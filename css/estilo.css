@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+    font-size: 11px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site {
+    max-width: 1200px;
+    /* Largura max de 1200 px */
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF8ED;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+/* logo site */
+.menu h1{
+    width: 255px;
+    height: 126px;
+    background:url(../img/Logo_patas_e_pelos.svg) no-repeat;
+    text-indent: -9999px;
+  }
