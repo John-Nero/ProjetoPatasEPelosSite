@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 body {
   font-size: 11px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", monospace;
   font-weight: 400;
 }
 
@@ -24,55 +25,102 @@ a {
   color: #fff;
   text-decoration: none;
 }
-img{
-    width: 100%;
+
+/*Pra todas as imagens se ajusta pra cabe 100% delas na dimensão que for passada*/
+img {
+  width: 100%;
 }
+
+/*Tamanho maximo do site*/
 .site {
   max-width: 1200px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.faixa{
-    background-color:#A38CD6;
+
+/*Faixa roxa do topo q fica atrás do menu pra n fica sem graça*/
+.faixa {
+  background-color: #A38CD6;
+  height: 108px;
 }
 
+/*Config de estilo geral do menu*/
 .menu{
-    
-    height: 108px;
-    display: flex;
-    align-items: center;
-    background-color: #A38CD6;
+  display: flex;
+  align-items: center;
+  
 }
-
-.logo h1{
-    width: 228px;
-    height: 72px;
-    background: url(../img/logo_patas_e_pelos.svg) no-repeat;
-    text-indent: -9999px;
-}
-
+ 
 .menu ul{
-    display: flex;
+  margin-left: 75px;
+  display: flex;
+  
 }
-
+ 
 .menu ul li{
-    margin: 0 5 px;
+  margin: 0 10px;
+}
+ 
+.menu > a{
+  background-color: #E30047;
+  padding: 15px;
+  margin-left: 15px;
+  border-radius: 20px;
 }
 
-.menu ul li a{
-    background-color: #bfacdd;
-    padding: 10px 5px;
-    margin-top: 50px;
-    margin-left: 40px;
-    border: black solid 1px;
-    border-radius: 20px;
-    color: black; /*Muda a cor do texto dentro das li*/
+/*Config pra logo fica ali no menu superior*/
+.logo h1 {
+  width: 228px;
+  height: 72px;
+  background: url(../img/logo_patas_e_pelos.svg) no-repeat;
+  text-indent: -9999px;
 }
 
+/*Deixa os itens do menu lado a lado*/
+
+
+/*Da uma margem entre os itens e tbm deixa mais centralizado o contexto geral do menu*/
+
+
+/*marco: cuidado com o sasuke do seu lado */
+/*John: Tenho que toma cuidado se o naldo vier pra ca, o sasuke é tranquilo*/
+
+/*Estilização dos botões menu*/
+.menu-botoes a {
+  width: 95px;
+  background-color: #bfacdd;
+  padding: 10px 21px;
+  margin-top: 50px;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: black;
+  /*Muda a cor do texto dentro das li*/
+  font-size: 14;
+}
+
+/*Regula a grossura do texto dos botões do menu*/
+.menu-botoes a {
+  font-weight: 100;
+}
+
+.menu-icones{
+  
+  padding: 25px;
+}
+
+/* elipse de contato */
 .contato h2{
-    width: 231px;
-    height: 187px;
-    background: url(../img/elipse_telefone.svg) no-repeat;
-    text-indent: -9999px;
+  margin-top: 150px;
+  width: 276px;
+  height: 226px;
+  background: url(../img/elipse_telefone.svg) no-repeat;
+  text-indent: -9999px;
+  align-items: center;
+}
+
+
+
+.main{
+  background: #FFF8ED;
 }
