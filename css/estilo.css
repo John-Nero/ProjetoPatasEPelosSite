@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
-
 .material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 body {
-    font-size: 11px;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
 }
 
 a,
@@ -17,33 +16,63 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
-    font-size: 1.5em;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.site {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
-.site {
-    max-width: 1200px;
-    /* Largura max de 1200 px */
-    width: 100%;
-    margin: 0 auto;
-    background-color: #FFF8ED;
+.faixa{
+    background-color:#A38CD6;
 }
 
 .menu{
+    
+    height: 108px;
     display: flex;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #A38CD6;
 }
 
-/* logo site */
-.menu h1{
-    width: 255px;
-    height: 126px;
-    background:url(../img/Logo_patas_e_pelos.svg) no-repeat;
+.logo h1{
+    width: 228px;
+    height: 72px;
+    background: url(../img/logo_patas_e_pelos.svg) no-repeat;
     text-indent: -9999px;
-  }
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    margin: 0 5 px;
+}
+
+.menu ul li a{
+    background-color: #bfacdd;
+    padding: 10px 5px;
+    margin-top: 50px;
+    margin-left: 40px;
+    border: black solid 1px;
+    border-radius: 20px;
+    color: black; /*Muda a cor do texto dentro das li*/
+}
+
+.contato h2{
+    width: 231px;
+    height: 187px;
+    background: url(../img/elipse_telefone.svg) no-repeat;
+    text-indent: -9999px;
+}
