@@ -24,55 +24,52 @@ a {
   color: #fff;
   text-decoration: none;
 }
-img{
-    width: 100%;
-}
+
+/*Tamanho maximo do site*/
 .site {
   max-width: 1200px;
   width: 100%;
   margin: auto;
 }
-
-.faixa{
-    background-color:#A38CD6;
+.menu_superior {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 108px;
+  background-color: #a38cd6;
+}
+.menu_superior h1 {
+  width: 228px;
+  height: 72px;
+  background: url(../img/Logo_Patas_e_pelos.svg) no-repeat;
+  text-indent: -9999px;
 }
 
-.menu{
-    
-    height: 108px;
-    display: flex;
-    align-items: center;
-    background-color: #A38CD6;
+.menu_botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo h1{
-    width: 228px;
-    height: 72px;
-    background: url(../img/logo_patas_e_pelos.svg) no-repeat;
-    text-indent: -9999px;
+.menu_botoes a {
+  width: 95px;
+  background-color: #bfacdd;
+  padding: 10px 21px;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: black;
+  /*Muda a cor do texto dentro das li*/
+  font-size: 14;
 }
 
-.menu ul{
-    display: flex;
+.menu_icones {
+  display: flex;
+  align-items: center;
+
 }
 
-.menu ul li{
-    margin: 0 5 px;
-}
-
-.menu ul li a{
-    background-color: #bfacdd;
-    padding: 10px 5px;
-    margin-top: 50px;
-    margin-left: 40px;
-    border: black solid 1px;
-    border-radius: 20px;
-    color: black; /*Muda a cor do texto dentro das li*/
-}
-
-.contato h2{
-    width: 231px;
-    height: 187px;
-    background: url(../img/elipse_telefone.svg) no-repeat;
-    text-indent: -9999px;
+.menu_icones a{
+  width: 100px;
+  height: 30px;
+  padding: 25px;
 }
