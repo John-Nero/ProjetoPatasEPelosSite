@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/*|########| CONFIGURAÇÕES GERAIS |########|*/
 
 body {
   font-size: 11px;
@@ -29,6 +31,14 @@ a {
   margin: auto;
 }
 
+/*Cor geral do site*/
+main {
+  background-color: #fcebd1;
+}
+
+/*|########| MENU SUPERIOR |########|*/
+
+/*Cor e alinhamento menu superior*/
 .menu_superior {
   display: flex;
   align-items: center;
@@ -38,6 +48,7 @@ a {
   background-color: #a38cd6;
 }
 
+/*Logo do site*/
 .menu_superior h1 {
   width: 228px;
   height: 72px;
@@ -45,6 +56,7 @@ a {
   text-indent: -9999px;
 }
 
+/*Alinhamento e espaçamento dos botões do menu*/
 .menu_botoes {
   display: flex;
   align-items: center;
@@ -52,6 +64,7 @@ a {
   margin: 37px;
 }
 
+/*Estilização dos botões*/
 .menu_botoes a {
   width: 95px;
   background-color: #bfacdd;
@@ -63,38 +76,41 @@ a {
   font-size: 14;
 }
 
+/*Alinhamento dos icones do menu*/
 .menu_icones {
   display: flex;
   align-items: center;
-
 }
 
+/*Tamanho dos icones do menu*/
 .menu_icones a {
   width: 100px;
   height: 30px;
   padding: 25px;
 }
 
+/*Elipse de contato do menu*/
 .menu_superior h2 {
-  width: 362px;
-  height: 337px;
+  width: 275px;
+  height: 225px;
   background: url(../img/Elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
-  margin-top: 220px;
+  margin-top: 96px;
   position: relative;
-  z-index: 1;
 }
 
+/*|########| AGENDE SEU HORARIO |########|*/
+
 .separacao {
-  padding: 40px 0;
+margin: 40px 0;
 }
 
 .agenda h2 {
   width: 40%;
   font-size: 8em;
-  color: #A38CD6;
+  color: #a38cd6;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   font-style: normal;
+  font-family: "Roboto Flex", sans-serif;
 }
