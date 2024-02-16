@@ -33,7 +33,7 @@ a {
 
 /*Cor geral do site*/
 main {
-  background-color: #fcebd1;
+  background-color: #FFF8ED;
 }
 
 /*|########| MENU SUPERIOR |########|*/
@@ -90,8 +90,8 @@ main {
 
 /*Elipse de contato do menu*/
 .menu_superior h2 {
-  width: 275px;
-  height: 225px;
+  width: 258px;
+  height: 228px;
   background: url(../img/Elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
   margin-top: 96px;
@@ -101,15 +101,38 @@ main {
 /*|########| AGENDE SEU HORARIO |########|*/
 
 .separacao {
-  margin: 40px 0;
+  margin: 20px 0;
+}
+
+.agenda {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .agenda h2 {
-  width: 40%;
-  font-size: 8em;
+  width: 438px;
+  font-size: 68px;
   color: #a38cd6;
   text-align: center;
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
-  font-family: "Roboto Flex", sans-serif;
+  text-align: left;
+}
+
+.agenda p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.agenda a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
 }
