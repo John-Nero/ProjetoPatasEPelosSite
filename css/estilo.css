@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
+/*|########| CONFIGURAÇÕES GERAIS |########|*/
 
 body {
   font-size: 11px;
-  font-family: "Roboto", monospace;
+  font-family: "Roboto Mono", "Roboto Black", monospace;
   font-weight: 400;
 }
 
@@ -19,6 +17,7 @@ h5,
 h6 {
   font-weight: 700;
   font-size: 1.5em;
+  color: #a38cd6;
 }
 
 a {
@@ -26,101 +25,239 @@ a {
   text-decoration: none;
 }
 
-/*Pra todas as imagens se ajusta pra cabe 100% delas na dimensão que for passada*/
-img {
-  width: 100%;
-}
-
 /*Tamanho maximo do site*/
 .site {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
+/*Cor geral do site*/
+main {
+  background-color: #FFF8ED;
+}
 
-/*Faixa roxa do topo q fica atrás do menu pra n fica sem graça*/
+/*|########| MENU SUPERIOR |########|*/
+
+/*Faixa roxa de fora a fora do site*/
 .faixa {
-  background-color: #A38CD6;
+  background-color: #a38cd6;
+  width: 100%;
+}
+
+/*Cor e alinhamento menu superior*/
+.menu_superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 108px;
 }
 
-/*Config de estilo geral do menu*/
-.menu{
-  display: flex;
-  align-items: center;
-  
-}
- 
-.menu ul{
-  margin-left: 75px;
-  display: flex;
-  
-}
- 
-.menu ul li{
-  margin: 0 10px;
-}
- 
-.menu > a{
-  background-color: #E30047;
-  padding: 15px;
-  margin-left: 15px;
-  border-radius: 20px;
-}
-
-/*Config pra logo fica ali no menu superior*/
-.logo h1 {
+/*Logo do site*/
+.menu_superior h1 {
   width: 228px;
   height: 72px;
   background: url(../img/logo_patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
-/*Deixa os itens do menu lado a lado*/
+/*Alinhamento e espaçamento dos botões do menu*/
+.menu_botoes {
+  display: flex;
+}
 
-
-/*Da uma margem entre os itens e tbm deixa mais centralizado o contexto geral do menu*/
-
-
-/*marco: cuidado com o sasuke do seu lado */
-/*John: Tenho que toma cuidado se o naldo vier pra ca, o sasuke é tranquilo*/
-
-/*Estilização dos botões menu*/
-.menu-botoes a {
+/*Estilização dos botões*/
+.menu_botoes a {
   width: 95px;
   background-color: #bfacdd;
-  padding: 10px 21px;
-  margin-top: 50px;
-  margin-left: 10px;
+  padding: 11px 27px;
+  margin-left: 20px;
   border-radius: 20px;
   color: black;
   /*Muda a cor do texto dentro das li*/
   font-size: 14;
 }
 
-/*Regula a grossura do texto dos botões do menu*/
-.menu-botoes a {
-  font-weight: 100;
+/*Alinhamento dos icones do menu*/
+.menu_icones {
+  display: flex;
+  margin-left: 10px;
 }
 
-.menu-icones{
-  
-  padding: 25px;
+.menu_icones a {
+  display: flex;
+  margin-left: 6px;
 }
 
-/* elipse de contato */
-.contato h2{
-  margin-top: 150px;
-  width: 276px;
-  height: 226px;
+/*Elipse de contato do menu*/
+.menu_superior h2 {
+  width: 258px;
+  height: 228px;
   background: url(../img/elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
+  margin-top: 96px;
+  position: relative;
+}
+
+.imgbanner img {
+  width: 1200px;
+}
+
+/*|########| AGENDE SEU HORARIO |########|*/
+
+.separacao {
+  margin: 20px 0;
+}
+
+.agenda {
+  margin-left: 40px;
+  display: flex;
   align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.agenda h2 {
+  font-size: 5.4em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.agenda p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.agenda a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
+}
+
+/*|########| CATEGORIAS |########| */
+
+.categorias div {
+  display: flex;
+  justify-content: center;
+}
+.categorias div:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+}
+/*Config das estrelas*/
+
+
+#estrela_roxa {
+  left: -200px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+#estrela_laranja {
+  left: -130px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.categorias h2 {
+  width: 438px;
+  font-size: 68px;
+  color: #a38cd6;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
 }
 
 
+/*|########| tosa e banho |########| */
 
-.main{
-  background: #FFF8ED;
+.tosa {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.tosa h2 {
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.tosa h2:nth-child(2) {
+  font-size: 3.5em;
+  color: #FF9A5B;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.tosa p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.tosa a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
+}
+
+.sobre {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.sobre h2 {
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.sobre h2:nth-child(2) {
+  font-size: 3.5em;
+  color: #FF9A5B;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.sobre p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.sobre a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
 }
