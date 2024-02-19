@@ -17,6 +17,7 @@ h5,
 h6 {
   font-weight: 700;
   font-size: 1.5em;
+  color: #a38cd6;
 }
 
 a {
@@ -56,7 +57,7 @@ main {
 .menu_superior h1 {
   width: 228px;
   height: 72px;
-  background: url(../img/Logo_Patas_e_pelos.svg) no-repeat;
+  background: url(../img/logo_patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
@@ -92,10 +93,14 @@ main {
 .menu_superior h2 {
   width: 258px;
   height: 228px;
-  background: url(../img/Elipse_telefone.svg) no-repeat;
+  background: url(../img/elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
   margin-top: 96px;
   position: relative;
+}
+
+.imgbanner img {
+  width: 1200px;
 }
 
 /*|########| AGENDE SEU HORARIO |########|*/
@@ -112,10 +117,8 @@ main {
 }
 
 .agenda h2 {
-  width: 438px;
-  font-size: 68px;
+  font-size: 5.4em;
   color: #a38cd6;
-  text-align: center;
   font-weight: 900;
   font-style: normal;
   text-align: left;
@@ -126,9 +129,131 @@ main {
   color: #000;
   font-size: 23px;
   margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 .agenda a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
+}
+
+/*|########| CATEGORIAS |########| */
+
+.categorias div {
+  display: flex;
+  justify-content: center;
+}
+.categorias div:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+}
+/*Config das estrelas*/
+
+
+#estrela_roxa {
+  left: -200px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+#estrela_laranja {
+  left: -130px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.categorias h2 {
+  width: 438px;
+  font-size: 68px;
+  color: #a38cd6;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+
+/*|########| tosa e banho |########| */
+
+.tosa {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.tosa h2 {
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.tosa h2:nth-child(2) {
+  font-size: 3.5em;
+  color: #FF9A5B;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.tosa p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.tosa a {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 900;
+  border-radius: 39px;
+  background-color: #FF9A5B;
+  padding: 6px 32px;
+}
+
+.sobre {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.sobre h2 {
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.sobre h2:nth-child(2) {
+  font-size: 3.5em;
+  color: #FF9A5B;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+}
+
+.sobre p {
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.sobre a {
   margin-top: 50px;
   font-size: 26px;
   font-weight: 900;
