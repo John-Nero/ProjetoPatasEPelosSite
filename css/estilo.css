@@ -17,7 +17,8 @@ h6 {
   font-weight: 700;
   font-size: 1.5em;
 }
-h2{
+
+h2 {
   font-size: 5.4em;
   color: #a38cd6;
   font-weight: 900;
@@ -30,19 +31,35 @@ a {
   text-decoration: none;
 }
 
+.titulo_roxo {
 
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  margin-left: 20px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.imgbanner,
+.agenda,
+.categorias,
+.tosa,
+.sobre,
+.visita {
+  background-color: #FFF8ED;
+}
 
 /*Tamanho maximo do site*/
 .site {
   max-width: 1200px;
+  /* Largura max de 1200 px */
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
-/*Cor geral do site*/
-main {
-  background-color: #fff8ed;
-}
+
 
 /*|########| MENU SUPERIOR |########|*/
 
@@ -117,19 +134,11 @@ main {
 }
 
 .agenda {
-  margin-left: 40px;
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
 }
 
-.agenda h2 {
-  font-size: 5.4em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
 
 .agenda p {
   width: 346px;
@@ -137,10 +146,12 @@ main {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
+  margin-left: 30px;
 }
 
 .agenda a {
   margin-top: 50px;
+  margin-left: 30px;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
@@ -150,9 +161,10 @@ main {
 
 /*|########| CATEGORIAS |########| */
 
-.categorias{
+.categorias {
   font-family: "Roboto Flex", sans-serif;
 }
+
 .categorias div,
 div:nth-child(2) a {
   display: flex;
@@ -167,6 +179,7 @@ div:nth-child(2) a {
 .categorias div:nth-child(2) ul li {
   margin: 25px;
 }
+
 /*Config das estrelas*/
 
 #estrela_roxa_superior {
@@ -180,14 +193,6 @@ div:nth-child(2) a {
   position: relative;
 }
 
-.categorias h2 {
-  width: 438px;
-  font-size: 5.4em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
 
 #estrela_roxa_inferior {
   left: 486px;
@@ -201,22 +206,14 @@ div:nth-child(2) a {
   position: relative;
 }
 
-/*|########| tosa e banho |########| */
+/*|########| TOSA E BANHO |########| */
 
 .tosa {
-  margin-left: 40px;
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
 }
 
-.tosa h2 {
-  font-size: 5em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
 
 .tosa h2:nth-child(2) {
   font-size: 3.5em;
@@ -243,19 +240,12 @@ div:nth-child(2) a {
   padding: 6px 32px;
 }
 
+/*|########| SOBRE |########| */
+
 .sobre {
-  margin-left: 40px;
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
-}
-
-.sobre h2 {
-  font-size: 5em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
 }
 
 .sobre h2:nth-child(2) {
@@ -264,6 +254,7 @@ div:nth-child(2) a {
   font-weight: 900;
   font-style: normal;
   text-align: left;
+  margin-left: 20px;
 }
 
 .sobre p {
@@ -272,13 +263,39 @@ div:nth-child(2) a {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
+  margin-left: 20px;
 }
 
 .sobre a {
   margin-top: 50px;
+  margin-left: 20px;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
   padding: 6px 32px;
+}
+
+.sobre img {
+  margin-left: -20px;
+
+}
+
+/*|########| VENHA NOS VISITAR |########| */
+
+.visita {
+  display: flex;
+}
+
+.visita h2 {
+  margin: 35% 22px 0 0;
+  text-align: end;
+}
+
+.visita p {
+  font-family: "Roboto", sans-serif;
+  width: 346px;
+  color: #000;
+  font-size: 23px;
+
 }
