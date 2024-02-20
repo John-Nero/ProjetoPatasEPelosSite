@@ -10,20 +10,27 @@ body {
 
 a,
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 700;
   font-size: 1.5em;
+}
+h2{
+  font-size: 5.4em;
   color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
 }
 
 a {
   color: #fff;
   text-decoration: none;
 }
+
+
 
 /*Tamanho maximo do site*/
 .site {
@@ -34,7 +41,7 @@ a {
 
 /*Cor geral do site*/
 main {
-  background-color: #FFF8ED;
+  background-color: #fff8ed;
 }
 
 /*|########| MENU SUPERIOR |########|*/
@@ -137,48 +144,62 @@ main {
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
 }
 
 /*|########| CATEGORIAS |########| */
 
-.categorias div {
+.categorias{
+  font-family: "Roboto Flex", sans-serif;
+}
+.categorias div,
+div:nth-child(2) a {
   display: flex;
   justify-content: center;
 }
+
 .categorias div:nth-child(2) ul {
   display: flex;
   justify-content: center;
 }
+
+.categorias div:nth-child(2) ul li {
+  margin: 25px;
+}
 /*Config das estrelas*/
 
-
-#estrela_roxa {
-  left: -200px;
-  width: 20px;
-  height: 20px;
+#estrela_roxa_superior {
+  left: -238px;
   position: relative;
 }
 
-#estrela_laranja {
+#estrela_laranja_superior {
   left: -130px;
-  width: 20px;
-  height: 20px;
+
   position: relative;
 }
 
 .categorias h2 {
   width: 438px;
-  font-size: 68px;
+  font-size: 5.4em;
   color: #a38cd6;
-  text-align: center;
-  justify-content: center;
   font-weight: 900;
   font-style: normal;
   text-align: left;
 }
 
+#estrela_roxa_inferior {
+  left: 486px;
+  bottom: -13px;
+  position: relative;
+}
+
+#estrela_laranja_inferior {
+  left: 489px;
+  bottom: -65px;
+  position: relative;
+}
 
 /*|########| tosa e banho |########| */
 
@@ -199,7 +220,7 @@ main {
 
 .tosa h2:nth-child(2) {
   font-size: 3.5em;
-  color: #FF9A5B;
+  color: #ff9a5b;
   font-weight: 900;
   font-style: normal;
   text-align: left;
@@ -218,7 +239,7 @@ main {
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
 }
 
@@ -239,7 +260,7 @@ main {
 
 .sobre h2:nth-child(2) {
   font-size: 3.5em;
-  color: #FF9A5B;
+  color: #ff9a5b;
   font-weight: 900;
   font-style: normal;
   text-align: left;
@@ -258,6 +279,6 @@ main {
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
 }
