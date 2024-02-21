@@ -31,6 +31,8 @@ a {
   text-decoration: none;
 }
 
+/*|########| FONTE PERSONALIZADA |########|*/
+
 .titulo_roxo {
 
   font-size: 5em;
@@ -42,6 +44,8 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*|########| COR GERAL |########|*/
+
 .imgbanner,
 .agenda,
 .categorias,
@@ -51,15 +55,14 @@ a {
   background-color: #FFF8ED;
 }
 
-/*Tamanho maximo do site*/
+/*|########| TAMANHO |########|*/
+
 .site {
   max-width: 1200px;
   /* Largura max de 1200 px */
   width: 100%;
   margin: 0 auto;
 }
-
-
 
 /*|########| MENU SUPERIOR |########|*/
 
@@ -278,7 +281,6 @@ div:nth-child(2) a {
 
 .sobre img {
   margin-left: -20px;
-
 }
 
 /*|########| VENHA NOS VISITAR |########| */
