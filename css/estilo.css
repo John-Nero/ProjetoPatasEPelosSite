@@ -81,7 +81,7 @@ a {
 .menu_superior h1 {
   width: 228px;
   height: 72px;
-  background: url(../img/logo_patas_e_pelos.svg) no-repeat;
+  background: url(../img/menu/Logo_Patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
@@ -117,7 +117,7 @@ a {
 .menu_superior h2 {
   width: 258px;
   height: 228px;
-  background: url(../img/elipse_telefone.svg) no-repeat;
+  background: url(../img/menu/Elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
   margin-top: 96px;
   position: relative;
