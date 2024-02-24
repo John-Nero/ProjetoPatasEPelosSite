@@ -84,7 +84,7 @@ a {
 .menu_superior h1 {
   width: 228px;
   height: 72px;
-  background: url(../img/menu/Logo_Patas_e_pelos.svg) no-repeat;
+  background: url(../img/menu/logo_Patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
@@ -120,7 +120,7 @@ a {
 .menu_superior h2 {
   width: 258px;
   height: 228px;
-  background: url(../img/menu/Elipse_telefone.svg) no-repeat;
+  background: url(../img/menu/elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
   margin-top: 96px;
   position: relative;
@@ -129,7 +129,6 @@ a {
 .imgbanner img {
   width: 1200px;
 }
-
 /*|########| AGENDE SEU HORARIO |########|*/
 
 .agenda {
@@ -169,7 +168,8 @@ div:nth-child(2) a {
   justify-content: center;
 }
 
-.categorias div:nth-child(2) ul {
+.categorias div:nth-child(2) ul,
+.categorias div:nth-child(2) ul li h3 {
   display: flex;
   justify-content: center;
 }
