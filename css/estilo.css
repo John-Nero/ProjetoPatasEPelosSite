@@ -49,6 +49,7 @@ a {
   font-weight: 900;
   font-style: normal;
   text-align: left;
+  font-family: "Roboto Flex", sans-serif;
   margin-left: 20px;
 }
 
@@ -333,12 +334,12 @@ div:nth-child(2) a {
 }
 
 .depo_principal div span:nth-child(1) {
-  top: -307px;
+  top: -282px;
   left: 153px;
 }
 
 .depo_principal div span:nth-child(2) {
-  top: -194px;
+  top: -184px;
   left: 205px;
 }
 
@@ -351,8 +352,8 @@ div:nth-child(2) a {
   display: inline-flex;
   width: 59px;
   height: 59px;
-  top: -177px;
-  left: 216px;
+  top: -184px;
+  left: 200px;
 }
 
 .depo_principal div span:nth-child(4) {
@@ -360,19 +361,19 @@ div:nth-child(2) a {
   width: 302px;
   height: 302px;
   position: relative;
-  top: 75px;
+  top: 95px;
   left: -396px;
 }
 
 .depo_principal div span:nth-child(5) {
-  top: -214px;
+  top: -183px;
   left: 118px;
   z-index: 1;
 }
 
 .depo_principal div span:nth-child(6) {
-  top: -547px;
-  left: 215px;
+  top: -498px;
+  left: 130px;
 }
 
 .depo_principal div span:nth-child(7) {
@@ -382,13 +383,45 @@ div:nth-child(2) a {
 
 .depo_principal div span:nth-child(7) img:nth-child(2) {
   position: relative;
-  top: 2px;
-  left: -136px;
+  top: -121px;
+  left: 546px;
 }
 
 .depo_principal div span:nth-child(8) {
   top: -168px;
   left: 230px;
+}
+
+/*Parte do depoimento por escrito*/
+.depo_principal h2 {
+  font-size: 6em;
+  text-align: center;
+}
+
+
+.depo_principal div:nth-child(2) div:nth-child(1) {
+  margin-top: 68px;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(2) {
+  margin-top: 100px;
+}
+
+.depo_principal h3,
+.depo_principal h5 {
+  font-size: 3.9em;
+  text-align: center;
+}
+
+.depo_principal h4 {
+  font-size: 3.2em;
+  text-align: center;
+}
+
+.depo_principal p {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Roboto Flex";
 }
 
 /*|########| VENHA NOS VISITAR |########| */
