@@ -43,6 +43,15 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+.subtitulo_laranja {
+  font-size: 3.5em;
+  color: #ff9a5b;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  margin-left: 20px;
+}
+
 /*|########| COR GERAL |########|*/
 
 .imgbanner,
@@ -50,6 +59,7 @@ a {
 .categorias,
 .tosa,
 .sobre,
+.depo,
 .visita {
   background-color: #fff8ed;
   margin-top: 3px;
@@ -211,14 +221,6 @@ div:nth-child(2) a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.tosa h2:nth-child(2) {
-  font-size: 3.5em;
-  color: #ff9a5b;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
-
 .tosa p {
   width: 346px;
   color: #000;
@@ -244,15 +246,6 @@ div:nth-child(2) a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.sobre h2:nth-child(2) {
-  font-size: 3.5em;
-  color: #ff9a5b;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-  margin-left: 20px;
-}
-
 .sobre p {
   width: 346px;
   color: #000;
@@ -274,6 +267,128 @@ div:nth-child(2) a {
 
 .sobre img {
   margin-left: -20px;
+}
+
+/*|########| DEPOIMENTO |########| */
+
+/*DIV ENFEITE TOPO*/
+.depo_topo {
+  display: flex;
+  position: relative;
+}
+
+.depo_topo span {
+  position: relative;
+}
+
+.depo_topo span:nth-child(1) {
+  position: relative;
+  bottom: -243px;
+  left: 60px;
+}
+
+.depo_topo span:nth-child(2) {
+  position: relative;
+  bottom: -300px;
+  left: 76px;
+}
+
+.depo_topo span:nth-child(3) {
+  position: relative;
+  bottom: -127px;
+  left: 288px;
+}
+
+.depo_topo span:nth-child(4) {
+  position: relative;
+  bottom: -196px;
+  left: 334px;
+}
+
+.depo_topo span:nth-child(5) {
+  position: relative;
+  bottom: -21px;
+  left: 496px;
+}
+
+.depo_topo span:nth-child(6) {
+  position: relative;
+  bottom: -39px;
+  left: 102px;
+}
+
+.depo_topo span:nth-child(7) {
+  position: relative;
+  bottom: -222px;
+  left: 406px;
+}
+
+/*DIV PRINCIPAL*/
+.depo_principal {
+  display: flex;
+}
+
+.depo_principal div span {
+  position: relative;
+}
+
+.depo_principal div span:nth-child(1) {
+  top: -307px;
+  left: 153px;
+}
+
+.depo_principal div span:nth-child(2) {
+  top: -194px;
+  left: 205px;
+}
+
+.depo_principal div span:nth-child(2) img:nth-child(2) {
+  position: relative;
+  left: -123px;
+}
+
+.depo_principal div span:nth-child(3) {
+  display: inline-flex;
+  width: 59px;
+  height: 59px;
+  top: -177px;
+  left: 216px;
+}
+
+.depo_principal div span:nth-child(4) {
+  display: inline-flex;
+  width: 302px;
+  height: 302px;
+  position: relative;
+  top: 75px;
+  left: -396px;
+}
+
+.depo_principal div span:nth-child(5) {
+  top: -214px;
+  left: 118px;
+  z-index: 1;
+}
+
+.depo_principal div span:nth-child(6) {
+  top: -547px;
+  left: 215px;
+}
+
+.depo_principal div span:nth-child(7) {
+  top: -177px;
+  left: -441px;
+}
+
+.depo_principal div span:nth-child(7) img:nth-child(2) {
+  position: relative;
+  top: 2px;
+  left: -136px;
+}
+
+.depo_principal div span:nth-child(8) {
+  top: -168px;
+  left: 230px;
 }
 
 /*|########| VENHA NOS VISITAR |########| */
