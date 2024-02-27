@@ -10,20 +10,13 @@ body {
 
 a,
 h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 700;
   font-size: 1.5em;
-}
-
-h2 {
-  font-size: 5.4em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
 }
 
 a {
@@ -328,18 +321,22 @@ div:nth-child(2) a {
   display: flex;
 }
 
+.depo_principal div {
+  width: 711px;
+}
+
 .depo_principal div span {
   position: relative;
 }
 
 .depo_principal div span:nth-child(1) {
-  top: -282px;
+  top: -134px;
   left: 153px;
 }
 
 .depo_principal div span:nth-child(2) {
-  top: -184px;
-  left: 205px;
+  top: -43px;
+  left: 188px;
 }
 
 .depo_principal div span:nth-child(2) img:nth-child(2) {
@@ -351,8 +348,8 @@ div:nth-child(2) a {
   display: inline-flex;
   width: 59px;
   height: 59px;
-  top: -184px;
-  left: 200px;
+  top: -44px;
+  left: 139px;
 }
 
 .depo_principal div span:nth-child(4) {
@@ -360,24 +357,24 @@ div:nth-child(2) a {
   width: 302px;
   height: 302px;
   position: relative;
-  top: 95px;
-  left: -396px;
+  top: -83px;
+  left: -45px;
 }
 
 .depo_principal div span:nth-child(5) {
-  top: -201px;
-  left: 118px;
+  top: -369px;
+  left: 91px;
   z-index: 1;
 }
 
 .depo_principal div span:nth-child(6) {
-  top: -498px;
+  top: -700px;
   left: 130px;
 }
 
 .depo_principal div span:nth-child(7) {
-  top: -177px;
-  left: -441px;
+  top: -495px;
+  left: 54px;
 }
 
 .depo_principal div span:nth-child(7) img:nth-child(2) {
@@ -385,13 +382,16 @@ div:nth-child(2) a {
   top: 10px;
   left: -141px;
 }
-
-.depo_principal div span:nth-child(8) {
-  top: -168px;
-  left: 230px;
+.depo_principal div span:nth-child(8) {top: -474px;left: -24px;}
+.depo_principal div span:nth-child(9) {
+  top: -510px;
+  left: 231px;
 }
 
-
+.depo_principal div span:nth-child(10) {
+  top: -432px;
+  left: -136px;
+}
 
 
 /*|########| VENHA NOS VISITAR |########| */
@@ -400,7 +400,7 @@ div:nth-child(2) a {
   display: flex;
 }
 
-.visita>div {
+.visita > div {
   margin-right: 50px;
 }
 
