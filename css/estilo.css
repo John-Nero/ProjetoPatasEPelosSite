@@ -166,7 +166,7 @@ a {
 }
 
 .categorias div,
-div:nth-child(2) a {
+.categorias div:nth-child(2) a {
   display: flex;
   justify-content: center;
 }
@@ -442,7 +442,6 @@ div:nth-child(2) a {
   left: -108px;
 }
 
-
 /*|########| VENHA NOS VISITAR |########| */
 
 .visita {
@@ -488,4 +487,75 @@ div:nth-child(2) a {
   font-style: normal;
   text-align: end;
   font-family: "Roboto Flex", sans-serif;
+}
+
+/*|########| RODAPÉ |########| */
+
+.rodape {
+  background: #a38cd6;
+  text-align: left;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+.rodape > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+.rodape div div {
+  width: 25%;
+}
+
+.rodape p {
+  width: 278px;
+  height: 59px;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.rodape div div:nth-child(1) a {
+  font-weight: bold;
+  color: #ff9a5b;
+  margin: 20px 0;
+}
+
+.rodape div div:nth-child(1) ul {
+  display: flex;
+}
+
+.rodape div div:nth-child(1) ul li img {
+  margin: 0 5px;
+}
+
+.rodape div div:nth-child(1) ul li img {
+  width: 36px;
+  height: 36px;
+}
+
+.rodape div div:nth-child(2) {
+  color: #000;
+  margin: 40px 0;
+}
+
+.rodape div div:nth-child(2) ul li {
+  margin: 20px 0;
+}
+
+.rodape div div:nth-child(2) ul li a {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.rodape div div:nth-child(3) {
+  margin: 20px 0;
+}
+
+.rodape div div:nth-child(3) h2 {
+  margin: 20px 0 10px 0;
+}
+.rodape div div:nth-child(3) a {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
 }
