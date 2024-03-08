@@ -17,7 +17,6 @@ h5,
 h6 {
   font-weight: 700;
   font-size: 1.5em;
-  color: #a38cd6;
 }
 
 a {
@@ -25,16 +24,46 @@ a {
   text-decoration: none;
 }
 
-/*Tamanho maximo do site*/
-.site {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
+/*|########| FONTE PERSONALIZADA |########|*/
+
+.titulo_roxo {
+  font-size: 5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  font-family: "Roboto Flex", sans-serif;
 }
 
-/*Cor geral do site*/
-main {
-  background-color: #FFF8ED;
+.subtitulo_laranja {
+  font-size: 3.5em;
+  color: #ff9a5b;
+  font-weight: 900;
+  font-style: normal;
+  text-align: left;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/*|########| COR GERAL |########|*/
+
+.imgbanner,
+.agenda,
+.categorias,
+.tosa,
+.sobre,
+.depo,
+.visita {
+  background-color: #fff8ed;
+  margin-top: 3px;
+}
+
+/*|########| TAMANHO |########|*/
+
+.site {
+  max-width: 1200px;
+  /* Largura max de 1200 px */
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*|########| MENU SUPERIOR |########|*/
@@ -57,7 +86,7 @@ main {
 .menu_superior h1 {
   width: 228px;
   height: 72px;
-  background: url(../img/logo_patas_e_pelos.svg) no-repeat;
+  background: url(../img/menu/logo_Patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
@@ -93,7 +122,7 @@ main {
 .menu_superior h2 {
   width: 258px;
   height: 228px;
-  background: url(../img/elipse_telefone.svg) no-repeat;
+  background: url(../img/menu/elipse_telefone.svg) no-repeat;
   text-indent: -9999px;
   margin-top: 96px;
   position: relative;
@@ -105,23 +134,10 @@ main {
 
 /*|########| AGENDE SEU HORARIO |########|*/
 
-.separacao {
-  margin: 20px 0;
-}
-
 .agenda {
-  margin-left: 40px;
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
-}
-
-.agenda h2 {
-  font-size: 5.4em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
 }
 
 .agenda p {
@@ -130,79 +146,72 @@ main {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
+  margin-left: 30px;
 }
 
 .agenda a {
   margin-top: 50px;
+  margin-left: 30px;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
 }
 
 /*|########| CATEGORIAS |########| */
 
-.categorias div {
-  display: flex;
-  justify-content: center;
-}
-.categorias div:nth-child(2) ul {
-  display: flex;
-  justify-content: center;
-}
-/*Config das estrelas*/
-
-
-#estrela_roxa {
-  left: -200px;
-  width: 20px;
-  height: 20px;
-  position: relative;
-}
-
-#estrela_laranja {
-  left: -130px;
-  width: 20px;
-  height: 20px;
-  position: relative;
-}
-
-.categorias h2 {
-  width: 438px;
-  font-size: 68px;
-  color: #a38cd6;
-  text-align: center;
-  justify-content: center;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
-
-
-/*|########| tosa e banho |########| */
-
-.tosa {
-  margin-left: 40px;
-  display: flex;
-  align-items: center;
+.categorias {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.tosa h2 {
-  font-size: 5em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
+.categorias div,
+.categorias div:nth-child(2) a {
+  display: flex;
+  justify-content: center;
 }
 
-.tosa h2:nth-child(2) {
-  font-size: 3.5em;
-  color: #FF9A5B;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
+.categorias div:nth-child(2) ul,
+.categorias div:nth-child(2) ul li h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.categorias div:nth-child(2) ul li {
+  margin: 25px;
+}
+
+/*Config das estrelas*/
+
+#estrela_roxa_superior {
+  left: -238px;
+  position: relative;
+}
+
+#estrela_laranja_superior {
+  left: -130px;
+
+  position: relative;
+}
+
+#estrela_roxa_inferior {
+  left: 486px;
+  bottom: -13px;
+  position: relative;
+}
+
+#estrela_laranja_inferior {
+  left: 489px;
+  bottom: -65px;
+  position: relative;
+}
+
+/*|########| TOSA E BANHO |########| */
+
+.tosa {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .tosa p {
@@ -218,31 +227,16 @@ main {
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
 }
 
+/*|########| SOBRE |########| */
+
 .sobre {
-  margin-left: 40px;
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
-}
-
-.sobre h2 {
-  font-size: 5em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
-}
-
-.sobre h2:nth-child(2) {
-  font-size: 3.5em;
-  color: #FF9A5B;
-  font-weight: 900;
-  font-style: normal;
-  text-align: left;
 }
 
 .sobre p {
@@ -251,13 +245,327 @@ main {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
+  margin-left: 20px;
 }
 
 .sobre a {
   margin-top: 50px;
+  margin-left: 20px;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
-  background-color: #FF9A5B;
+  background-color: #ff9a5b;
   padding: 6px 32px;
+}
+
+.sobre img {
+  margin-left: -20px;
+}
+
+/*|########| DEPOIMENTO |########| */
+
+/*DIV ENFEITE TOPO*/
+.depo_topo {
+  display: flex;
+  position: relative;
+}
+
+.depo_topo span {
+  position: relative;
+}
+
+.depo_topo span:nth-child(1) {
+  position: relative;
+  bottom: -243px;
+  left: 60px;
+}
+
+.depo_topo span:nth-child(2) {
+  position: relative;
+  bottom: -300px;
+  left: 76px;
+}
+
+.depo_topo span:nth-child(3) {
+  position: relative;
+  bottom: -127px;
+  left: 288px;
+}
+
+.depo_topo span:nth-child(4) {
+  position: relative;
+  bottom: -196px;
+  left: 334px;
+}
+
+.depo_topo span:nth-child(5) {
+  position: relative;
+  bottom: -21px;
+  left: 496px;
+}
+
+.depo_topo span:nth-child(6) {
+  position: relative;
+  bottom: -39px;
+  left: 102px;
+}
+
+.depo_topo span:nth-child(7) {
+  position: relative;
+  bottom: -222px;
+  left: 406px;
+}
+
+/*DIV PRINCIPAL*/
+.depo_principal {
+  display: flex;
+  align-items: center;
+}
+
+.depo_principal div span {
+  position: relative;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(1) {
+  top: -300px;
+  left: 153px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(2) {
+  top: -217px;
+  left: 233px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(2) img:nth-child(2) {
+  position: relative;
+  left: -123px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(3) {
+  display: inline-flex;
+  width: 60px;
+  height: 59px;
+  top: -221px;
+  left: 219px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(4) {
+  display: inline-flex;
+  width: 302px;
+  height: 302px;
+  position: relative;
+  top: 50px;
+  left: -401px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(5) {
+  top: -237px;
+  left: 154px;
+  z-index: 1;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(6) {
+  top: -557px;
+  left: 195px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(7) {
+  top: -204px;
+  left: -400px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(7) img:nth-child(2) {
+  position: relative;
+  top: -118px;
+  left: 541px;
+}
+.depo_principal div:nth-child(1) span:nth-child(8) {
+  top: -346px;
+  left: 189px;
+}
+.depo_principal div:nth-child(1) span:nth-child(9) {
+  top: -386px;
+  left: 431px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(10) {
+  top: -300px;
+  left: 82px;
+}
+
+.depo_principal div:nth-child(2) {
+  width: 446px;
+  height: 770px;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(1) h2 {
+  font-size: 5.5em;
+  text-align: center;
+}
+.depo_principal div:nth-child(2) div:nth-child(1) h3 {
+  text-align: center;
+}
+.depo_principal div:nth-child(2) div:nth-child(2) {
+  margin-top: 90px;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(2) h2 {
+  font-size: 3.5em;
+  text-align: center;
+}
+.depo_principal div:nth-child(2) div:nth-child(2) h3 {
+  text-align: center;
+}
+.depo_principal div:nth-child(2) div:nth-child(2) ul {
+  display: flex;
+  justify-content: center;
+}
+.depo_principal div:nth-child(2) div:nth-child(2) div {
+  display: flex;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(2) div p {
+  font-size: 2.5em;
+  font-family: "Roboto Flex", sans-serif;
+  margin: 0px 20px;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(3) span:nth-child(1) {
+  position: relative;
+  top: -730px;
+  left: -70px;
+}
+
+.depo_principal div:nth-child(2) div:nth-child(3) span:nth-child(2) {
+  position: relative;
+  top: -482px;
+  left: -108px;
+}
+
+/*|########| VENHA NOS VISITAR |########| */
+
+.visita {
+  display: flex;
+  margin-top: -130px;
+}
+
+.visita > div {
+  margin-right: 50px;
+}
+
+.visita h2 {
+  margin: 31% 22px 0 0;
+  text-align: end;
+}
+
+.visita p {
+  font-family: "Roboto", sans-serif;
+  width: 346px;
+  color: #000;
+  font-size: 30px;
+  margin-top: 32px;
+  text-align: end;
+}
+
+.visita ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 89px;
+  margin-right: 21px;
+}
+
+.visita ul li {
+  margin-left: 10px;
+}
+
+.visita div div h2 {
+  margin-top: 0;
+  text-align: end;
+  font-size: 2.5em;
+  color: #a38cd6;
+  font-weight: 900;
+  font-style: normal;
+  text-align: end;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/*|########| RODAPÉ |########| */
+
+.rodape {
+  background: #a38cd6;
+  text-align: left;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.rodape > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  padding: 30px 0 16px;
+  margin: 0 75px 0 73px;
+}
+
+
+
+
+.rodape p {
+  width: 278px;
+  height: 59px;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.rodape div div div:nth-child(1) a {
+  font-weight: bold;
+  color: #ff9a5b;
+  margin: 20px 0;
+}
+
+.rodape div div div:nth-child(1) ul {
+  display: flex;
+}
+
+.rodape div div div:nth-child(1) ul li img {
+  margin: 0 5px;
+}
+
+.rodape div div div:nth-child(1) ul li img {
+  width: 36px;
+  height: 36px;
+}
+
+.rodape div div div:nth-child(2) {
+  color: #000;
+  margin: 40px 123px;
+}
+
+.rodape div div div:nth-child(2) ul li {
+  margin: 20px 0;
+}
+
+.rodape div div div:nth-child(2) ul li a {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.rodape div div div:nth-child(3) {
+  margin: 20px 0;
+}
+
+.rodape div div div:nth-child(3) h2 {
+  margin: 20px 0 10px 0;
+}
+.rodape div div div:nth-child(3) a {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.rodape > div span {
+  position: absolute;
+  left: 284px;
+  bottom: -4115px;
 }
