@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@900&1display=swap" rel="stylesheet" />
 
+    <!--SLICK-->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Aponta para o arquivo de estilo-->
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
@@ -58,6 +63,7 @@
       <section class="site">
         <div class="banner">
           <img src="img/banners/banner_1.svg" alt="banner patas e pelos" />
+          <img src="img/banners/banner_2.svg" alt="banner patas e pelos" />
         </div>
       </section>
       <!--fIM BANNER PRINCIPAL-->
@@ -84,31 +90,17 @@
             <h2 class="titulo_roxo">Categorias</h2>
           </div>
 
-          <div>
-            <ul>
-              <li>
-                <a href="#"><img src="img/icones_categorias/gato.svg" alt="" /></a>
-                <h3>Gatos</h3>
-              </li>
-              <li>
-                <a href="#"><img src="img/icones_categorias/cachorro.svg" alt="" /></a>
-                <h3>Cachorros</h3>
-              </li>
-              <li>
-                <a href="#"><img src="img/icones_categorias/furao.svg" alt="" /></a>
-                <h3>Furao</h3>
-              </li>
-              <li>
-                <a href="#"><img src="img/icones_categorias/passaro.svg" alt="" /></a>
-                <h3>Passaros</h3>
-              </li>
-              <li>
-                <a href="#"><img src="img/icones_categorias/coelho.svg" alt="" /></a>
-                <h3>Coelhos</h3>
-              </li>
-            </ul>
+          <div class="carrosel_categorias">
+            <img src="img/icones_categorias/gato.svg" alt="" />
+            <img src="img/icones_categorias/cachorro.svg" alt="" />
+            <img src="img/icones_categorias/furao.svg" alt="" />
+            <img src="img/icones_categorias/ave.svg" alt="" />
+            <img src="img/icones_categorias/coelho.svg   " alt="" />
+            <img src="img/icones_categorias/hamster.svg" alt="" />
+            <img src="img/icones_categorias/tartaruga.svg" alt="" />
+            <img src="img/icones_categorias/peixes.svg" alt="" />
           </div>
-          
+
           <div>
             <span id="estrela_laranja_inferior"><img src="img/estrela_laranja.svg" alt="" /></span>
             <span id="estrela_roxa_inferior"><img src="img/estrela_roxa.svg" alt="" /></span>
@@ -287,5 +279,14 @@
         <span><img src="img/enfeites/coletanea.svg" alt="" /></span>
       </div>
     </footer>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!--Slick para animações-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!--arquivo de configuração das animações-->
+    <script src="js/animacoes.js"></script>
   </body>
 </html>
