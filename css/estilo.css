@@ -239,6 +239,10 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+.tosa div:nth-child(2){
+  margin-left: 20px;
+}
+
 .tosa p {
   width: 346px;
   color: #000;
@@ -274,7 +278,7 @@ a {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
-  margin-left: 20px;
+
 }
 
 .sobre a {
