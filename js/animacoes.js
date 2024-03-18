@@ -9,7 +9,7 @@ $(".banner").slick({
 /*CATEGORIAS*/
 $(".carrosel_categorias").slick({
   slidesToShow: 5,
-  slidesToScroll: 3,
-  autoplay: true,
+  slidesToScroll: 5,
+  autoplay: false,
   autoplaySpeed: 5000
 });
