@@ -166,16 +166,29 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+.categorias div:nth-child(1) span:nth-child(1) {
+  left: 3%;
+  top: 62px;
+  position: relative;
+}
+
+.categorias div:nth-child(1) span:nth-child(2) {
+  left: 9%;
+  bottom: -12px;
+  position: relative;
+}
+
 .categorias div h2 {
-display: flex;
+  display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .categorias div div a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:  0 39px;
+  margin: 0 39px;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -221,11 +234,7 @@ display: flex;
   position: relative;
 }
 
-#estrela_laranja_inferior {
-  left: 489px;
-  bottom: -65px;
-  position: relative;
-}
+
 
 /*|########| TOSA E BANHO |########| */
 
