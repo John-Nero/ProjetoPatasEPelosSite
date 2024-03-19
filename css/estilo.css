@@ -140,6 +140,9 @@ a {
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
 }
+.agenda div{
+  margin-left: 20px;
+}
 
 .agenda p {
   width: 346px;
@@ -147,7 +150,6 @@ a {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
-  margin-left: 30px;
 }
 
 .agenda a {
@@ -166,6 +168,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*Estrelas topo*/
 .categorias div:nth-child(1) span:nth-child(1) {
   left: 3%;
   top: 62px;
@@ -215,26 +218,18 @@ a {
   z-index: 1;
 }
 
-/*Config das estrelas*/
-
-#estrela_roxa_superior {
-  left: -238px;
+/*Estrelas base*/
+.categorias div:nth-child(3) span:nth-child(1) {
+  left: 90%;
+  top: 11px;
   position: relative;
 }
 
-#estrela_laranja_superior {
-  left: -130px;
-
+.categorias div:nth-child(3) span:nth-child(2) {
+  left: 91%;
+  bottom: 9px;
   position: relative;
 }
-
-#estrela_roxa_inferior {
-  left: 486px;
-  bottom: -13px;
-  position: relative;
-}
-
-
 
 /*|########| TOSA E BANHO |########| */
 
@@ -242,6 +237,10 @@ a {
   display: flex;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
+}
+
+.tosa div:nth-child(2){
+  margin-left: 20px;
 }
 
 .tosa p {
@@ -269,13 +268,17 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+.sobre div{
+  margin-left: 20px;
+}
+
 .sobre p {
   width: 346px;
   color: #000;
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
-  margin-left: 20px;
+
 }
 
 .sobre a {
