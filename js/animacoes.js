@@ -13,3 +13,11 @@ $(".carrosel_categorias").slick({
   autoplay: false,
   autoplaySpeed: 5000
 });
+
+/*DEPOIMENTO*/
+$(".carrosel_depo").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 5000
+});

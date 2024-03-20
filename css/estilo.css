@@ -140,6 +140,7 @@ a {
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
 }
+
 .agenda div {
   margin-left: 20px;
 }
@@ -487,10 +488,12 @@ a {
   display: flex;
   margin-top: -130px;
 }
-.visita > img {
-  margin-bottom: 70px;
+
+.visita>img {
+  margin-bottom: 20px;
 }
-.visita > div {
+
+.visita>div {
   margin-right: 50px;
 }
 
@@ -533,9 +536,14 @@ a {
 /*|########| RODAPÉ |########| */
 
 .rodape {
+  font-family: "Roboto Flex", sans-serif;
   background: #a38cd6;
   text-align: center;
-  padding: 26px 0 30px 0px;
+  padding: 26px 0 7px 0px;
+}
+
+.rodape a {
+  color: #000;
 }
 
 .rodape div div {
@@ -543,11 +551,22 @@ a {
 }
 
 .rodape div div div:nth-child(1) {
-  margin: 20px 0px 0px 90px;
-  width: 22%;
+  margin-left: 90px;
+  width: 24%;
   flex-direction: column;
   align-items: baseline;
   text-align: left;
+}
+
+.rodape div div div:nth-child(1) p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.rodape div div div:nth-child(1) a {
+  color: #ff9a5b;
+  margin: 10px 0;
+  font-size: 1.7em;
 }
 
 .rodape div div div:nth-child(1) ul {
@@ -564,27 +583,38 @@ a {
 }
 
 .rodape div div div:nth-child(2) {
-  margin: 20px 0px 0px 60px;
+  margin: 45px 0px 0px 60px;
   flex-direction: column;
-  align-items: center;
+  align-items: first baseline;
 }
+
+
 
 .rodape div div div:nth-child(2) ul {
   flex-direction: column;
   align-items: baseline;
-
   text-align: left;
 }
 
+.rodape div div div:nth-child(2) ul li {
+  font-weight: lighter;
+  font-size: 0.8em;
+  margin: 15px 0;
+}
+
 .rodape div div div:nth-child(3) {
-  margin: 20px 0px 0px 60px;
+  margin: 45px 0px 0px 60px;
 
   flex-direction: column;
   align-items: baseline;
 }
 
-.rodape > div span {
+.rodape div div div:nth-child(3) a {
+  margin: 20px 0px;
+}
+
+.rodape>div span {
   position: absolute;
-  top: 4799px;
-  left: 18%;
+  top: 4773px;
+  left: 19%;
 }
