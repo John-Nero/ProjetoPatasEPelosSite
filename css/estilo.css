@@ -140,7 +140,7 @@ a {
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
 }
-.agenda div{
+.agenda div {
   margin-left: 20px;
 }
 
@@ -239,7 +239,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.tosa div:nth-child(2){
+.tosa div:nth-child(2) {
   margin-left: 20px;
 }
 
@@ -268,7 +268,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.sobre div{
+.sobre div {
   margin-left: 20px;
 }
 
@@ -278,7 +278,6 @@ a {
   font-size: 23px;
   margin-bottom: 30px;
   margin-top: 25px;
-
 }
 
 .sobre a {
@@ -488,8 +487,10 @@ a {
   display: flex;
   margin-top: -130px;
 }
-
-.visita>div {
+.visita > img {
+  margin-bottom: 70px;
+}
+.visita > div {
   margin-right: 50px;
 }
 
@@ -534,12 +535,11 @@ a {
 .rodape {
   background: #a38cd6;
   text-align: center;
+  padding: 26px 0 30px 0px;
 }
 
 .rodape div div {
-  background: chartreuse;
   display: flex;
-
 }
 
 .rodape div div div:nth-child(1) {
@@ -548,11 +548,9 @@ a {
   flex-direction: column;
   align-items: baseline;
   text-align: left;
-  background: rgb(255, 153, 0);
 }
 
 .rodape div div div:nth-child(1) ul {
-  background: rgb(140, 0, 255);
   display: flex;
 }
 
@@ -566,17 +564,12 @@ a {
 }
 
 .rodape div div div:nth-child(2) {
-  margin: 20px 0px 0px 90px;
-  background: rgb(255, 153, 0);
+  margin: 20px 0px 0px 60px;
   flex-direction: column;
   align-items: center;
-
 }
 
-
-
 .rodape div div div:nth-child(2) ul {
-  background: rgb(255, 153, 0);
   flex-direction: column;
   align-items: baseline;
 
@@ -584,15 +577,14 @@ a {
 }
 
 .rodape div div div:nth-child(3) {
-  background: rgb(255, 153, 0);
+  margin: 20px 0px 0px 60px;
+
   flex-direction: column;
   align-items: baseline;
-  margin-left: 90px;
 }
 
-.rodape div div div:nth-child(4) {
-  background: rgb(255, 153, 0);
-  flex-direction: column;
-  align-items: baseline;
-  margin-left: 90px;
+.rodape > div span {
+  position: absolute;
+  top: 4799px;
+  left: 18%;
 }
