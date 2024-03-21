@@ -31,3 +31,10 @@ $('.texto_equipe').slick({
       }
   ]
 });
+
+$(".carrosel_depo_imagem").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000
+});
