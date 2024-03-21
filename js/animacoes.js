@@ -14,10 +14,20 @@ $(".carrosel_categorias").slick({
   autoplaySpeed: 5000
 });
 
-/*DEPOIMENTO*/
-$(".carrosel_depo").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 5000
+$('.texto_equipe').slick({
+  slide: 'li',
+  centerMode: true,
+  centerPadding: '0',
+  slidesToShow: 3,
+  responsive: [
+      {
+          breakpoint: 768,
+          settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+          }
+      }
+  ]
 });
