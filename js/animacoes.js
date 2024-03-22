@@ -20,19 +20,24 @@ $('.texto_equipe').slick({
   centerPadding: '0',
   slidesToShow: 3,
   responsive: [
-      {
-          breakpoint: 768,
-          settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-          }
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
       }
+    }
   ]
 });
 
 $(".carrosel_depo_imagem").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,

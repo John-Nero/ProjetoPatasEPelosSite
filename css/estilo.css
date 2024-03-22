@@ -27,7 +27,7 @@ a {
 /*|########| FONTE PERSONALIZADA |########|*/
 
 .titulo_roxo {
-   font-size: 5em;
+  font-size: 5em;
   color: #a38cd6;
   font-weight: 900;
   font-style: normal;
@@ -339,7 +339,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-.equipe div > div:nth-child(1) {
+.equipe div>div:nth-child(1) {
   margin-left: 20px;
 }
 
@@ -378,8 +378,10 @@ a {
 }
 
 .texto_equipe img {
-  width: 100%; /* Ajuste conforme necessário */
-  height: auto; /* Ajuste conforme necessário */
+  width: 100%;
+  /* Ajuste conforme necessário */
+  height: auto;
+  /* Ajuste conforme necessário */
   filter: blur(5px);
 }
 
@@ -424,7 +426,8 @@ a {
 }
 
 .texto_equipe .slick-slide:not(.slick-center) {
-  transform: scale(0.6); /* Mantém o tamanho ao sair do centro */
+  transform: scale(0.6);
+  /* Mantém o tamanho ao sair do centro */
 }
 
 .texto_equipe li:not(.slick-center) h2,
@@ -475,14 +478,17 @@ h5 {
 h4,
 h5 {
   /* Aumenta a imagem e o texto do meio */
-  filter: blur(0px); /* Desfoque no texto do meio */
+  filter: blur(0px);
+  /* Desfoque no texto do meio */
 }
+
 /*|########| DEPOIMENTO |########| */
 .depo {
   top: -1px;
   z-index: 1;
-  height: 894px;
+  height: 994px;
 }
+
 /*DIV ENFEITE TOPO*/
 .depo_topo {
   display: flex;
@@ -596,31 +602,27 @@ h5 {
   left: 0%;
 }
 
+.carrosel_depo_imagem .slick-prev, .carrosel_depo_imagem .slick-next {
+  text-indent: -999px;
+  display: none;
+}
+
+
 .carrosel_depo_imagem {
   width: 447px;
   height: 447px;
   bottom: 539px;
   left: 28%;
   z-index: 1;
-  /*  */
-  /* bottom: 0; */
-  /* left: -0%; */
+  
 }
 
 .depo_principal div:nth-child(1) span:nth-child(5) {
-  
+
   bottom: 0;
   left: -0%;
 }
 
-.depo_principal div:nth-child(1) span:nth-child(6) {
-  
-/* bottom: 974px; */
-  
-left: 108%;
-  
-position: absolute;
-}
 
 .depo_principal div:nth-child(1) span:nth-child(7) {
   bottom: 635px;
@@ -648,23 +650,45 @@ position: absolute;
   left: -13%;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1) > h2,
-div:nth-child(1) > h3 {
+.depo_principal div:nth-child(2) div:nth-child(1)>h2,
+div:nth-child(1)>h3 {
   text-align: center !important;
   margin-left: 7%;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1) > h3 {
+.depo_principal div:nth-child(2) div:nth-child(1)>h3 {
   margin-top: 10px;
-  /* font-size: 5.5em; */
 }
 
+
+
+.carrosel_depo_texto .slick-prev,
+.carrosel_depo_texto .slick-next {
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  text-indent: -9999px;
+}
+
+.carrosel_depo_texto .slick-prev {
+  left: -32px;
+  background: chartreuse;
+  background: url(../img/seta_circulo_direita.svg);
+}
+
+.carrosel_depo_texto .slick-next {
+  right: -30px;
+  background: url(../img/seta_circulo_esquerda.svg);
+}
+
+
+
 .carrosel_depo_texto {
-   position: relative;
-   width: 446px;
-   height: 335px;
-   left: 21%;
-   margin-top: 70px;
+  position: relative;
+  width: 446px;
+  height: 335px;
+  left: 21%;
+  margin-top: 70px;
 }
 
 .carrosel_depo_texto div:nth-child(1) h2 {
@@ -676,12 +700,10 @@ div:nth-child(1) > h3 {
   text-align: center;
 }
 
-.depo_principal > div:nth-child(2){
+.depo_principal>div:nth-child(2) {
   position: relative;
   bottom: 248px;
 }
-
-
 
 .carrosel_depo_texto div:nth-child(2) h2 {
   font-size: 3.5em;
@@ -702,6 +724,16 @@ div:nth-child(1) > h3 {
   margin: 0px 20px;
 }
 
+.depo_principal div:nth-child(3) span:nth-child(1) {
+  left: 27%;
+  bottom: 267px;
+}
+
+.depo_principal div:nth-child(3) span:nth-child(2) {
+  bottom: 54px;
+  left: 20%;
+}
+
 /*|########| VENHA NOS VISITAR |########| */
 
 .visita {
@@ -709,11 +741,11 @@ div:nth-child(1) > h3 {
   margin-top: -130px;
 }
 
-.visita > img {
+.visita>img {
   margin-bottom: 20px;
 }
 
-.visita > div {
+.visita>div {
   margin-right: 50px;
 }
 
@@ -829,7 +861,7 @@ div:nth-child(1) > h3 {
   margin: 20px 0px;
 }
 
-.rodape > div span {
+.rodape>div span {
   position: absolute;
   top: 4773px;
   left: 19%;
