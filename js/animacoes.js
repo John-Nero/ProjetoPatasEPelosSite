@@ -36,5 +36,14 @@ $(".carrosel_depo_imagem").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
-  autoplaySpeed: 2000
+  autoplaySpeed: 2000,
+  asNavFor: '.carrosel_depo_texto'
+});
+
+$(".carrosel_depo_texto").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  asNavFor: '.carrosel_depo_imagem'
 });

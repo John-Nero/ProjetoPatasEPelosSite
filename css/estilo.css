@@ -27,7 +27,7 @@ a {
 /*|########| FONTE PERSONALIZADA |########|*/
 
 .titulo_roxo {
-  font-size: 5em;
+   font-size: 5em;
   color: #a38cd6;
   font-weight: 900;
   font-style: normal;
@@ -311,10 +311,11 @@ a {
 }
 
 .equipe_esquerdo p:nth-child(2) {
-  width: 283px;
+  width: 281px;
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 40px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .equipe_esquerdo p:nth-child(3) {
@@ -322,18 +323,20 @@ a {
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .equipe_esquerdo a {
   width: 183px;
   margin-top: 10px;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
   padding: 17px 55px;
   position: relative;
   top: 30px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .equipe div > div:nth-child(1) {
@@ -371,7 +374,7 @@ a {
   position: relative;
   right: 40px;
   width: 140%;
-  top: 60px;
+  bottom: -170px;
 }
 
 .texto_equipe img {
@@ -386,6 +389,7 @@ a {
   font-size: 32px;
   font-weight: 500;
   margin-top: 49px;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .texto_equipe li h3 {
@@ -393,6 +397,7 @@ a {
   justify-content: center;
   font-size: 32px;
   font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .texto_equipe li h4 {
@@ -400,6 +405,7 @@ a {
   justify-content: center;
   font-size: 20px;
   font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .texto_equipe li h5 {
@@ -408,16 +414,17 @@ a {
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .texto_equipe .slick-slide {
-  transform: scale(0.8);
+  transform: scale(0.69);
   transition: all 0.4s ease-in-out;
   padding: 40px 0;
 }
 
 .texto_equipe .slick-slide:not(.slick-center) {
-  transform: scale(0.8); /* Mantém o tamanho ao sair do centro */
+  transform: scale(0.6); /* Mantém o tamanho ao sair do centro */
 }
 
 .texto_equipe li:not(.slick-center) h2,
@@ -425,6 +432,7 @@ a {
 .texto_equipe li:not(.slick-center) h4,
 .texto_equipe li:not(.slick-center) h5 {
   filter: blur(5px);
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .texto_equipe .slick-prev,
@@ -470,10 +478,10 @@ h5 {
   filter: blur(0px); /* Desfoque no texto do meio */
 }
 /*|########| DEPOIMENTO |########| */
-/*|########| DEPOIMENTO |########| */
 .depo {
   top: -1px;
   z-index: 1;
+  height: 894px;
 }
 /*DIV ENFEITE TOPO*/
 .depo_topo {
@@ -513,7 +521,7 @@ h5 {
   position: relative;
   width: 25px;
   height: 25px;
-  bottom: -21px;
+  bottom: -33px;
   left: 44%;
 }
 
@@ -529,8 +537,8 @@ h5 {
   position: relative;
   width: 25px;
   height: 25px;
-  bottom: -84px;
-  left: -26%;
+  bottom: -51px;
+  left: -23%;
 }
 
 .depo_topo span:nth-child(7) {
@@ -553,15 +561,15 @@ h5 {
 }
 
 .depo_principal div:nth-child(1) span:nth-child(1) {
-  bottom: 471px;
+  bottom: 308px;
   width: 88px;
-  left: 20%;
+  left: 35%;
   height: 88px;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(2) {
-  bottom: 370px;
-  left: 20%;
+  bottom: 211px;
+  left: 44%;
   width: 130px;
   height: 130px;
 }
@@ -575,7 +583,7 @@ h5 {
   display: inline-flex;
   width: 59px;
   height: 59px;
-  bottom: 389px;
+  bottom: 354px;
   left: 45%;
 }
 
@@ -584,110 +592,116 @@ h5 {
   width: 302px;
   height: 302px;
   position: relative;
-  bottom: 101px;
-  left: -48%;
+  bottom: 235px;
+  left: 0%;
 }
 
 .carrosel_depo_imagem {
   width: 447px;
   height: 447px;
-  bottom: 399px;
-  left: 20%;
+  bottom: 539px;
+  left: 28%;
   z-index: 1;
+  /*  */
+  /* bottom: 0; */
+  /* left: -0%; */
 }
 
 .depo_principal div:nth-child(1) span:nth-child(5) {
-  top: -237px;
-  left: 154px;
-  z-index: 1;
+  
+  bottom: 0;
+  left: -0%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(6) {
-  bottom: 870px;
-  left: 101%;
+  
+/* bottom: 974px; */
+  
+left: 108%;
+  
+position: absolute;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(7) {
-  bottom: 508px;
-  left: -2%;
-  width: 171px;
-  height: 171px;
+  bottom: 635px;
+  left: 26%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(7) img:nth-child(2) {
   position: relative;
-  /* top: -118px; */
-  left: -99%;
+  bottom: -10px;
+  left: -52%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(8) {
-  bottom: 557px;
-  left: 5%;
+  bottom: 644px;
+  left: 4%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(9) {
-  bottom: 604px;
-  left: 41%;
+  bottom: 639px;
+  left: 56%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(10) {
-  bottom: 495px;
-  left: -12%;
+  bottom: 598px;
+  left: -13%;
 }
 
-.depo_principal div:nth-child(2) {
-  width: 446px;
-  height: 770px;
+.depo_principal div:nth-child(2) div:nth-child(1) > h2,
+div:nth-child(1) > h3 {
+  text-align: center !important;
+  margin-left: 7%;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1) h2 {
+.depo_principal div:nth-child(2) div:nth-child(1) > h3 {
+  margin-top: 10px;
+  /* font-size: 5.5em; */
+}
+
+.carrosel_depo_texto {
+   position: relative;
+   width: 446px;
+   height: 335px;
+   left: 21%;
+   margin-top: 70px;
+}
+
+.carrosel_depo_texto div:nth-child(1) h2 {
   font-size: 5.5em;
   text-align: center;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1) h3 {
+.carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(2) {
-  margin-top: 90px;
+.depo_principal > div:nth-child(2){
+  position: relative;
+  bottom: 248px;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(2) h2 {
+
+
+.carrosel_depo_texto div:nth-child(2) h2 {
   font-size: 3.5em;
   text-align: center;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(2) h3 {
+.carrosel_depo_texto div:nth-child(2) h3 {
   text-align: center;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(2) ul {
+.carrosel_depo_texto div:nth-child(2) ul {
   display: flex;
   justify-content: center;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(2) div {
-  display: flex;
-}
-
-.depo_principal div:nth-child(2) div:nth-child(2) div p {
+.carrosel_depo_texto div:nth-child(2) div p {
   font-size: 2.5em;
-
   margin: 0px 20px;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(3) span:nth-child(1) {
-  position: relative;
-  top: -730px;
-  left: -70px;
-}
-
-.depo_principal div:nth-child(2) div:nth-child(3) span:nth-child(2) {
-  position: relative;
-  top: -482px;
-  left: -108px;
-}
 /*|########| VENHA NOS VISITAR |########| */
 
 .visita {
