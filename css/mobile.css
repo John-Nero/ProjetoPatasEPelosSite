@@ -1,0 +1,108 @@
+/*######################*/
+/*#### 601 até 900 #####*/
+/*######################*/
+
+@media (max-width: 600px) {
+  /*Menu superior*/
+  .menu_botoes,
+  .menu_icones li:nth-child(3),
+  .menu_superior h2 {
+    display: none;
+  }
+
+  .menu_superior {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu_superior div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_superior > a {
+    margin-left: 20px;
+    top: 7px;
+    position: relative;
+  }
+
+  .menu_superior > a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*Banner*/
+  .banner {
+    display: none;
+  }
+
+  /*Agenda*/
+  .agenda {
+    flex-direction: column;
+  }
+
+  .agenda p {
+    width: 346px;
+    position: relative;
+    left: 20%;
+    text-align: center;
+  }
+
+  .agenda a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .agenda img {
+    display: none;
+  }
+
+  /*Categorias*/
+  .categorias span {
+    display: none;
+  }
+
+  /*Tosa*/
+
+  .tosa {
+    flex-direction: column;
+  }
+
+  .tosa img {
+    display: none;
+  }
+
+  /*Sobre*/
+  .sobre {
+    flex-direction: column;
+  }
+
+  .sobre img {
+    display: none;
+  }
+
+  /*equipe*/
+  .carrosel_equipe {
+    display: none;
+  }
+
+  /*Depoimento*/
+
+  .depo {
+    display: none;
+  }
+
+  .visita > img {
+    display: none;
+  }
+}
+
+/*Rodape*/
+.rodape div div div:nth-child(3) {
+  margin: 45px 0px 0px 22px;
+}
+
+.rodape > div span {
+  display: none;
+}
