@@ -15,15 +15,15 @@
     justify-content: unset;
     margin-left: 30%;
   }
-  
+
   .menu_superior div {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .menu_icones{
-   margin-left: -39px;
+  .menu_icones {
+    margin-left: -39px;
     margin-top: 2pxx;
   }
 
@@ -45,17 +45,29 @@
 
   /*Agenda*/
   .agenda {
+    margin-top: 45px;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .agenda div {
+    margin: auto;
+    width: 63%;
+  }
+
+  .agenda h2 {
+    text-align: center;
   }
 
   .agenda p {
-    width: 346px;
+    width: 76%;
     position: relative;
-    left: 20%;
+    left: 13%;
     text-align: center;
   }
 
   .agenda a {
+    margin: auto;
     display: flex;
     justify-content: center;
   }
