@@ -12,13 +12,19 @@
 
   .menu_superior {
     display: flex;
-    justify-content: center;
+    justify-content: unset;
+    margin-left: 30%;
   }
   
   .menu_superior div {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+
+  .menu_icones{
+   margin-left: -39px;
+    margin-top: 2pxx;
   }
 
   .menu_superior > a {
