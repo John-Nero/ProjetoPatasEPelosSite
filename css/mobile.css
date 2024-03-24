@@ -276,9 +276,39 @@
 
   /*visita*/
 
-  .visita > img {
-    display: none;
+  .visita {
+    margin-top: 0px;
   }
+
+  .visita > img {
+    margin-top: 50px;
+    width: 421px;
+  }
+
+  .visita div {
+    margin-left: -30%;
+  }
+
+  .visita h2 {
+    margin: 6% 0 0 0;
+  }
+  .visita p {
+    font-size: 2.2em;
+    margin-top: 0;
+  }
+
+.visita > div div {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.visita ul {
+  margin-right: 0;
+margin-top: 117px;
+}
 
   /*Rodape*/
   .rodape div div div:nth-child(3) {
