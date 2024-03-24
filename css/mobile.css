@@ -106,12 +106,16 @@
 
   /*Tosa*/
 
-  .tosa {
-    flex-direction: column;
+  .tosa div {
+    margin-left: 20px;
   }
 
-  .tosa img {
+  .tosa img:nth-child(1) {
     display: none;
+  }
+
+  .tosa p {
+    width: 300px;
   }
 
   /*Sobre*/
