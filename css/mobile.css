@@ -119,8 +119,33 @@
   }
 
   /*Sobre*/
+
   .sobre {
+    margin-top: 45px;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .sobre div {
+    margin: auto;
+    width: 63%;
+  }
+
+  .sobre h2 {
+    text-align: center;
+  }
+
+  .sobre p {
+    width: 76%;
+    position: relative;
+    left: 13%;
+    text-align: center;
+  }
+
+  .sobre a {
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 
   .sobre img {
