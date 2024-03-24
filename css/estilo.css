@@ -51,7 +51,7 @@ a {
 .sobre,
 .depo,
 .visita {
-  background-color: #fff8ed;
+  background-color: #ade97b;
   margin-top: 3px;
   font-family: "Roboto Flex", sans-serif;
 }
@@ -74,7 +74,7 @@ a {
 }
 
 /*Cor e alinhamento menu superior*/
-.menu_superior {
+.menu_superior div{
   display: flex;
   align-items: center;
   justify-content: space-between;

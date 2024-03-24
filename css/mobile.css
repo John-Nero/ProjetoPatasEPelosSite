@@ -27,23 +27,21 @@
     margin-top: 2pxx;
   }
 
+  .menu_superior > a img {
+    width: 50px;
+    height: 50px;
+  }
   .menu_superior > a {
     margin-left: 20px;
     top: 7px;
     position: relative;
   }
-
-  .menu_superior > a img {
-    width: 50px;
-    height: 50px;
-  }
-
   /*Banner*/
   .banner {
     display: none;
   }
 
-  /*Agenda*/
+  /*Agende Seu horario*/
   .agenda {
     margin-top: 45px;
     flex-direction: column;
@@ -77,8 +75,33 @@
   }
 
   /*Categorias*/
+
+  .categorias {
+    margin-top: 25px;
+  }
   .categorias span {
     display: none;
+  }
+  .categorias div h2 {
+    margin-bottom: 15px;
+  }
+
+  .carrosel_categorias .slick-prev {
+    left: -11px;
+  }
+
+  .carrosel_categorias .slick-next {
+    right: -27px;
+  }
+
+  .carrosel_categorias {
+    left: 19%;
+    width: 356px;
+  }
+
+  .categorias div div a {
+    width: 90px;
+    margin: 0px 22px;
   }
 
   /*Tosa*/

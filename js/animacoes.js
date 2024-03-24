@@ -9,9 +9,18 @@ $(".banner").slick({
 /*CATEGORIAS*/
 $(".carrosel_categorias").slick({
   slidesToShow: 5,
-  slidesToScroll: 5,
+  slidesToScroll: 1,
   autoplay: false,
-  autoplaySpeed: 5000
+  responsive: [
+    {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+     
+      }
+    }
+  ]
 });
 
 $('.texto_equipe').slick({
