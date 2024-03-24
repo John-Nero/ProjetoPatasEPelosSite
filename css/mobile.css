@@ -157,6 +157,7 @@
     background: #c3eca1;
     flex-direction: column;
     align-items: center;
+    height: 750px;
   }
   .equipe_esquerdo {
     width: 53%;
@@ -166,6 +167,9 @@
   .equipe_esquerdo p:nth-child(2),
   .equipe_esquerdo p:nth-child(3) {
     display: none;
+  }
+  .equipe_esquerdo a {
+    margin-bottom: 25px;
   }
 
   .texto_equipe .slick-prev,
@@ -197,21 +201,91 @@
   }
 
   /*Depoimento*/
-
   .depo {
+    height: 850px;
+  }
+  .depo_principal > div:nth-child(2) {
+    position: static;
+  }
+
+  .depo_topo,
+  .depo_principal div:nth-child(1) span:nth-child(7),
+  .depo_principal div:nth-child(1) span:nth-child(4),
+  .depo_principal div:nth-child(1) span:nth-child(8),
+  .depo_principal div:nth-child(3) span:nth-child(2),
+  .depo_principal div:nth-child(3) span:nth-child(1) {
     display: none;
   }
+  .depo_principal {
+    flex-direction: column-reverse;
+  }
+  .depo_principal > div:nth-child(1) {
+    position: relative;
+    top: 121px;
+    left: -21%;
+  }
+  .depo_principal div:nth-child(1) span:nth-child(1) {
+    bottom: 509px;
+    left: 30%;
+  }
+  .depo_principal div:nth-child(2) div:nth-child(1) > h3 {
+    font-size: 2.6em;
+    width: 367px;
+  }
+  .carrosel_depo_imagem img {
+    width: 298px;
+    height: 298px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(2) {
+    bottom: 502px;
+    left: 64%;
+    width: 99px;
+    height: 99px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(2) img:nth-child(2) {
+    left: -97px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(3) {
+    bottom: 395px;
+    left: 65%;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(6) {
+    left: 34%;
+    bottom: 792px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(9) {
+    left: 60%;
+    bottom: 772px;
+  }
+
+  .carrosel_depo_texto {
+    top: 388px;
+    left: 0%;
+    width: 394px;
+    text-align: center;
+  }
+  .depo_principal div:nth-child(2) div:nth-child(1) > h2,
+  div:nth-child(1) > h3 {
+    margin: auto;
+  }
+
+  /*visita*/
 
   .visita > img {
     display: none;
   }
-}
 
-/*Rodape*/
-.rodape div div div:nth-child(3) {
-  margin: 45px 0px 0px 22px;
-}
+  /*Rodape*/
+  .rodape div div div:nth-child(3) {
+    margin: 45px 0px 0px 22px;
+  }
 
-.rodape > div span {
-  display: none;
+  .rodape > div span {
+    display: none;
+  }
 }

@@ -44,12 +44,12 @@ $(".carrosel_depo_imagem").slick({
   infinite: true,
   speed: 500,
   fade: true,
-  cssEase: 'linear',
+  cssEase: "linear",
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: '.carrosel_depo_texto'
+  asNavFor: ".carrosel_depo_texto"
 });
 
 $(".carrosel_depo_texto").slick({
@@ -57,5 +57,5 @@ $(".carrosel_depo_texto").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: '.carrosel_depo_imagem'
+  asNavFor: ".carrosel_depo_imagem"
 });
