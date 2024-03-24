@@ -23,19 +23,17 @@ $(".carrosel_categorias").slick({
   ]
 });
 
-$('.texto_equipe').slick({
-  slide: 'li',
+$(".texto_equipe").slick({
+  slide: "li",
   centerMode: true,
-  centerPadding: '0',
+  centerPadding: "0",
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 600,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
       }
     }
   ]

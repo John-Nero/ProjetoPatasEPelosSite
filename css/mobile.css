@@ -153,8 +153,47 @@
   }
 
   /*equipe*/
-  .carrosel_equipe {
+  .equipe {
+    background: #c3eca1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .equipe_esquerdo {
+    width: 53%;
+    margin: 90px 0 0;
+  }
+
+  .equipe_esquerdo p:nth-child(2),
+  .equipe_esquerdo p:nth-child(3) {
     display: none;
+  }
+
+  .texto_equipe .slick-prev,
+  .texto_equipe .slick-next,
+  .carrosel_equipe .slick-prev,
+  .carrosel_equipe .slick-next {
+    display: none !important;
+  }
+
+  .carrosel_equipe {
+    margin: auto;
+    right: auto;
+    width: 600px;
+  }
+
+  .texto_equipe {
+    position: relative;
+    right: 40px;
+    width: auto;
+    bottom: -170px;
+  }
+
+  .texto_equipe img,
+  .texto_equipe li:not(.slick-center) h2,
+  .texto_equipe li:not(.slick-center) h3,
+  .texto_equipe li:not(.slick-center) h4,
+  .texto_equipe li:not(.slick-center) h5 {
+    filter: none;
   }
 
   /*Depoimento*/
