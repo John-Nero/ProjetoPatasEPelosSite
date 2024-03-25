@@ -51,8 +51,7 @@ a {
 .sobre,
 .depo,
 .visita {
-  background-color: #ade97b;
-  margin-top: 3px;
+  background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;
 }
 
@@ -74,7 +73,7 @@ a {
 }
 
 /*Cor e alinhamento menu superior*/
-.menu_superior div{
+.menu_superior div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,7 +101,6 @@ a {
   margin-left: 20px;
   border-radius: 20px;
   color: black;
-  /*Muda a cor do texto dentro das li*/
   font-size: 14;
 }
 
@@ -112,6 +110,7 @@ a {
   margin-left: 10px;
 }
 
+/*Espaçamento interno dos icones*/
 .menu_icones a {
   display: flex;
   margin-left: 6px;
@@ -128,21 +127,26 @@ a {
   z-index: 1;
 }
 
-.imgbanner img {
+/*|########| BANNER |########|*/
+
+.banner img {
   width: 1200px;
 }
 
 /*|########| AGENDE SEU HORARIO |########|*/
 
+/*deixa o texto ao lado da imagem*/
 .agenda {
   display: flex;
   align-items: center;
 }
 
+/*Espaço entre a lateral do site e o texto da div*/
 .agenda div {
   margin-left: 20px;
 }
 
+/*Configuração para o tamanho e estilo do paragrafo*/
 .agenda p {
   width: 346px;
   color: #000;
@@ -151,6 +155,7 @@ a {
   margin-top: 25px;
 }
 
+/*Botão 'Clique aqui!'abaixo do paragrafo*/
 .agenda a {
   margin-top: 50px;
   margin-left: 30px;
@@ -175,13 +180,16 @@ a {
   bottom: -12px;
   position: relative;
 }
+/*FIM Estrelas topo*/
 
+/*Titulo*/
 .categorias div h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
+/*Nome de cada categorias*/
 .categorias div div a {
   display: flex;
   flex-direction: column;
@@ -191,12 +199,14 @@ a {
   color: rgb(0, 0, 0);
 }
 
+/*Config das setas do carrosel*/
 .carrosel_categorias .slick-prev:before,
 .carrosel_categorias .slick-next:before {
   font-size: 30px;
   color: #e7992400;
 }
 
+/*Seta a imagem do circulo pra setas do carrosel*/
 .carrosel_categorias .slick-prev {
   height: 30px;
   width: 30px;
@@ -205,6 +215,7 @@ a {
   z-index: 1;
 }
 
+/*Seta a imagem do circulo pra setas do carrosel*/
 .carrosel_categorias .slick-next {
   height: 30px;
   width: 30px;
@@ -225,18 +236,17 @@ a {
   bottom: 9px;
   position: relative;
 }
+/*FIM Estrelas base*/
 
 /*|########| TOSA E BANHO |########| */
 
+/*Deixa a imagem do lado do texto*/
 .tosa {
   display: flex;
   align-items: center;
 }
 
-.tosa div:nth-child(2) {
-  margin-left: 20px;
-}
-
+/*Config do texto do paragrafo*/
 .tosa p {
   width: 346px;
   color: #000;
@@ -245,6 +255,7 @@ a {
   margin-top: 25px;
 }
 
+/*Botão 'Clique aqui abaxio do paragrafo'*/
 .tosa a {
   margin-top: 50px;
   font-size: 26px;
@@ -256,15 +267,18 @@ a {
 
 /*|########| SOBRE |########| */
 
+/*Deixa o texto ao lado da imagem*/
 .sobre {
   display: flex;
   align-items: center;
 }
 
+/*Espaçamento entre a lateral do site e o texto da div*/
 .sobre div {
   margin-left: 20px;
 }
 
+/*Config do texto do paragrafo*/
 .sobre p {
   width: 346px;
   color: #000;
@@ -273,6 +287,7 @@ a {
   margin-top: 25px;
 }
 
+/*Botão 'Clique aqui abaxio do paragrafo'*/
 .sobre a {
   margin-top: 50px;
   margin-left: 20px;
@@ -283,20 +298,24 @@ a {
   padding: 6px 32px;
 }
 
+/*Coloca a imagem dentro do limite do site*/
 .sobre img {
   margin-left: -20px;
 }
 
 /*|########| EQUIPE |########| */
 
+/*Seta o tamanho geral da sessão, define a onda de fundo e aplica flex aos conteudos internos*/
 .equipe {
   display: flex;
   background: url(../img/equipe/fundo_equipe.svg) no-repeat;
   width: 100%;
   height: 971px;
+  font-family: "Roboto Flex", sans-serif;
   background-color: #fff8ed;
 }
 
+/*seta o tamanho maximo da div q o titulo, paragrafo e botão podem ocupa e da um espaçamento entre a parede do site e o texto da div*/
 .equipe_esquerdo {
   margin: 25% 0 0 10px;
   display: flex;
@@ -304,28 +323,30 @@ a {
   width: 32%;
 }
 
+/*personalizção do Titulo*/
 .equipe_esquerdo h2 {
   font-size: 5.5em;
   font-weight: 900;
   line-height: 66px;
 }
 
+/*Personalização do paragrafo central*/
 .equipe_esquerdo p:nth-child(2) {
   width: 281px;
   font-size: 25px;
   margin-top: 50px;
   margin-bottom: 40px;
-  font-family: "Roboto Flex", sans-serif;
 }
 
+/*Personalização do 'Uma equipe de profissionais preparados'*/
 .equipe_esquerdo p:nth-child(3) {
   width: 275px;
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Roboto Flex", sans-serif;
 }
 
+/*Botão 'Clique aqui abaxio do paragrafo'*/
 .equipe_esquerdo a {
   width: 183px;
   margin-top: 10px;
@@ -336,28 +357,15 @@ a {
   padding: 17px 55px;
   position: relative;
   top: 30px;
-  font-family: "Roboto Flex", sans-serif;
 }
 
-.equipe div>div:nth-child(1) {
-  margin-left: 20px;
-}
-
+/*Da o espaçamento entre o nome do funcionario e a imagem do mesmo*/
 .equipe div div div:nth-child(2) a {
   display: flex;
-  justify-content: center;
   margin-top: -5px;
 }
 
-.equipe div div:nth-child(2) ul {
-  display: flex;
-  justify-content: center;
-}
-
-.equipe div div:nth-child(2) ul li {
-  margin: 10px;
-}
-
+/*Seta o tamanho e espaçamento do carrosel em relação aos outro elementos da sessão */
 .carrosel_equipe {
   display: flex;
   flex-direction: column;
@@ -366,10 +374,11 @@ a {
   text-align: center;
   position: relative;
   top: -230px;
-  right: 180px;
-  width: 680px;
+  right: 124px;
+  width: 649px;
 }
 
+/*Seta a localização dele pra fica alinhado ao texto da sessão*/
 .texto_equipe {
   position: relative;
   right: 40px;
@@ -377,6 +386,7 @@ a {
   bottom: -170px;
 }
 
+/*taanho e efeito da imagem dos funcionarios*/
 .texto_equipe img {
   width: 100%;
   /* Ajuste conforme necessário */
@@ -385,6 +395,7 @@ a {
   filter: blur(5px);
 }
 
+/*personalização do nome dos funcionarios*/
 .texto_equipe li h2 {
   display: flex;
   justify-content: center;
@@ -394,6 +405,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*personalização do sobre nome  dos funcionarios*/
 .texto_equipe li h3 {
   display: flex;
   justify-content: center;
@@ -402,14 +414,17 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*personalização do cargo e idade dos funcionarios*/
 .texto_equipe li h4 {
   display: flex;
   justify-content: center;
   font-size: 20px;
   font-weight: 500;
+
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*personalização da descrição dos funcionarios*/
 .texto_equipe li h5 {
   display: flex;
   justify-content: center;
@@ -419,25 +434,28 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
+/*Velocidade de transição e efeito aplicado na transição de um funcionario e outro*/
 .texto_equipe .slick-slide {
   transform: scale(0.69);
   transition: all 0.4s ease-in-out;
   padding: 40px 0;
 }
 
+/*deixa os funcionarios ao lado de um tamanho menor ao do centro*/
 .texto_equipe .slick-slide:not(.slick-center) {
   transform: scale(0.6);
   /* Mantém o tamanho ao sair do centro */
 }
 
+/*Aplica o efeito de desfoque nos funcionarios que não são o foco do carrosel*/
 .texto_equipe li:not(.slick-center) h2,
 .texto_equipe li:not(.slick-center) h3,
 .texto_equipe li:not(.slick-center) h4,
 .texto_equipe li:not(.slick-center) h5 {
   filter: blur(5px);
-  font-family: "Roboto Flex", sans-serif;
 }
 
+/*Configuração das setas do carrosel*/
 .texto_equipe .slick-prev,
 .texto_equipe .slick-next {
   height: 30px;
@@ -446,6 +464,7 @@ a {
   text-indent: -9999px;
 }
 
+/*Seta a imagem das setas*/
 .texto_equipe .slick-prev {
   left: 3px;
   background: url(../img/seta_circulo_direita.svg);
@@ -455,11 +474,9 @@ a {
   right: -30px;
   background: url(../img/seta_circulo_esquerda.svg);
 }
+/*Fim Seta a imagem das setas*/
 
-.texto_equipe .slick-prev li {
-  filter: blur(40px);
-}
-
+/*MARCO VE ISSO AQ Q EU N SEI N*/
 .texto_equipe .slick-slide img,
 h3,
 h4,
@@ -468,6 +485,7 @@ h5 {
   transition: all 0.4s ease-in-out;
 }
 
+/*Tira o efeito de desfoque do funcinario que está em destaque no carrosel*/
 .slick-center img {
   transform: scale(1.4);
   filter: blur(0px);
@@ -481,8 +499,11 @@ h5 {
   filter: blur(0px);
   /* Desfoque no texto do meio */
 }
+/*Fim Tira o efeito de desfoque do funcinario que está em destaque no carrosel*/
 
 /*|########| DEPOIMENTO |########| */
+
+/*Sobe a sessão para ter uma integração melhor com a anterior*/
 .depo {
   top: -1px;
   z-index: 1;
@@ -495,6 +516,7 @@ h5 {
   position: relative;
 }
 
+/*Configuração dos locais de cada img/span do topo*/
 .depo_topo span {
   position: relative;
 }
@@ -555,7 +577,11 @@ h5 {
   left: -44%;
 }
 
+/* FIM Configuração dos locais de cada img/span do topo*/
+
 /*DIV PRINCIPAL*/
+
+/*Configuração dos locais de cada img/span do centro*/
 .depo_principal {
   display: flex;
   align-items: center;
@@ -601,30 +627,29 @@ h5 {
   bottom: 235px;
   left: 0%;
 }
+/*FIM Configuração dos locais de cada img/span do centro*/
 
-.carrosel_depo_imagem .slick-prev, .carrosel_depo_imagem .slick-next {
+/*Tira as setas do carrosel de imagem*/
+.carrosel_depo_imagem .slick-prev,
+.carrosel_depo_imagem .slick-next {
   text-indent: -999px;
   display: none;
 }
 
-
+/*configura o local onde o carrosel de imagem deve ficar e tambem diz o tamanho que ele deve ser*/
 .carrosel_depo_imagem {
   width: 447px;
   height: 447px;
   bottom: 539px;
   left: 28%;
   z-index: 1;
-  
 }
 
+/*Configuração dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 .depo_principal div:nth-child(1) span:nth-child(5) {
-
   bottom: 0;
   left: -0%;
 }
-
-
-
 
 .depo_principal div:nth-child(1) span:nth-child(6) {
   bottom: 635px;
@@ -652,18 +677,18 @@ h5 {
   left: -13%;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1)>h2,
-div:nth-child(1)>h3 {
+.depo_principal div:nth-child(2) div:nth-child(1) > h2,
+div:nth-child(1) > h3 {
   text-align: center !important;
   margin-left: 7%;
 }
 
-.depo_principal div:nth-child(2) div:nth-child(1)>h3 {
+.depo_principal div:nth-child(2) div:nth-child(1) > h3 {
   margin-top: 10px;
 }
+/*FIM Configuração dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 
-
-
+/*Configuração das setas do carrosel de texto*/
 .carrosel_depo_texto .slick-prev,
 .carrosel_depo_texto .slick-next {
   height: 30px;
@@ -672,6 +697,7 @@ div:nth-child(1)>h3 {
   text-indent: -9999px;
 }
 
+/*Seta as imagens da setas do carrosel para a padrão do site*/
 .carrosel_depo_texto .slick-prev {
   left: -32px;
   background: chartreuse;
@@ -683,7 +709,7 @@ div:nth-child(1)>h3 {
   background: url(../img/seta_circulo_esquerda.svg);
 }
 
-
+/*configura o local onde o carrosel de texto deve ficar e tambem diz o tamanho que ele deve ser*/
 
 .carrosel_depo_texto {
   position: relative;
@@ -693,41 +719,50 @@ div:nth-child(1)>h3 {
   margin-top: 70px;
 }
 
+/*Alinha o nome do pet e seta o tamanho do mesmo*/
 .carrosel_depo_texto div:nth-child(1) h2 {
   font-size: 5.5em;
   text-align: center;
 }
 
+/*Alinha o nome do dono*/
 .carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
-
-.depo_principal>div:nth-child(2) {
+/*Alinha a div geral onde o carrosel está*/
+.depo_principal > div:nth-child(2) {
   position: relative;
   bottom: 248px;
 }
 
+/*alinahmento e tamanho do nome do dono do pet*/
 .carrosel_depo_texto div:nth-child(2) h2 {
   font-size: 3.5em;
   text-align: center;
 }
 
+/*alinahmento do nome do pet*/
 .carrosel_depo_texto div:nth-child(2) h3 {
   text-align: center;
 }
 
+/*Alinhamento das rações que são usadas como metrica de avaliação*/
 .carrosel_depo_texto div:nth-child(2) ul {
   display: flex;
   justify-content: center;
 }
 
+/*Personalização e alinhamento do paragrafo de depoimento*/
 .carrosel_depo_texto div:nth-child(2) div p {
   font-size: 2.5em;
+
   margin: 0px 20px;
 }
 
+/*Detalhes abaixo do depoimento*/
 .depo_principal div:nth-child(3) span:nth-child(1) {
   left: 27%;
+
   bottom: 267px;
 }
 
@@ -735,27 +770,34 @@ div:nth-child(1)>h3 {
   bottom: 54px;
   left: 20%;
 }
+/*FIM Detalhes abaixo do depoimento*/
 
 /*|########| VENHA NOS VISITAR |########| */
 
+/*Flex para a imagem do mapa ficar ao lado do texto e negativação do margin top para subir
+a sessão */
 .visita {
   display: flex;
   margin-top: -130px;
 }
 
-.visita>img {
+/*Margin para o rodapé não ficar colado a sessão*/
+.visita > img {
   margin-bottom: 20px;
 }
 
-.visita>div {
+/*Empurra a div de texto mais para o centro do site*/
+.visita > div {
   margin-right: 50px;
 }
 
+/*Personalização do titulo*/
 .visita h2 {
   margin: 31% 22px 0 0;
   text-align: end;
 }
 
+/*Personalização do paragrafo*/
 .visita p {
   font-family: "Roboto", sans-serif;
   width: 346px;
@@ -765,6 +807,7 @@ div:nth-child(1)>h3 {
   text-align: end;
 }
 
+/*ajuste das redes sociais*/
 .visita ul {
   display: flex;
   justify-content: flex-end;
@@ -772,36 +815,31 @@ div:nth-child(1)>h3 {
   margin-right: 21px;
 }
 
+/*Espaçamento interno das redes sociais*/
 .visita ul li {
   margin-left: 10px;
 }
 
-.visita div div h2 {
-  margin-top: 0;
-  text-align: end;
-  font-size: 2.5em;
-  color: #a38cd6;
-  font-weight: 900;
-  font-style: normal;
-  text-align: end;
-}
-
 /*|########| RODAPÉ |########| */
 
+/*cor do rodapé e alinhamento dos itens internos do mesmo*/
 .rodape {
   background: #a38cd6;
   text-align: center;
   padding: 26px 0 7px 0px;
 }
 
+/*personalização para que todos os links do rodapé ficarem pretos*/
 .rodape a {
   color: #000;
 }
 
+/*flex para que as tres colubnas fiquem uma ao lado da outra*/
 .rodape div div {
   display: flex;
 }
 
+/*Alinhamento e definição de tamanho maximo, alinhamento dos itens internos*/
 .rodape div div div:nth-child(1) {
   margin-left: 90px;
   width: 24%;
@@ -810,61 +848,69 @@ div:nth-child(1)>h3 {
   text-align: left;
 }
 
+/*personalização do paragrafo interno*/
 .rodape div div div:nth-child(1) p {
   font-size: 1.2em;
   margin: 20px 0;
 }
 
+/*personalização do telefone de contato*/
 .rodape div div div:nth-child(1) a {
   color: #ff9a5b;
   margin: 10px 0;
   font-size: 1.7em;
 }
 
+/*Flex para que as redes sociais fiquem uma ao lado da outra*/
 .rodape div div div:nth-child(1) ul {
   display: flex;
 }
 
+/*espaçamento interno das redes sociais*/
 .rodape div div div:nth-child(1) ul li {
   margin: 0 5px 0 0;
 }
 
+/*Tamanho de cada icone das redes sociais*/
 .rodape div div div:nth-child(1) ul li img {
   width: 33px;
   height: 33px;
 }
-
+/*espaçamento da segunda coluna*/
 .rodape div div div:nth-child(2) {
   margin: 45px 0px 0px 60px;
   flex-direction: column;
   align-items: first baseline;
 }
 
+/*flex column para que os textos fiquem um abaixo do outro dentro da coluna e alinhamento a direita dos mesmos*/
 .rodape div div div:nth-child(2) ul {
   flex-direction: column;
   align-items: baseline;
   text-align: left;
 }
 
+/*Personalização das fontes*/
 .rodape div div div:nth-child(2) ul li {
   font-weight: lighter;
   font-size: 0.8em;
   margin: 15px 0;
 }
-
+/*espaçamento da terceira coluna*/
 .rodape div div div:nth-child(3) {
   margin: 45px 0px 0px 60px;
-
   flex-direction: column;
   align-items: baseline;
 }
 
+/*Distanciamento entre os h2 e os a */
 .rodape div div div:nth-child(3) a {
   margin: 20px 0px;
 }
 
-.rodape>div span {
+/*Detalhes do rodapé(cachorro e as patas)*/
+.rodape > div span {
   position: absolute;
-  top: 5495px;
+  top: 5485px;
   left: 19%;
 }

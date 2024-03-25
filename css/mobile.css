@@ -33,7 +33,7 @@
   }
   .menu_superior > a {
     margin-left: 20px;
-    top: 7px;
+    top: 25px;
     position: relative;
   }
   /*Banner*/
@@ -154,7 +154,8 @@
 
   /*equipe*/
   .equipe {
-    background: #c3eca1;
+  background-color: #FFF8ED;
+ 
     flex-direction: column;
     align-items: center;
     height: 750px;
@@ -352,4 +353,15 @@
   .rodape div div div:nth-child(2) ul {
     text-align: center;
   }
+}
+
+/*Serve pra não mostra o menu mobile em largura maior q 600 px*/
+@media not all and (max-width: 600px) {
+  .menu_superior > a {
+    display: none;
+  }
+
+  
+    .tosa  > img:nth-child(2){display: none;}
+  
 }

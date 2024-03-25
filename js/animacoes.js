@@ -16,13 +16,13 @@ $(".carrosel_categorias").slick({
       breakpoint: 601,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
-     
+        slidesToScroll: 1
       }
     }
   ]
 });
 
+/*EQUIPE*/
 $(".texto_equipe").slick({
   slide: "li",
   centerMode: true,
@@ -33,12 +33,15 @@ $(".texto_equipe").slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 1
       }
     }
   ]
 });
 
+/*DEPOIMENTO*/
+
+/*Esse gira as imagens dos depoimentos*/
 $(".carrosel_depo_imagem").slick({
   dots: true,
   infinite: true,
@@ -52,6 +55,9 @@ $(".carrosel_depo_imagem").slick({
   asNavFor: ".carrosel_depo_texto"
 });
 
+/*Para os dois girarem juntos a gente ta chamando o asNavFor fazendo referencia um do outro em cada configuração*/
+
+/*Esse gira os textos*/
 $(".carrosel_depo_texto").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -59,3 +65,5 @@ $(".carrosel_depo_texto").slick({
   autoplaySpeed: 2000,
   asNavFor: ".carrosel_depo_imagem"
 });
+
+
