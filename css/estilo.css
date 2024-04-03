@@ -125,6 +125,7 @@ a {
   margin-top: 96px;
   position: relative;
   z-index: 1;
+  z-index: 1;
 }
 
 /*|########| BANNER |########|*/
@@ -671,6 +672,7 @@ h5 {
   bottom: 639px;
   left: 56%;
 }
+
 
 .depo_principal div:nth-child(1) span:nth-child(9) {
   bottom: 598px;
