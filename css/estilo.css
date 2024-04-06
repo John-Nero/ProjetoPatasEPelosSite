@@ -51,14 +51,14 @@ a {
 .sobre,
 .depo,
 .visita {
-  background-color: #fff8ed;
+  background-color: #0edf20;
   font-family: "Roboto Flex", sans-serif;
 }
 
 /*|########| TAMANHO |########|*/
 
 .site {
-  max-width: 1200px;
+  max-width: 1920px;
   /* Largura max de 1200 px */
   width: 100%;
   margin: 0 auto;
@@ -76,34 +76,32 @@ a {
 .menu_superior div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 108px;
+  justify-content: space-around;
+  height: 88px;
 }
 
 /*Logo do site*/
 .menu_superior h1 {
-  width: 228px;
+  width: 273px;
   height: 72px;
-  background: url(../img/menu/logo_Patas_e_pelos.svg) no-repeat;
+  background: url(../img/logo_Patas_e_pelos.svg) no-repeat;
   text-indent: -9999px;
 }
 
 /*Alinhamento e espaçamento dos botões do menu*/
 .menu_botoes {
   display: flex;
+  justify-content: space-around;
 }
 
 /*Estilização dos botões*/
 .menu_botoes a {
-  width: 95px;
   background-color: #bfacdd;
-  padding: 11px 27px;
-  margin-left: 20px;
+  padding: 4px 56px;
+  margin-left: 30px;
   border-radius: 20px;
   color: black;
-  font-size: 14;
 }
-
 /*Alinhamento dos icones do menu*/
 .menu_icones {
   display: flex;
@@ -113,7 +111,7 @@ a {
 /*Espaçamento interno dos icones*/
 .menu_icones a {
   display: flex;
-  margin-left: 6px;
+  margin-left: 13px;
 }
 
 /*Elipse de contato do menu*/
@@ -131,7 +129,14 @@ a {
 /*|########| BANNER |########|*/
 
 .banner img {
-  width: 1200px;
+  width: 1920px;
+}
+
+/*Tira as setas do carrosel de imagem*/
+.banner .slick-prev,
+.banner .slick-next {
+  text-indent: -999px;
+  display: none !important;
 }
 
 /*|########| AGENDE SEU HORARIO |########|*/
@@ -143,23 +148,32 @@ a {
 }
 
 /*Espaço entre a lateral do site e o texto da div*/
-.agenda div {
+.agenda > div {
+  margin-left: 3%;
+}
+
+.agenda div div {
+  display: flex;
+  width: 504px;
+  margin-left: -23px;
+  margin-bottom: 50px;
+}
+
+.agenda div div p {
+  margin-top: 20px;
   margin-left: 20px;
 }
 
 /*Configuração para o tamanho e estilo do paragrafo*/
 .agenda p {
-  width: 346px;
   color: #000;
-  font-size: 23px;
-  margin-bottom: 30px;
-  margin-top: 25px;
+  font-size: 3em;
 }
 
 /*Botão 'Clique aqui!'abaixo do paragrafo*/
 .agenda a {
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 15%;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
@@ -672,7 +686,6 @@ h5 {
   bottom: 639px;
   left: 56%;
 }
-
 
 .depo_principal div:nth-child(1) span:nth-child(9) {
   bottom: 598px;
