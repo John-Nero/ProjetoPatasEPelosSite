@@ -485,7 +485,7 @@ a {
 /*Configuração das setas do carrosel*/
 .texto_equipe .slick-prev,
 .texto_equipe .slick-next {
-display: none;
+  display: none;
 }
 
 /*MARCO VE ISSO AQ Q EU N SEI N*/
@@ -782,7 +782,7 @@ div:nth-child(1) > h3 {
 }
 
 .depo_principal div:nth-child(3) span:nth-child(2) {
-  bottom: 54px;
+  bottom: -13px;
   left: 20%;
 }
 /*FIM Detalhes abaixo do depoimento*/
@@ -875,21 +875,18 @@ div:nth-child(1) > h3 {
 a sessão */
 .visita {
   display: flex;
-  margin-top: -130px;
+  margin-top: 250px;
 }
 
 /*Margin para o rodapé não ficar colado a sessão*/
 .visita > img {
-  margin-bottom: 20px;
+  margin-bottom: 207px;
 }
 
-/*Empurra a div de texto mais para o centro do site*/
-.visita > div {
-  margin-right: 50px;
-}
+.visita > div{margin-top: 303px;}
 
 /*Personalização do titulo*/
-.visita h2 {
+.visita > div > h2 {
   margin: 31% 22px 0 0;
   text-align: end;
 }
@@ -897,10 +894,10 @@ a sessão */
 /*Personalização do paragrafo*/
 .visita p {
   font-family: "Roboto", sans-serif;
-  width: 346px;
   color: #000;
   font-size: 30px;
   margin-top: 32px;
+  margin-right: 22px;
   text-align: end;
 }
 
@@ -908,13 +905,20 @@ a sessão */
 .visita ul {
   display: flex;
   justify-content: flex-end;
-  margin-top: 89px;
+  margin-top: 10px;
   margin-right: 21px;
 }
 
 /*Espaçamento interno das redes sociais*/
 .visita ul li {
   margin-left: 10px;
+}
+
+.visita div div h2 {
+  color: #a38cd6;
+  font-size: 4.6em;
+  text-align: end;
+  margin-right: 22px;
 }
 
 /*|########| RODAPÉ |########| */
