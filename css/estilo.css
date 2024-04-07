@@ -172,7 +172,6 @@ a {
 
 /*Botão 'Clique aqui!'abaixo do paragrafo*/
 .agenda a {
-  margin-top: 50px;
   margin-left: 15%;
   font-size: 26px;
   font-weight: 900;
@@ -293,23 +292,32 @@ a {
 }
 
 /*Espaçamento entre a lateral do site e o texto da div*/
-.sobre div {
-  margin-left: 20px;
+.sobre > div {
+  margin-left: 3%;
 }
 
+.sobre div div {
+  display: flex;
+  width: 507px;
+  margin-left: -23px;
+  margin-bottom: 30px;
+}
+
+.sobre div div p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 3em;
+}
 /*Config do texto do paragrafo*/
 .sobre p {
-  width: 346px;
   color: #000;
   font-size: 23px;
-  margin-bottom: 30px;
   margin-top: 25px;
 }
 
 /*Botão 'Clique aqui abaxio do paragrafo'*/
 .sobre a {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 15%;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
@@ -327,9 +335,9 @@ a {
 /*Seta o tamanho geral da sessão, define a onda de fundo e aplica flex aos conteudos internos*/
 .equipe {
   display: flex;
-  background: url(../img/equipe/fundo_equipe.svg) no-repeat;
+  background: url(../img/mascaras/equipe.svg) no-repeat;
   width: 100%;
-  height: 971px;
+  height: 1543px;
   font-family: "Roboto Flex", sans-serif;
   background-color: #fff8ed;
 }
@@ -339,7 +347,7 @@ a {
   margin: 25% 0 0 10px;
   display: flex;
   flex-direction: column;
-  width: 32%;
+  width: 22%;
 }
 
 /*personalizção do Titulo*/
@@ -352,15 +360,15 @@ a {
 /*Personalização do paragrafo central*/
 .equipe_esquerdo p:nth-child(2) {
   width: 281px;
-  font-size: 25px;
+  font-size: 2em;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 19px;
 }
 
 /*Personalização do 'Uma equipe de profissionais preparados'*/
 .equipe_esquerdo p:nth-child(3) {
   width: 275px;
-  font-size: 25px;
+  font-size: 2em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -389,12 +397,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 197px 0px 0 47px;
+  margin: 192px 0px 0 -151px;
   text-align: center;
   position: relative;
   top: -230px;
-  right: 124px;
-  width: 649px;
+  /* right: 124px; */
+  width: 1062px;
 }
 
 /*Seta a localização dele pra fica alinhado ao texto da sessão*/
@@ -477,23 +485,8 @@ a {
 /*Configuração das setas do carrosel*/
 .texto_equipe .slick-prev,
 .texto_equipe .slick-next {
-  height: 30px;
-  width: 30px;
-  z-index: 1;
-  text-indent: -9999px;
+display: none;
 }
-
-/*Seta a imagem das setas*/
-.texto_equipe .slick-prev {
-  left: 3px;
-  background: url(../img/seta_circulo_direita.svg);
-}
-
-.texto_equipe .slick-next {
-  right: -30px;
-  background: url(../img/seta_circulo_esquerda.svg);
-}
-/*Fim Seta a imagem das setas*/
 
 /*MARCO VE ISSO AQ Q EU N SEI N*/
 .texto_equipe .slick-slide img,
@@ -929,6 +922,7 @@ a sessão */
 
 /*Detalhes do rodapé(cachorro e as patas)*/
 .rodape > div span {
+  display: none;
   position: absolute;
   top: 5485px;
   left: 19%;
