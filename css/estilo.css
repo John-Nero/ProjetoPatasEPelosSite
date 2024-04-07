@@ -27,7 +27,7 @@ a {
 /*|########| FONTE PERSONALIZADA |########|*/
 
 .titulo_roxo {
-  font-size: 5em;
+  font-size: 8.5em;
   color: #a38cd6;
   font-weight: 900;
   font-style: normal;
@@ -35,7 +35,7 @@ a {
 }
 
 .subtitulo_laranja {
-  font-size: 3.5em;
+  font-size: 4.5em;
   color: #ff9a5b;
   font-weight: 900;
   font-style: normal;
@@ -202,7 +202,6 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  font-size: 8.5em;
 }
 
 /*Nome de cada categorias*/
@@ -262,23 +261,27 @@ a {
   align-items: center;
 }
 
+.tosa div {
+  margin-left: 71px;
+}
+
 /*Config do texto do paragrafo*/
 .tosa p {
-  width: 346px;
+  width: 379px;
   color: #000;
-  font-size: 23px;
-  margin-bottom: 30px;
+  font-size: 3em;
+  margin-bottom: 73px;
   margin-top: 25px;
 }
 
 /*Botão 'Clique aqui abaxio do paragrafo'*/
 .tosa a {
-  margin-top: 50px;
+  margin-left: 20%;
   font-size: 26px;
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
-  padding: 6px 32px;
+  padding: 15px 66px;
 }
 
 /*|########| SOBRE |########| */

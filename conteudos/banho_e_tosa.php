@@ -1,6 +1,6 @@
 <section class="site">
         <div class="tosa">
-          <img src="img/mascaras/mascara_banho.svg" alt="" />
+          <img src="img/mascaras/banho_e_tosa.svg" alt="" />
           <img src="img/mascaras/mascara_banho_mobile.svg" alt="" />
           <div>
             <h2 class="titulo_roxo">Fazemos:</h2>
