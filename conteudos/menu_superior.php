@@ -8,9 +8,10 @@
               <nav>
                 <ul class="menu_botoes">
                   <li><a href="#">Home</a></li>
+                  <li><a href="#">Sobre Nós</a></li>
                   <li><a href="#">Produtos</a></li>
+                  <li><a href="#">Contato</a></li>
                   <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Quem somos</a></li>
                 </ul>
               </nav>
 
@@ -21,9 +22,7 @@
                 <li>
                   <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" /></a>
                 </li>
-                <li>
-                  <a href="#"><img src="img/menu/carrinho.svg" alt="Carrinho" /></a>
-                </li>
+                
               </ul>
 
               <!--O Telefone passa por modificação no css para vira uma imagem-->

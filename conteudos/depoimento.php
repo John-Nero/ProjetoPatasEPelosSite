@@ -4,7 +4,7 @@
           <!--Detalhes do topo da sessão-->
           <div class="depo_topo">
             <span><img src="img/enfeites/estrela_roxa.svg" alt="" /> </span>
-            <span><img src="img/enfeites/conjunto_esferas01.svg" alt="" /> </span>
+            <span><img src="img/enfeites/conjunto_esferas.svg" alt="" /> </span>
             <span><img src="img/enfeites/estrela_roxa.svg" alt="" /> </span>
             <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span>
             <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span>
