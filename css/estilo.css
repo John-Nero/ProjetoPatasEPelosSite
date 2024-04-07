@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 
-/*|########| CONFIGURAÇÕES GERAIS |########|*/
+/*|########| CONFIGURAÃ‡Ã•ES GERAIS |########|*/
 
 body {
   font-size: 11px;
@@ -50,8 +50,9 @@ a {
 .tosa,
 .sobre,
 .depo,
-.visita {
-  background-color: #0edf20;
+.visita,
+.rodape {
+  background-color: #FFF8ED;
   font-family: "Roboto Flex", sans-serif;
 }
 
@@ -88,13 +89,13 @@ a {
   text-indent: -9999px;
 }
 
-/*Alinhamento e espaçamento dos botões do menu*/
+/*Alinhamento e espaÃ§amento dos botÃµes do menu*/
 .menu_botoes {
   display: flex;
   justify-content: space-around;
 }
 
-/*Estilização dos botões*/
+/*EstilizaÃ§Ã£o dos botÃµes*/
 .menu_botoes a {
   background-color: #bfacdd;
   padding: 4px 56px;
@@ -108,7 +109,7 @@ a {
   margin-left: 10px;
 }
 
-/*Espaçamento interno dos icones*/
+/*EspaÃ§amento interno dos icones*/
 .menu_icones a {
   display: flex;
   margin-left: 13px;
@@ -147,7 +148,7 @@ a {
   align-items: center;
 }
 
-/*Espaço entre a lateral do site e o texto da div*/
+/*EspaÃ§o entre a lateral do site e o texto da div*/
 .agenda > div {
   margin-left: 3%;
 }
@@ -164,13 +165,13 @@ a {
   margin-left: 20px;
 }
 
-/*Configuração para o tamanho e estilo do paragrafo*/
+/*ConfiguraÃ§Ã£o para o tamanho e estilo do paragrafo*/
 .agenda p {
   color: #000;
   font-size: 3em;
 }
 
-/*Botão 'Clique aqui!'abaixo do paragrafo*/
+/*BotÃ£o 'Clique aqui!'abaixo do paragrafo*/
 .agenda a {
   margin-left: 15%;
   font-size: 26px;
@@ -273,7 +274,7 @@ a {
   margin-top: 25px;
 }
 
-/*Botão 'Clique aqui abaxio do paragrafo'*/
+/*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
 .tosa a {
   margin-left: 20%;
   font-size: 26px;
@@ -291,7 +292,7 @@ a {
   align-items: center;
 }
 
-/*Espaçamento entre a lateral do site e o texto da div*/
+/*EspaÃ§amento entre a lateral do site e o texto da div*/
 .sobre > div {
   margin-left: 3%;
 }
@@ -315,7 +316,7 @@ a {
   margin-top: 25px;
 }
 
-/*Botão 'Clique aqui abaxio do paragrafo'*/
+/*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
 .sobre a {
   margin-left: 15%;
   font-size: 26px;
@@ -332,7 +333,7 @@ a {
 
 /*|########| EQUIPE |########| */
 
-/*Seta o tamanho geral da sessão, define a onda de fundo e aplica flex aos conteudos internos*/
+/*Seta o tamanho geral da sessÃ£o, define a onda de fundo e aplica flex aos conteudos internos*/
 .equipe {
   display: flex;
   background: url(../img/mascaras/equipe.svg) no-repeat;
@@ -342,7 +343,7 @@ a {
   background-color: #fff8ed;
 }
 
-/*seta o tamanho maximo da div q o titulo, paragrafo e botão podem ocupa e da um espaçamento entre a parede do site e o texto da div*/
+/*seta o tamanho maximo da div q o titulo, paragrafo e botÃ£o podem ocupa e da um espaÃ§amento entre a parede do site e o texto da div*/
 .equipe_esquerdo {
   margin: 25% 0 0 10px;
   display: flex;
@@ -350,14 +351,14 @@ a {
   width: 22%;
 }
 
-/*personalizção do Titulo*/
+/*personalizÃ§Ã£o do Titulo*/
 .equipe_esquerdo h2 {
   font-size: 5.5em;
   font-weight: 900;
   line-height: 66px;
 }
 
-/*Personalização do paragrafo central*/
+/*PersonalizaÃ§Ã£o do paragrafo central*/
 .equipe_esquerdo p:nth-child(2) {
   width: 281px;
   font-size: 2em;
@@ -365,7 +366,7 @@ a {
   margin-bottom: 19px;
 }
 
-/*Personalização do 'Uma equipe de profissionais preparados'*/
+/*PersonalizaÃ§Ã£o do 'Uma equipe de profissionais preparados'*/
 .equipe_esquerdo p:nth-child(3) {
   width: 275px;
   font-size: 2em;
@@ -373,7 +374,7 @@ a {
   margin-bottom: 10px;
 }
 
-/*Botão 'Clique aqui abaxio do paragrafo'*/
+/*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
 .equipe_esquerdo a {
   width: 183px;
   margin-top: 10px;
@@ -386,13 +387,13 @@ a {
   top: 30px;
 }
 
-/*Da o espaçamento entre o nome do funcionario e a imagem do mesmo*/
+/*Da o espaÃ§amento entre o nome do funcionario e a imagem do mesmo*/
 .equipe div div div:nth-child(2) a {
   display: flex;
   margin-top: -5px;
 }
 
-/*Seta o tamanho e espaçamento do carrosel em relação aos outro elementos da sessão */
+/*Seta o tamanho e espaÃ§amento do carrosel em relaÃ§Ã£o aos outro elementos da sessÃ£o */
 .carrosel_equipe {
   display: flex;
   flex-direction: column;
@@ -405,7 +406,7 @@ a {
   width: 1062px;
 }
 
-/*Seta a localização dele pra fica alinhado ao texto da sessão*/
+/*Seta a localizaÃ§Ã£o dele pra fica alinhado ao texto da sessÃ£o*/
 .texto_equipe {
   position: relative;
   right: 40px;
@@ -416,13 +417,13 @@ a {
 /*taanho e efeito da imagem dos funcionarios*/
 .texto_equipe img {
   width: 100%;
-  /* Ajuste conforme necessário */
+  /* Ajuste conforme necessÃ¡rio */
   height: auto;
-  /* Ajuste conforme necessário */
+  /* Ajuste conforme necessÃ¡rio */
   filter: blur(5px);
 }
 
-/*personalização do nome dos funcionarios*/
+/*personalizaÃ§Ã£o do nome dos funcionarios*/
 .texto_equipe li h2 {
   display: flex;
   justify-content: center;
@@ -432,7 +433,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-/*personalização do sobre nome  dos funcionarios*/
+/*personalizaÃ§Ã£o do sobre nome  dos funcionarios*/
 .texto_equipe li h3 {
   display: flex;
   justify-content: center;
@@ -441,7 +442,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-/*personalização do cargo e idade dos funcionarios*/
+/*personalizaÃ§Ã£o do cargo e idade dos funcionarios*/
 .texto_equipe li h4 {
   display: flex;
   justify-content: center;
@@ -451,7 +452,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-/*personalização da descrição dos funcionarios*/
+/*personalizaÃ§Ã£o da descriÃ§Ã£o dos funcionarios*/
 .texto_equipe li h5 {
   display: flex;
   justify-content: center;
@@ -461,7 +462,7 @@ a {
   font-family: "Roboto Flex", sans-serif;
 }
 
-/*Velocidade de transição e efeito aplicado na transição de um funcionario e outro*/
+/*Velocidade de transiÃ§Ã£o e efeito aplicado na transiÃ§Ã£o de um funcionario e outro*/
 .texto_equipe .slick-slide {
   transform: scale(0.69);
   transition: all 0.4s ease-in-out;
@@ -471,10 +472,10 @@ a {
 /*deixa os funcionarios ao lado de um tamanho menor ao do centro*/
 .texto_equipe .slick-slide:not(.slick-center) {
   transform: scale(0.6);
-  /* Mantém o tamanho ao sair do centro */
+  /* MantÃ©m o tamanho ao sair do centro */
 }
 
-/*Aplica o efeito de desfoque nos funcionarios que não são o foco do carrosel*/
+/*Aplica o efeito de desfoque nos funcionarios que nÃ£o sÃ£o o foco do carrosel*/
 .texto_equipe li:not(.slick-center) h2,
 .texto_equipe li:not(.slick-center) h3,
 .texto_equipe li:not(.slick-center) h4,
@@ -482,7 +483,7 @@ a {
   filter: blur(5px);
 }
 
-/*Configuração das setas do carrosel*/
+/*ConfiguraÃ§Ã£o das setas do carrosel*/
 .texto_equipe .slick-prev,
 .texto_equipe .slick-next {
   display: none;
@@ -497,7 +498,7 @@ h5 {
   transition: all 0.4s ease-in-out;
 }
 
-/*Tira o efeito de desfoque do funcinario que está em destaque no carrosel*/
+/*Tira o efeito de desfoque do funcinario que estÃ¡ em destaque no carrosel*/
 .slick-center img {
   transform: scale(1.4);
   filter: blur(0px);
@@ -511,15 +512,15 @@ h5 {
   filter: blur(0px);
   /* Desfoque no texto do meio */
 }
-/*Fim Tira o efeito de desfoque do funcinario que está em destaque no carrosel*/
+/*Fim Tira o efeito de desfoque do funcinario que estÃ¡ em destaque no carrosel*/
 
 /*|########| DEPOIMENTO |########| */
 
-/*Sobe a sessão para ter uma integração melhor com a anterior*/
+/*Sobe a sessÃ£o para ter uma integraÃ§Ã£o melhor com a anterior*/
 .depo {
   top: -1px;
   z-index: 1;
-  height: 994px;
+  height: 1255px;
 }
 
 /*DIV ENFEITE TOPO*/
@@ -528,7 +529,7 @@ h5 {
   position: relative;
 }
 
-/*Configuração dos locais de cada img/span do topo*/
+/*ConfiguraÃ§Ã£o dos locais de cada img/span do topo*/
 .depo_topo span {
   position: relative;
 }
@@ -589,12 +590,12 @@ h5 {
   left: -29%;
 }
 
-/* FIM Configuração dos locais de cada img/span do topo*/
+/* FIM ConfiguraÃ§Ã£o dos locais de cada img/span do topo*/
 
 /*DIV PRINCIPAL*/
 
-/*Configuração dos locais de cada img/span do centro*/
-/*Configuração dos locais de cada img/span do centro*/
+/*ConfiguraÃ§Ã£o dos locais de cada img/span do centro*/
+/*ConfiguraÃ§Ã£o dos locais de cada img/span do centro*/
 .depo_principal {
   display: flex;
   align-items: center;
@@ -640,7 +641,7 @@ h5 {
   bottom: 105px;
   left: -44%;
 }
-/*FIM Configuração dos locais de cada img/span do centro*/
+/*FIM ConfiguraÃ§Ã£o dos locais de cada img/span do centro*/
 
 /*Tira as setas do carrosel de imagem*/
 .carrosel_depo_imagem .slick-prev,
@@ -658,7 +659,7 @@ h5 {
   z-index: 1;
 }
 
-/*Configuração dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
+/*ConfiguraÃ§Ã£o dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 .depo_principal div:nth-child(1) span:nth-child(5) {
   bottom: 0;
   left: -0%;
@@ -701,9 +702,9 @@ div:nth-child(1) > h3 {
 .depo_principal div:nth-child(2) div:nth-child(1) > h3 {
   margin-top: 10px;
 }
-/*FIM Configuração dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
+/*FIM ConfiguraÃ§Ã£o dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 
-/*Configuração das setas do carrosel de texto*/
+/*ConfiguraÃ§Ã£o das setas do carrosel de texto*/
 .carrosel_depo_texto .slick-prev,
 .carrosel_depo_texto .slick-next {
   height: 30px;
@@ -712,7 +713,7 @@ div:nth-child(1) > h3 {
   text-indent: -9999px;
 }
 
-/*Seta as imagens da setas do carrosel para a padrão do site*/
+/*Seta as imagens da setas do carrosel para a padrÃ£o do site*/
 .carrosel_depo_texto .slick-prev {
   left: -32px;
   background: chartreuse;
@@ -744,7 +745,7 @@ div:nth-child(1) > h3 {
 .carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
-/*Alinha a div geral onde o carrosel está*/
+/*Alinha a div geral onde o carrosel estÃ¡*/
 .depo_principal > div:nth-child(2) {
   position: relative;
   bottom: 248px;
@@ -761,13 +762,13 @@ div:nth-child(1) > h3 {
   text-align: center;
 }
 
-/*Alinhamento das rações que são usadas como metrica de avaliação*/
+/*Alinhamento das raÃ§Ãµes que sÃ£o usadas como metrica de avaliaÃ§Ã£o*/
 .carrosel_depo_texto div:nth-child(2) ul {
   display: flex;
   justify-content: center;
 }
 
-/*Personalização e alinhamento do paragrafo de depoimento*/
+/*PersonalizaÃ§Ã£o e alinhamento do paragrafo de depoimento*/
 .carrosel_depo_texto div:nth-child(2) div p {
   font-size: 2.5em;
 
@@ -787,7 +788,7 @@ div:nth-child(1) > h3 {
 }
 /*FIM Detalhes abaixo do depoimento*/
 
-/*Configuração das setas do carrosel de texto*/
+/*ConfiguraÃ§Ã£o das setas do carrosel de texto*/
 .carrosel_depo_texto .slick-prev,
 .carrosel_depo_texto .slick-next {
   height: 30px;
@@ -796,7 +797,7 @@ div:nth-child(1) > h3 {
   text-indent: -9999px;
 }
 
-/*Seta as imagens da setas do carrosel para a padrão do site*/
+/*Seta as imagens da setas do carrosel para a padrÃ£o do site*/
 .carrosel_depo_texto .slick-prev {
   left: -32px;
   background: chartreuse;
@@ -814,7 +815,7 @@ div:nth-child(1) > h3 {
   position: relative;
   height: 335px;
   left: 33%;
-  margin-top: 70px;
+  margin-top: 149px;
 }
 
 /*Alinha o nome do pet e seta o tamanho do mesmo*/
@@ -827,7 +828,7 @@ div:nth-child(1) > h3 {
 .carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
-/*Alinha a div geral onde o carrosel está*/
+/*Alinha a div geral onde o carrosel estÃ¡*/
 .depo_principal > div:nth-child(2) {
   position: relative;
   bottom: 375px;
@@ -844,16 +845,15 @@ div:nth-child(1) > h3 {
   text-align: center;
 }
 
-/*Alinhamento das rações que são usadas como metrica de avaliação*/
+/*Alinhamento das raÃ§Ãµes que sÃ£o usadas como metrica de avaliaÃ§Ã£o*/
 .carrosel_depo_texto div:nth-child(2) ul {
   display: flex;
   justify-content: center;
 }
 
-/*Personalização e alinhamento do paragrafo de depoimento*/
+/*PersonalizaÃ§Ã£o e alinhamento do paragrafo de depoimento*/
 .carrosel_depo_texto div:nth-child(2) div p {
-  font-size: 2.5em;
-
+  font-size: 3.5em;
   margin: 0px 20px;
 }
 
@@ -864,34 +864,36 @@ div:nth-child(1) > h3 {
 }
 
 .depo_principal div:nth-child(3) span:nth-child(2) {
-  bottom: 49px;
+  bottom: -112px;
   left: 20%;
+  width: 588px;
+  height: 480px;
 }
 /*FIM Detalhes abaixo do depoimento*/
 
 /*|########| VENHA NOS VISITAR |########| */
 
-/*Flex para a imagem do mapa ficar ao lado do texto e negativação do margin top para subir
-a sessão */
+/*Flex para a imagem do mapa ficar ao lado do texto e negativaÃ§Ã£o do margin top para subir
+a sessÃ£o */
 .visita {
   display: flex;
-  margin-top: 250px;
+  /* margin-top: 250px; */
 }
 
-/*Margin para o rodapé não ficar colado a sessão*/
+/*Margin para o rodapÃ© nÃ£o ficar colado a sessÃ£o*/
 .visita > img {
   margin-bottom: 207px;
 }
 
 .visita > div{margin-top: 303px;}
 
-/*Personalização do titulo*/
+/*PersonalizaÃ§Ã£o do titulo*/
 .visita > div > h2 {
   margin: 31% 22px 0 0;
   text-align: end;
 }
 
-/*Personalização do paragrafo*/
+/*PersonalizaÃ§Ã£o do paragrafo*/
 .visita p {
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -909,7 +911,7 @@ a sessão */
   margin-right: 21px;
 }
 
-/*Espaçamento interno das redes sociais*/
+/*EspaÃ§amento interno das redes sociais*/
 .visita ul li {
   margin-left: 10px;
 }
@@ -921,16 +923,16 @@ a sessão */
   margin-right: 22px;
 }
 
-/*|########| RODAPÉ |########| */
+/*|########| RODAPÃ‰ |########| */
 
-/*cor do rodapé e alinhamento dos itens internos do mesmo*/
+/*cor do rodapÃ© e alinhamento dos itens internos do mesmo*/
 .rodape {
   background: #a38cd6;
   text-align: center;
   padding: 26px 0 7px 0px;
 }
 
-/*personalização para que todos os links do rodapé ficarem pretos*/
+/*personalizaÃ§Ã£o para que todos os links do rodapÃ© ficarem pretos*/
 .rodape a {
   color: #000;
 }
@@ -940,48 +942,62 @@ a sessão */
   display: flex;
 }
 
-/*Alinhamento e definição de tamanho maximo, alinhamento dos itens internos*/
+.rodape div div div{
+  width: 25%;
+}
+
+/*Alinhamento e definiÃ§Ã£o de tamanho maximo, alinhamento dos itens internos*/
 .rodape div div div:nth-child(1) {
   margin-left: 90px;
-  width: 24%;
   flex-direction: column;
   align-items: baseline;
   text-align: left;
 }
 
-/*personalização do paragrafo interno*/
+/*personalizaÃ§Ã£o do paragrafo interno*/
 .rodape div div div:nth-child(1) p {
-  font-size: 1.2em;
+  font-size: 2.5em;
   margin: 20px 0;
 }
 
-/*personalização do telefone de contato*/
+.rodape div div div:nth-child(1) h2 {
+  font-size: 2.5em;
+}
+
+/*personalizaÃ§Ã£o do telefone de contato*/
 .rodape div div div:nth-child(1) a {
   color: #ff9a5b;
   margin: 10px 0;
-  font-size: 1.7em;
+  font-size: 2.5em;
 }
+
+
 
 /*Flex para que as redes sociais fiquem uma ao lado da outra*/
 .rodape div div div:nth-child(1) ul {
   display: flex;
 }
 
-/*espaçamento interno das redes sociais*/
+/*espaÃ§amento interno das redes sociais*/
 .rodape div div div:nth-child(1) ul li {
   margin: 0 5px 0 0;
 }
 
 /*Tamanho de cada icone das redes sociais*/
 .rodape div div div:nth-child(1) ul li img {
-  width: 33px;
-  height: 33px;
+  width: 44px;
+  height: 44px;
 }
-/*espaçamento da segunda coluna*/
+
+/*espaÃ§amento da segunda coluna*/
 .rodape div div div:nth-child(2) {
-  margin: 45px 0px 0px 60px;
+  margin: 40px 0px 0px 84px;
   flex-direction: column;
   align-items: first baseline;
+}
+
+.rodape div div div:nth-child(2) h2{
+  font-size: 2.5em;
 }
 
 /*flex column para que os textos fiquem um abaixo do outro dentro da coluna e alinhamento a direita dos mesmos*/
@@ -991,28 +1007,37 @@ a sessão */
   text-align: left;
 }
 
-/*Personalização das fontes*/
+/*PersonalizaÃ§Ã£o das fontes*/
 .rodape div div div:nth-child(2) ul li {
   font-weight: lighter;
-  font-size: 0.8em;
-  margin: 15px 0;
+  font-size: 1em;
+  margin: 38px 0;
 }
-/*espaçamento da terceira coluna*/
+/*espaÃ§amento da terceira coluna*/
 .rodape div div div:nth-child(3) {
-  margin: 45px 0px 0px 60px;
+  margin: 45px 0px 0px -50px;
   flex-direction: column;
   align-items: baseline;
 }
 
-/*Distanciamento entre os h2 e os a */
-.rodape div div div:nth-child(3) a {
-  margin: 20px 0px;
+.rodape div div div:nth-child(3) h2{
+font-size: 2.5em;
 }
 
-/*Detalhes do rodapé(cachorro e as patas)*/
+/*Distanciamento entre os h2 e os a */
+.rodape div div div:nth-child(3) a {
+  margin: 25px 0px 0 50px;
+}
+
+/*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
-  display: none;
   position: absolute;
-  top: 5485px;
-  left: 19%;
+  top: 8785px;
+  left: -2%;
+  width: 1919px;
+}
+
+.rodape > div span  img{
+  width: 100%;
+  height: 100%;
 }
