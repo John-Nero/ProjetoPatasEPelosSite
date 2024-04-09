@@ -10,7 +10,8 @@ $(".banner").slick({
 $(".carrosel_categorias").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 601,
