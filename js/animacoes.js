@@ -67,4 +67,21 @@ $(".carrosel_depo_texto").slick({
   asNavFor: ".carrosel_depo_imagem"
 });
 
+$(".lista-com-imagens").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 
