@@ -7,11 +7,11 @@
 
               <nav>
                 <ul class="menu_botoes">
-                  <li><a href="#">Home</a></li>
+                  <li><a href="index.php">Home</a></li>
                   <li><a href="#">Sobre Nós</a></li>
                   <li><a href="#">Produtos</a></li>
                   <li><a href="#">Contato</a></li>
-                  <li><a href="#">Serviços</a></li>
+                  <li><a href="servicos.php">Serviços</a></li>
                 </ul>
               </nav>
 
