@@ -160,7 +160,7 @@ a {
   margin-bottom: 50px;
 }
 
-.agenda div h2{
+.agenda div h2 {
   line-height: 100px;
 }
 
@@ -187,7 +187,9 @@ a {
 
 /*|########| CATEGORIAS |########| */
 
-.categorias{margin-top:-146px}
+.categorias {
+  margin-top: -146px;
+}
 
 /*Estrelas topo*/
 .categorias div:nth-child(1) span:nth-child(1) {
@@ -237,21 +239,21 @@ a {
   display: none;
 }
 
-.carrosel_categorias{
+.carrosel_categorias {
   margin-left: 15%;
-  width: 1245px ;
+  width: 1245px;
 }
 
 /*Estrelas base*/
 .categorias div:nth-child(3) span:nth-child(1) {
-  left: 90%;
-  top: 11px;
+  left: 74%;
+  bottom: -67px;
   position: relative;
 }
 
 .categorias div:nth-child(3) span:nth-child(2) {
-  left: 91%;
-  bottom: 9px;
+  left: 74%;
+  bottom: -47px;
   position: relative;
 }
 /*FIM Estrelas base*/
@@ -262,19 +264,34 @@ a {
 .tosa {
   display: flex;
   align-items: center;
+  margin-top: -50px;
 }
 
-.tosa div {
+.tosa > div {
   margin-left: 71px;
+  margin-top: -206px;
+}
+
+.tosa div div {
+  display: flex;
+  width: 549px;
+  margin-left: -23px;
+  margin-bottom: 50px;
+}
+
+
+.tosa div div p {
+  margin: 20px 38px 0 0;
 }
 
 /*Config do texto do paragrafo*/
 .tosa p {
-  width: 379px;
   color: #000;
-  font-size: 3em;
-  margin-bottom: 73px;
-  margin-top: 25px;
+  font-size: 3.4em;
+}
+
+.tosa div div img{
+  transform: scaleX(-1);
 }
 
 /*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
