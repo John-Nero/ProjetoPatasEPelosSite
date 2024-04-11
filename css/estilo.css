@@ -150,7 +150,7 @@ a {
 
 /*EspaÃ§o entre a lateral do site e o texto da div*/
 .agenda > div {
-  margin-left: 3%;
+  margin-left: 10%;
 }
 
 .agenda div div {
@@ -158,6 +158,10 @@ a {
   width: 504px;
   margin-left: -23px;
   margin-bottom: 50px;
+}
+
+.agenda div h2{
+  line-height: 100px;
 }
 
 .agenda div div p {
@@ -178,7 +182,7 @@ a {
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
-  padding: 6px 32px;
+  padding: 10px 32px;
 }
 
 /*|########| CATEGORIAS |########| */
