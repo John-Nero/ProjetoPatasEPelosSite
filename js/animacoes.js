@@ -24,20 +24,11 @@ $(".carrosel_categorias").slick({
 });
 
 /*EQUIPE*/
-$(".texto_equipe").slick({
-  slide: "li",
+$(".carrosel_equipe").slick({
   centerMode: true,
-  centerPadding: "0",
   slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+ slidesToScroll: 1,
+ autoplay: false
 });
 
 /*DEPOIMENTO*/

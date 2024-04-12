@@ -49,6 +49,7 @@ a {
 .categorias,
 .tosa,
 .sobre,
+.equipe,
 .depo,
 .visita,
 .rodape {
@@ -359,6 +360,7 @@ a {
 .equipe {
   display: flex;
   margin-top: -108px;
+  height: 1503px;
 }
 
 .equipe > div:nth-child(1) {
@@ -389,7 +391,7 @@ a {
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1) {
   left: 40%;
 }
-.equipe div:nth-child(1)  span:nth-child(1) img:nth-child(2) {
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(2) {
   width: 362px;
   height: 362px;
   top: -175px;
@@ -404,22 +406,92 @@ a {
 
 .equipe div:nth-child(1) span:nth-child(2),
 .equipe div:nth-child(1) span:nth-child(2) img {
-
+  display: flex;
+  width: 121px;
   height: 121px;
 }
 .equipe div:nth-child(1) span:nth-child(2) {
   position: relative;
   top: 15%;
-  left: 5%;
+  left: 23%;
+}
+
+.equipe div:nth-child(1) span:nth-child(3),
+.equipe div:nth-child(1) span:nth-child(3) img {
+  display: flex;
+  width: 235px;
+  height: 235px;
+}
+.equipe div:nth-child(1) span:nth-child(3) {
+  position: relative;
+  top: 28%;
+  left: 38%;
 }
 
 /*Conteudo central*/
-.equipe div:nth-child(2) {
+.equipe > div:nth-child(2) {
   width: 42%;
   background: crimson;
 }
 
 .equipe div h2 {
+  margin-top: 19%;
+  text-align: center;
+}
+
+.equipe div:nth-child(2) div p {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.equipe div:nth-child(2) div p:nth-child(3) {
+  text-align: center;
+  font-size: 2.5em;
+  background: bisque;
+  width: 354px;
+  margin-top: 10px;
+  margin-left: 28%;
+}
+
+.carrosel_equipe{
+  height: 448px;
+}
+
+.carrosel_equipe .slick-slide:not(.slick-center) {
+  margin-top: 34px;
+  height: 448px;
+  filter: blur(5px);
+  transform: scale(0.6);
+
+  align-items: center;
+}
+
+.carrosel_equipe .slick-slide {
+  transform: scale(0.69);
+  transition: all 0.4s ease-in-out;
+  padding: 40px 0;
+    align-items: center;
+  margin: 0 45px;
+}
+
+.carrosel_equipe div div div{
+  width: 255px !important;
+}
+
+.carrosel_equipe .slick-slide:not(.slick-center) img {
+  width: 259px;
+  height: 259px;
+}
+
+.carrosel_equipe div img {
+  width: 354px;
+  height: 354px;
+}
+
+/*personalização do cargo e idade dos funcionarios*/
+.carrosel_equipe div h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .equipe div:nth-child(3) {
