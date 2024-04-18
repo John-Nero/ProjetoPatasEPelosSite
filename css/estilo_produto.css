@@ -1,0 +1,304 @@
+/* define as regras da animação */
+
+h2.animate__animated {
+    animation-duration: 1s; /* Altera a duração da animação para 2 segundos */
+    animation-fill-mode: both; /* Garante que a animação mantenha o estado final após a conclusão */
+}
+
+.topo-servico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topo-servico-textos{
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  }
+  
+  .topo-servico-textos h2{
+    font-size: 105px;
+    font-weight: 800;
+    color: #664D9F;
+    font-family: "Roboto Flex", sans-serif;
+  }
+  
+  .topo-servico-textos p{
+    width: 98%;
+    font-size: 62px;
+    font-weight: 700;
+    color: #FF9A5B;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+  }
+  
+  .topo-servico img:nth-of-type(1){
+    margin-left: 50px;
+  }
+  
+  .topo-servico img:nth-of-type(2){
+    margin-right: 85px;
+  }
+  /* carrosel infernal */
+  .lista-com-imagens{
+    display: flex;
+  }
+
+  .lista-com-imagens h2{
+    font-size: 31px;
+  }
+  
+  .lista-com-imagens p{
+    font-size: 23px;
+  }
+
+  .lista-com-imagens h2,p{
+    text-align: left;
+    width: 516px;
+    font-family: "Roboto Flex", sans-serif;
+  }
+
+  .servico_texto{
+    position: relative;
+    top: -470px;
+    left:7%;
+  }
+
+  .servico_texto_v2{
+    position: relative;
+    top: -335px;
+    left: 7%;
+  }
+
+  .servico_texto a {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 90px;
+    border: 2px solid white;
+    background-color: #664D9F;
+    padding: 25px 42px;
+    position: absolute;
+    bottom: -180%;
+    left: -5%;
+  }
+
+  .servico_texto_v2 a {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 24px;
+    color: black;
+    font-weight: 900;
+    border-radius: 90px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 25px 42px;
+    position: absolute;
+    bottom: -125%;
+    left: -5%;
+  }
+
+  .servico_imagem_container {
+    position: relative;
+}
+
+.servico_imagem_container img {
+    display: block;
+    width: 100%;
+}
+
+.lista-com-imagens .slick-slide{
+  transform: scale(0.9);
+}
+
+/* Define a animação de fade */
+@keyframes fadeAnimation {
+  0% { opacity: 0; } /* Início da animação com opacidade 0 */
+  100% { opacity: 1; } /* Fim da animação com opacidade 1 */
+}
+
+.fade_delay1 {
+  animation-name: fadeAnimation;
+  animation-duration: 1s; /* Duração da animação */
+  animation-delay: 1s; /* Atraso antes do início da animação */
+}
+
+.fade_delay2 {
+  animation-name: fadeAnimation;
+  animation-duration: 1.2s; /* Duração da animação */
+  animation-delay: 1.2s; /* Atraso antes do início da animação */
+}
+
+.fade_delay3 {
+  animation-name: fadeAnimation;
+  animation-duration: 1.3s; /* Duração da animação */
+  animation-delay: 1.3s; /* Atraso antes do início da animação */
+}
+
+  /* fim servico */
+  
+  /* inicio banners */
+  
+  /* estrelas */
+  
+  .estrelas span:nth-child(1){
+    left: 8%;
+    top: 23px;
+    position: relative;
+  }
+  
+  .estrelas span:nth-child(2){
+    left: 11%;
+    top: 35px;
+    position: relative;
+  }
+  
+  .estrelas span:nth-child(3){
+    left: 13%;
+    top: -70px;
+    position: relative;
+  }
+  
+  .estrelas span:nth-child(4){
+    left: 63%;
+    top: 5px;
+    position: relative;
+  }
+  
+  .estrelas span:nth-child(5){
+    left: 65%;
+    top: -5px;
+    position: relative;
+  }
+  
+  .estrelas span:nth-child(6){
+    left: 68%;
+    top: 40px;
+    position: relative;
+  }
+  
+  .banners_servico{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 65px;
+  }
+  
+  .banners_servico img{
+    width: 461px;
+    border-radius: 20px;
+    filter: drop-shadow(14px 14px 6px rgba(0, 0, 0, 0.5));
+  }
+  
+  .banners_servico a{
+    width: 461px;
+  }
+  
+  .estrelas_baixo span:nth-child(1){
+    left: 4%;
+    top: 140px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(2){
+    left: 4%;
+    top: 196px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(3){
+    left: 4%;
+    top: 198px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(4){
+    left: 22%;
+    top: 136px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(5){
+    left: 21%;
+    top: 125px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(6){
+    left: 18%;
+    top: 170px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(7){
+    left: 18%;
+    top: 13px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(8){
+    left: 44%;
+    top: 150px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(9){
+    left: 45%;
+    top: 45px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(10){
+    left: 42%;
+    top: 140px;
+    position: relative;
+  }
+  
+  .estrelas_baixo span:nth-child(11){
+    left: 42%;
+    top: 175px;
+    position: relative;
+  }
+  
+  .contato{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .contato h2{
+    font-size: 128px;
+    width: 578px;
+    margin-bottom: 10px;
+  }
+  
+  .contato p{
+    font-size: 64px;
+  }
+  
+  .contato_esquerdo{
+    position: relative;
+    left: 4%;
+  }
+  
+  .contato img{
+    position: relative;
+    left: 2%;
+  }
+  
+    .contato_botao a{
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 20px;
+      font-size: 26px;
+      font-weight: 900;
+      text-align: center;
+      border-radius: 39px;
+      background-color: #ff9a5b;
+      padding: 18px 0px;
+      position: absolute;
+      left: 22%;
+      top: 99%;
+    }

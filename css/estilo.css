@@ -49,10 +49,11 @@ a {
 .categorias,
 .tosa,
 .sobre,
+.equipe,
 .depo,
 .visita,
 .rodape {
-  background-color: #FFF8ED;
+  background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;
 }
 
@@ -130,7 +131,7 @@ a {
 /*|########| BANNER |########|*/
 
 .banner img {
-  width: 1920px;
+  width: 100%;
 }
 
 /*Tira as setas do carrosel de imagem*/
@@ -150,7 +151,7 @@ a {
 
 /*EspaÃ§o entre a lateral do site e o texto da div*/
 .agenda > div {
-  margin-left: 3%;
+  margin-left: 10%;
 }
 
 .agenda div div {
@@ -158,6 +159,10 @@ a {
   width: 504px;
   margin-left: -23px;
   margin-bottom: 50px;
+}
+
+.agenda div h2 {
+  line-height: 100px;
 }
 
 .agenda div div p {
@@ -178,10 +183,14 @@ a {
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
-  padding: 6px 32px;
+  padding: 10px 32px;
 }
 
 /*|########| CATEGORIAS |########| */
+
+.categorias {
+  margin-top: -146px;
+}
 
 /*Estrelas topo*/
 .categorias div:nth-child(1) span:nth-child(1) {
@@ -207,6 +216,7 @@ a {
 /*Nome de cada categorias*/
 .categorias div div a {
   display: flex;
+  width: 200px;
   flex-direction: column;
   justify-content: center;
   margin: 0 39px;
@@ -214,41 +224,37 @@ a {
   color: rgb(0, 0, 0);
 }
 
+.categorias div div a img {
+  width: 200px;
+  height: 200px;
+}
+
+.categorias div div a p {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+
 /*Config das setas do carrosel*/
 .carrosel_categorias .slick-prev:before,
 .carrosel_categorias .slick-next:before {
-  font-size: 30px;
-  color: #e7992400;
+  display: none;
 }
 
-/*Seta a imagem do circulo pra setas do carrosel*/
-.carrosel_categorias .slick-prev {
-  height: 30px;
-  width: 30px;
-  left: 3px;
-  background: url(../img/seta_circulo_direita.svg);
-  z-index: 1;
-}
-
-/*Seta a imagem do circulo pra setas do carrosel*/
-.carrosel_categorias .slick-next {
-  height: 30px;
-  width: 30px;
-  right: 3px;
-  background: url(../img/seta_circulo_esquerda.svg);
-  z-index: 1;
+.carrosel_categorias {
+  margin-left: 15%;
+  width: 1245px;
 }
 
 /*Estrelas base*/
 .categorias div:nth-child(3) span:nth-child(1) {
-  left: 90%;
-  top: 11px;
+  left: 74%;
+  bottom: -67px;
   position: relative;
 }
 
 .categorias div:nth-child(3) span:nth-child(2) {
-  left: 91%;
-  bottom: 9px;
+  left: 74%;
+  bottom: -47px;
   position: relative;
 }
 /*FIM Estrelas base*/
@@ -259,19 +265,33 @@ a {
 .tosa {
   display: flex;
   align-items: center;
+  margin-top: -50px;
 }
 
-.tosa div {
+.tosa > div {
   margin-left: 71px;
+  margin-top: -206px;
+}
+
+.tosa div div {
+  display: flex;
+  width: 549px;
+  margin-left: -23px;
+  margin-bottom: 50px;
+}
+
+.tosa div div p {
+  margin: 20px 38px 0 0;
 }
 
 /*Config do texto do paragrafo*/
 .tosa p {
-  width: 379px;
   color: #000;
-  font-size: 3em;
-  margin-bottom: 73px;
-  margin-top: 25px;
+  font-size: 3.4em;
+}
+
+.tosa div div img {
+  transform: scaleX(-1);
 }
 
 /*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
@@ -290,11 +310,14 @@ a {
 .sobre {
   display: flex;
   align-items: center;
+  margin-top: -208px;
 }
 
 /*EspaÃ§amento entre a lateral do site e o texto da div*/
 .sobre > div {
-  margin-left: 3%;
+  width: 522px;
+  margin-left: 16%;
+  margin-right: 8%;
 }
 
 .sobre div div {
@@ -323,7 +346,7 @@ a {
   font-weight: 900;
   border-radius: 39px;
   background-color: #ff9a5b;
-  padding: 6px 32px;
+  padding: 15px 66px;
 }
 
 /*Coloca a imagem dentro do limite do site*/
@@ -333,186 +356,148 @@ a {
 
 /*|########| EQUIPE |########| */
 
-/*Seta o tamanho geral da sessÃ£o, define a onda de fundo e aplica flex aos conteudos internos*/
+/*Circulos do lado esquerdo da sessão*/
 .equipe {
   display: flex;
-  background: url(../img/mascaras/equipe.svg) no-repeat;
-  width: 100%;
-  height: 1543px;
-  font-family: "Roboto Flex", sans-serif;
-  background-color: #fff8ed;
+  margin-top: -108px;
+  height: 1503px;
 }
 
-/*seta o tamanho maximo da div q o titulo, paragrafo e botÃ£o podem ocupa e da um espaÃ§amento entre a parede do site e o texto da div*/
-.equipe_esquerdo {
-  margin: 25% 0 0 10px;
+.equipe > div:nth-child(1) {
+  background: chocolate;
+  width: 30%;
+}
+
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(1),
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3),
+.equipe span:nth-child(2) img {
+  width: 235px;
+  height: 235px;
+  background: #7fff00;
+}
+
+.equipe div:nth-child(1) span:nth-child(1) {
+  width: 420px;
+  height: 537px;
   display: flex;
+  margin-left: 17%;
   flex-direction: column;
-  width: 22%;
 }
 
-/*personalizÃ§Ã£o do Titulo*/
-.equipe_esquerdo h2 {
-  font-size: 5.5em;
-  font-weight: 900;
-  line-height: 66px;
-}
-
-/*PersonalizaÃ§Ã£o do paragrafo central*/
-.equipe_esquerdo p:nth-child(2) {
-  width: 281px;
-  font-size: 2em;
-  margin-top: 50px;
-  margin-bottom: 19px;
-}
-
-/*PersonalizaÃ§Ã£o do 'Uma equipe de profissionais preparados'*/
-.equipe_esquerdo p:nth-child(3) {
-  width: 275px;
-  font-size: 2em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
-.equipe_esquerdo a {
-  width: 183px;
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: 900;
-  border-radius: 39px;
-  background-color: #ff9a5b;
-  padding: 17px 55px;
+.equipe div:nth-child(1) span img {
   position: relative;
-  top: 30px;
 }
 
-/*Da o espaÃ§amento entre o nome do funcionario e a imagem do mesmo*/
-.equipe div div div:nth-child(2) a {
-  display: flex;
-  margin-top: -5px;
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(1) {
+  left: 40%;
+}
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(2) {
+  width: 362px;
+  height: 362px;
+  top: -175px;
+  left: 4%;
+  z-index: 2;
 }
 
-/*Seta o tamanho e espaÃ§amento do carrosel em relaÃ§Ã£o aos outro elementos da sessÃ£o */
-.carrosel_equipe {
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3) {
+  top: -325px;
+  left: 2%;
+}
+
+.equipe div:nth-child(1) span:nth-child(2),
+.equipe div:nth-child(1) span:nth-child(2) img {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 192px 0px 0 -151px;
+  width: 121px;
+  height: 121px;
+}
+.equipe div:nth-child(1) span:nth-child(2) {
+  position: relative;
+  top: 15%;
+  left: 23%;
+}
+
+.equipe div:nth-child(1) span:nth-child(3),
+.equipe div:nth-child(1) span:nth-child(3) img {
+  display: flex;
+  width: 235px;
+  height: 235px;
+}
+.equipe div:nth-child(1) span:nth-child(3) {
+  position: relative;
+  top: 28%;
+  left: 38%;
+}
+
+/*Conteudo central*/
+.equipe > div:nth-child(2) {
+  width: 42%;
+  background: crimson;
+}
+
+.equipe div h2 {
+  margin-top: 19%;
   text-align: center;
-  position: relative;
-  top: -230px;
-  /* right: 124px; */
-  width: 1062px;
 }
 
-/*Seta a localizaÃ§Ã£o dele pra fica alinhado ao texto da sessÃ£o*/
-.texto_equipe {
-  position: relative;
-  right: 40px;
-  width: 140%;
-  bottom: -170px;
+.equipe div:nth-child(2) div p {
+  text-align: center;
+  font-size: 2.5em;
 }
 
-/*taanho e efeito da imagem dos funcionarios*/
-.texto_equipe img {
-  width: 100%;
-  /* Ajuste conforme necessÃ¡rio */
-  height: auto;
-  /* Ajuste conforme necessÃ¡rio */
+.equipe div:nth-child(2) div p:nth-child(3) {
+  text-align: center;
+  font-size: 2.5em;
+  background: bisque;
+  width: 354px;
+  margin-top: 10px;
+  margin-left: 28%;
+}
+
+.carrosel_equipe{
+  height: 448px;
+}
+
+.carrosel_equipe .slick-slide:not(.slick-center) {
+  margin-top: 34px;
+  height: 448px;
   filter: blur(5px);
+  transform: scale(0.6);
+
+  align-items: center;
 }
 
-/*personalizaÃ§Ã£o do nome dos funcionarios*/
-.texto_equipe li h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 500;
-  margin-top: 49px;
-  font-family: "Roboto Flex", sans-serif;
-}
-
-/*personalizaÃ§Ã£o do sobre nome  dos funcionarios*/
-.texto_equipe li h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 500;
-  font-family: "Roboto Flex", sans-serif;
-}
-
-/*personalizaÃ§Ã£o do cargo e idade dos funcionarios*/
-.texto_equipe li h4 {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 500;
-
-  font-family: "Roboto Flex", sans-serif;
-}
-
-/*personalizaÃ§Ã£o da descriÃ§Ã£o dos funcionarios*/
-.texto_equipe li h5 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300;
-  font-family: "Roboto Flex", sans-serif;
-}
-
-/*Velocidade de transiÃ§Ã£o e efeito aplicado na transiÃ§Ã£o de um funcionario e outro*/
-.texto_equipe .slick-slide {
+.carrosel_equipe .slick-slide {
   transform: scale(0.69);
   transition: all 0.4s ease-in-out;
   padding: 40px 0;
+    align-items: center;
+  margin: 0 45px;
 }
 
-/*deixa os funcionarios ao lado de um tamanho menor ao do centro*/
-.texto_equipe .slick-slide:not(.slick-center) {
-  transform: scale(0.6);
-  /* MantÃ©m o tamanho ao sair do centro */
+.carrosel_equipe div div div{
+  width: 255px !important;
 }
 
-/*Aplica o efeito de desfoque nos funcionarios que nÃ£o sÃ£o o foco do carrosel*/
-.texto_equipe li:not(.slick-center) h2,
-.texto_equipe li:not(.slick-center) h3,
-.texto_equipe li:not(.slick-center) h4,
-.texto_equipe li:not(.slick-center) h5 {
-  filter: blur(5px);
+.carrosel_equipe .slick-slide:not(.slick-center) img {
+  width: 259px;
+  height: 259px;
 }
 
-/*ConfiguraÃ§Ã£o das setas do carrosel*/
-.texto_equipe .slick-prev,
-.texto_equipe .slick-next {
-  display: none;
+.carrosel_equipe div img {
+  width: 354px;
+  height: 354px;
 }
 
-/*MARCO VE ISSO AQ Q EU N SEI N*/
-.texto_equipe .slick-slide img,
-h3,
-h4,
-h5 {
-  max-width: 100%;
-  transition: all 0.4s ease-in-out;
+/*personalização do cargo e idade dos funcionarios*/
+.carrosel_equipe div h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-/*Tira o efeito de desfoque do funcinario que estÃ¡ em destaque no carrosel*/
-.slick-center img {
-  transform: scale(1.4);
-  filter: blur(0px);
-  margin-bottom: 35px;
+.equipe div:nth-child(3) {
+  width: 27%;
+  background: darkblue;
 }
-
-.slick-center h3,
-h4,
-h5 {
-  /* Aumenta a imagem e o texto do meio */
-  filter: blur(0px);
-  /* Desfoque no texto do meio */
-}
-/*Fim Tira o efeito de desfoque do funcinario que estÃ¡ em destaque no carrosel*/
 
 /*|########| DEPOIMENTO |########| */
 
@@ -885,7 +870,9 @@ a sessÃ£o */
   margin-bottom: 207px;
 }
 
-.visita > div{margin-top: 303px;}
+.visita > div {
+  margin-top: 303px;
+}
 
 /*PersonalizaÃ§Ã£o do titulo*/
 .visita > div > h2 {
@@ -942,7 +929,7 @@ a sessÃ£o */
   display: flex;
 }
 
-.rodape div div div{
+.rodape div div div {
   width: 25%;
 }
 
@@ -971,8 +958,6 @@ a sessÃ£o */
   font-size: 2.5em;
 }
 
-
-
 /*Flex para que as redes sociais fiquem uma ao lado da outra*/
 .rodape div div div:nth-child(1) ul {
   display: flex;
@@ -996,7 +981,7 @@ a sessÃ£o */
   align-items: first baseline;
 }
 
-.rodape div div div:nth-child(2) h2{
+.rodape div div div:nth-child(2) h2 {
   font-size: 2.5em;
 }
 
@@ -1020,8 +1005,8 @@ a sessÃ£o */
   align-items: baseline;
 }
 
-.rodape div div div:nth-child(3) h2{
-font-size: 2.5em;
+.rodape div div div:nth-child(3) h2 {
+  font-size: 2.5em;
 }
 
 /*Distanciamento entre os h2 e os a */
@@ -1032,12 +1017,12 @@ font-size: 2.5em;
 /*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
   position: absolute;
-  top: 8785px;
+  top: 8554px;
   left: -2%;
   width: 1919px;
 }
 
-.rodape > div span  img{
+.rodape > div span img {
   width: 100%;
   height: 100%;
 }

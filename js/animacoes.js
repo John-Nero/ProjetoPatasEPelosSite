@@ -10,7 +10,8 @@ $(".banner").slick({
 $(".carrosel_categorias").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 601,
@@ -23,20 +24,11 @@ $(".carrosel_categorias").slick({
 });
 
 /*EQUIPE*/
-$(".texto_equipe").slick({
-  slide: "li",
+$(".carrosel_equipe").slick({
   centerMode: true,
-  centerPadding: "0",
   slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+ slidesToScroll: 1,
+ autoplay: false
 });
 
 /*DEPOIMENTO*/
@@ -64,6 +56,23 @@ $(".carrosel_depo_texto").slick({
   autoplay: false,
   autoplaySpeed: 2000,
   asNavFor: ".carrosel_depo_imagem"
+});
+
+$(".lista-com-imagens").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 
