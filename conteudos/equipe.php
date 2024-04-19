@@ -19,7 +19,7 @@
             </div>
             <div class="carrosel_equipe">
 
-                <div>
+                <div class="card_funcionario">
                     <img src="img/equipe/truskino.svg" alt="" />
                     <h2>Truskino</h2>
                     <h3>Mendes</h3>
@@ -27,7 +27,7 @@
                     <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
                 </div>
 
-                <div>
+                <div class="card_funcionario">
                     <img src="img/equipe/luxana.svg" alt="" />
                     <h2>Luxana</h2>
                     <h3>Silva</h3>
@@ -35,7 +35,7 @@
                     <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
                 </div>
 
-                <div>
+                <div class="card_funcionario">
                     <img src="img/equipe/daskina.svg" alt="" />
                     <h2>Daskina</h2>
                     <h3>Moto</h3>
@@ -43,7 +43,7 @@
                     <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
                 </div>
 
-                <div>
+                <div class="card_funcionario">
                     <img src="img/equipe/dany.svg" alt="" />
                     <h2>Daskina</h2>
                     <h3>Moto</h3>

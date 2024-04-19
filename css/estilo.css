@@ -356,18 +356,20 @@ a {
 
 /*|########| EQUIPE |########| */
 
-/*Circulos do lado esquerdo da sessão*/
+/*CIRCULOS DO LADO ESQUERDO*/
 .equipe {
   display: flex;
   margin-top: -108px;
   height: 1503px;
 }
 
+
+/*Tamanho da div em relação a sessão Equipe*/
 .equipe > div:nth-child(1) {
-  background: chocolate;
-  width: 30%;
+  width: 59%;
 }
 
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1),
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(3),
 .equipe span:nth-child(2) img {
@@ -376,6 +378,7 @@ a {
   background: #7fff00;
 }
 
+/*Tamanho de enfeites e Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) {
   width: 420px;
   height: 537px;
@@ -384,13 +387,17 @@ a {
   flex-direction: column;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span img {
   position: relative;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1) {
   left: 40%;
 }
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(2) {
   width: 362px;
   height: 362px;
@@ -399,42 +406,49 @@ a {
   z-index: 2;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(3) {
   top: -325px;
   left: 2%;
 }
 
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(2),
 .equipe div:nth-child(1) span:nth-child(2) img {
   display: flex;
   width: 121px;
   height: 121px;
 }
+
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(2) {
   position: relative;
   top: 15%;
   left: 23%;
 }
 
+
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3),
 .equipe div:nth-child(1) span:nth-child(3) img {
   display: flex;
   width: 235px;
   height: 235px;
 }
+
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3) {
   position: relative;
   top: 28%;
   left: 38%;
 }
 
-/*Conteudo central*/
+/*CONTEUDO DIV PRINCIPAL*/
 .equipe > div:nth-child(2) {
   width: 42%;
-  background: crimson;
 }
 
-.equipe div h2 {
+.equipe > div > h2 {
   margin-top: 19%;
   text-align: center;
 }
@@ -447,56 +461,62 @@ a {
 .equipe div:nth-child(2) div p:nth-child(3) {
   text-align: center;
   font-size: 2.5em;
-  background: bisque;
   width: 354px;
   margin-top: 10px;
   margin-left: 28%;
 }
 
-.carrosel_equipe{
-  height: 448px;
+/*Espacamento entre o carrosel e o texto acima*/
+.carrosel_equipe {
+  margin-top: 32px;
 }
 
-.carrosel_equipe .slick-slide:not(.slick-center) {
-  margin-top: 34px;
-  height: 448px;
-  filter: blur(5px);
-  transform: scale(0.6);
-
-  align-items: center;
-}
-
+/*Efeito aplicado ao passar um funcionario*/
 .carrosel_equipe .slick-slide {
-  transform: scale(0.69);
   transition: all 0.4s ease-in-out;
-  padding: 40px 0;
-    align-items: center;
-  margin: 0 45px;
 }
 
-.carrosel_equipe div div div{
-  width: 255px !important;
+/*deixa os funcionarios laterais menores em relacao ao central*/
+.carrosel_equipe .slick-slide:not(.slick-center) {
+  transform: scale(0.8);
 }
 
-.carrosel_equipe .slick-slide:not(.slick-center) img {
-  width: 259px;
-  height: 259px;
+/*Aplica o efeito de desfoque nos funcionarios laterais*/
+.carrosel_equipe .slick-slide:not(.slick-center) img,
+.carrosel_equipe .slick-slide:not(.slick-center) h2,
+.carrosel_equipe .slick-slide:not(.slick-center) h3,
+.carrosel_equipe .slick-slide:not(.slick-center) h4,
+.carrosel_equipe .slick-slide:not(.slick-center) p {
+  filter: blur(5px);
+  margin-left: 10px;
 }
 
-.carrosel_equipe div img {
-  width: 354px;
-  height: 354px;
+/*Configuracao das setas do carrosel*/
+.carrosel_equipe .slick-prev,
+.carrosel_equipe .slick-next {
+  display: none !important;
 }
 
-/*personalização do cargo e idade dos funcionarios*/
-.carrosel_equipe div h4 {
-  font-size: 20px;
-  font-weight: 500;
+/*Alinha o texto dos funcionarios ao centro do card*/
+.card_funcionario {
+  text-align: center;
 }
 
-.equipe div:nth-child(3) {
-  width: 27%;
-  background: darkblue;
+/*Margem do primeiro nome do funcionario*/
+.card_funcionario h2 {
+  margin-top: 10px;
+}
+
+/*Tamanho do nome e sobre nome*/
+.card_funcionario h2,
+.card_funcionario h3 {
+  font-size: 2.5em;
+}
+
+/*Tamanho do texto e margem da especialidade*/
+.card_funcionario h4 {
+  margin: 10px 0 13px 0px;
+  font-size: 2.2em;
 }
 
 /*|########| DEPOIMENTO |########| */
@@ -785,7 +805,6 @@ div:nth-child(1) > h3 {
 /*Seta as imagens da setas do carrosel para a padrÃ£o do site*/
 .carrosel_depo_texto .slick-prev {
   left: -32px;
-  background: chartreuse;
   background: url(../img/seta_circulo_direita.svg);
 }
 

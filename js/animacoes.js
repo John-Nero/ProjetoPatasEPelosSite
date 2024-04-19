@@ -3,7 +3,7 @@ $(".banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000
+  autoplaySpeed: 2000,
 });
 
 /*CATEGORIAS*/
@@ -17,18 +17,20 @@ $(".carrosel_categorias").slick({
       breakpoint: 601,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 /*EQUIPE*/
 $(".carrosel_equipe").slick({
+  slide: "div",
   centerMode: true,
+  centerPadding: "0",
   slidesToShow: 3,
- slidesToScroll: 1,
- autoplay: false
+  slidesToScroll: 1,
+  autoplay: false,
 });
 
 /*DEPOIMENTO*/
@@ -44,7 +46,7 @@ $(".carrosel_depo_imagem").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_texto"
+  asNavFor: ".carrosel_depo_texto",
 });
 
 /*Para os dois girarem juntos a gente ta chamando o asNavFor fazendo referencia um do outro em cada configuração*/
@@ -55,7 +57,7 @@ $(".carrosel_depo_texto").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_imagem"
+  asNavFor: ".carrosel_depo_imagem",
 });
 
 $(".lista-com-imagens").slick({
@@ -69,10 +71,8 @@ $(".lista-com-imagens").slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
-
-
