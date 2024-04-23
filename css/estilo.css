@@ -24,6 +24,15 @@ a {
   text-decoration: none;
 }
 
+/*Bloqueia a seleção das imagens do site*/
+img {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  user-select: none;
+}
+
 /*|########| FONTE PERSONALIZADA |########|*/
 
 .titulo_roxo {
@@ -363,19 +372,16 @@ a {
   height: 1503px;
 }
 
-
-/*Tamanho da div em relação a sessão Equipe*/
+/*Tamanho da div em relacao a sessao Equipe*/
 .equipe > div:nth-child(1) {
   width: 59%;
 }
 
 /*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1),
-.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3),
-.equipe span:nth-child(2) img {
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3) {
   width: 235px;
   height: 235px;
-  background: #7fff00;
 }
 
 /*Tamanho de enfeites e Posicionamento de enfeites*/
@@ -423,10 +429,9 @@ a {
 /*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(2) {
   position: relative;
-  top: 15%;
+  top: 5%;
   left: 23%;
 }
-
 
 /*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3),
@@ -439,25 +444,28 @@ a {
 /*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3) {
   position: relative;
-  top: 28%;
+  top: 11%;
   left: 38%;
 }
 
 /*CONTEUDO DIV PRINCIPAL*/
+.equipe h2 {
+  text-align: center;
+}
+
+/*Tamanho maximo da div*/
 .equipe > div:nth-child(2) {
   width: 42%;
 }
 
+/*Posicionamento do Titulo*/
 .equipe > div > h2 {
   margin-top: 19%;
   text-align: center;
 }
 
-.equipe div:nth-child(2) div p {
-  text-align: center;
-  font-size: 2.5em;
-}
 
+/*Posicionamento do paragrafo*/
 .equipe div:nth-child(2) div p:nth-child(3) {
   text-align: center;
   font-size: 2.5em;
@@ -519,6 +527,111 @@ a {
   font-size: 2.2em;
 }
 
+/*CIRCULOS DO LADO DIREITO*/
+
+/*Tamanho maximo da div*/
+.equipe > div:nth-child(3) {
+  width: 50%;
+}
+
+/*Flex para todos os elementos internos*/
+.equipe > div:nth-child(3) > span {
+  display: flex;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) {
+  margin-left: 77px;
+  width: 304px;
+  height: 318px;
+}
+
+/*Tamanho de enfeites e relative para todos os elementos*/
+.equipe > div:nth-child(3) > span:nth-child(1) img {
+  width: 121px;
+  height: 121px;
+  position: relative;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(1) {
+  left: 26px;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(2) {
+  left: 20%;
+  bottom: -96px;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(3) {
+  right: 79%;
+  top: 198px;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) {
+  width: 251px;
+  height: 307px;
+  margin-left: 43%;
+}
+
+/*relative para todos os elementos internos*/
+.equipe > div:nth-child(3) > span:nth-child(2) img {
+  position: relative;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) img:nth-child(1) {
+  width: 235px;
+  height: 235px;
+  left: 6%;
+  z-index: 2;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) img:nth-child(2) {
+  width: 121px;
+  right: 235px;
+  top: 94px;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) {
+  width: 618px;
+  height: 500px;
+  right: 25%;
+  bottom: -1%;
+  position: relative;
+}
+
+/*relative para todos os elementos internos*/
+.equipe > div:nth-child(3) > span:nth-child(3) img {
+  position: relative;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(1) {
+  width: 258px;
+  height: 258px;
+  top: 49%;
+}
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(2) {
+  width: 397px;
+  height: 397px;
+  right: 22%;
+  top: 17%;
+  z-index: 2;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(3) {
+  width: 258px;
+  height: 258px;
+  right: 48%;
+}
 /*|########| DEPOIMENTO |########| */
 
 /*Sobe a sessÃ£o para ter uma integraÃ§Ã£o melhor com a anterior*/
