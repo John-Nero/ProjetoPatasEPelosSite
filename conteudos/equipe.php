@@ -7,7 +7,7 @@
                 <img src="img\enfeites\esfera_roxo.svg" alt="">
                 <img src="img\enfeites\esfera_laranja.svg" alt="">
             </span>
-            <span> <img src="img\enfeites\esfera_roxo.svg" alt=""></span>
+            <span><img src="img\enfeites\esfera_roxo.svg" alt=""></span>
             <span><img src="img\enfeites\esfera_laranja.svg" alt=""></span>
         </div>
 
@@ -52,6 +52,10 @@
                 </div>
 
             </div>
+
+            <span><img src="img\enfeites\estrela_roxa.svg" alt=""></span>
+            <span><img src="img\enfeites\estrela_roxa.svg" alt=""></span>
+            
         </div>
 
         <div>
@@ -69,6 +73,7 @@
                 <img src="img\enfeites\esfera_roxo.svg" alt="">
                 <img src="img\enfeites\esfera_laranja.svg" alt="">
             </span>
+            <span><img src="img\enfeites\estrela_laranja.svg" alt=""></span>
         </div>
 
     </div>

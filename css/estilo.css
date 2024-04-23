@@ -369,7 +369,7 @@ img {
 .equipe {
   display: flex;
   margin-top: -108px;
-  height: 1503px;
+  height: 1037px;
 }
 
 /*Tamanho da div em relacao a sessao Equipe*/
@@ -464,7 +464,6 @@ img {
   text-align: center;
 }
 
-
 /*Posicionamento do paragrafo*/
 .equipe div:nth-child(2) div p:nth-child(3) {
   text-align: center;
@@ -525,6 +524,25 @@ img {
 .card_funcionario h4 {
   margin: 10px 0 13px 0px;
   font-size: 2.2em;
+}
+
+.equipe > div:nth-child(2) > span {
+  display: flex;
+  position: relative;
+}
+
+.equipe > div:nth-child(2) > span:nth-child(3) {
+  width: 81px;
+  left: 63%;
+  top: 119px;
+  background: #ff9a5b;
+}
+
+.equipe > div:nth-child(2) > span:nth-child(4) {
+  width: 81px;
+  left: -5%;
+  top: 201px;
+  background: aqua;
 }
 
 /*CIRCULOS DO LADO DIREITO*/
@@ -632,6 +650,15 @@ img {
   height: 258px;
   right: 48%;
 }
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(4) {
+  position: relative;
+  left: 57%;
+  bottom: 60px;
+  width: 40px;
+}
+
 /*|########| DEPOIMENTO |########| */
 
 /*Sobe a sessÃ£o para ter uma integraÃ§Ã£o melhor com a anterior*/
