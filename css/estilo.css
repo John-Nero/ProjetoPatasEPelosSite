@@ -549,7 +549,7 @@ img {
 .equipe > div:nth-child(2) > span:nth-child(4) {
   width: 81px;
   left: -3%;
-  top: 201px;
+  top: 98px;
 }
 
 /*CIRCULOS DO LADO DIREITO*/
@@ -993,13 +993,13 @@ div:nth-child(1) > h3 {
 /*FIM Detalhes abaixo do depoimento*/
 
 /*|########| VENHA NOS VISITAR |########| */
+/*|########| VENHA NOS VISITAR |########| */
 
 /*Flex para a imagem do mapa ficar ao lado do texto e negativaÃ§Ã£o do margin top para subir
 a sessÃ£o */
 .visita {
   display: flex;
-  /* margin-top: 250px; */
-}
+  margin-bottom: -144px;
 
 /*Margin para o rodapÃ© nÃ£o ficar colado a sessÃ£o*/
 .visita > img {
@@ -1007,13 +1007,16 @@ a sessÃ£o */
 }
 
 .visita > div {
-  margin-top: 303px;
+  margin-top: -43px;
+  margin-left: -248px;
+  margin-right: 71px;
 }
 
 /*PersonalizaÃ§Ã£o do titulo*/
 .visita > div > h2 {
-  margin: 31% 22px 0 0;
-  text-align: end;
+  margin: 32% 0 0 124px;
+  text-align: center;
+  font-size: 9.5em;
 }
 
 /*PersonalizaÃ§Ã£o do paragrafo*/
@@ -1022,8 +1025,9 @@ a sessÃ£o */
   color: #000;
   font-size: 30px;
   margin-top: 32px;
-  margin-right: 22px;
-  text-align: end;
+  font-size: 4.5em;
+  margin-left: 211px;
+  text-align: center;
 }
 
 /*ajuste das redes sociais*/
@@ -1031,7 +1035,7 @@ a sessÃ£o */
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
-  margin-right: 21px;
+  margin-right: 169px;
 }
 
 /*EspaÃ§amento interno das redes sociais*/
@@ -1039,11 +1043,18 @@ a sessÃ£o */
   margin-left: 10px;
 }
 
+.visita ul li a img {
+  width: 110px;
+  height: 110px;
+}
+
 .visita div div h2 {
   color: #a38cd6;
-  font-size: 4.6em;
-  text-align: end;
-  margin-right: 22px;
+  font-size: 5.6em;
+  text-align: center;
+  /* margin-right: 0px; */
+  width: 561px;
+  margin-left: 237px;
 }
 
 /*|########| RODAPÃ‰ |########| */
@@ -1153,7 +1164,7 @@ a sessÃ£o */
 /*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
   position: absolute;
-  top: 8554px;
+  top: 6635px;
   left: -2%;
   width: 1919px;
 }
