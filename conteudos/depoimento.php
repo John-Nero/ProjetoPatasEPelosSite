@@ -3,23 +3,21 @@
 
           <!--Detalhes do topo da sessão-->
           <div class="depo_topo">
-            <span><img src="img/enfeites/estrela_roxa.svg" alt="" /> </span>
-            <span><img src="img/enfeites/conjunto_esferas.svg" alt="" /> </span>
-            <span><img src="img/enfeites/estrela_roxa.svg" alt="" /> </span>
-            <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span>
+           
             <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span>
             <span><img src="img/enfeites/estrela_laranja.svg " alt="" /> </span>
-            <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span>
+            <span><img src="img/enfeites/estrela_laranja.svg" alt="" /> </span> 
+            <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
           </div>
 
           <div class="depo_principal">
             <!--Detalhes centrais e imagem do carrosel-->
             <div>
-              <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+             
               <span>
                 <img src="img/enfeites/esfera_laranja.svg" alt="" />
-                <img src="img/enfeites/Colar.svg" alt=""
-              /></span>
+                <img src="img/enfeites/Colar.svg" alt=""/>
+              </span>
               <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
               <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
 
