@@ -1,6 +1,6 @@
 /* define as regras da animação */
 
-h2.animate__animated {
+.fundo_site h2.animate__animated {
     animation-duration: 1s; /* Altera a duração da animação para 2 segundos */
     animation-fill-mode: both; /* Garante que a animação mantenha o estado final após a conclusão */
 }

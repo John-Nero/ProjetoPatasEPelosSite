@@ -2,9 +2,9 @@
   <div class="categorias">
     <!--Estrelas acima das categorias-->
     <div>
-      <span><img class="wow animate__animated animate__fadeInDownBig" src="img/enfeites/estrela_roxa.svg" alt="" /></span>
-      <span><img class= "wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
-      <h2 class="titulo_roxo wow animate__animated animate__flipInX ">Categorias</h2>
+      <span><img class="wow animate__animated animate__fadeInDownBig" data-wow-delay:="3s" src="img/enfeites/estrela_roxa.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="8s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
+      <h2 class="titulo_roxo wow animate__animated animate__flipInX " data-wow-delay:="12s">Categorias</h2>
     </div>
 
     <!--categorias rotativas--->
@@ -55,8 +55,8 @@
 
     <!--Estrelas abaixo das categorias-->
     <div>
-      <span><img class= "wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
-      <span><img class="wow animate__animated animate__fadeInDownBig" src="img/enfeites/estrela_roxa.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeInDownBig" data-wow-delay:="14s" src="img/enfeites/estrela_roxa.svg" alt="" /></span>
     </div>
   </div>
 </section>

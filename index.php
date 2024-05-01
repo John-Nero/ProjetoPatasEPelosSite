@@ -53,7 +53,7 @@
       <!-- FIM TOSA E BANHO -->
 
       <!-- SOBRE NOS -->
-      <?php include_once 'conteudos/sobre_conteudo.php'?>
+      <?php include_once 'conteudos/sobre_nos.php'?>
       <!-- FIM SOBRE NOS -->
 
       <!--EQUIPE-->

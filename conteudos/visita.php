@@ -5,7 +5,7 @@
 
     <div>
       <h2 class="titulo_roxo wow animate__animated animate__flipInX ">Venha nos visitar</h2>
-      <p class="wow animate__animated animate__fadeIn">Endereço: R. São Miguel Paulista, n:200</p>
+      <p class="wow animate__animated animate__fadeIn" data-wow-delay:="5s" >Endereço: R. São Miguel Paulista, n:200</p>
       <div>
         <ul>
           <li>

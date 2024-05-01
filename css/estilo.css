@@ -741,7 +741,8 @@ img {
 }
 
 .depo_principal > div:nth-child(1) {
-  width: 85%;
+  width: 83%;
+  margin-left: 20px;
 }
 .depo_principal div:nth-child(1) span:nth-child(1) {
   bottom: 370px;
@@ -992,7 +993,6 @@ div:nth-child(1) > h3 {
 }
 /*FIM Detalhes abaixo do depoimento*/
 
-/*|########| VENHA NOS VISITAR |########| */
 /*|########| VENHA NOS VISITAR |########| */
 
 /*Flex para a imagem do mapa ficar ao lado do texto e negativaÃ§Ã£o do margin top para subir
