@@ -13,9 +13,9 @@
 
         <div>
             <div>
-                <h2 class="titulo_roxo">Conheça a nossa Equipe! </h2>
-                <p>Conheça a equipe “Patas e Pelos”, as pessoas responsaveis por dar muito amor para o seu pet.</p>
-                <p>Uma equipe de profissionais preparados.</p>
+                <h2 class="titulo_roxo wow animate__animated animate__flipInX">Conheça a nossa Equipe! </h2>
+                <p class="wow animate__animated animate__fadeIn">Conheça a equipe “Patas e Pelos”, as pessoas responsaveis por dar muito amor para o seu pet.</p>
+                <p class="wow animate__animated animate__fadeIn">Uma equipe de profissionais preparados.</p>
             </div>
             <div class="carrosel_equipe">
 
@@ -53,16 +53,16 @@
 
             </div>
 
-            <span><img src="img\enfeites\estrela_roxa.svg" alt=""></span>
-            <span><img src="img\enfeites\estrela_roxa.svg" alt=""></span>
-            
+            <span><img class="wow animate__animated animate__fadeInDownBig" src="img\enfeites\estrela_roxa.svg" alt=""></span>
+            <span><img class="wow animate__animated animate__fadeInDownBig" src="img\enfeites\estrela_roxa.svg" alt=""></span>
+
         </div>
 
         <div>
             <span>
-                <img src="img\enfeites\esfera_roxo.svg" alt="">
-                <img src="img\enfeites\esfera_roxo.svg" alt="">
-                <img src="img\enfeites\esfera_roxo.svg" alt="">
+                <img class="" src="img\enfeites\esfera_roxo.svg" alt="">
+                <img class="" src="img\enfeites\esfera_roxo.svg" alt="">
+                <img class="" src="img\enfeites\esfera_roxo.svg" alt="">
             </span>
             <span>
                 <img src="img\enfeites\esfera_laranja.svg" alt="">
