@@ -389,7 +389,7 @@ img {
   width: 420px;
   height: 537px;
   display: flex;
-  margin-left: 17%;
+  margin-left: 7%;
   flex-direction: column;
 }
 
@@ -791,8 +791,8 @@ img {
 }
 
 .depo_principal div:nth-child(1) span:nth-child(5) {
-  bottom: 538px;
-  left: 11%;
+  bottom: 552px;
+  left: 18%;
   width: 258px;
   height: 258px;
 }
