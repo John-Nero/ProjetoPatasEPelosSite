@@ -20,9 +20,13 @@
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!--ANIMATE STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Aponta para o arquivo de estilo-->
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/mobile.css" />
+    
   </head>
 
   <body>
@@ -49,7 +53,7 @@
       <!-- FIM TOSA E BANHO -->
 
       <!-- SOBRE NOS -->
-      <?php include_once 'conteudos/sobre_conteudo.php'?>
+      <?php include_once 'conteudos/sobre_nos.php'?>
       <!-- FIM SOBRE NOS -->
 
       <!--EQUIPE-->
@@ -75,6 +79,15 @@
 
     <!--Slick para animações-->
     <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+     <!--WOW-->
+     <script src="js/wow.min.js"></script>
+     <script>
+              new WOW().init();
+              </script>
+    
+
 
     <!--arquivo de configuração das animações-->
     <script src="js/animacoes.js"></script>

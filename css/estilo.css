@@ -24,6 +24,15 @@ a {
   text-decoration: none;
 }
 
+/*Bloqueia a seleção das imagens do site*/
+img {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  user-select: none;
+}
+
 /*|########| FONTE PERSONALIZADA |########|*/
 
 .titulo_roxo {
@@ -356,41 +365,45 @@ a {
 
 /*|########| EQUIPE |########| */
 
-/*Circulos do lado esquerdo da sessão*/
+/*CIRCULOS DO LADO ESQUERDO*/
 .equipe {
   display: flex;
   margin-top: -108px;
-  height: 1503px;
+  height: 1037px;
 }
 
+/*Tamanho da div em relacao a sessao Equipe*/
 .equipe > div:nth-child(1) {
-  background: chocolate;
-  width: 30%;
+  width: 59%;
 }
 
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1),
-.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3),
-.equipe span:nth-child(2) img {
+.equipe div:nth-child(1) span:nth-child(1) img:nth-child(3) {
   width: 235px;
   height: 235px;
-  background: #7fff00;
 }
 
+/*Tamanho de enfeites e Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) {
   width: 420px;
   height: 537px;
   display: flex;
-  margin-left: 17%;
+  margin-left: 7%;
   flex-direction: column;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span img {
   position: relative;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(1) {
   left: 40%;
 }
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(2) {
   width: 362px;
   height: 362px;
@@ -399,105 +412,262 @@ a {
   z-index: 2;
 }
 
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(1) img:nth-child(3) {
   top: -325px;
   left: 2%;
 }
 
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(2),
 .equipe div:nth-child(1) span:nth-child(2) img {
   display: flex;
   width: 121px;
   height: 121px;
 }
+
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(2) {
   position: relative;
-  top: 15%;
+  top: 5%;
   left: 23%;
 }
 
+/*Tamanho de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3),
 .equipe div:nth-child(1) span:nth-child(3) img {
   display: flex;
   width: 235px;
   height: 235px;
 }
+
+/*Posicionamento de enfeites*/
 .equipe div:nth-child(1) span:nth-child(3) {
   position: relative;
-  top: 28%;
+  top: 11%;
   left: 38%;
 }
 
-/*Conteudo central*/
-.equipe > div:nth-child(2) {
-  width: 42%;
-  background: crimson;
+/*CONTEUDO DIV PRINCIPAL*/
+.equipe h2 {
+  text-align: center;
 }
 
-.equipe div h2 {
+/*Tamanho maximo da div*/
+.equipe > div:nth-child(2) {
+  width: 42%;
+}
+
+/*Posicionamento do Titulo*/
+.equipe > div > h2 {
   margin-top: 19%;
   text-align: center;
 }
-
-.equipe div:nth-child(2) div p {
+.equipe div:nth-child(2) div p:nth-child(2) {
   text-align: center;
   font-size: 2.5em;
+  margin-top: 25px;
 }
 
+/*Posicionamento do paragrafo*/
 .equipe div:nth-child(2) div p:nth-child(3) {
   text-align: center;
   font-size: 2.5em;
-  background: bisque;
   width: 354px;
   margin-top: 10px;
   margin-left: 28%;
 }
 
-.carrosel_equipe{
-  height: 448px;
+/*Espacamento entre o carrosel e o texto acima*/
+.carrosel_equipe {
+  margin-top: 32px;
 }
 
-.carrosel_equipe .slick-slide:not(.slick-center) {
-  margin-top: 34px;
-  height: 448px;
-  filter: blur(5px);
-  transform: scale(0.6);
-
-  align-items: center;
-}
-
+/*Efeito aplicado ao passar um funcionario*/
 .carrosel_equipe .slick-slide {
-  transform: scale(0.69);
   transition: all 0.4s ease-in-out;
-  padding: 40px 0;
-    align-items: center;
-  margin: 0 45px;
 }
 
-.carrosel_equipe div div div{
-  width: 255px !important;
+/*deixa os funcionarios laterais menores em relacao ao central*/
+.carrosel_equipe .slick-slide:not(.slick-center) {
+  transform: scale(0.8);
 }
 
-.carrosel_equipe .slick-slide:not(.slick-center) img {
-  width: 259px;
-  height: 259px;
+/*Aplica o efeito de desfoque nos funcionarios laterais*/
+.carrosel_equipe .slick-slide:not(.slick-center) img,
+.carrosel_equipe .slick-slide:not(.slick-center) h2,
+.carrosel_equipe .slick-slide:not(.slick-center) h3,
+.carrosel_equipe .slick-slide:not(.slick-center) h4,
+.carrosel_equipe .slick-slide:not(.slick-center) p {
+  filter: blur(5px);
+  margin-left: 10px;
 }
 
-.carrosel_equipe div img {
-  width: 354px;
-  height: 354px;
+/*Configuracao das setas do carrosel*/
+.carrosel_equipe .slick-prev,
+.carrosel_equipe .slick-next {
+  display: none !important;
 }
 
-/*personalização do cargo e idade dos funcionarios*/
-.carrosel_equipe div h4 {
-  font-size: 20px;
-  font-weight: 500;
+/*Alinha o texto dos funcionarios ao centro do card*/
+.card_funcionario {
+  text-align: center;
 }
 
-.equipe div:nth-child(3) {
-  width: 27%;
-  background: darkblue;
+/*Margem do primeiro nome do funcionario*/
+.card_funcionario h2 {
+  margin-top: 10px;
 }
+
+/*Tamanho do nome e sobre nome*/
+.card_funcionario h2,
+.card_funcionario h3 {
+  font-size: 2.5em;
+}
+
+/*Tamanho do texto e margem da especialidade*/
+.card_funcionario h4 {
+  margin: 10px 0 8px 0px;
+  font-size: 2.2em;
+}
+
+.card_funcionario p {
+  font-size: 2.2em;
+}
+
+.equipe > div:nth-child(2) > span {
+  display: flex;
+  position: relative;
+}
+
+.equipe > div:nth-child(2) > span:nth-child(3) {
+  width: 81px;
+  left: 63%;
+  top: 119px;
+}
+
+.equipe > div:nth-child(2) > span:nth-child(4) {
+  width: 81px;
+  left: -3%;
+  top: 98px;
+}
+
+/*CIRCULOS DO LADO DIREITO*/
+
+/*Tamanho maximo da div*/
+.equipe > div:nth-child(3) {
+  width: 50%;
+}
+
+/*Flex para todos os elementos internos*/
+.equipe > div:nth-child(3) > span {
+  display: flex;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) {
+  margin-left: 77px;
+  width: 304px;
+  height: 318px;
+}
+
+/*Tamanho de enfeites e relative para todos os elementos*/
+.equipe > div:nth-child(3) > span:nth-child(1) img {
+  width: 121px;
+  height: 121px;
+  position: relative;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(1) {
+  left: 26px;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(2) {
+  left: 20%;
+  bottom: -96px;
+}
+
+/*Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(1) img:nth-child(3) {
+  right: 79%;
+  top: 198px;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) {
+  width: 251px;
+  height: 307px;
+  margin-left: 43%;
+}
+
+/*relative para todos os elementos internos*/
+.equipe > div:nth-child(3) > span:nth-child(2) img {
+  position: relative;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) img:nth-child(1) {
+  width: 235px;
+  height: 235px;
+  left: 6%;
+  z-index: 2;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(2) img:nth-child(2) {
+  width: 121px;
+  right: 235px;
+  top: 94px;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) {
+  width: 618px;
+  height: 500px;
+  right: 25%;
+  bottom: -1%;
+  position: relative;
+}
+
+/*relative para todos os elementos internos*/
+.equipe > div:nth-child(3) > span:nth-child(3) img {
+  position: relative;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(1) {
+  width: 258px;
+  height: 258px;
+  top: 49%;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(2) {
+  width: 397px;
+  height: 397px;
+  right: 22%;
+  top: 17%;
+  z-index: 2;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(3) img:nth-child(3) {
+  width: 258px;
+  height: 258px;
+  right: 48%;
+}
+
+/*Tamanho de enfeites e Posicionamento de enfeites*/
+.equipe > div:nth-child(3) > span:nth-child(4) {
+  position: relative;
+  left: 57%;
+  bottom: 60px;
+  width: 40px;
+}
+
+/*|########| DEPOIMENTO |########| */
 
 /*|########| DEPOIMENTO |########| */
 
@@ -512,6 +682,7 @@ a {
 .depo_topo {
   display: flex;
   position: relative;
+  height: 170px;
 }
 
 /*ConfiguraÃ§Ã£o dos locais de cada img/span do topo*/
@@ -521,60 +692,37 @@ a {
 
 .depo_topo span:nth-child(1) {
   position: relative;
-  width: 80px;
-  height: 80px;
-  bottom: 224px;
-  left: 62%;
+  width: 37px;
+  height: 37px;
+  top: 17px;
+  left: 4%;
 }
 
 .depo_topo span:nth-child(2) {
   position: relative;
-  width: 447px;
-  height: 315px;
-  bottom: 291px;
-  left: 53%;
+  width: 37px;
+  height: 37px;
+  top: 112px;
+  left: 9%;
 }
 
 .depo_topo span:nth-child(3) {
+  width: 37px;
+  height: 37px;
   position: relative;
-  width: 80px;
-  height: 80px;
-  bottom: 85px;
-  left: 7%;
+  top: 12px;
+  left: 26%;
 }
-
 .depo_topo span:nth-child(4) {
-  position: relative;
-  width: 39px;
-  height: 34px;
-  bottom: -9px;
-  left: 61%;
+  width: 132px;
+  height: 132px;
+  left: 10%;
 }
 
-.depo_topo span:nth-child(5) {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  bottom: -42px;
-  left: -29%;
+.depo_topo span:nth-child(4) img {
+  width: 132px;
+  height: 132px;
 }
-
-.depo_topo span:nth-child(6) {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  bottom: 1px;
-  left: 5%;
-}
-
-.depo_topo span:nth-child(7) {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  bottom: -114px;
-  left: -29%;
-}
-
 /* FIM ConfiguraÃ§Ã£o dos locais de cada img/span do topo*/
 
 /*DIV PRINCIPAL*/
@@ -584,6 +732,7 @@ a {
 .depo_principal {
   display: flex;
   align-items: center;
+  width: 1826px;
 }
 
 .depo_principal div span {
@@ -591,40 +740,37 @@ a {
   display: inline-flex;
 }
 
+.depo_principal > div:nth-child(1) {
+  width: 83%;
+  margin-left: 20px;
+}
 .depo_principal div:nth-child(1) span:nth-child(1) {
-  bottom: 659px;
-  width: 147px;
-  left: 29%;
-  height: 147px;
+  bottom: 370px;
+  left: 40%;
+  width: 196px;
+  height: 196px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(2) {
+  position: relative;
+  left: -190px;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(2) {
-  bottom: 497px;
-  left: 45%;
-  width: 218px;
-  height: 218px;
-}
-
-.depo_principal div:nth-child(1) span:nth-child(2) img:nth-child(2) {
-  position: relative;
-  left: -207px;
+  display: inline-flex;
+  width: 89px;
+  height: 89px;
+  bottom: 395px;
+  left: 61%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(3) {
   display: inline-flex;
-  width: 99px;
-  height: 99px;
-  bottom: 445px;
-  left: 63%;
-}
-
-.depo_principal div:nth-child(1) span:nth-child(4) {
-  display: inline-flex;
-  width: 507px;
-  height: 507px;
+  width: 455px;
+  height: 455px;
   position: relative;
-  bottom: 105px;
-  left: -44%;
+  bottom: -16px;
+  left: -26%;
 }
 /*FIM ConfiguraÃ§Ã£o dos locais de cada img/span do centro*/
 
@@ -637,40 +783,39 @@ a {
 
 /*configura o local onde o carrosel de imagem deve ficar e tambem diz o tamanho que ele deve ser*/
 .carrosel_depo_imagem {
-  width: 823px;
-  height: 823px;
-  bottom: 539px;
-  left: 28%;
+  width: 739px;
+  height: 739px;
+  bottom: 415px;
+  left: 15%;
   z-index: 1;
 }
 
-/*ConfiguraÃ§Ã£o dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 .depo_principal div:nth-child(1) span:nth-child(5) {
-  bottom: 0;
-  left: -0%;
+  bottom: 552px;
+  left: 18%;
+  width: 258px;
+  height: 258px;
 }
 
-.depo_principal div:nth-child(1) span:nth-child(6) {
-  bottom: 742px;
-  left: 24%;
-  width: 287px;
-  height: 287px;
-}
-
-.depo_principal div:nth-child(1) span:nth-child(6) img:nth-child(2) {
+.depo_principal div:nth-child(1) span:nth-child(5) img:nth-child(2) {
   position: relative;
   bottom: -17px;
   left: -100%;
 }
 
+.depo_principal div:nth-child(1) span:nth-child(6) {
+  bottom: 654px;
+  left: 54%;
+}
+
 .depo_principal div:nth-child(1) span:nth-child(7) {
-  bottom: 814px;
-  left: 28%;
+  bottom: 637px;
+  left: 22%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(8) {
-  bottom: 883px;
-  left: 69%;
+  bottom: 517px;
+  left: 6%;
 }
 
 .depo_principal div:nth-child(1) span:nth-child(9) {
@@ -681,11 +826,12 @@ a {
 .depo_principal div:nth-child(2) div:nth-child(1) > h2,
 div:nth-child(1) > h3 {
   text-align: center !important;
-  margin-left: 16%;
+  /* margin-left: 0%; */
 }
 
 .depo_principal div:nth-child(2) div:nth-child(1) > h3 {
   margin-top: 10px;
+  margin-left: 4%;
 }
 /*FIM ConfiguraÃ§Ã£o dos locais de cada img/span do centro abaixo do do carrosel de imagem*/
 
@@ -729,11 +875,6 @@ div:nth-child(1) > h3 {
 /*Alinha o nome do dono*/
 .carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
-}
-/*Alinha a div geral onde o carrosel estÃ¡*/
-.depo_principal > div:nth-child(2) {
-  position: relative;
-  bottom: 248px;
 }
 
 /*alinahmento e tamanho do nome do dono do pet*/
@@ -785,7 +926,6 @@ div:nth-child(1) > h3 {
 /*Seta as imagens da setas do carrosel para a padrÃ£o do site*/
 .carrosel_depo_texto .slick-prev {
   left: -32px;
-  background: chartreuse;
   background: url(../img/seta_circulo_direita.svg);
 }
 
@@ -799,8 +939,9 @@ div:nth-child(1) > h3 {
 .carrosel_depo_texto {
   position: relative;
   height: 335px;
-  left: 33%;
-  margin-top: 149px;
+  left: 17%;
+  margin-top: 92px;
+  width: 480px;
 }
 
 /*Alinha o nome do pet e seta o tamanho do mesmo*/
@@ -816,7 +957,8 @@ div:nth-child(1) > h3 {
 /*Alinha a div geral onde o carrosel estÃ¡*/
 .depo_principal > div:nth-child(2) {
   position: relative;
-  bottom: 375px;
+  bottom: 217px;
+  width: 50%;
 }
 
 /*alinahmento e tamanho do nome do dono do pet*/
@@ -839,20 +981,20 @@ div:nth-child(1) > h3 {
 /*PersonalizaÃ§Ã£o e alinhamento do paragrafo de depoimento*/
 .carrosel_depo_texto div:nth-child(2) div p {
   font-size: 3.5em;
-  margin: 0px 20px;
+  margin: 0px 17px;
 }
 
 /*Detalhes abaixo do depoimento*/
 .depo_principal div:nth-child(3) span:nth-child(1) {
-  left: 15%;
-  bottom: 621px;
+  left: -23%;
+  bottom: 846px;
 }
 
 .depo_principal div:nth-child(3) span:nth-child(2) {
-  bottom: -112px;
-  left: 20%;
-  width: 588px;
-  height: 480px;
+  top: 47px;
+  left: -13%;
+  width: 528px;
+  height: 413px;
 }
 /*FIM Detalhes abaixo do depoimento*/
 
@@ -862,22 +1004,24 @@ div:nth-child(1) > h3 {
 a sessÃ£o */
 .visita {
   display: flex;
-  /* margin-top: 250px; */
+  margin-bottom: -144px;
 }
-
 /*Margin para o rodapÃ© nÃ£o ficar colado a sessÃ£o*/
 .visita > img {
   margin-bottom: 207px;
 }
 
 .visita > div {
-  margin-top: 303px;
+  margin-top: -43px;
+  margin-left: -248px;
+  margin-right: 71px;
 }
 
 /*PersonalizaÃ§Ã£o do titulo*/
 .visita > div > h2 {
-  margin: 31% 22px 0 0;
-  text-align: end;
+  margin: 32% 0 0 124px;
+  text-align: center;
+  font-size: 9.5em;
 }
 
 /*PersonalizaÃ§Ã£o do paragrafo*/
@@ -886,8 +1030,9 @@ a sessÃ£o */
   color: #000;
   font-size: 30px;
   margin-top: 32px;
-  margin-right: 22px;
-  text-align: end;
+  font-size: 4.5em;
+  margin-left: 211px;
+  text-align: center;
 }
 
 /*ajuste das redes sociais*/
@@ -895,7 +1040,7 @@ a sessÃ£o */
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
-  margin-right: 21px;
+  margin-right: 169px;
 }
 
 /*EspaÃ§amento interno das redes sociais*/
@@ -903,11 +1048,18 @@ a sessÃ£o */
   margin-left: 10px;
 }
 
+.visita ul li a img {
+  width: 110px;
+  height: 110px;
+}
+
 .visita div div h2 {
   color: #a38cd6;
-  font-size: 4.6em;
-  text-align: end;
-  margin-right: 22px;
+  font-size: 5.6em;
+  text-align: center;
+  /* margin-right: 0px; */
+  width: 561px;
+  margin-left: 237px;
 }
 
 /*|########| RODAPÃ‰ |########| */
@@ -1017,7 +1169,7 @@ a sessÃ£o */
 /*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
   position: absolute;
-  top: 8554px;
+  top: 6635px;
   left: -2%;
   width: 1919px;
 }

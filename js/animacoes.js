@@ -25,10 +25,12 @@ $(".carrosel_categorias").slick({
 
 /*EQUIPE*/
 $(".carrosel_equipe").slick({
+  slide: "div",
   centerMode: true,
+  centerPadding: "0",
   slidesToShow: 3,
- slidesToScroll: 1,
- autoplay: false
+  slidesToScroll: 1,
+  autoplay: false
 });
 
 /*DEPOIMENTO*/
@@ -53,6 +55,8 @@ $(".carrosel_depo_imagem").slick({
 $(".carrosel_depo_texto").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
+  speed: 500,
+  fade: true,
   autoplay: false,
   autoplaySpeed: 2000,
   asNavFor: ".carrosel_depo_imagem"
@@ -74,5 +78,3 @@ $(".lista-com-imagens").slick({
     }
   ]
 });
-
-
