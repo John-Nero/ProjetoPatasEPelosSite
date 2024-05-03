@@ -7,19 +7,19 @@
       <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="14s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
       <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" src="img/enfeites/estrela_laranja.svg " alt="" /> </span>
       <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
-      <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="25s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
     </div>
 
     <div class="depo_principal">
       <!--Detalhes centrais e imagem do carrosel-->
       <div>
 
-        <span>
+        <span class="wow animate__animated animate__fadeIn" data-wow-delay:="30s">
           <img src="img/enfeites/esfera_laranja.svg" alt="" />
           <img src="img/enfeites/Colar.svg" alt="" />
         </span>
-        <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
-        <span><img src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+        <span><img  class="wow animate__animated animate__fadeIn" data-wow-delay:="35s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+        <span><img  class="wow animate__animated animate__fadeIn" data-wow-delay:="40s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
 
 
         <!--Imagens dos pets do carrosel-->
@@ -31,7 +31,7 @@
         </div>
 
         <!--Detalhes abaixo da imagem-->
-        <span>
+        <span class="wow animate__animated animate__fadeIn" data-wow-delay:="50s">
           <img src="img/enfeites/esfera_laranja.svg" alt="" />
           <img src="img/enfeites/cama.svg" alt="" />
         </span>
@@ -44,7 +44,7 @@
       <div>
         <!--Titulo e subtitulo da sessão-->
         <div class="wow animate__animated animate__flipInX">
-          <h2 class="titulo_roxo">depoimentos</h2>
+          <h2 class="titulo_roxo">Depoimentos</h2>
           <h3 class="subtitulo_laranja">Confira o amor dos nossos clientes</h3>
         </div>
 

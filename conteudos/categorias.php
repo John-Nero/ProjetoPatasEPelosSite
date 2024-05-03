@@ -55,7 +55,7 @@
 
     <!--Estrelas abaixo das categorias-->
     <div>
-      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" data-wow-duration="4s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
       <span><img class="wow animate__animated animate__fadeInDownBig" data-wow-delay:="14s" src="img/enfeites/estrela_roxa.svg" alt="" /></span>
     </div>
   </div>
