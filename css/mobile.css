@@ -8,18 +8,27 @@
     display: none !important;
   }
 
-  .menu_superior h1 {
-    display: none;
+  .menu_superior {
+
+  }
+  
+
+  .abrir-menu {
+    width: 34px;
+    height: 34px;
+    background: url(img\menu_hamburguer.svg) no-repeat;
+    text-indent: -9999px;
   }
 
-  .menu_botoes a {
-    background-color: #bfacdd;
-    padding: 4px 19px;
-    margin-left: 5px;
-    border-radius: 20px;
-    color: black;
+  /*Menu superior*/
+  .menu_botoes,
+  .menu_superior h2 {
+    display: none;
   }
-  .telefone_contato {
-    margin-top: 162px !important;
+}
+@media not all and (max-width: 600px) {
+  .abrir-menu,
+  .fechar-menu {
+    display: none;
   }
 }

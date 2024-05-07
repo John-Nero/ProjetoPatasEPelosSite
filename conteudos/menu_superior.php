@@ -3,6 +3,8 @@
     <div class="menu_superior">
       <div>
         <!--H1 que vira img por config no css-->
+<button class="abrir_menu"></button>
+        
         <h1>Patas e pelos</h1>
 
         <nav>
@@ -27,9 +29,8 @@
 
         <!--O Telefone passa por modificação no css para vira uma imagem-->
         <a href="">
-          <h2 class="telefone_contato">Telefone para contato</h2>
-          <img class="whatsapp_icone" src="img\whatsapp.png" alt="WhatsApp contato">
-        </a>
+          <h2>Telefone para contato</h2>
+                </a>
 
         <!--Menu hamburguer inacabado-->
       </div>
