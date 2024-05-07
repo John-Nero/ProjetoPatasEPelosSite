@@ -27,12 +27,13 @@
 
         <!--O Telefone passa por modificação no css para vira uma imagem-->
         <a href="">
-          <h2>Telefone para contato</h2>
+          <h2 class="telefone_contato">Telefone para contato</h2>
+          <img class="whatsapp_icone" src="img\whatsapp.png" alt="WhatsApp contato">
         </a>
 
         <!--Menu hamburguer inacabado-->
       </div>
-      <a href=""><img src="img/menu_hambuguer.svg" alt="" /></a>
+     <!-- <a href=""><img src="img/menu_hambuguer.svg" alt="" /></a> -->
     </div>
   </div>
 </div>
