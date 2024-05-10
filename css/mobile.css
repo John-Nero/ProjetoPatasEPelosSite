@@ -8,10 +8,15 @@
     display: none !important;
   }
 
+  .agenda,
+  .tosa,
+  .categorias,
+  .rodape,
+  .sobre,
+  .visita,
   .menu_superior {
-
+    display: none;
   }
-  
 
   .abrir-menu {
     width: 34px;
@@ -20,12 +25,85 @@
     text-indent: -9999px;
   }
 
-  /*Menu superior*/
-  .menu_botoes,
-  .menu_superior h2 {
+  .equipe {
+    margin-top: 0;
+  }
+
+  .equipe > div:nth-child(1),
+  .equipe > div:nth-child(3),
+  .equipe > div:nth-child(2) > span:nth-child(3),
+  .equipe > div:nth-child(2) > span:nth-child(4) {
+    display: none;
+  }
+
+  .equipe > div:nth-child(2) {
+    width: 100%;
+  }
+
+  /*----------------------------------------------------------*/
+
+  .depo_topo span:nth-child(1),
+  .depo_topo span:nth-child(2),
+  .depo_topo span:nth-child(3),
+  .depo_principal div:nth-child(3) span:nth-child(1),
+  .depo_principal div:nth-child(1) span:nth-child(6),
+  .depo_principal div:nth-child(1) span:nth-child(7) {
     display: none;
   }
 }
+.depo_topo span:nth-child(4) img {
+  width: 80px;
+  height: 80px;
+}
+
+.depo_topo span:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 72%;
+  top: 62px;
+  position: relative;
+}
+
+.depo_principal {
+  width: 900px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(1) {
+  width: 100px;
+  height: 100px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  bottom: 3px;
+  position: relative;
+  left: 50%;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(2) {
+  left: -47px;
+  top: -2px;
+}
+
+.depo_principal div:nth-child(1) span:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 10%;
+}
+.depo_principal div:nth-child(1) span:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  bottom: 138px;
+  left: -9%;
+}
+
+.carrosel_depo_imagem {
+  width: 441px;
+  height: 441px;
+  left: 20%;
+}
+
 @media not all and (max-width: 600px) {
   .abrir-menu,
   .fechar-menu {
