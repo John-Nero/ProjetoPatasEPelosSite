@@ -10,11 +10,15 @@
 
   .agenda,
   .tosa,
+  .banner,
   .categorias,
+  .banner,
+  .depo,
+  .equipe,
   .rodape,
   .sobre,
   .visita,
-  .menu_superior {
+  .menu_superior h2 {
     display: none;
   }
 
@@ -104,9 +108,31 @@
   left: 20%;
 }
 
-@media not all and (max-width: 600px) {
-  .abrir-menu,
-  .fechar-menu {
+@media not all and (max-width: 899px) {
+  .menu_botoes {
     display: none;
   }
+  .abrir_menu {
+    background: url(../img/menu_hamburguer.svg);
+    align-self: start;
+    margin: 4% 0% 5% 0%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    position: relative;
+    right: 232px;
+    bottom: 12px;
+  }
+  .menu_superior div {
+    justify-content: center;
+  }
+  .menu_icones li:nth-child(1) {
+    position: relative;
+    right: 521px;
+    }
+
+    .menu_icones li:nth-child(2) {
+      position: relative;
+      left : 157px;
+      }
 }
