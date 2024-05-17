@@ -1,0 +1,613 @@
+/* define as regras da animação */
+
+h2.animate__animated {
+  animation-duration: 1s; /* Altera a duração da animação para 2 segundos */
+  animation-fill-mode: both; /* Garante que a animação mantenha o estado final após a conclusão */
+}
+
+/*|########| BANNER |########|*/
+
+.banner_servico img {
+  width: 100%;
+}
+
+/*Tira as setas do carrosel de imagem*/
+.banner_servico .slick-prev,
+.banner_servico .slick-next {
+  text-indent: -999px;
+  display: none !important;
+}
+
+.topo-servico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo-servico-textos {
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.topo-servico-textos h2 {
+  font-size: 105px;
+  font-weight: 800;
+  color: #664d9f;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.topo-servico-textos p {
+  width: 98%;
+  font-size: 62px;
+  font-weight: 700;
+  color: #ff9a5b;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.topo-servico img:nth-of-type(1) {
+  margin-left: 50px;
+}
+
+.topo-servico img:nth-of-type(2) {
+  margin-right: 85px;
+}
+/* carrosel infernal */
+.lista-com-imagens {
+  display: flex;
+}
+
+.lista-com-imagens h2 {
+  font-size: 31px;
+}
+
+.lista-com-imagens p {
+  font-size: 23px;
+}
+
+.lista-com-imagens h2,
+p {
+  text-align: left;
+  width: 516px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.servico_texto {
+  position: relative;
+  top: -470px;
+  left: 7%;
+}
+
+.servico_texto_v2 {
+  position: relative;
+  top: -335px;
+  left: 7%;
+}
+
+.servico_texto a {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  border-radius: 90px;
+  border: 2px solid white;
+  background-color: #664d9f;
+  padding: 25px 42px;
+  position: relative;
+  bottom: -200px;
+  left: -5%;
+}
+
+.servico_texto_v2 a {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 24px;
+  color: black;
+  font-weight: 900;
+  border-radius: 90px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 25px 42px;
+  position: relative;
+  bottom: -100px;
+  left: -5%;
+}
+
+.servico_imagem_container {
+  position: relative;
+}
+
+.servico_imagem_container img {
+  display: block;
+  width: 100%;
+}
+
+.lista-com-imagens .slick-slide {
+  transform: scale(0.9);
+}
+
+/* Define a animação de fade */
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  } /* Início da animação com opacidade 0 */
+  100% {
+    opacity: 1;
+  } /* Fim da animação com opacidade 1 */
+}
+
+.fade_delay1 {
+  animation-name: fadeAnimation;
+  animation-duration: 1s; /* Duração da animação */
+  animation-delay: 1s; /* Atraso antes do início da animação */
+}
+
+.fade_delay2 {
+  animation-name: fadeAnimation;
+  animation-duration: 1.2s; /* Duração da animação */
+  animation-delay: 1.2s; /* Atraso antes do início da animação */
+}
+
+.fade_delay3 {
+  animation-name: fadeAnimation;
+  animation-duration: 1.3s; /* Duração da animação */
+  animation-delay: 1.3s; /* Atraso antes do início da animação */
+}
+
+.fade_batata1 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.3s; /* Duração da animação */
+  animation-delay: 0.3s; /* Atraso antes do início da animação */
+}
+
+.fade_batata2 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.4s; /* Duração da animação */
+  animation-delay: 0.4s; /* Atraso antes do início da animação */
+}
+
+.fade_batata3 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.5s; /* Duração da animação */
+  animation-delay: 0.5s; /* Atraso antes do início da animação */
+}
+
+.fade_batata4 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.6s; /* Duração da animação */
+  animation-delay: 0.6s; /* Atraso antes do início da animação */
+}
+
+.fade_batata5 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.7s; /* Duração da animação */
+  animation-delay: 0.7s; /* Atraso antes do início da animação */
+}
+
+.fade_fundo1 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.35s; /* Duração da animação */
+  animation-delay: 0.35s; /* Atraso antes do início da animação */
+}
+
+.fade_fundo2 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.45s; /* Duração da animação */
+  animation-delay: 0.45s; /* Atraso antes do início da animação */
+}
+
+.fade_fundo3 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.55s; /* Duração da animação */
+  animation-delay: 0.55s; /* Atraso antes do início da animação */
+}
+
+.fade_fundo4 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.65s; /* Duração da animação */
+  animation-delay: 0.65s; /* Atraso antes do início da animação */
+}
+
+.fade_icone1 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.38s; /* Duração da animação */
+  animation-delay: 0.38s; /* Atraso antes do início da animação */
+}
+
+.fade_icone2 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.48s; /* Duração da animação */
+  animation-delay: 0.48s; /* Atraso antes do início da animação */
+}
+
+.fade_icone3 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.58s; /* Duração da animação */
+  animation-delay: 0.58s; /* Atraso antes do início da animação */
+}
+
+.fade_icone4 {
+  animation-name: fadeAnimation;
+  animation-duration: 0.68s; /* Duração da animação */
+  animation-delay: 0.68s; /* Atraso antes do início da animação */
+}
+/* fim servico */
+
+/* inicio banners */
+
+/* estrelas */
+
+/*serviços*/
+
+.teste1 {
+  display: flex;
+}
+
+.teste2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -33%;
+}
+
+.estilo2 {
+  position: relative;
+  margin-right: 71px;
+}
+
+.servico_banner {
+  position: relative;
+  top: -480px;
+  left: 11%;
+}
+
+.servico_banner_v2 {
+  position: relative;
+  top: -510px;
+  left: 11%;
+}
+
+.servico_conteudo {
+  position: absolute;
+}
+
+.servico_conteudo_v2 {
+  position: absolute;
+  top: 86%;
+}
+
+.servico_conteudo h2 {
+  font-size: 31px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.servico_conteudo_v2 h2 {
+  font-size: 31px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.servico_conteudo p {
+  width: 276px;
+  font-size: 22px;
+  color: white;
+}
+
+.servico_conteudo_v2 p {
+  width: 276px;
+  font-size: 22px;
+  color: white;
+}
+
+.servico_conteudo a {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 21.99px;
+  color: #665098;
+  font-weight: 900;
+  position: relative;
+  bottom: -100px;
+  left: -5%;
+}
+
+.servico_conteudo_v2 a {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 21.99px;
+  color: #665098;
+  font-weight: 900;
+  position: relative;
+  bottom: -100px;
+  left: -5%;
+}
+
+.servico_banner img {
+  width: 35%;
+  position: relative;
+  left: -2%;
+}
+
+.servico_banner_v2 img {
+  width: 50%;
+  position: relative;
+  left: -8%;
+}
+
+.teste1 span {
+  z-index: -1;
+}
+
+.teste1 span:nth-child(1) {
+  position: relative;
+  top: -100px;
+  left: -4%;
+}
+
+.teste1 span:nth-child(2) {
+  position: relative;
+  top: 222px;
+  left: -11%;
+}
+
+.teste1 span:nth-child(3) {
+  position: relative;
+  top: -156px;
+  left: -23%;
+}
+
+.teste1 span:nth-child(4) {
+  position: relative;
+  top: 258px;
+  left: -30%;
+}
+
+.teste1 span:nth-child(5) {
+  position: relative;
+  top: -240px;
+  left: -50%;
+}
+
+/* fim serviços */
+
+.estrelas_baixo span:nth-child(1) {
+  left: 4%;
+  top: 140px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(2) {
+  left: 4%;
+  top: 196px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(3) {
+  left: 4%;
+  top: 198px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(4) {
+  left: 22%;
+  top: 136px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(5) {
+  left: 21%;
+  top: 125px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(6) {
+  left: 18%;
+  top: 170px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(7) {
+  left: 18%;
+  top: 13px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(8) {
+  left: 44%;
+  top: 150px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(9) {
+  left: 45%;
+  top: 45px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(10) {
+  left: 42%;
+  top: 140px;
+  position: relative;
+}
+
+.estrelas_baixo span:nth-child(11) {
+  left: 42%;
+  top: 175px;
+  position: relative;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.contato h2 {
+  font-size: 128px;
+  width: 578px;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  font-size: 64px;
+}
+
+.contato_esquerdo {
+  position: relative;
+  left: 4%;
+}
+
+.contato img {
+  position: relative;
+  left: 2%;
+}
+
+.contato_botao a {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 39px;
+  background-color: #ff9a5b;
+  padding: 18px 0px;
+  position: absolute;
+  left: 22%;
+  top: 99%;
+}
+
+/* galeria */
+
+.galeria {
+  display: flex;
+  width: 50%;
+}
+
+.galeria_parallax {
+  overflow: visible;
+}
+
+/* posicionamento dos elementos */
+
+.galeria span:nth-child(1){
+  position: relative;
+  left: 139%;
+  top: -12px;
+}
+
+.galeria span:nth-child(2){
+  position: relative;
+  left: 24%;
+  top: 180px;
+}
+
+.galeria_img1{
+  position: relative;
+  left: 63%;
+  top: 60px;
+}
+
+.galeria span:nth-child(4){
+  position: relative;
+  left: 64%;
+  top: 54px;
+}
+
+.galeria_img2{
+  position: relative;
+  left: 65%;
+  top: 20px;
+}
+
+.galeria span:nth-child(6){
+  position: relative;
+  left: 73%;
+  top: 278px;
+}
+
+.galeria span:nth-child(7){
+  position: relative;
+  right: 67%;
+  top: 456px;
+}
+
+.galeria span:nth-child(8){
+  position: relative;
+  right: 69%;
+  top: 490px;
+}
+
+.galeria span:nth-child(9){
+  position: relative;
+  right: 70%;
+  top: 490px;
+}
+
+.galeria_img3{
+  position: relative;
+  right: 65%;
+  top: 350px;
+}
+
+.galeria span:nth-child(11){
+  position: relative;
+  right: 55%;
+  top: 350px;
+}
+
+.galeria span:nth-child(12){
+  position: relative;
+  right: 52%;
+  top: 305px;
+}
+
+.galeria_img4{
+  position: relative;
+  right: 50%;
+  top: 326px;
+}
+
+.galeria span:nth-child(13){
+  position: relative;
+  right: 44%;
+  top: 370px;
+}
+
+.galeria span:nth-child(14){
+  position: relative;
+  right: 45%;
+  top: 391px;
+}
+
+.galeria span:nth-child(15){
+  position: relative;
+  right: 49%;
+  top: 457px;
+}
+
+.galeria span:nth-child(16){
+  position: relative;
+  right: 49%;
+  top: 457px;
+}
+
+.galeria span:nth-child(17){
+  position: relative;
+  right: 151%;
+  top: 136px;
+  z-index: -1;
+}
+/* lado direito */
+.galeria_D{
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria_D h2{
+  font-size: 130px;
+}
+
+.galeria_D p{
+  font-size: 50px;
+}
