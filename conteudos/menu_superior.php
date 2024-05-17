@@ -19,7 +19,7 @@
 
                 <ul class="menu_icones">
                     <li>
-                        <a href="#"><img src="img/menu/login.svg" alt="Login" /></a>
+                        <a href="#"><img src="img/menu/login.svg" alt="Login"/></a>
                     </li>
                     <li>
                         <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" /></a>
