@@ -12,7 +12,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="#">Sobre Nós</a></li>
                         <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="contato.php">Contato</a></li>
                         <li><a href="servicos.php">Serviços</a></li>
                     </ul>
                 </nav>
