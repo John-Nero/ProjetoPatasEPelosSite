@@ -1,0 +1,6 @@
+main > h2:nth-child(1){
+    width: 1810px;
+    height: 906px;
+    background: url(../img/PG_contato/EntreEmContato.svg) no-repeat;
+    text-indent: -9999px;
+}
