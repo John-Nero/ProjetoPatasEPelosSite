@@ -179,25 +179,25 @@
         <section class="fundo_site">
             <div class="site">
                 <div class="galeria">
+                <div class="galeria_Esquerdo">
+                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span> 
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_img1">
+                        <div class="galeria_Esquerdo_img1">
                         <img class="parallax" src="img/servicos/galeria/foto1.svg" alt="">
                         </div>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <div class="galeria_img2">
+                    <div class="galeria_Esquerdo_img2">
                         <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
                     </div>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <div class="galeria_img3">
+                    <div class="galeria_Esquerdo_img3">
                         <img class="parallax" src="img/servicos/galeria/foto1.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_img4">
+                        <div class="galeria_Esquerdo_img4">
                         <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -205,13 +205,52 @@
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/servicos/galeria/fundo1.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    
+
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <div class="galeria_Esquerdo_img5">
+                        <img class="parallax" src="img/servicos/galeria/foto3.svg" alt="">
+                        </div>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <div class="galeria_Esquerdo_img6">
+                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        </div>
+                        <span><img src="img/servicos/galeria/fundo2.svg" alt=""></span>
+                        <div class="galeria_Esquerdo_img7">
+                        <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
+                        </div>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <span><img src="img/servicos/galeria/fundo3.svg" alt=""></span>
+                        <div class="galeria_Esquerdo_img8">
+                        <img class="parallax" src="img/servicos/galeria/foto5.svg" alt="">
+                        </div>
+                        <div class="galeria_Esquerdo_img9">
+                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        </div>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
+
+                        <div class="galeria_Esquerdo_img10">
+                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        </div>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <div class="galeria_Esquerdo_img11">
+                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        </div>
+                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
+
+                    </div>
                 </div>
 
 
                 <div class="galeria_D">
                     <h2>Nossa Galeria!</h2>
                     <p>Confira conosco as nossas fofurices e se apaixone por eles.</p>
+                </div>
                 </div>
             </div>
 
