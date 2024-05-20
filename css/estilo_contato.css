@@ -1,6 +1,70 @@
-main > h2:nth-child(1){
-    width: 1810px;
-    height: 906px;
-    background: url(../img/PG_contato/EntreEmContato.svg) no-repeat;
-    text-indent: -9999px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/*|########| CONFIGURAÃ‡Ã•ES GERAIS |########|*/
+
+body {
+  font-size: 11px;
+  font-family: "Roboto Flex", "Roboto Black", monospace;
+  font-weight: 400;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Bloqueia a seleção das imagens do site*/
+img {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */  
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  user-select: none;
+}
+/*______________________________________________________________________________*/
+.site > h2:nth-child(1) {
+  width: 1810px;
+  height: 906px;
+  background: url(../img/PG_contato/EntreEmContato.svg) no-repeat;
+  text-indent: -9999px;
+}
+.conteudo_principal {
+    display: flex;
+  background: url(img\mascaras\equipe.svg);
+}
+
+.site > h2:nth-child(2){
+    color: #ff9a5b;
+    font-size: 5.5em;
+    text-align: center;
+    width: 632px;
+    margin-left: 31%;
+}
+
+.conteudo_principal span{
+    position: relative;
+}
+
+.conteudo_principal > span:nth-child(1){
+    background-color: aqua;
+    width: 561px;
+    height: 467px;
+    left: -23%;
+}
+.conteudo_principal > span:nth-child(2){
+    background-color: aqua;
+    width: 561px;
+    height: 467px;
+    left: -23%;
 }
