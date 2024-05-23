@@ -4,7 +4,7 @@
 
 body {
   font-size: 11px;
-  font-family: "Roboto Flex", "Roboto Black", monospace;
+  font-family: "Roboto Mono", "Roboto Black", monospace;
   font-weight: 400;
 }
 
@@ -26,45 +26,103 @@ a {
 
 /*Bloqueia a seleção das imagens do site*/
 img {
-  -webkit-touch-callout: none; /* iPhone OS, Safari */  
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
   -webkit-user-select: none; /* Chrome, Safari 3 */
   -khtml-user-select: none; /* Safari 2 */
   -moz-user-select: none; /* Firefox */
   user-select: none;
 }
 /*______________________________________________________________________________*/
-.site > h2:nth-child(1) {
-  width: 1810px;
-  height: 906px;
-  background: url(../img/PG_contato/EntreEmContato.svg) no-repeat;
-  text-indent: -9999px;
-}
-.conteudo_principal {
-    display: flex;
-  background: url(img\mascaras\equipe.svg);
+
+/*|########| TOPO CONTATO |########| */
+
+.entreEmContato div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.site > h2:nth-child(2){
-    color: #ff9a5b;
-    font-size: 5.5em;
-    text-align: center;
-    width: 632px;
-    margin-left: 31%;
+.entreEmContato div div h2 {
+  background: chartreuse;
+  font-size: 6.2em;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  color: #ff9a5b;
+  width: 884px;
 }
 
-.conteudo_principal span{
-    position: relative;
+/*|########| FORMULARIO DE ENVIO |########| */
+
+/*Caixa geral*/
+.form {
+  margin-top: -212px;
 }
 
-.conteudo_principal > span:nth-child(1){
-    background-color: aqua;
-    width: 561px;
-    height: 467px;
-    left: -23%;
+.form > img {
+  margin-bottom: -905px;
+  width: 1512px;
 }
-.conteudo_principal > span:nth-child(2){
-    background-color: aqua;
-    width: 561px;
-    height: 467px;
-    left: -23%;
+
+.form > div {
+  z-index: 2;
+  position: relative;
+}
+.formulario {
+  width: 1289px;
+  height: 620px;
+  background: #a38cd6;
+  display: flex;
+  align-items: center;
+  margin-left: 290px;
+  margin-top: 56px;
+  border-radius: 90px;
+}
+
+/*Config dos inputs e dos titulos de cada campo*/
+
+.formulario > div h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.formulario > div input {
+  height: 39px;
+  width: 336px;
+  border-radius: 13px;
+}
+
+.formulario > div input::placeholder {
+  position: absolute; /* Posicionamento absoluto em relação ao input-container */
+  bottom: 0; /* Alinha o placeholder ao fundo */
+  left: 0; /* Alinha o placeholder ao canto esquerdo */
+  padding-left: 5px; /* Ajusta o espaçamento esquerdo para o placeholder */
+  color: #d0c5da;
+  font-size: 1.3em;
+}
+
+.formulario > div {
+  height: 540px;
+}
+
+/*div lateral com os campos de identificação e o enfeite da base*/
+.formulario > div:nth-child(1) {
+  margin-left: 100px;
+}
+
+.formulario > div:nth-child(1) div:nth-child(2),
+.formulario > div:nth-child(1) div:nth-child(3) {
+  margin-top: 10px;
+}
+
+.formulario > div:nth-child(1) span{height: 363px;
+  top: -85px;
+  position: relative;
+  margin-left: -79px;
+  display: flex;}   
+
+.formulario > div:nth-child(2) textarea {
+  width: 605px;
+  height: 363px;
+  border-radius: 10px;
 }

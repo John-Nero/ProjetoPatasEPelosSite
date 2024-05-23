@@ -117,7 +117,7 @@ if(isset($_POST['email'])){
 
     <!--Link pro css do site pra ficar bonitinho-->
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_contato.css">
 
     <!--Responsivo-->
 
@@ -127,10 +127,21 @@ if(isset($_POST['email'])){
 
 <body>
     <main>
-        <section class="form">
+        <section class="entreEmContato">
             <div class="site">
-                <h2>Contato Teacher Camila</h2>
+                <div>
+                    <img src="img\banners\EntreEmContato.svg"
+                        alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas">
 
+                    <h2>Fale conosco e agende o seu horário, agora mesmo !</h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="form">
+        <img src="img\PG_contato\FundoFormulario.svg" alt="">
+            <div class="site">
+                
                 <h3 class="confirm">
                     <?php
                     if($ok == 1){
@@ -141,31 +152,39 @@ if(isset($_POST['email'])){
                     ?>
                 </h3>
 
-                <form action="#" method="POST">
+                <form class="formulario" action="#" method="POST">
                     <div>
                         <div>
-                            <input type="text" name="nome" id="nome" placeholder="Informe seu nome:" required>
+                            <h2>Nome</h2>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome e sobrenome" required>
                             <!--o nome e o id é como se fosse a variavel, o placeholder é pro texto ficar dentro do input q é uma caixa q tem o tipo texto e o required é para ser um campo obrigatorio, tendeu?-->
                         </div>
                         <div>
-                            <input type="email" name="email" id="email" placeholder="Informe seu email:" required>
+                            <h2>Telefone</h2>
+                            <input type="tel" name="tel" id="tel" placeholder="DDD + Celular" required>
                         </div>
                         <div>
-                            <input type="tel" name="tel" id="tel" placeholder="Informe seu telefone" required>
+                            <h2>Email</h2>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email   " required>
                         </div>
+                        <span><img src="img\enfeites\DetalhesForms.svg" alt=""></span>
                     </div>
                     <div>
                         <div>
+                            <h2>Descreva o que deseja</h2>
                             <textarea name="mens" id="mens" cols="30" rows="10"
                                 placeholder="Informe sua mensagem:"></textarea>
                         </div>
                         <div>
-                            <input type="submit" value="Enviar por e-mail">
-                            <button onclick="EnviarWhats()"> Enviar por WhatsApp </button>
+                            <div><img src="img\enfeites\iconWhatsappForm.svg" alt="icone whatsapp"><button
+                                    onclick="EnviarWhats()"> Enviar por WhatsApp </button></div>
+                            <div><img src="img\enfeites\iconEmailForms.svg" alt="Icon email"><input type="submit"
+                                    value="Enviar por e-mail"></div>
                         </div>
                     </div>
                 </form>
             </div>
+
         </section>
     </main>
 </body>
