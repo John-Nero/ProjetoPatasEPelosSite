@@ -43,13 +43,14 @@ img {
 }
 
 .entreEmContato div div h2 {
-  background: chartreuse;
+ /* background: chartreuse;*/
   font-size: 6.2em;
   font-family: "Roboto Flex", sans-serif;
   text-align: center;
   font-weight: 900;
   color: #ff9a5b;
   width: 884px;
+  z-index: 2;
 }
 
 /*|########| FORMULARIO DE ENVIO |########| */
@@ -61,7 +62,6 @@ img {
 
 .form > img {
   margin-bottom: -905px;
-  width: 1512px;
 }
 
 .form > div {
@@ -69,13 +69,13 @@ img {
   position: relative;
 }
 .formulario {
-  width: 1289px;
+  width: 1228px;
   height: 620px;
   background: #a38cd6;
   display: flex;
   align-items: center;
   margin-left: 290px;
-  margin-top: 56px;
+  margin-top: 147px;
   border-radius: 90px;
 }
 
@@ -84,15 +84,19 @@ img {
 .formulario > div h2 {
   color: #fff;
   font-weight: 500;
+  font-size: 2em;
 }
 
-.formulario > div input {
+.formulario > div:nth-child(1) input {
   height: 39px;
   width: 336px;
   border-radius: 13px;
+  box-shadow: none;
+  border-width: 0;
 }
 
-.formulario > div input::placeholder {
+.formulario > div input::placeholder,
+.formulario > div:nth-child(2) textarea::placeholder {
   position: absolute; /* Posicionamento absoluto em relação ao input-container */
   bottom: 0; /* Alinha o placeholder ao fundo */
   left: 0; /* Alinha o placeholder ao canto esquerdo */
@@ -107,22 +111,53 @@ img {
 
 /*div lateral com os campos de identificação e o enfeite da base*/
 .formulario > div:nth-child(1) {
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .formulario > div:nth-child(1) div:nth-child(2),
 .formulario > div:nth-child(1) div:nth-child(3) {
-  margin-top: 10px;
+  margin-top: 55px;
 }
 
-.formulario > div:nth-child(1) span{height: 363px;
+.formulario > div:nth-child(1) span {
+  height: 363px;
   top: -85px;
   position: relative;
-  margin-left: -79px;
-  display: flex;}   
+  margin-left: -38px;
+  display: flex;
+}
 
 .formulario > div:nth-child(2) textarea {
-  width: 605px;
+  width: 653px;
   height: 363px;
   border-radius: 10px;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) {
+  display: flex;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div {
+  display: flex;
+  height: 60px;
+  background: #ff9a5b;
+  align-items: center;
+  width: 316px;
+  border-radius: 20px;
+  justify-content: center;
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div button,
+.formulario > div:nth-child(2) div:nth-child(2) div input {
+  font-size: 1.8em;
+  background: #ff9a5b;
+  border-width: 0;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div:nth-child(2) {
+  margin-left: 28px;
 }

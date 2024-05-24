@@ -131,7 +131,7 @@ if(isset($_POST['email'])){
             <div class="site">
                 <div>
                     <img src="img\banners\EntreEmContato.svg"
-                        alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas">
+                        alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas"dra=false        >
 
                     <h2>Fale conosco e agende o seu horário, agora mesmo !</h2>
                 </div>
@@ -165,21 +165,21 @@ if(isset($_POST['email'])){
                         </div>
                         <div>
                             <h2>Email</h2>
-                            <input type="email" name="email" id="email" placeholder="Digite seu email   " required>
+                            <input type="email" name="email" id="emall" placeholder="Digite seu email   " required>
                         </div>
-                        <span><img src="img\enfeites\DetalhesForms.svg" alt=""></span>
+                        <span><img src="img\PG_contato\DetalhesForms.svg" alt="" draggable="false"></span>
                     </div>
                     <div>
                         <div>
                             <h2>Descreva o que deseja</h2>
                             <textarea name="mens" id="mens" cols="30" rows="10"
-                                placeholder="Informe sua mensagem:"></textarea>
+                                placeholder="Digite sua mensagem aqui"></textarea>
                         </div>
                         <div>
-                            <div><img src="img\enfeites\iconWhatsappForm.svg" alt="icone whatsapp"><button
-                                    onclick="EnviarWhats()"> Enviar por WhatsApp </button></div>
-                            <div><img src="img\enfeites\iconEmailForms.svg" alt="Icon email"><input type="submit"
-                                    value="Enviar por e-mail"></div>
+                            <div><img src="img\PG_contato\iconWhatsappForm.svg" alt="icone whatsapp"><button
+                                    onclick="EnviarWhats()">Whatsapp</button></div>
+                            <div><img src="img\PG_contato\iconEmailForms.svg" alt="Icon email"><input type="submit"
+                                    value="Email"></div>
                         </div>
                     </div>
                 </form>
