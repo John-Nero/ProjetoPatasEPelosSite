@@ -78,3 +78,26 @@ $(".lista-com-imagens").slick({
     }
   ]
 });
+
+/* FORM WhatsAPP */
+function EnviarWhats() {
+  let assunto = "Site Oficina Auto Mestre";
+  let nome = "*Nome:* " + document.getElementById("nome").value;
+  let email = "*E-mail:* " + document.getElementById("email").value;
+  let fone = "*Fone:* " + document.getElementById("fone").value;
+  let mens = "*Mens:* " + document.getElementById("mens").value;
+
+  let numeroWhats = "5511997548991";
+
+  let quebraDeLinha = "%0A";
+
+  var mensagem = encodeURIComponent(assunto + quebraDeLinha + nome + quebraDeLinha + email + quebraDeLinha + fone + quebraDeLinha + mens);
+
+  window.open("https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem, "_blank");
+
+  // Limpar os valores dos campos do formulário
+  document.getElementById("nome").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("fone").value = "";
+  document.getElementById("mens").value = "";
+}

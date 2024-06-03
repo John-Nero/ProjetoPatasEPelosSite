@@ -4,10 +4,10 @@
     <!--Detalhes do topo da sessão-->
     <div class="depo_topo">
 
-      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="14s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
-      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" src="img/enfeites/estrela_laranja.svg " alt="" /> </span>
-      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt="" /></span>
-      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="25s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="14s" src="img/enfeites/estrela_laranja.svg" alt="" draggable=false /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="18s" src="img/enfeites/estrela_laranja.svg " alt="" draggable=false /> </span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt="" draggable=false /></span>
+      <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="25s" src="img/enfeites/esfera_roxo.svg" alt="" draggable=false /></span>
     </div>
 
     <div class="depo_principal">
@@ -15,30 +15,30 @@
       <div>
 
         <span class="wow animate__animated animate__fadeIn" data-wow-delay:="30s">
-          <img src="img/enfeites/esfera_laranja.svg" alt="" />
-          <img src="img/enfeites/Colar.svg" alt="" />
+          <img src="img/enfeites/esfera_laranja.svg" alt="" draggable=false />
+          <img src="img/enfeites/Colar.svg" alt="" draggable=false />
         </span>
-        <span><img  class="wow animate__animated animate__fadeIn" data-wow-delay:="35s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
-        <span><img  class="wow animate__animated animate__fadeIn" data-wow-delay:="40s" src="img/enfeites/esfera_roxo.svg" alt="" /></span>
+        <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="35s" src="img/enfeites/esfera_roxo.svg" alt="" draggable=false /></span>
+        <span><img class="wow animate__animated animate__fadeIn" data-wow-delay:="40s" src="img/enfeites/esfera_roxo.svg" alt="" draggable=false /></span>
 
 
         <!--Imagens dos pets do carrosel-->
         <div class="carrosel_depo_imagem">
-          <img src="img/mascaras/mascara_pet1.svg" alt="" />
-          <img src="img/mascaras/mascara_pet2.svg" alt="" />
-          <img src="img/mascaras/mascara_pet3.svg" alt="" />
-          <img src="img/mascaras/mascara_pet4.svg" alt="" />
+          <img src="img/mascaras/mascara_pet1.svg" alt="" draggable=false />
+          <img src="img/mascaras/mascara_pet2.svg" alt="" draggable=false />
+          <img src="img/mascaras/mascara_pet3.svg" alt="" draggable=false />
+          <img src="img/mascaras/mascara_pet4.svg" alt="" draggable=false />
         </div>
 
         <!--Detalhes abaixo da imagem-->
         <span class="wow animate__animated animate__fadeIn" data-wow-delay:="50s">
-          <img src="img/enfeites/esfera_laranja.svg" alt="" />
-          <img src="img/enfeites/cama.svg" alt="" />
+          <img src="img/enfeites/esfera_laranja.svg" alt="" draggable=false />
+          <img src="img/enfeites/cama.svg" alt="" draggable=false />
         </span>
-        <span><img class="wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" data-wow-delay:="4s" alt="" /></span>
-        <span><img class="wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" data-wow-delay:="10s"alt="" /></span>
+        <span><img class="wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" data-wow-delay:="4s" alt="" draggable=false /></span>
+        <span><img class="wow animate__animated animate__fadeIn" src="img/enfeites/estrela_laranja.svg" data-wow-delay:="10s" alt="" draggable=false /></span>
 
-        <span><img class="wow animate__animated animate__fadeInDownBig" src="img/enfeites/estrela_roxa.svg" data-wow-delay:="20s" alt="" /></span>
+        <span><img class="wow animate__animated animate__fadeInDownBig" src="img/enfeites/estrela_roxa.svg" data-wow-delay:="20s" alt="" draggable=false /></span>
       </div>
 
       <div>
@@ -56,19 +56,19 @@
             <h3 class="subtitulo_laranja">Aline</h3>
             <ul>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
             </ul>
             <div>
@@ -81,19 +81,19 @@
             <h3 class="subtitulo_laranja">Willian</h3>
             <ul>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
             </ul>
             <div>
@@ -106,19 +106,19 @@
             <h3 class="subtitulo_laranja">Derick</h3>
             <ul>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
             </ul>
             <div>
@@ -131,19 +131,19 @@
             <h3 class="subtitulo_laranja">Matilde</h3>
             <ul>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
               <li>
-                <img src="img/enfeites/comida.svg" alt="" />
+                <img src="img/enfeites/comida.svg" alt="" draggable=false />
               </li>
             </ul>
             <div>
@@ -154,8 +154,8 @@
 
         <!--Detalhes da base da sessão-->
         <div>
-          <span class="wow animate__animated animate__fadeInDownBig" data-wow-delay:="30s"><img src="img/enfeites/estrela_roxa.svg" alt="" /></span>
-          <span><img src="img/enfeites/esferas_laranja_e_roxa.svg" alt="" /></span>
+          <span class="wow animate__animated animate__fadeInDownBig" data-wow-delay:="30s"><img src="img/enfeites/estrela_roxa.svg" alt="" draggable=false /></span>
+          <span><img src="img/enfeites/esferas_laranja_e_roxa.svg" alt="" draggable=false /></span>
         </div>
       </div>
     </div>

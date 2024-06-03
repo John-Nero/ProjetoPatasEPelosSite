@@ -19,10 +19,10 @@
 
                 <ul class="menu_icones">
                     <li>
-                        <a href="#"><img src="img/menu/login.svg" alt="Login"/></a>
+                        <a href="#"><img src="img/menu/login.svg" alt="Login" draggable=false></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" /></a>
+                        <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" draggable=false></a>
                     </li>
 
                 </ul>
@@ -34,7 +34,7 @@
 
                 <!--Menu hamburguer inacabado-->
             </div>
-            <!-- <a href=""><img src="img/menu_hambuguer.svg" alt="" /></a> -->
+            <!-- <a href=""><img src="img/menu_hambuguer.svg" alt="" draggable=false/></a> -->
         </div>
     </div>
 </div>
