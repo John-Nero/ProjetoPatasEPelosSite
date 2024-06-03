@@ -91,7 +91,7 @@ if(isset($_POST['email'])){
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher Camila</title>
+    <title>Contato  - Patas e pelos Pethouse</title>
 
     <!--Link para o arquivo que da um reset maneiro na pagina (Tem que ficar antes pq se n reseta tudo mo perigo)-->
     <link rel="stylesheet" href="css/reset.css">
@@ -117,6 +117,9 @@ if(isset($_POST['email'])){
 
     <!--Link pro css do site pra ficar bonitinho-->
 
+    <link rel="stylesheet" href="css/estilo.css">
+
+
     <link rel="stylesheet" href="css/estilo_contato.css">
 
     <!--Responsivo-->
@@ -126,6 +129,11 @@ if(isset($_POST['email'])){
 </head>
 
 <body>
+<header>
+      <!--FAIXA MENU-->
+      <?php include_once 'conteudos/menu_superior.php'?>
+      <!--FIM FAIXA MENU-->
+    </header>
     <main>
         <section class="entreEmContato">
             <div class="site">
@@ -187,4 +195,8 @@ if(isset($_POST['email'])){
 
         </section>
     </main>
+
+    <!--RODAPÉ-->
+    <?php include_once 'conteudos/rodape.php'?>
+    <!--FIM RODAPÉ-->
 </body>
