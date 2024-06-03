@@ -27,6 +27,7 @@ $(".carrosel_categorias").slick({
 $(".carrosel_equipe").slick({
   slide: "div",
   centerMode: true,
+  autoplay: true,
   centerPadding: "0",
   slidesToShow: 3,
   slidesToScroll: 1,

@@ -133,7 +133,7 @@ if (isset($_POST['email'])) {
 
                 <!--Imagem do topo e o fale conosco acima do form-->
                 <div>
-                    <img src="img\banners\entreEmContato.svg" alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas" draggable=false>
+                    <img src="img\PG_contato\entreEmContatoBanner.svg" alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas" draggable=false>
                     <h2>Fale conosco e agende o seu horário, agora mesmo !</h2>
                 </div>
             </div>
@@ -142,7 +142,9 @@ if (isset($_POST['email'])) {
 
         <!--Form-->
         <section class="form">
-            <img src="img\PG_contato\fundoFormulario.svg" alt="" draggable=false>
+            <img src="img\PG_contato\fundoFormulario1200.svg" alt="" draggable=false>
+            <img src="img\PG_contato\fundoFormularioResponsivo.svg" alt="" draggable=false>
+
             <div class="site">
 
                 <h3 class="confirm">
@@ -170,7 +172,7 @@ if (isset($_POST['email'])) {
                             <h2>Email</h2>
                             <input type="email" name="email" id="emall" placeholder="Digite seu email" required>
                         </div>
-                        <span><img src="img\PG_contato\DetalhesForms.svg" alt="" draggable="false"></span>
+                        <span><img src="img\PG_contato\cachorrosEEstrelasForm.svg" alt="" draggable="false"></span>
                     </div>
                     <div>
                         <div>
@@ -178,8 +180,8 @@ if (isset($_POST['email'])) {
                             <textarea name="mens" id="mens" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
                         </div>
                         <div>
-                            <div><img src="img\PG_contato\iconWhatsappForm.svg" alt="icone whatsapp" draggable=false><button onclick="EnviarWhats()">Whatsapp</button></div>
-                            <div><img src="img\PG_contato\iconEmailForms.svg" alt="Icon email" draggable=false><input type="submit" value="Email"></div>
+                            <div><img src="img\PG_contato\icons\iconWhatsappForm.svg" alt="icone whatsapp" draggable=false><button onclick="EnviarWhats()">Whatsapp</button></div>
+                            <div><img src="img\PG_contato\icons\iconEmailForms.svg" alt="Icon email" draggable=false><input type="submit" value="Email"></div>
                         </div>
                     </div>
                 </form>

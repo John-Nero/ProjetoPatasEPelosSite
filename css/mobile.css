@@ -7,7 +7,22 @@
   .slick-prev {
     display: none !important;
   }
+  .menu_superior {
+    display: none;
+  }
+
   /*PAGINA DE CONTATO*/
+  .entreEmContato div div img,
+  .form > img:nth-child(1) {
+    display: none;
+  }
+
+  .formulario {
+    width: 673px;
+    margin-left: 13%;
+    display: block;
+    height: 778px;
+  }
 }
 
 @media not all and (max-width: 900px) {
@@ -15,6 +30,10 @@
     display: none;
   }
   .tosa img:nth-child(2) {
+    display: none;
+  }
+
+  .form > img:nth-child(2) {
     display: none;
   }
 }

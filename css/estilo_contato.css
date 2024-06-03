@@ -60,7 +60,7 @@ img {
   margin-top: -212px;
 }
 
-.form > img {
+.form > img:nth-child(1) {
   margin-bottom: -905px;
   margin-left: -7px;
 }
