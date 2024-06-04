@@ -1,0 +1,69 @@
+h1,
+h2,
+p {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+p {
+  font-size: 2.5em;
+}
+
+.sobre_nos_pt1 div,
+.sobre_nos_pt1 span {
+  margin-top: 50px;
+}
+
+.sobre_nos_pt1,
+.sobre_nos_pt2 {
+  display: flex;
+  background: #fff8ed;
+}
+
+.sobre_nos_pt1 img,
+.sobre_nos_pt2 img {
+  width: 100%;
+}
+
+.sobre_nos_pt1 img {
+  margin-left: -10px;
+}
+
+.sobre_nos_pt2 img {
+  margin-left: 64px;
+}
+
+.sobre_nos_pt1 div,
+.sobre_nos_pt2 div {
+  margin-top: 250px;
+  margin-left: 10%;
+  width: 600px;
+}
+
+.sobre_nos_pt1 span,
+.sobre_nos_pt2 span {
+  width: 50%;
+}
+
+.sobre_nos_pt1 div,
+.sobre_nos_pt2 div {
+  margin-top: 250px;
+  margin-left: 15%;
+}
+
+.carrosel_Marcas .slick-prev:before,
+.carrosel_Marcas .slick-next:before {
+  display: none;
+}
+
+.carrosel_Marcas {
+  width: 100%;
+}
+
+.carrosel_Marcas img {
+  width: 214px;
+}
+
+.carrosel_Marcas {
+  text-align: center;
+  width: 214px !important;
+}

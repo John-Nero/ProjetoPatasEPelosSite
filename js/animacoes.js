@@ -80,6 +80,23 @@ $(".lista-com-imagens").slick({
   ]
 });
 
+//---------------PAGINA SOBRE NÓS-------------------------------
+$(".carrosel_Marcas").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 /* FORM WhatsAPP */
 function EnviarWhats() {
   let assunto = "Site Oficina Auto Mestre";
