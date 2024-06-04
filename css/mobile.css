@@ -17,11 +17,76 @@
     display: none;
   }
 
+  .form > img:nth-child(2) {
+    width: 100%;
+    margin-top: 180px;
+
+  }
+
+  .form > div {
+    top: -1096px;
+    margin-left: 3%;
+  }
+
   .formulario {
     width: 673px;
+    margin: 0;
     margin-left: 13%;
     display: block;
-    height: 778px;
+    height: 824px;
+  }
+
+  .formulario > div:nth-child(1),
+  .formulario > div:nth-child(2) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .formulario > div:nth-child(1) {
+    height: 227px;
+    padding-top: 20px;
+  }
+
+  .formulario > div:nth-child(1) div:nth-child(2),
+  .formulario > div:nth-child(1) div:nth-child(3) {
+    margin-top: 13px;
+  }
+
+  .formulario > div:nth-child(1) input {
+    width: 537px;
+  }
+  .formulario > div:nth-child(2) {
+    margin-top: 274px;
+  }
+
+  .formulario > div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    margin-top: -274px;
+  }
+
+  .formulario > div:nth-child(2) textarea {
+    width: 537px;
+    height: 237px;
+    position: relative;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) {
+    margin-top: -15px;
+    flex-direction: row;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div {
+    flex-direction: row;
+    width: 260px;
+    z-index: 2;
+  }
+
+  .formulario > div:nth-child(1) span {
+    top: 259px;
+    margin-left: -26px;
   }
 }
 
