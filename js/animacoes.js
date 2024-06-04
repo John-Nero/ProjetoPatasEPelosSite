@@ -84,7 +84,21 @@ $(".lista-com-imagens").slick({
 
 let parallax = document.getElementsByClassName('parallax');
 new simpleParallax(parallax, {
-  overflow: false,
+  overflow: true,
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
+
+let parallax1 = document.getElementsByClassName('parallax1');
+new simpleParallax(parallax1, {
+  overflow: true,
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
+
+let parallax2 = document.getElementsByClassName('parallax2');
+new simpleParallax(parallax2, {
+  overflow: true,
 	delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });

@@ -45,7 +45,7 @@
                 <div class="topo-servico">
                     <div class="topo-servico-textos">
                         <h2 class="animate__animated animate__flipInX">Nossos Serviços</h2>
-                        <p class="animate__animated animate__fadeIn">E ache o que melhor se encaixa com voce:</p>
+                        <p class="animate__animated animate__fadeIn">E ache o que melhor se encaixa <br> com voce:</p>
                     </div>
                 </div>
             </div>
@@ -180,25 +180,30 @@
             <div class="site">
                 <div class="galeria">
                 <div class="galeria_Esquerdo">
+                    <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span> 
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img1">
-                        <img class="parallax" src="img/servicos/galeria/foto1.svg" alt="">
+
+                    <div class="galeria_Esquerdo_img1">
+                        <img class="1" src="img/servicos/galeria/foto1.svg" alt="">
                         </div>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+
                     <div class="galeria_Esquerdo_img2">
-                        <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
-                    </div>
+                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
+                    </div> 
+
+
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                     <div class="galeria_Esquerdo_img3">
-                        <img class="parallax" src="img/servicos/galeria/foto1.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto1.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img4">
-                        <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
@@ -208,37 +213,37 @@
 
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img5">
-                        <img class="parallax" src="img/servicos/galeria/foto3.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto3.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img6">
-                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
                         </div>
                         <span><img src="img/servicos/galeria/fundo2.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img7">
-                        <img class="parallax" src="img/servicos/galeria/foto2.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
 
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/servicos/galeria/fundo3.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img8">
-                        <img class="parallax" src="img/servicos/galeria/foto5.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto5.svg" alt="">
                         </div>
                         <div class="galeria_Esquerdo_img9">
-                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
 
                         <div class="galeria_Esquerdo_img10">
-                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <div class="galeria_Esquerdo_img11">
-                        <img class="parallax" src="img/servicos/galeria/foto4.svg" alt="">
+                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
                         </div>
                         <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
                         <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
@@ -248,8 +253,8 @@
 
 
                 <div class="galeria_D">
-                    <h2>Nossa Galeria!</h2>
-                    <p>Confira conosco as nossas fofurices e se apaixone por eles.</p>
+                    <h2 class="titulo_roxo">Nossa <br> Galeria!</h2>
+                    <p class="subtitulo_laranja">Confira conosco <br> as nossas <br> fofurices e se <br> apaixone por <br> eles.</p>
                 </div>
                 </div>
             </div>
@@ -259,7 +264,7 @@
     </main>
 
     <!--RODAPÉ-->
-    <?php include_once 'conteudos/rodape.php' ?>
+    <?php include_once 'conteudos/rodape.php'?>
     <!--FIM RODAPÉ-->
 
 
@@ -270,7 +275,7 @@
     <!--Slick para animações-->
     <script type="text/javascript" src="js/slick.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple--js@5.5.1/dist/simple.min.js"></script>
 
     <!--arquivo de configuração das animações-->
     <script src="js/animacoes.js"></script>
