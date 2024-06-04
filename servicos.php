@@ -179,6 +179,7 @@
         <section class="fundo_site">
             <div class="site">
                 <div class="galeria">
+                <div class="galeria_Esquerdo_mainDIV">
                 <div class="galeria_Esquerdo">
                     <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
                     <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span> 
@@ -255,6 +256,7 @@
                 <div class="galeria_D">
                     <h2 class="titulo_roxo">Nossa <br> Galeria!</h2>
                     <p class="subtitulo_laranja">Confira conosco <br> as nossas <br> fofurices e se <br> apaixone por <br> eles.</p>
+                </div>
                 </div>
                 </div>
             </div>

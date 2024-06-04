@@ -54,6 +54,7 @@ img {
 /*|########| COR GERAL |########|*/
 
 .imgbanner,
+.banner,
 .agenda,
 .categorias,
 .tosa,
@@ -61,6 +62,11 @@ img {
 .equipe,
 .depo,
 .visita,
+.galeria,
+.topo-servico,
+.carrosel_alinhamento,
+.teste1,
+.teste2,
 .rodape {
   background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;

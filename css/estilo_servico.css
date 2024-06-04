@@ -18,9 +18,6 @@ h2.animate__animated {
   display: none !important;
 }
 
-.topo-servico {
-}
-
 .topo-servico-textos {
   text-align: center;
   font-family: "Roboto Flex", sans-serif;
@@ -477,6 +474,10 @@ p {
 /* galeria */
 
 .galeria{
+  height: 1415px;
+}
+
+.galeria_Esquerdo_mainDIV{
   display: flex;
   height: 1200px;
 }
@@ -484,6 +485,7 @@ p {
 .galeria_Esquerdo {
   display: flex;
   width: 50%;
+  z-index: 2;
 }
 
 .galeria_parallax {
@@ -793,6 +795,7 @@ p {
   position: relative;
   right: 443%;
   top: 1233px;
+  height: 173px;
 }
 
 .galeria_Esquerdo span:nth-child(37){
