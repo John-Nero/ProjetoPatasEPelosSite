@@ -40,58 +40,60 @@
     <main>
         <section class="site">
             <div class="sobre_nos_pt1">
-                <span><img src="img\PG_sobre_nos\MascaraGato.svg" alt="Doutora segurando um gato"></span>
+                <span><img src="img\PG_sobre_nos\MascaraGato.svg" alt="Doutora segurando um gato" draggable=false></span>
                 <div>
-                    <h1 class="titulo_roxo">Sobre nós</h1>
-                    <h2 class="subtitulo_laranja">Conheça um pouco mais de nos</h2>
+                    <h1>Sobre nós</h1>
+                    <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
                     <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
                 </div>
             </div>
 
             <div class="sobre_nos_pt2">
                 <div>
-                    <h2 class="titulo_roxo">Sobre nós</h2>
+                    <h2>Sobre nós</h2>
                     <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
                     <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
                 </div>
-                <span><img src="img\PG_sobre_nos\Mascaracachorro.svg" alt="Cachorro vestindo jaleco de veterinario"></span>
+                <span><img src="img\PG_sobre_nos\Mascaracachorro.svg" alt="Cachorro vestindo jaleco de veterinario" draggable=false></span>
             </div>
         </section>
 
         <section class="site">
             <div class="marcas">
-                <h2>Marcas Parceiras</h2>
-                <h2 class="subtitulo_laranja">Conheça as nossas marcas parceiras</h2>
+                <div>
+                    <h2>Marcas Parceiras</h2>
+                    <h2 class="subtitulo_laranja">Conheça as nossas marcas <br> parceiras</h2>
+                </div>
                 <div class="carrosel_Marcas">
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas"></span>
-                        <h3>Patas unidas</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats"></span>
-                        <h3>Personalit cats</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria"></span>
-                        <h3>União agraria</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets"></span>
-                        <h3>Love pets</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai"></span>
-                        <h3>Petz do paraguai</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas"></span>
-                        <h3>Patas unidas</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats"></span>
-                        <h3>Personalit cats</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria"></span>
-                        <h3>União agraria</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets"></span>
-                        <h3>Love pets</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets" draggable=false></span>
+
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai"></span>
-                        <h3>Petz do paraguai</h3>
+                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai" draggable=false></span>
+
                     </div>
                 </div>
             </div>

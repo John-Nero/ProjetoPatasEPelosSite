@@ -63,6 +63,9 @@ $(".carrosel_depo_texto").slick({
   asNavFor: ".carrosel_depo_imagem"
 });
 
+//---------------PAGINA SERVIÇOS-------------------------------
+
+
 $(".lista-com-imagens").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -84,8 +87,9 @@ $(".lista-com-imagens").slick({
 $(".carrosel_Marcas").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 601,

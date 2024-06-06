@@ -4,6 +4,15 @@ p {
   font-family: "Roboto Flex", sans-serif;
 }
 
+h2,
+h1 {
+  font-size: 8.5em;
+  color: #664D9F;
+  font-weight: 900;
+  font-style: normal;
+ 
+}
+
 p {
   font-size: 2.5em;
 }
@@ -50,20 +59,52 @@ p {
   margin-left: 15%;
 }
 
-.carrosel_Marcas .slick-prev:before,
-.carrosel_Marcas .slick-next:before {
-  display: none;
+.marcas {
+  background: #fff8ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.carrosel_Marcas {
-  width: 100%;
+.marcas div:nth-child(1) {
+  margin-top: 100px;
 }
 
-.carrosel_Marcas img {
-  width: 214px;
-}
-
-.carrosel_Marcas {
+.marcas div:nth-child(1) h2:nth-child(1){
+  font-size: 6.5em;
   text-align: center;
-  width: 214px !important;
+}
+
+.marcas div:nth-child(1) h2:nth-child(2){
+  text-align: center;
+}
+
+.carrosel_Marcas .slick-prev,
+.carrosel_Marcas .slick-next {
+  display: none !important;
+}
+
+.carrosel_Marcas {
+  margin-top: -60px;
+  width: 80%;
+}
+
+.carrosel_Marcas div div a {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 39px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.carrosel_Marcas div div a img {
+  width: 150px;
+  height: 150px;
+}
+
+.carrosel_Marcas div div a p {
+  margin-top: 10px;
+  font-size: 1.4em;
 }
