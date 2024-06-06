@@ -39,6 +39,7 @@
 
     <main>
         <section class="site">
+            <!--Primeira sessão do site-->
             <div class="sobre_nos_pt1">
                 <span><img src="img\PG_sobre_nos\MascaraGato.svg" alt="Doutora segurando um gato" draggable=false></span>
                 <div>
@@ -48,6 +49,7 @@
                 </div>
             </div>
 
+            <!--Primeira sessão do site-->
             <div class="sobre_nos_pt2">
                 <div>
                     <h2>Sobre nós</h2>
@@ -59,6 +61,7 @@
         </section>
 
         <section class="site">
+            <!--Carrosel de marcas parceiras-->
             <div class="marcas">
                 <div>
                     <h2>Marcas Parceiras</h2>

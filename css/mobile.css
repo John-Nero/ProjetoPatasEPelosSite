@@ -11,7 +11,7 @@
     display: none;
   }
 
-  /*PAGINA DE CONTATO*/
+  /*-----------------PAGINA DE CONTATO/*-----------------*/
   .entreEmContato div div img,
   .form > img:nth-child(1) {
     display: none;
@@ -88,6 +88,8 @@
     top: 259px;
     margin-left: -26px;
   }
+
+  /*-----------------PAGINA SOBRE NÓS/*-----------------*/
 }
 
 @media not all and (max-width: 900px) {
