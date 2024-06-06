@@ -3,7 +3,7 @@ $(".banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000
+  autoplaySpeed: 2000,
 });
 
 /*CATEGORIAS*/
@@ -17,10 +17,10 @@ $(".carrosel_categorias").slick({
       breakpoint: 601,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 /*EQUIPE*/
@@ -31,7 +31,7 @@ $(".carrosel_equipe").slick({
   centerPadding: "0",
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false
+  autoplay: false,
 });
 
 /*DEPOIMENTO*/
@@ -47,7 +47,7 @@ $(".carrosel_depo_imagem").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_texto"
+  asNavFor: ".carrosel_depo_texto",
 });
 
 /*Para os dois girarem juntos a gente ta chamando o asNavFor fazendo referencia um do outro em cada configuração*/
@@ -60,11 +60,10 @@ $(".carrosel_depo_texto").slick({
   fade: true,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_imagem"
+  asNavFor: ".carrosel_depo_imagem",
 });
 
 //---------------PAGINA SERVIÇOS-------------------------------
-
 
 $(".lista-com-imagens").slick({
   slidesToShow: 3,
@@ -77,10 +76,10 @@ $(".lista-com-imagens").slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 //---------------PAGINA SOBRE NÓS-------------------------------
@@ -92,13 +91,13 @@ $(".carrosel_Marcas").slick({
   cssEase: "linear",
   responsive: [
     {
-      breakpoint: 601,
+      breakpoint: 901,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 /* FORM WhatsAPP */
@@ -113,9 +112,22 @@ function EnviarWhats() {
 
   let quebraDeLinha = "%0A";
 
-  var mensagem = encodeURIComponent(assunto + quebraDeLinha + nome + quebraDeLinha + email + quebraDeLinha + fone + quebraDeLinha + mens);
+  var mensagem = encodeURIComponent(
+    assunto +
+      quebraDeLinha +
+      nome +
+      quebraDeLinha +
+      email +
+      quebraDeLinha +
+      fone +
+      quebraDeLinha +
+      mens
+  );
 
-  window.open("https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem, "_blank");
+  window.open(
+    "https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem,
+    "_blank"
+  );
 
   // Limpar os valores dos campos do formulário
   document.getElementById("nome").value = "";

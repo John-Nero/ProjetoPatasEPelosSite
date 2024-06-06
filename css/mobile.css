@@ -20,7 +20,6 @@
   .form > img:nth-child(2) {
     width: 100%;
     margin-top: 180px;
-
   }
 
   .form > div {
@@ -89,7 +88,59 @@
     margin-left: -26px;
   }
 
-  /*-----------------PAGINA SOBRE NÓS/*-----------------*/
+  /*-----------------PAGINA SOBRE NOS/*-----------------*/
+
+  /*Sessao 1*/
+  .sobre_nos_pt1 h1 {
+    font-size: 5.5em;
+  }
+
+  .sobre_nos_pt1 h2 {
+    font-size: 2.5em;
+  }
+
+  .sobre_nos_pt1 div {
+    margin-left: 0;
+    margin-top: 132px;
+  }
+
+  .sobre_nos_pt1 span {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  /*Sessao 2*/
+  .sobre_nos_pt2 h2:nth-child(1) {
+    font-size: 5.5em;
+  }
+
+  .sobre_nos_pt2 h2:nth-child(2) {
+    font-size: 2.5em;
+  }
+
+  .sobre_nos_pt2 div {
+    margin-left: 68px;
+    margin-top: 90px;
+  }
+
+  .sobre_nos_pt2 span {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .sobre_nos_pt2 img{
+    margin-left: 0;
+  }
+
+  /*marcas*/
+  .marcas h2:nth-child(1) {
+    font-size: 5.5em;
+  }
+
+  .marcas h2:nth-child(2) {
+    font-size: 2.5em;
+  }
+
 }
 
 @media not all and (max-width: 900px) {
