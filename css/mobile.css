@@ -7,135 +7,151 @@
   .slick-prev {
     display: none !important;
   }
-
-  .agenda,
-  .tosa,
-  .banner,
-  .categorias,
-  .banner,
-  .depo,
-  .equipe,
-  .rodape,
-  .sobre,
-  .visita,
-  .menu_superior h2 {
+  .menu_superior {
     display: none;
   }
 
-  .abrir-menu {
-    width: 34px;
-    height: 34px;
-    background: url(img\menu_hamburguer.svg) no-repeat;
-    text-indent: -9999px;
+  /*-----------------PAGINA DE CONTATO/*-----------------*/
+  .entreEmContato div div img,
+  .form > img:nth-child(1) {
+    display: none;
   }
 
-  .equipe {
+  .form > img:nth-child(2) {
+    width: 100%;
+    margin-top: 180px;
+  }
+
+  .form > div {
+    top: -1096px;
+    margin-left: 3%;
+  }
+
+  .formulario {
+    width: 673px;
+    margin: 0;
+    margin-left: 13%;
+    display: block;
+    height: 824px;
+  }
+
+  .formulario > div:nth-child(1),
+  .formulario > div:nth-child(2) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .formulario > div:nth-child(1) {
+    height: 227px;
+    padding-top: 20px;
+  }
+
+  .formulario > div:nth-child(1) div:nth-child(2),
+  .formulario > div:nth-child(1) div:nth-child(3) {
+    margin-top: 13px;
+  }
+
+  .formulario > div:nth-child(1) input {
+    width: 537px;
+  }
+  .formulario > div:nth-child(2) {
+    margin-top: 274px;
+  }
+
+  .formulario > div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    margin-top: -274px;
+  }
+
+  .formulario > div:nth-child(2) textarea {
+    width: 537px;
+    height: 237px;
+    position: relative;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) {
+    margin-top: -15px;
+    flex-direction: row;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div {
+    flex-direction: row;
+    width: 260px;
+    z-index: 2;
+  }
+
+  .formulario > div:nth-child(1) span {
+    top: 259px;
+    margin-left: -26px;
+  }
+
+  /*-----------------PAGINA SOBRE NOS/*-----------------*/
+
+  /*Sessao 1*/
+  .sobre_nos_pt1 h1 {
+    font-size: 5.5em;
+  }
+
+  .sobre_nos_pt1 h2 {
+    font-size: 2.5em;
+  }
+
+  .sobre_nos_pt1 div {
+    margin-left: 0;
+    margin-top: 132px;
+  }
+
+  .sobre_nos_pt1 span {
     margin-top: 0;
-  }
-
-  .equipe > div:nth-child(1),
-  .equipe > div:nth-child(3),
-  .equipe > div:nth-child(2) > span:nth-child(3),
-  .equipe > div:nth-child(2) > span:nth-child(4) {
-    display: none;
-  }
-
-  .equipe > div:nth-child(2) {
     width: 100%;
   }
 
-  /*----------------------------------------------------------*/
+  /*Sessao 2*/
+  .sobre_nos_pt2 h2:nth-child(1) {
+    font-size: 5.5em;
+  }
 
-  .depo_topo span:nth-child(1),
-  .depo_topo span:nth-child(2),
-  .depo_topo span:nth-child(3),
-  .depo_principal div:nth-child(3) span:nth-child(1),
-  .depo_principal div:nth-child(1) span:nth-child(6),
-  .depo_principal div:nth-child(1) span:nth-child(7) {
+  .sobre_nos_pt2 h2:nth-child(2) {
+    font-size: 2.5em;
+  }
+
+  .sobre_nos_pt2 div {
+    margin-left: 68px;
+    margin-top: 90px;
+  }
+
+  .sobre_nos_pt2 span {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .sobre_nos_pt2 img{
+    margin-left: 0;
+  }
+
+  /*marcas*/
+  .marcas h2:nth-child(1) {
+    font-size: 5.5em;
+  }
+
+  .marcas h2:nth-child(2) {
+    font-size: 2.5em;
+  }
+
+}
+
+@media not all and (max-width: 900px) {
+  .abrir_menu {
+    display: none;
+  }
+  .tosa img:nth-child(2) {
     display: none;
   }
 
-  .depo_topo span:nth-child(4) img {
-    width: 80px;
-    height: 80px;
+  .form > img:nth-child(2) {
+    display: none;
   }
-  
-  .depo_topo span:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    left: 72%;
-    top: 62px;
-    position: relative;
-  }
-  
-  .depo_principal {
-    width: 900px;
-  }
-  
-  .depo_principal div:nth-child(1) span:nth-child(1) {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(1) {
-    width: 100px;
-    height: 100px;
-    bottom: 3px;
-    position: relative;
-    left: 50%;
-  }
-  
-  .depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(2) {
-    left: -47px;
-    top: -2px;
-  }
-  
-  .depo_principal div:nth-child(1) span:nth-child(2) {
-    width: 100px;
-    height: 100px;
-    left: 10%;
-  }
-  .depo_principal div:nth-child(1) span:nth-child(3) {
-    width: 120px;
-    height: 120px;
-    bottom: 138px;
-    left: -9%;
-  }
-  
-  .carrosel_depo_imagem {
-    width: 441px;
-    height: 441px;
-    left: 20%;
-  }
-
-  .abrir_menu {
-    background: url(../img/menu_hamburguer.svg);
-    align-self: start;
-    margin: 4% 0% 5% 0%;
-    width: 30px;
-    height: 30px;
-    border: 0;
-    position: relative;
-    right: 232px;
-    bottom: 12px;
-  }
-  .menu_superior div {
-    justify-content: center;
-  }
-  .menu_icones li:nth-child(1) {
-    position: relative;
-    right: 521px;
-    }
-
-    .menu_icones li:nth-child(2) {
-      position: relative;
-      left : 157px;
-      }
-}
-
-
-@media not all and (max-width: 900px) {
-  .abrir_menu{display: none;}
-  .tosa img:nth-child(2){display: none;}
-  
 }

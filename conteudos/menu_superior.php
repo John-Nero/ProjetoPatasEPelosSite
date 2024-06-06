@@ -10,7 +10,7 @@
                 <nav>
                     <ul class="menu_botoes">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="sobreNos.php">Sobre Nós</a></li>
                         <li><a href="#">Produtos</a></li>
                         <li><a href="contato.php">Contato</a></li>
                         <li><a href="servicos.php">Serviços</a></li>
@@ -19,10 +19,10 @@
 
                 <ul class="menu_icones">
                     <li>
-                        <a href="#"><img src="img/menu/login.svg" alt="Login"/></a>
+                        <a href="#"><img src="img/menu/login.svg" alt="Login" draggable=false></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" /></a>
+                        <a href="#"><img src="img/menu/favoritos.svg" alt="Favoritos" draggable=false></a>
                     </li>
 
                 </ul>
@@ -34,7 +34,7 @@
 
                 <!--Menu hamburguer inacabado-->
             </div>
-            <!-- <a href=""><img src="img/menu_hambuguer.svg" alt="" /></a> -->
+            <!-- <a href=""><img src="img/menu_hambuguer.svg" alt="" draggable=false/></a> -->
         </div>
     </div>
 </div>

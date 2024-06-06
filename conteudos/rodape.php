@@ -3,20 +3,20 @@
         <div>
             <!--Primeira coluna-->
             <div>
-                <img src="img/logo_Patas_e_pelos.svg" alt="Logo Patas e Pelos" />
+                <img src="img/logo_Patas_e_pelos.svg" alt="Logo Patas e Pelos" draggable=false />
                 <p>Sabemos que os animais de estimação são como a família, por isso estamos empenhados em fornecer
                     produtos da mais alta qualidade em que possa confiar.</p>
                 <h2>Entre em contato:</h2>
                 <a href="tel:1190028922">(11)9002-8922</a>
                 <ul>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/whatsapp.svg" alt="whatsapp" /></a>
+                        <a href="#"><img src="img/redes_sociais/whatsapp.svg" alt="whatsapp" draggable=false /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/instagram.svg" alt="instagram" /></a>
+                        <a href="#"><img src="img/redes_sociais/instagram.svg" alt="instagram" draggable=false /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/X.svg" alt="Facebook" /></a>
+                        <a href="#"><img src="img/redes_sociais/X.svg" alt="Facebook" draggable=false /></a>
                     </li>
                 </ul>
             </div>
@@ -42,6 +42,6 @@
         </div>
 
         <!--Detalhes ao redor do rodapé e o cachorro que fica ao lado da terceira coluna-->
-        <span><img src="img/enfeites/rodape_fundo.svg" alt="" /></span>
+        <span><img src="img/enfeites/rodape_fundo.svg" alt="" draggable=false /></span>
     </div>
 </footer>

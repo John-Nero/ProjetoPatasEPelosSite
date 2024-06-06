@@ -1,0 +1,115 @@
+/*|########| CONFIGURACOES GERAIS |########|*/
+h1,
+h2,
+p {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/*estilização dos titulos em roxo mais escuro*/
+h2,
+h1 {
+  font-size: 8.5em;
+  color: #664d9f;
+  font-weight: 900;
+  font-style: normal;
+}
+
+p {
+  font-size: 2.5em;
+}
+
+/*|########| SESSAO 1 E 2 PORQUE SÃO SEMELHANTES |########|*/
+.sobre_nos_pt1,
+.sobre_nos_pt2 {
+  display: flex;
+  background: #fff8ed;
+}
+
+.sobre_nos_pt1 span,
+.sobre_nos_pt2 span {
+  width: 50%;
+}
+
+.sobre_nos_pt1 img,
+.sobre_nos_pt2 img {
+  width: 100%;
+}
+
+/*|########| SESSAO 1 DIFERENCIAL |########|*/
+
+.sobre_nos_pt1 span {
+  margin-top: 50px;
+}
+
+.sobre_nos_pt1 div {
+  width: 600px;
+  margin-left: 15%;
+  margin-top: 250px;
+}
+
+.sobre_nos_pt1 img {
+  margin-left: -10px;
+}
+
+/*|########| SESSAO 2 DIFERENCIAL |########|*/
+
+.sobre_nos_pt2 img {
+  margin-left: 64px;
+}
+
+.sobre_nos_pt2 div {
+  margin-top: 250px;
+  margin-left: 15%;
+  width: 600px;
+}
+
+/*|########| MARCAS |########|*/
+.marcas {
+  background: #fff8ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marcas div:nth-child(1) {
+  margin-top: 100px;
+}
+
+.marcas div:nth-child(1) h2:nth-child(1) {
+  font-size: 6.5em;
+  text-align: center;
+}
+
+.marcas div:nth-child(1) h2:nth-child(2) {
+  text-align: center;
+}
+
+.carrosel_Marcas .slick-prev,
+.carrosel_Marcas .slick-next {
+  display: none !important;
+}
+
+.carrosel_Marcas {
+  margin-top: -60px;
+  width: 80%;
+}
+
+.carrosel_Marcas div div a {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 39px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.carrosel_Marcas div div a img {
+  width: 150px;
+  height: 150px;
+}
+
+.carrosel_Marcas div div a p {
+  margin-top: 10px;
+  font-size: 1.4em;
+}

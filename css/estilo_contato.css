@@ -1,6 +1,164 @@
-main > h2:nth-child(1){
-    width: 1810px;
-    height: 906px;
-    background: url(../img/PG_contato/EntreEmContato.svg) no-repeat;
-    text-indent: -9999px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/*|########| CONFIGURACOES GERAIS |########|*/
+
+body {
+  font-size: 11px;
+  font-family: "Roboto Mono", "Roboto Black", monospace;
+  font-weight: 400;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Bloqueia a seleção das imagens do site*/
+img {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  user-select: none;
+}
+/*______________________________________________________________________________*/
+
+/*|########| TOPO CONTATO |########| */
+
+.entreEmContato div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entreEmContato div div h2 {
+  /* background: chartreuse;*/
+  font-size: 6.2em;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  color: #ff9a5b;
+  width: 884px;
+  z-index: 2;
+}
+
+/*|########| FORMULARIO DE ENVIO |########| */
+
+/*Caixa geral*/
+.form {
+  margin-top: -212px;
+}
+
+.form > img:nth-child(1) {
+  margin-bottom: -905px;
+  margin-left: -7px;
+}
+
+.form > div {
+  z-index: 2;
+  position: relative;
+}
+.formulario {
+  width: 1228px;
+  height: 620px;
+  background: #a38cd6;
+  display: flex;
+  align-items: center;
+  margin-left: 290px;
+  margin-top: 147px;
+  border-radius: 90px;
+}
+
+/*Config dos inputs e dos titulos de cada campo*/
+
+.formulario > div h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.formulario > div:nth-child(1) input {
+  height: 39px;
+  width: 336px;
+  border-radius: 13px;
+  box-shadow: none;
+  border-width: 0;
+}
+
+.formulario > div input::placeholder,
+.formulario > div:nth-child(2) textarea::placeholder {
+  position: absolute; /* Posicionamento absoluto em relação ao input-container */
+  bottom: 0; /* Alinha o placeholder ao fundo */
+  left: 0; /* Alinha o placeholder ao canto esquerdo */
+  padding-left: 5px; /* Ajusta o espaçamento esquerdo para o placeholder */
+  color: #d0c5da;
+  font-size: 1.3em;
+}
+
+.formulario > div {
+  height: 540px;
+}
+
+/*div lateral com os campos de identificação e o enfeite da base*/
+.formulario > div:nth-child(1) {
+  margin-left: 50px;
+}
+
+.formulario > div:nth-child(1) div:nth-child(2),
+.formulario > div:nth-child(1) div:nth-child(3) {
+  margin-top: 55px;
+}
+
+.formulario > div:nth-child(1) span {
+  height: 363px;
+  top: -85px;
+  position: relative;
+  margin-left: -38px;
+  display: flex;
+}
+
+.formulario > div:nth-child(2) textarea {
+  width: 653px;
+  height: 363px;
+  border-radius: 10px;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) {
+  display: flex;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div {
+  display: flex;
+  height: 60px;
+  background: #ff9a5b;
+  align-items: center;
+  width: 316px;
+  border-radius: 20px;
+  justify-content: center;
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div button,
+.formulario > div:nth-child(2) div:nth-child(2) div input {
+  font-size: 1.8em;
+  background: #ff9a5b;
+  border-width: 0;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.formulario > div:nth-child(2) div:nth-child(2) div:nth-child(2) {
+  margin-left: 28px;
 }
