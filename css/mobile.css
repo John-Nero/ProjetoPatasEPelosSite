@@ -1,5 +1,5 @@
 /*######################*/
-/*#### 600 até 900 #####*/
+/*#### 601 até 900 #####*/
 /*######################*/
 
 @media (max-width: 900px) {
@@ -128,7 +128,7 @@
     width: 100%;
   }
 
-  .sobre_nos_pt2 img{
+  .sobre_nos_pt2 img {
     margin-left: 0;
   }
 
@@ -140,6 +140,92 @@
   .marcas h2:nth-child(2) {
     font-size: 2.5em;
   }
+}
+
+/* ######################### */
+/* ####   0 atÃ© 600  ##### */
+/* ######################### */
+@media (max-width: 300px) {
+  .slick-next,
+  .slick-prev {
+    display: none !important;
+  }
+  .menu_superior {
+    display: none;
+  }
+  /*-----------------PAGINA DE CONTATO/*-----------------*/
+
+  .entreEmContato div div h2 {
+    font-size: 2.2em;
+    width: 300px;
+  }
+  .formulario {
+    width: 215px;
+    height: 390px;
+    margin-left: 13%;
+    top: 735px;
+    position: relative;
+    border-radius: 19px;
+  }
+
+  .formulario > div h2 {
+    font-size: 1em;
+  }
+
+  .formulario > div:nth-child(1) input {
+    width: 180px;
+    height: 19px;
+    font-size: 0.6em;
+  }
+
+  .entreEmContato div div img,
+  .form > img:nth-child(1) {
+    display: none;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div:nth-child(1),
+  .formulario > div:nth-child(2) div:nth-child(2) div:nth-child(2) {
+    width: 90px;
+    height: 28px;
+    margin: 0;
+    font-size: 1.3em;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div:nth-child(1) {
+    margin-right: 10px;
+  }
+  .formulario > div:nth-child(2) div:nth-child(1) {
+    margin-top: -371px;
+  }
+
+  .formulario > div:nth-child(2) textarea {
+    width: 184px;
+    height: 84px;
+    font-size: 0.8em;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) {
+    margin-top: 11px;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div button,
+  .formulario > div:nth-child(2) div:nth-child(2) div input {
+    font-size: 0.6em;
+  }
+
+  .formulario > div:nth-child(2) div:nth-child(2) div:nth-child(1) img,
+  .formulario > div:nth-child(2) div:nth-child(2) div button,
+  .formulario > div:nth-child(2) div:nth-child(2) div img {
+    height: 26px;
+  }
+
+  .formulario > div:nth-child(1) span {
+    top: 112px;
+    margin-left: -3px;
+    height: 134px;
+  }
+
+  .formulario > div:nth-child(1) span img{width: 215px;} 
 
 }
 
