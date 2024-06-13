@@ -80,9 +80,9 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
 
-     <!--WOW-->
-     <script src="js/wow.min.js"></script>
-     <script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
               new WOW().init();
               </script>
     

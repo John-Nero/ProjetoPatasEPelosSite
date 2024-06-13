@@ -116,11 +116,11 @@
 
 
                 <div class="teste1">
-                <span class="fade_batata1 animate__animated animate__fadein"><img src="img/enfeites/bolota1.svg" alt="" /> </span>
-                <span class="fade_batata2 animate__animated animate__fadein"><img src="img/enfeites/bolota2.svg" alt="" /> </span>
-                <span class="fade_batata3 animate__animated animate__fadein"><img src="img/enfeites/bolota3.svg" alt="" /> </span>
-                <span class="fade_batata4 animate__animated animate__fadein"><img src="img/enfeites/bolota4.svg" alt="" /> </span>
-                <span class="fade_batata5 animate__animated animate__fadein"><img src="img/enfeites/bolota5.svg" alt="" /> </span>
+                    <span class="fade_batata1 animate__animated animate__fadein"><img src="img/enfeites/bolota1.svg" alt="" /> </span>
+                    <span class="fade_batata2 animate__animated animate__fadein"><img src="img/enfeites/bolota2.svg" alt="" /> </span>
+                    <span class="fade_batata3 animate__animated animate__fadein"><img src="img/enfeites/bolota3.svg" alt="" /> </span>
+                    <span class="fade_batata4 animate__animated animate__fadein"><img src="img/enfeites/bolota4.svg" alt="" /> </span>
+                    <span class="fade_batata5 animate__animated animate__fadein"><img src="img/enfeites/bolota5.svg" alt="" /> </span>
                 </div>
                 <div class="teste2">
                     <div class="estilo2">
@@ -169,96 +169,216 @@
                                 <a href="#">Veja mais ➝</a>
                             </div>
                         </div>
-                    </div>
-                    </div>
+                    </div>qwdqwdq
+                </div>
             </div>
         </section>
 
         <!-- galeria -->
-
         <section class="fundo_site">
             <div class="site">
                 <div class="galeria">
-                <div class="galeria_Esquerdo_mainDIV">
-                <div class="galeria_Esquerdo">
-                    <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span> 
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                    <div class="galeria_Esquerdo_mainDIV">
+                        <div class="galeria_Esquerdo">
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <div class="galeria_Esquerdo_img1">
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup">
+                                <div class="popup-content">
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img2">
+                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
 
-                    <div class="galeria_Esquerdo_img1">
-                        <img class="1" src="img/servicos/galeria/foto1.svg" alt="">
-                        </div>
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
 
-                    <div class="galeria_Esquerdo_img2">
-                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                    </div> 
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-durawdqwdtion="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup">
+                                <div class="popup-content">
+                                    Seu conteúdo aqui, como texto ou outra imagem
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>qw   
+                            </span>-->
+                            <div class="galeria_Esquerdo_img3">
+                                <img class="" src="img/servicos/galeria/foto1.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup"> 
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img4">
+                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo1.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup">
+                                <div class="popup-content">
+                                    Seu conteúdo aqui, como texto ou outra imagem
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img5">
+                                <img class="" src="img/servicos/galeria/foto3.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup">
+                                <div class="popup-content">
+                                    Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img6">
+                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo2.svg" alt=""></span>
+                            <!-- <span class="popup"> 30
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img7">
+                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo3.svg" alt=""></span>
+                            <!-- <span class="popup"> 35
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img8">
+                                <img class="" src="img/servicos/galeria/foto5.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <!-- <span class="popup"> 37
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img9">
+                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                            <!-- <span class="popup"> 41
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+
+                            <div class="galeria_Esquerdo_img10">
+                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" data-wow-duration="6s" src="img/enfeites/estrela_roxa.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <!-- <span class="popup"> 46
+                                <div class="popup-content">
+                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    <p>Seu texto aqui</p>
+                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                </div>
+                            </span> -->
+                            <div class="galeria_Esquerdo_img11">
+                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
+                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
+                                <div class="texto-sobreposto">
+                                    <p>Nome</p>
+                                    <p>Done</p>
+                                </div>
+                            </div>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" data-wow-duration="6s" src="img/enfeites/estrela_roxa.svg" alt=""></span> <!--48-->
+                        </div>
+                    </div>
 
 
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-                    <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                    <div class="galeria_Esquerdo_img3">
-                        <img class="" src="img/servicos/galeria/foto1.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img4">
-                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/servicos/galeria/fundo1.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img5">
-                        <img class="" src="img/servicos/galeria/foto3.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img6">
-                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                        </div>
-                        <span><img src="img/servicos/galeria/fundo2.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img7">
-                        <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/servicos/galeria/fundo3.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img8">
-                        <img class="" src="img/servicos/galeria/foto5.svg" alt="">
-                        </div>
-                        <div class="galeria_Esquerdo_img9">
-                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-
-                        <div class="galeria_Esquerdo_img10">
-                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <div class="galeria_Esquerdo_img11">
-                        <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                        </div>
-                        <span><img src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                        <span><img src="img/enfeites/estrela_roxa.svg" alt=""></span>
-
+                    <div class="galeria_D">
+                        <h2 class="titulo_roxo animate__animated animate__flipInX">Nossa <br> Galeria!</h2>
+                        <p class="subtitulo_laranja animate__animated animate__fadeIn">Confira conosco <br> as nossas <br> fofurices e se <br> apaixone por <br> eles.</p>
                     </div>
                 </div>
-
-
-                <div class="galeria_D">
-                    <h2 class="titulo_roxo">Nossa <br> Galeria!</h2>
-                    <p class="subtitulo_laranja">Confira conosco <br> as nossas <br> fofurices e se <br> apaixone por <br> eles.</p>
-                </div>
-                </div>
-                </div>
+            </div>
             </div>
 
         </section>
@@ -266,7 +386,7 @@
     </main>
 
     <!--RODAPÉ-->
-    <?php include_once 'conteudos/rodape.php'?>
+    <?php include_once 'conteudos/rodape.php' ?>
     <!--FIM RODAPÉ-->
 
 
@@ -281,4 +401,9 @@
 
     <!--arquivo de configuração das animações-->
     <script src="js/animacoes.js"></script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>

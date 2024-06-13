@@ -102,3 +102,24 @@ new simpleParallax(parallax2, {
 	delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const popups = document.querySelectorAll('.popup');
+
+  popups.forEach(function(popup) {
+      popup.addEventListener('mouseenter', function() {
+          const popupContent = this.querySelector('.popup-content');
+          if (popupContent) {
+              popupContent.style.display = 'block';
+          }
+      });
+
+      popup.addEventListener('mouseleave', function() {
+          const popupContent = this.querySelector('.popup-content');
+          if (popupContent) {
+              popupContent.style.display = 'none';
+          }
+      });
+  });
+});
