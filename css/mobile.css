@@ -150,6 +150,7 @@
   .slick-prev {
     display: none !important;
   }
+
   .menu_superior {
     display: none;
   }
@@ -225,19 +226,139 @@
     height: 134px;
   }
 
-  .formulario > div:nth-child(1) span img{width: 215px;} 
+  .formulario > div:nth-child(1) span img {
+    width: 215px;
+  }
 
+  /*-----------------PAGINA DE SOBRE NOS-----------------*/
+  .sobre_nos_pt1,
+  .sobre_nos_pt2 {
+    width: 300px;
+    height: 233px;
+  }
+
+  /*Configurações gerais*/
+  .sobre_nos_pt1 > span:nth-child(1),
+  .sobre_nos_pt2 span:nth-child(3) {
+    display: none;
+  }
+
+  .sobre_nos_pt1 h1,
+  .sobre_nos_pt2 h2:nth-child(1),
+  .marcas div h2:nth-child(1) {
+    font-size: 2.4em !important;
+    text-align: center !important;
+  }
+
+  .sobre_nos_pt1 h2,
+  .sobre_nos_pt2 h2:nth-child(2),
+  .marcas div h2:nth-child(2) {
+    font-size: 1.2em;
+    text-align: center !important;
+  }
+  .sobre_nos_pt1 p,
+  .sobre_nos_pt2 p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  /*Fim configurações gerais*/
+
+  /*Parte 1(Cima)*/
+  .sobre_nos_pt1 img {
+    margin-left: 0;
+  }
+
+  .sobre_nos_pt1 > span:nth-child(2) {
+    margin-left: 8%;
+    width: 41px;
+    height: 41px;
+  }
+
+  .sobre_nos_pt1 > span:nth-child(3) {
+    margin: 58% 0 0 -19%;
+    width: 39px;
+    height: 42px;
+  }
+
+  .sobre_nos_pt1 > span:nth-child(2) img {
+    width: 35px;
+  }
+  .sobre_nos_pt1 > span:nth-child(3) img {
+    width: 45px;
+  }
+
+  .sobre_nos_pt1 div {
+    margin: 38px 0 0 -23px;
+    width: 139px;
+    position: relative;
+    left: 18%;
+  }
+
+  .sobre_nos_pt1 > img {
+    width: 121px;
+    height: 149px;
+    position: relative;
+    left: 1%;
+    top: 105px;
+    transform: rotatez(11deg);
+  }
+  /*Fim parte 1(Cima)*/
+
+  /*Parte 2(Meio)*/
+  .sobre_nos_pt2 span:nth-child(1) {
+    width: 100px;
+    transform: rotateZ(299deg);
+  }
+
+  .sobre_nos_pt2 img {
+    margin-left: -1px;
+    margin-top: 40px;
+  }
+
+  .sobre_nos_pt2 div {
+    margin: 0;
+    width: 139px;
+    position: relative;
+    left: -6%;
+    z-index: 2;
+  }
+
+  #mascaraLimpaSobreNos {
+    /* margin-top: 482px; */
+    position: relative;
+    top: -199px;
+    left: 50%;
+  }
+  /*Fim parte 2(Meio)*/
+
+  /*Marcas(Baixo)*/
+  .marcas {
+    margin-top: -253px;
+  }
+  .carrosel_Marcas div div a {
+   
+    width: 100px;
+ 
+  }
+  .carrosel_Marcas div div a img {
+    width: 30px;
+    height:30px;
+  }
+  /*Fim marcas(Baixo)*/
 }
 
 @media not all and (max-width: 900px) {
-  .abrir_menu {
-    display: none;
-  }
+  .abrir_menu,
   .tosa img:nth-child(2) {
     display: none;
   }
+}
 
-  .form > img:nth-child(2) {
+@media not all and (max-width: 300px) {
+  .sobre_nos_pt1 > span:nth-child(2),
+  .sobre_nos_pt1 > span:nth-child(3),
+  .sobre_nos_pt1 > span:nth-child(5),
+  #mascaraLimpaSobreNos {
     display: none;
   }
 }

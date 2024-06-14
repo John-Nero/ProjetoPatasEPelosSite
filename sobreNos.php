@@ -42,15 +42,22 @@
             <!--Primeira sessão do site-->
             <div class="sobre_nos_pt1">
                 <span><img src="img\PG_sobre_nos\MascaraGato.svg" alt="Doutora segurando um gato" draggable=false></span>
+                <span><img src="img\enfeites\esfera_roxo_escuro.svg" draggable=false></span>
+                <span><img src="img\enfeites\esfera_roxo_escuro.svg" draggable=false></span>
+
                 <div>
                     <h1>Sobre nós</h1>
                     <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
                     <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
                 </div>
+                <img src="img\enfeites\blobs_roxo.svg" draggable=false>
             </div>
+
+
 
             <!--Primeira sessão do site-->
             <div class="sobre_nos_pt2">
+                <span><img src="img\enfeites\blobs_roxo.svg" draggable=false></span>
                 <div>
                     <h2>Sobre nós</h2>
                     <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
@@ -58,6 +65,8 @@
                 </div>
                 <span><img src="img\PG_sobre_nos\Mascaracachorro.svg" alt="Cachorro vestindo jaleco de veterinario" draggable=false></span>
             </div>
+            <span id="mascaraLimpaSobreNos"><img src="img\PG_sobre_nos\mascaraLimpaSobreNos.svg" alt="Cachorro vestindo jaleco de veterinario" draggable=false></span>
+
         </section>
 
         <section class="site">
