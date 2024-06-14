@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!--Aponta para o arquivo de estilo-->
     <link rel="stylesheet" href="css/estilo.css" />
@@ -184,13 +185,15 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <div class="galeria_Esquerdo_img1">
-                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img1">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
+
+
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <!-- <span class="popup">
                                 <div class="popup-content">
@@ -199,11 +202,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img2">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img2">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
 
@@ -220,11 +223,11 @@
                                 </div>qw   
                             </span>-->
                             <div class="galeria_Esquerdo_img3">
-                                <img class="" src="img/servicos/galeria/foto1.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img3">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -236,11 +239,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img4">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img4">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -258,11 +261,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img5">
-                                <img class="" src="img/servicos/galeria/foto3.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto3.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3_laranja.svg" alt="Imagem Sobreposta" id="img5">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -274,11 +277,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img6">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_laranja.svg" alt="Imagem Sobreposta" id="img6">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo2.svg" alt=""></span>
@@ -290,11 +293,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img7">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_laranja.svg" alt="Imagem Sobreposta" id="img7">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -309,11 +312,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img8">
-                                <img class="" src="img/servicos/galeria/foto5.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto5.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4_roxo.svg" alt="Imagem Sobreposta" id="img8">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <!-- <span class="popup"> 37
@@ -324,11 +327,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img9">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img9">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -342,11 +345,11 @@
                             </span> -->
 
                             <div class="galeria_Esquerdo_img10">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img10">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -360,11 +363,11 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img11">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img11">
                                     <p>Nome</p>
-                                    <p>Done</p>
+                                    <p>Nome</p>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -396,6 +399,10 @@
 
     <!--Slick para animações-->
     <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/simple--js@5.5.1/dist/simple.min.js"></script>
 

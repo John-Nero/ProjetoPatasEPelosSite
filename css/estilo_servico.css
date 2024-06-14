@@ -520,9 +520,9 @@ p {
   scale: 0.6;
 }
 
-.galeria_Esquerdo_img1 {
+/* .galeria_Esquerdo_img1 {
   position: relative;
-  display: inline-block; /* Para que o tamanho da div se ajuste ao conteúdo */
+  display: inline-block;
   left: 45%;
   height: 170px;
   top: 190px;
@@ -563,7 +563,7 @@ p {
   left: 5px;
   width: 93%;
   height: 100%;
-  color: white; /* Cor do texto */
+  color: white;
   text-align: center;
   opacity: 0;
   visibility: hidden;
@@ -581,12 +581,119 @@ p {
 }
 
 .texto-sobreposto p {
-  font-size: 18px; /* Tamanho da fonte */
-  font-weight: bold; /* Peso da fonte */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra do texto */
-  margin: 0; /* Remove margem padrão do parágrafo */
-  padding: 10px; /* Espaçamento interno do texto */
+  font-size: 18px; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+  margin: 0; 
+  padding: 10px; 
   text-align: center; 
+} */
+
+/*  DE BAIXO PRA CIMA
+.galeria_Esquerdo_img1 {
+  position: relative;
+  display: inline-block;
+  width: 300px; 
+  height: 200px; 
+  overflow: visible; 
+}
+
+.imagem-base {
+  height: 100%;
+}
+
+.conteudo-sobreposto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+  transition: clip-path 0.5s ease-in-out; 
+}
+
+.galeria_Esquerdo_img1:hover .conteudo-sobreposto {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.imagem-sobreposta {
+  width: 100%;
+  height: auto;
+}
+
+.conteudo-sobreposto p {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 10px;
+} */
+
+.galeria_Esquerdo_img1 {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Ajuste conforme o tamanho das suas imagens */
+  height: 200px; /* Ajuste conforme o tamanho das suas imagens */
+  overflow: visible; /* Permitir que o conteúdo se mova livremente */
+  left: 46%;
+  top: 15%;
+}
+
+.imagem-base {
+  height: 100%;
+}
+
+.conteudo-sobreposto {
+  position: absolute;
+  top: 1%; /* Inicialmente fora da visão, acima do contêiner */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Inicialmente cortado acima */
+  transition: clip-path 0.8s ease-in-out, top ease-in-out; /* Transição suave para a animação */
+}
+
+.galeria_Esquerdo_img1:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img2:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img3:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img4:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img5:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img6:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img7:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img8:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img9:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img10:hover .conteudo-sobreposto,
+.galeria_Esquerdo_img11:hover .conteudo-sobreposto {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Move o conteúdo para baixo */
+  top: 0; /* Traz o conteúdo para dentro da área visível */
+}
+
+.imagem-sobreposta {
+  width: 100%;
+  height: auto;
+}
+
+.conteudo-sobreposto p {
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  width: 150px;
+  position: relative;
+  bottom: 50%;
+  text-align: center;
 }
 
 
@@ -606,6 +713,7 @@ p {
   top: 210px;
   height: 193px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(7) {
@@ -651,6 +759,7 @@ p {
   top: 350px;
   height: 170px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(12){
@@ -668,6 +777,7 @@ p {
   top: 440px;
   height: 194px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(14) {
@@ -730,6 +840,7 @@ p {
   top: 615px;
   height: 341px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(21){
@@ -747,6 +858,7 @@ p {
   top: 747px;
   height: 175px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(23){
@@ -764,6 +876,7 @@ p {
   top: 782px;
   height: 195px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(25){
@@ -797,6 +910,7 @@ p {
   top: 960px;
   height: 191px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo_img9{
@@ -805,6 +919,7 @@ p {
   top: 1027px;
   height: 170px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(30){
@@ -831,6 +946,7 @@ p {
   top: 1085px;
   height: 170px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(33){
@@ -866,6 +982,7 @@ p {
   top: 1233px;
   height: 173px;
   display: inline-block;
+  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(37){
@@ -884,6 +1001,62 @@ p {
   width: 82px;
   height: 79px;
   scale: 0.7;
+}
+
+#img1{
+  position: relative;
+  top: 26%;
+}
+
+#img2{
+  position: relative;
+  top: 26%;
+}
+
+#img3{
+  position: relative;
+  top: 31%;
+}
+
+#img4{
+  position: relative;
+  top: 27%;
+}
+
+#img5{
+  position: relative;
+  top: 15%;
+}
+
+#img6{
+  position: relative;
+  top: 29%;
+}
+
+#img7{
+  position: relative;
+  top: 27%;
+}
+
+#img8{
+  position: relative;
+  top: 28%;
+}
+
+#img9{
+  position: relative;
+  top: 31%;
+}
+
+#img10{
+  position: relative;
+  top: 30%;
+  left: 1%;
+}
+
+#img11{
+  position: relative;
+  top: 30%;
 }
 
 /* lado direito */
@@ -917,41 +1090,3 @@ p {
   animation-delay: 0s; 
 }
 
-.popup {
-  position: absolute;
-  top: 48%;
-  left: 111px;
-  transform: translate(-50%, -50%);
-  padding: 108px;
-  border-radius: 10px;
-  z-index: 999;
-}
-
-.popup img {
-  width: 200px;
-  height: auto;
-  position: relative;
-  left: 50px;
-  top: 16px;
-}
-
-.popup p {
-  position: relative;
-  left: 22%;
-  top: 115px;
-  z-index: 999;
-}
-
-.popup.active {
-  display: block;
-}
-
-.popup-content {
-  display: none; /* Por padrão, esconde o conteúdo */
-  position: absolute; /* Posiciona o conteúdo de forma absoluta */
-  bottom: 10%;
-  left: -25%; /* Centraliza horizontalmente */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Borda arredondada */
-  z-index: 999; /* Garante que o conteúdo esteja acima dos outros elementos */
-}
