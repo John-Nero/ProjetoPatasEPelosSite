@@ -360,6 +360,8 @@
 }
 
 @media not all and (max-width: 300px) {
+  .sobre_nos_pt1 > img,
+  .sobre_nos_pt2 > span:nth-child(1),
   .sobre_nos_pt1 > span:nth-child(2),
   .sobre_nos_pt1 > span:nth-child(3),
   .sobre_nos_pt1 > span:nth-child(5),
