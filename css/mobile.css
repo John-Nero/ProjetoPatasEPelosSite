@@ -295,11 +295,11 @@
   }
 
   .sobre_nos_pt1 > img {
-    width: 121px;
-    height: 149px;
+    width: 107px;
+    height: 129px;
     position: relative;
-    left: 1%;
-    top: 105px;
+    left: 6%;
+    top: 112px;
     transform: rotatez(11deg);
   }
   /*Fim parte 1(Cima)*/
@@ -335,14 +335,19 @@
   .marcas {
     margin-top: -253px;
   }
-  .carrosel_Marcas div div a {
-   
-    width: 100px;
- 
+  .carrosel_Marcas {
+    height: 178px;
+    width: 80%;
+    margin: -89px 0 0 8%;
   }
-  .carrosel_Marcas div div a img {
-    width: 30px;
-    height:30px;
+
+  .carrosel_Marcas div span {
+    margin: 0 35px;
+  }
+
+  .carrosel_Marcas div span img {
+    width: 50px;
+    height: 50px;
   }
   /*Fim marcas(Baixo)*/
 }
