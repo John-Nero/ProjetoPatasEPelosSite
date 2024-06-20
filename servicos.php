@@ -35,8 +35,14 @@
     </header>
     <main>
         <!--BANNER PRINCIPAL-->
-        <?php include_once 'conteudos/banner_servico.php' ?>
-        <!--fIM BANNER PRINCIPAL-->
+        <section class="site">
+  <!--banner rotativo-->
+    <div class="banner">
+        <img src="img/banners/servicos.svg" alt="R>são Miguel Paulista, N:200" />
+        <img src="img/banners/servicos_2.svg" alt="Horario de atendimento 24hrs" />
+        <img src="img/banners/servicos_3.svg" alt="veterinario, hotel,produtos, tosa e banho" />
+    </div>
+    </section>
 
 
 
@@ -51,15 +57,18 @@
             </div>
 
             <div class="carrosel_alinhamento">
-                <div class="lista-com-imagens">
+                <div class="carrosel_servico">
                     <div class="fade_delay1  animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/serv_1.svg" alt="">
-                            <div class="servico_texto">
-                                <h2 class="animate__animated animate__flipInX">Produtos</h2>
-                                <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
-                                    prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
-                                    prutukia nas daski daskina tereia daki.</p>
+                            <img src="img/servicos/carrosel/fundo_1.svg" alt="">
+                            <div class="carrosel_conteudo">
+                                <div class="carrosel_texto">
+                                    <img src="img/servicos/carrosel/veterinario_icon.svg" alt="">
+                                    <h2 class="animate__animated animate__flipInX">Produtos</h2>
+                                    <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
+                                        prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
+                                        prutukia nas daski daskina tereia daki.</p>
+                                </div>
                                 <a href="#">Consulte</a>
                             </div>
                         </div>
@@ -67,25 +76,31 @@
 
                     <div class="fade_delay2 animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/serv_2.svg" alt="">
-                            <div class="servico_texto_v2">
-                                <h2 class="animate__animated animate__flipInX">Produtos</h2>
-                                <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
-                                    prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
-                                    prutukia nas daski daskina tereia daki.</p>
+                            <img src="img/servicos/carrosel/fundo_2.svg" alt="">
+                            <div class="carrosel_conteudo_v2">
+                                <div class="carrosel_texto_v2">
+                                    <img src="img/servicos/carrosel/tosa_icon.svg" alt="">
+                                    <h2 class="animate__animated animate__flipInX">Produtos</h2>
+                                    <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
+                                        prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
+                                        prutukia nas daski daskina tereia daki.</p>
+                                </div>
                                 <a href="#">Consulte</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="fade_delay3 animate__animated animate__fadein">
+                    <div class="fade_delay3  animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/serv_3.svg" alt="">
-                            <div class="servico_texto">
-                                <h2 class="animate__animated animate__flipInX">Produtos</h2>
-                                <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
-                                    prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
-                                    prutukia nas daski daskina tereia daki.</p>
+                            <img src="img/servicos/carrosel/fundo_1.svg" alt="">
+                            <div class="carrosel_conteudo">
+                                <div class="carrosel_texto">
+                                    <img src="img/servicos/carrosel/blusa_icon.svg" alt="">
+                                    <h2 class="animate__animated animate__flipInX">Produtos</h2>
+                                    <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
+                                        prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
+                                        prutukia nas daski daskina tereia daki.</p>
+                                </div>
                                 <a href="#">Consulte</a>
                             </div>
                         </div>
@@ -93,12 +108,15 @@
 
                     <div class="fade_delay1 animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/serv_4.svg" alt="">
-                            <div class="servico_texto_v2">
-                                <h2 class="animate__animated animate__flipInX">Produtos</h2>
-                                <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
-                                    prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
-                                    prutukia nas daski daskina tereia daki.</p>
+                            <img src="img/servicos/carrosel/fundo_2.svg" alt="">
+                            <div class="carrosel_conteudo_v2">
+                                <div class="carrosel_texto_v2">
+                                    <img src="img/servicos/carrosel/tosa_icon.svg" alt="">
+                                    <h2 class="animate__animated animate__flipInX">Produtos</h2>
+                                    <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
+                                        prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
+                                        prutukia nas daski daskina tereia daki.</p>
+                                </div>
                                 <a href="#">Consulte</a>
                             </div>
                         </div>
@@ -169,7 +187,7 @@
                                 <a href="#">Veja mais ➝</a>
                             </div>
                         </div>
-                    </div>qwdqwdq
+                    </div>
                 </div>
             </div>
         </section>
@@ -184,13 +202,17 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <div class="galeria_Esquerdo_img1">
-                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img1">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
+
+
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <!-- <span class="popup">
                                 <div class="popup-content">
@@ -199,11 +221,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img2">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img2">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
 
@@ -220,27 +244,31 @@
                                 </div>qw   
                             </span>-->
                             <div class="galeria_Esquerdo_img3">
-                                <img class="" src="img/servicos/galeria/foto1.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img3">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <!-- <span class="popup"> 
                                 <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
                                     <img src="img/servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img4">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img4">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -258,11 +286,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img5">
-                                <img class="" src="img/servicos/galeria/foto3.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto3.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3_laranja.svg" alt="Imagem Sobreposta" id="img5">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p2>Nome</p2>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -274,11 +304,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img6">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_laranja.svg" alt="Imagem Sobreposta" id="img6">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p2>Nome</p2>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo2.svg" alt=""></span>
@@ -290,11 +322,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img7">
-                                <img class="" src="img/servicos/galeria/foto2.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_laranja.svg" alt="Imagem Sobreposta" id="img7">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p2>Nome</p2>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -309,11 +343,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img8">
-                                <img class="" src="img/servicos/galeria/foto5.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto5.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4_roxo.svg" alt="Imagem Sobreposta" id="img8">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <!-- <span class="popup"> 37
@@ -324,11 +360,13 @@
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img9">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img9">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -342,11 +380,13 @@
                             </span> -->
 
                             <div class="galeria_Esquerdo_img10">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img10">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -354,17 +394,19 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <!-- <span class="popup"> 46
                                 <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
+                                    Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
                                     <img src="img/servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img11">
-                                <img class="" src="img/servicos/galeria/foto4.svg" alt="">
-                                <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola.svg" alt="Imagem Sobreposta">
-                                <div class="texto-sobreposto">
-                                    <p>Nome</p>
-                                    <p>Done</p>
+                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <div class="conteudo-sobreposto">
+                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img11">
+                                    <div class="conteudo-texto">
+                                        <p>Nome</p>
+                                        <p1>Nome</p1>
+                                    </div>
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -381,6 +423,18 @@
             </div>
             </div>
 
+        </section>
+
+        <section class="site">
+            <div class="contato">
+                <div>
+                    <h2 class="titulo_roxo wow animate__animated animate__flipInX ">Entre em contato agora!</h2>
+                    <h2 class="subtitulo_laranja wow animate__animated animate__flipInX" data-wow-delay:="3s">E faça o seu pet feliz.</h2>
+                    <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
+
+                </div>
+                <img src="img/servicos/contato/contato.svg" alt="" />
+            </div>
         </section>
 
     </main>
