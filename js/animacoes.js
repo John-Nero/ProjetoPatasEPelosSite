@@ -3,7 +3,14 @@ $(".banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2000
+});
+
+$(".banner_servico").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000
 });
 
 /*CATEGORIAS*/
@@ -17,21 +24,18 @@ $(".carrosel_categorias").slick({
       breakpoint: 601,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 /*EQUIPE*/
 $(".carrosel_equipe").slick({
-  slide: "div",
   centerMode: true,
-  autoplay: true,
-  centerPadding: "0",
   slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
+ slidesToScroll: 1,
+ autoplay: false
 });
 
 /*DEPOIMENTO*/
@@ -47,7 +51,7 @@ $(".carrosel_depo_imagem").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_texto",
+  asNavFor: ".carrosel_depo_texto"
 });
 
 /*Para os dois girarem juntos a gente ta chamando o asNavFor fazendo referencia um do outro em cada configuração*/
@@ -56,82 +60,82 @@ $(".carrosel_depo_imagem").slick({
 $(".carrosel_depo_texto").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 500,
-  fade: true,
   autoplay: false,
   autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_imagem",
+  asNavFor: ".carrosel_depo_imagem"
 });
 
-//---------------PAGINA SERVIÇOS-------------------------------
+// $(".carrosel_servico").slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   dots: false,
+//   infinite: true,
+//   responsive: [
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+// });
 
-$(".lista-com-imagens").slick({
+// Inicializando o carrossel com a biblioteca slick
+$(".carrosel_servico").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
   dots: false,
   infinite: true,
   responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+  ]
 });
 
-//---------------PAGINA SOBRE NÓS-------------------------------
-$(".carrosel_Marcas").slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  cssEase: "linear",
-  responsive: [
-    {
-      breakpoint: 901,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+// Adicionando as classes 'impar' e 'par' aos slides
+$('.carrosel_servico').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+  // Remover classes existentes
+  $('.carrosel_servico .slick-slide').removeClass('impar par');
+  
+  // Loop através de todos os slides visíveis
+  $('.carrosel_servico .slick-slide').each(function(index) {
+      // Adiciona a classe impar ou par com base no índice
+      if (index % 2 === 0) {
+          $(this).addClass('par');
+      } else {
+          $(this).addClass('impar');
+      }
+  });
 });
 
-/* FORM WhatsAPP */
-function EnviarWhats() {
-  let assunto = "Site Oficina Auto Mestre";
-  let nome = "*Nome:* " + document.getElementById("nome").value;
-  let email = "*E-mail:* " + document.getElementById("email").value;
-  let fone = "*Fone:* " + document.getElementById("fone").value;
-  let mens = "*Mens:* " + document.getElementById("mens").value;
+// Inicializar o carrossel para garantir que as classes sejam aplicadas
+$('.carrosel_servico').slick('slickGoTo', 0);
 
-  let numeroWhats = "5511997548991";
+let parallax = document.getElementsByClassName('parallax');
+new simpleParallax(parallax, {
+  overflow: true,
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
 
-  let quebraDeLinha = "%0A";
+let parallax1 = document.getElementsByClassName('parallax1');
+new simpleParallax(parallax1, {
+  overflow: true,
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
 
-  var mensagem = encodeURIComponent(
-    assunto +
-      quebraDeLinha +
-      nome +
-      quebraDeLinha +
-      email +
-      quebraDeLinha +
-      fone +
-      quebraDeLinha +
-      mens
-  );
-
-  window.open(
-    "https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem,
-    "_blank"
-  );
-
-  // Limpar os valores dos campos do formulário
-  document.getElementById("nome").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("fone").value = "";
-  document.getElementById("mens").value = "";
-}
+let parallax2 = document.getElementsByClassName('parallax2');
+new simpleParallax(parallax2, {
+  overflow: true,
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});

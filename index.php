@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patas e pelos Pethouse</title>
-    <link rel="icon" href="img\favicon.ico">
-
-    
     <!--Reseta o estilo-->
     <link rel="stylesheet" href="css/reset.css" />
 
@@ -25,16 +22,16 @@
 
     <!--ANIMATE STYLE-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Aponta para o arquivo de estilo-->
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     
   </head>
-
   <body>
     <header>
       <!--FAIXA MENU-->
-      <?php include_once 'conteudos/menu-superior.php'?>
+      <?php include_once 'conteudos/menu_superior.php'?>
       <!--FIM FAIXA MENU-->
     </header>
     <main>
@@ -43,7 +40,7 @@
       <!--fIM BANNER PRINCIPAL-->
 
       <!--AGENDE SEU HORARIO-->
-      <?php include_once 'conteudos/agenda-horario.php'?>
+      <?php include_once 'conteudos/agenda_horario.php'?>
       <!--FIM AGENDE SEU HORARIO-->
 
       <!--CATEGORIAS-->
@@ -51,11 +48,11 @@
       <!--FIM CATEGORIAS-->
 
       <!-- TOSA E BANHO -->
-      <?php include_once 'conteudos/banho-e-tosa.php'?>
+      <?php include_once 'conteudos/banho_e_tosa.php'?>
       <!-- FIM TOSA E BANHO -->
 
       <!-- SOBRE NOS -->
-      <?php include_once 'conteudos/sobre-nos.php'?>
+      <?php include_once 'conteudos/sobre_nos.php'?>
       <!-- FIM SOBRE NOS -->
 
       <!--EQUIPE-->
@@ -83,9 +80,9 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
 
-     <!--WOW-->
-     <script src="js/wow.min.js"></script>
-     <script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
               new WOW().init();
               </script>
     
