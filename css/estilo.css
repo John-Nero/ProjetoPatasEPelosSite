@@ -137,10 +137,10 @@ img {
   z-index: 1;
 }
 
-.whatsapp_icone{
+.whatsapp_icone {
   width: 50px;
   height: 50px;
-} 
+}
 
 /*|########| BANNER |########|*/
 
@@ -679,7 +679,7 @@ img {
 /*Sobe a sessÃ£o para ter uma integraÃ§Ã£o melhor com a anterior*/
 .depo {
   top: -1px;
-  z-index: 1;
+  z-index: 2;
   height: 1255px;
 }
 
@@ -997,7 +997,7 @@ div:nth-child(1) > h3 {
 
 .depo_principal div:nth-child(3) span:nth-child(2) {
   top: 47px;
-  left: -13%;
+  left: 3%;
   width: 528px;
   height: 413px;
 }
@@ -1009,22 +1009,42 @@ div:nth-child(1) > h3 {
 a sessÃ£o */
 .visita {
   display: flex;
-  margin-bottom: -144px;
+  margin-top: -55px;
 }
 /*Margin para o rodapÃ© nÃ£o ficar colado a sessÃ£o*/
-.visita > img {
-  margin-bottom: 207px;
+
+.visita div:nth-child(1) {
+  width: 100%;
+  height: 940px;
 }
 
-.visita > div {
-  margin-top: -43px;
-  margin-left: -248px;
-  margin-right: 71px;
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mascara {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/mascaras/mascara_do_mapa.png") no-repeat center center;
+  background-size: cover;
+  pointer-events: none;
 }
 
 /*PersonalizaÃ§Ã£o do titulo*/
 .visita > div > h2 {
-  margin: 32% 0 0 124px;
+  margin: 13% 0 0 53px;
+
   text-align: center;
   font-size: 9.5em;
 }
@@ -1034,9 +1054,9 @@ a sessÃ£o */
   font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 30px;
-  margin-top: 32px;
+  margin-top: 8%;
   font-size: 4.5em;
-  margin-left: 211px;
+  margin-left: 13%;
   text-align: center;
 }
 
@@ -1045,7 +1065,7 @@ a sessÃ£o */
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
-  margin-right: 169px;
+  margin-right: 20%;
 }
 
 /*EspaÃ§amento interno das redes sociais*/
@@ -1064,7 +1084,7 @@ a sessÃ£o */
   text-align: center;
   /* margin-right: 0px; */
   width: 561px;
-  margin-left: 237px;
+  margin-left: 10%;
 }
 
 /*|########| RODAPÃ‰ |########| */
