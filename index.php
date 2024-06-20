@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patas e pelos Pethouse</title>
+    <link rel="icon" href="img\favicon.ico">
+
     
     <!--Reseta o estilo-->
     <link rel="stylesheet" href="css/reset.css" />
@@ -31,7 +33,7 @@
   <body>
     <header>
       <!--FAIXA MENU-->
-      <?php include_once 'conteudos/menu_superior.php'?>
+      <?php include_once 'conteudos/menu-superior.php'?>
       <!--FIM FAIXA MENU-->
     </header>
     <main>
@@ -40,7 +42,7 @@
       <!--fIM BANNER PRINCIPAL-->
 
       <!--AGENDE SEU HORARIO-->
-      <?php include_once 'conteudos/agenda_horario.php'?>
+      <?php include_once 'conteudos/agenda-horario.php'?>
       <!--FIM AGENDE SEU HORARIO-->
 
       <!--CATEGORIAS-->
@@ -48,11 +50,11 @@
       <!--FIM CATEGORIAS-->
 
       <!-- TOSA E BANHO -->
-      <?php include_once 'conteudos/banho_e_tosa.php'?>
+      <?php include_once 'conteudos/banho-e-tosa.php'?>
       <!-- FIM TOSA E BANHO -->
 
       <!-- SOBRE NOS -->
-      <?php include_once 'conteudos/sobre_nos.php'?>
+      <?php include_once 'conteudos/sobre-nos.php'?>
       <!-- FIM SOBRE NOS -->
 
       <!--EQUIPE-->
