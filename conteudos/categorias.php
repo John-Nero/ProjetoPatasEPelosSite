@@ -47,7 +47,7 @@
         </a>
       </div>
       <div>
-        <a href="#"><img src="img/icones_categorias/peixe.svg" alt="" draggable=false />
+        <a href="#"><img src="img/PG_home/icones_categorias/peixe.svg" alt="" draggable=false />
           <p>Peixe</p>
         </a>
       </div>
