@@ -65,24 +65,6 @@ $(".carrosel_depo_texto").slick({
   asNavFor: ".carrosel_depo_imagem"
 });
 
-// $(".carrosel_servico").slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   dots: false,
-//   infinite: true,
-//   responsive: [
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// });
-
-// Inicializando o carrossel com a biblioteca slick
 $(".carrosel_servico").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -90,34 +72,15 @@ $(".carrosel_servico").slick({
   dots: false,
   infinite: true,
   responsive: [
-      {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
+    }
   ]
 });
-
-// Adicionando as classes 'impar' e 'par' aos slides
-$('.carrosel_servico').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
-  // Remover classes existentes
-  $('.carrosel_servico .slick-slide').removeClass('impar par');
-  
-  // Loop através de todos os slides visíveis
-  $('.carrosel_servico .slick-slide').each(function(index) {
-      // Adiciona a classe impar ou par com base no índice
-      if (index % 2 === 0) {
-          $(this).addClass('par');
-      } else {
-          $(this).addClass('impar');
-      }
-  });
-});
-
-// Inicializar o carrossel para garantir que as classes sejam aplicadas
-$('.carrosel_servico').slick('slickGoTo', 0);
 
 let parallax = document.getElementsByClassName('parallax');
 new simpleParallax(parallax, {
@@ -138,4 +101,25 @@ new simpleParallax(parallax2, {
   overflow: true,
 	delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const popups = document.querySelectorAll('.popup');
+
+  popups.forEach(function(popup) {
+      popup.addEventListener('mouseenter', function() {
+          const popupContent = this.querySelector('.popup-content');
+          if (popupContent) {
+              popupContent.style.display = 'block';
+          }
+      });
+
+      popup.addEventListener('mouseleave', function() {
+          const popupContent = this.querySelector('.popup-content');
+          if (popupContent) {
+              popupContent.style.display = 'none';
+          }
+      });
+  });
 });

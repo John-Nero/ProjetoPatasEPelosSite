@@ -7,13 +7,13 @@ h2.animate__animated {
 
 /*|########| BANNER |########|*/
 
-.banner img {
+.banner_servico img {
   width: 100%;
 }
 
 /*Tira as setas do carrosel de imagem*/
-.banner .slick-prev,
-.banner .slick-next {
+.banner_servico .slick-prev,
+.banner_servico .slick-next {
   text-indent: -999px;
   display: none !important;
 }
@@ -47,7 +47,7 @@ h2.animate__animated {
   margin-right: 85px;
 }
 /* carrosel infernal */
-/* .carrosel_servico {
+.carrosel_servico {
   display: flex;
 }
 
@@ -143,107 +143,7 @@ p {
 
 .carrosel_servico .slick-slide {
   transform: scale(0.9);
-} */
-
-.carrosel_servico {
-  display: flex;
 }
-
-.carrosel_servico h2,
-.carrosel_servico p {
-  text-align: left;
-  width: 516px;
-  font-family: "Roboto Flex", sans-serif;
-}
-
-.carrosel_servico h2 {
-  font-size: 31px;
-}
-
-.carrosel_servico p {
-  font-size: 23px;
-}
-
-/* Estilos comuns para todas as abas */
-.carrosel_conteudo,
-.carrosel_conteudo_v2 {
-  position: relative;
-  left: 7%;
-}
-
-.carrosel_conteudo a,
-.carrosel_conteudo_v2 a {
-  margin-top: 50px;
-  margin-left: 30px;
-  font-size: 24px;
-  font-weight: 900;
-  border-radius: 90px;
-  padding: 25px 42px;
-  position: relative;
-  left: -5%;
-}
-
-/* Estilos para itens ímpares */
-.impar .carrosel_conteudo {
-  top: -600px;
-}
-
-.impar .carrosel_conteudo a {
-  bottom: -200px;
-  border: 2px solid white;
-  background-color: #664d9f;
-}
-
-.impar .carrosel_conteudo img {
-  width: 134px;
-  height: 134px;
-  position: relative;
-  bottom: 20px;
-}
-
-.impar .carrosel_texto {
-  position: relative;
-  bottom: 5px;
-}
-
-/* Estilos para itens pares */
-.par .carrosel_conteudo_v2 {
-  top: -450px;
-}
-
-.par .carrosel_conteudo_v2 a {
-  bottom: -100px;
-  color: black;
-  border: 2px solid black;
-  background-color: white;
-}
-
-.par .carrosel_conteudo_v2 img {
-  width: 134px;
-  height: 134px;
-  position: relative;
-  bottom: 20px;
-}
-
-.par .carrosel_texto_v2 {
-  position: relative;
-  bottom: 60px;
-}
-
-/* Estilo para contêineres de imagens */
-.servico_imagem_container {
-  position: relative;
-}
-
-.servico_imagem_container img {
-  display: block;
-  width: 100%;
-}
-
-.carrosel_servico .slick-slide {
-  transform: scale(0.9);
-}
-
 
 /* Define a animação de fade */
 @keyframes fadeAnimation {
@@ -360,12 +260,13 @@ p {
 
 .teste1 {
   display: flex;
+  margin-top: -10%;
 }
 
 .teste2 {
   display: flex;
   justify-content: space-around;
-  margin-top: -33%;
+  margin-top: -29%;
 }
 
 .estilo2 {
@@ -554,6 +455,7 @@ p {
 
 .galeria{
   height: 1415px;
+  margin-top: -123px;
 }
 
 .galeria_Esquerdo_mainDIV{
@@ -600,9 +502,7 @@ p {
 }
 
 /* .galeria_Esquerdo_img1 {
-/* .galeria_Esquerdo_img1 {
   position: relative;
-  display: inline-block;
   display: inline-block;
   left: 45%;
   height: 170px;
@@ -645,7 +545,6 @@ p {
   width: 93%;
   height: 100%;
   color: white;
-  color: white;
   text-align: center;
   opacity: 0;
   visibility: hidden;
@@ -663,11 +562,6 @@ p {
 }
 
 .texto-sobreposto p {
-  font-size: 18px; 
-  font-weight: bold; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
-  margin: 0; 
-  padding: 10px; 
   font-size: 18px; 
   font-weight: bold; 
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
@@ -738,7 +632,7 @@ p {
 
 .conteudo-sobreposto {
   position: absolute;
-  top: 0%;
+  top: 0%; /* Inicialmente fora da visão, acima do contêiner */
   left: 0;
   width: 100%;
   height: 100%;
@@ -828,7 +722,6 @@ p {
   height: 193px;
   display: inline-block;
   overflow: visible;
-  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(7) {
@@ -875,7 +768,6 @@ p {
   height: 170px;
   display: inline-block;
   overflow: visible;
-  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(12){
@@ -893,7 +785,6 @@ p {
   top: 440px;
   height: 194px;
   display: inline-block;
-  overflow: visible;
   overflow: visible;
 }
 
@@ -958,7 +849,6 @@ p {
   height: 341px;
   display: inline-block;
   overflow: visible;
-  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(21){
@@ -977,7 +867,6 @@ p {
   height: 175px;
   display: inline-block;
   overflow: visible;
-  overflow: visible;
 }
 
 .galeria_Esquerdo span:nth-child(23){
@@ -995,7 +884,6 @@ p {
   top: 782px;
   height: 195px;
   display: inline-block;
-  overflow: visible;
   overflow: visible;
 }
 
@@ -1022,8 +910,6 @@ p {
   right: 315%;
   top: 800px;
   z-index: -1;
-  width: 683px;
-  height: 463px;
 }
 
 .galeria_Esquerdo_img8{
@@ -1033,7 +919,6 @@ p {
   height: 191px;
   display: inline-block;
   overflow: visible;
-  overflow: visible;
 }
 
 .galeria_Esquerdo_img9{
@@ -1042,7 +927,6 @@ p {
   top: 1027px;
   height: 170px;
   display: inline-block;
-  overflow: visible;
   overflow: visible;
 }
 
@@ -1070,7 +954,6 @@ p {
   top: 1085px;
   height: 170px;
   display: inline-block;
-  overflow: visible;
   overflow: visible;
 }
 
@@ -1107,7 +990,6 @@ p {
   top: 1233px;
   height: 173px;
   display: inline-block;
-  overflow: visible;
   overflow: visible;
 }
 
@@ -1216,14 +1098,13 @@ p {
   animation-delay: 0s; 
 }
 
-
 /*|########| contato |########| */
 
 /*Deixa o texto ao lado da imagem*/
 .contato {
   display: flex;
   align-items: center;
-  margin-top: -220px;
+  margin-top: -155px;
 }
 
 /*EspaÃ§amento entre a lateral do site e o texto da div*/
@@ -1238,18 +1119,6 @@ p {
   width: 507px;
   margin-left: -23px;
   margin-bottom: 30px;
-}
-
-.contato div div p {
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 3em;
-}
-/*Config do texto do paragrafo*/
-.contato p {
-  color: #000;
-  font-size: 23px;
-  margin-top: 25px;
 }
 
 /*BotÃ£o 'Clique aqui abaxio do paragrafo'*/
