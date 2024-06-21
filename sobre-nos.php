@@ -33,7 +33,7 @@
 <body>
     <header>
         <!--FAIXA MENU-->
-        <?php include_once 'conteudos/menu_superior.php' ?>
+        <?php include_once 'conteudos/menu-superior.php' ?>
         <!--FIM FAIXA MENU-->
     </header>
 
