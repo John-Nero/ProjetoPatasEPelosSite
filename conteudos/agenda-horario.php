@@ -8,6 +8,6 @@
             </div>
             <a href="#" class="wow animate__animated animate__fadeIn " data-wow-delay:="7s">clique aqui!</a>
         </div>
-        <img src="img/mascaras/agenda_seu_horario.svg" alt="" draggable=false />
+        <img src="img/PG_home/mascaras/agenda_seu_horario.svg" alt="" draggable=false />
     </div>
 </section>

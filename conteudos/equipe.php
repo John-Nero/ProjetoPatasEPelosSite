@@ -20,7 +20,7 @@
             <div class="carrosel_equipe">
 
                 <div class="card_funcionario">
-                    <img src="img/equipe/truskino.svg" alt="" draggable=false />
+                    <img src="img/PG_home/equipe/truskino.svg" alt="" draggable=false />
                     <h2>Truskino</h2>
                     <h3>Mendes</h3>
                     <h4>veterinaria - 24 anos</h4>
@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="card_funcionario">
-                    <img src="img/equipe/luxana.svg" alt="" draggable=false />
+                    <img src="img/PG_home/equipe/luxana.svg" alt="" draggable=false />
                     <h2>Luxana</h2>
                     <h3>Silva</h3>
                     <h4>veterinaria - 24 anos</h4>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="card_funcionario">
-                    <img src="img/equipe/daskina.svg" alt="" draggable=false />
+                    <img src="img/PG_home/equipe/daskina.svg" alt="" draggable=false />
                     <h2>Daskina</h2>
                     <h3>Moto</h3>
                     <h4>veterinaria - 24 anos</h4>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="card_funcionario">
-                    <img src="img/equipe/dany.svg" alt="" draggable=false />
+                    <img src="img/PG_home/equipe/dany.svg" alt="" draggable=false />
                     <h2>Daskina</h2>
                     <h3>Moto</h3>
                     <h4>veterinaria - 24 anos</h4>

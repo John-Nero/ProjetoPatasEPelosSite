@@ -24,10 +24,10 @@
 
         <!--Imagens dos pets do carrosel-->
         <div class="carrosel_depo_imagem">
-          <img src="img/mascaras/mascara_pet1.svg" alt="" draggable=false />
-          <img src="img/mascaras/mascara_pet2.svg" alt="" draggable=false />
-          <img src="img/mascaras/mascara_pet3.svg" alt="" draggable=false />
-          <img src="img/mascaras/mascara_pet4.svg" alt="" draggable=false />
+          <img src="img/PG_home/mascaras/mascara_pet1.svg" alt="" draggable=false />
+          <img src="img/PG_home/mascaras/mascara_pet2.svg" alt="" draggable=false />
+          <img src="img/PG_home/mascaras/mascara_pet3.svg" alt="" draggable=false />
+          <img src="img/PG_home/mascaras/mascara_pet4.svg" alt="" draggable=false />
         </div>
 
         <!--Detalhes abaixo da imagem-->
