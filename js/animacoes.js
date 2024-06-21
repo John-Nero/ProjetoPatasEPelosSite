@@ -65,7 +65,7 @@ $(".carrosel_depo_texto").slick({
 
 //---------------PAGINA SERVIÇOS-------------------------------
 
-$(".lista-com-imagens").slick({
+$(".carrosel_servico").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
@@ -80,6 +80,47 @@ $(".lista-com-imagens").slick({
       },
     },
   ],
+});
+
+let parallax = document.getElementsByClassName("parallax");
+new simpleParallax(parallax, {
+  overflow: true,
+  delay: 0.6,
+  transition: "cubic-bezier(0,0,0,1)",
+});
+
+let parallax1 = document.getElementsByClassName("parallax1");
+new simpleParallax(parallax1, {
+  overflow: true,
+  delay: 0.6,
+  transition: "cubic-bezier(0,0,0,1)",
+});
+
+let parallax2 = document.getElementsByClassName("parallax2");
+new simpleParallax(parallax2, {
+  overflow: true,
+  delay: 0.6,
+  transition: "cubic-bezier(0,0,0,1)",
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popups = document.querySelectorAll(".popup");
+
+  popups.forEach(function (popup) {
+    popup.addEventListener("mouseenter", function () {
+      const popupContent = this.querySelector(".popup-content");
+      if (popupContent) {
+        popupContent.style.display = "block";
+      }
+    });
+
+    popup.addEventListener("mouseleave", function () {
+      const popupContent = this.querySelector(".popup-content");
+      if (popupContent) {
+        popupContent.style.display = "none";
+      }
+    });
+  });
 });
 
 //---------------PAGINA SOBRE NÓS-------------------------------
