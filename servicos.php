@@ -34,15 +34,15 @@
         <!--FIM FAIXA MENU-->
     </header>
     <main>
-    <!--BANNER PRINCIPAL-->
-    <section class="site">
-    <!--banner rotativo-->
-    <div class="banner">
-        <img src="img/servicos/banners/servicos.svg" alt="R>são Miguel Paulista, N:200" />
-        <img src="img/servicos/banners/servicos_2.svg" alt="Horario de atendimento 24hrs" />
-        <img src="img/servicos/banners/servicos_3.svg" alt="veterinario, hotel,produtos, tosa e banho" />
-    </div>
-    </section>
+        <!--BANNER PRINCIPAL-->
+        <section class="site">
+            <!--banner rotativo-->
+            <div class="banner">
+                <img src="img/PG_servicos/banners/AtendimentoVeterinario.svg" alt="R>são Miguel Paulista, N:200" />
+                <img src="img/PG_servicos/banners/confiraJaOfertas.svg" alt="Horario de atendimento 24hrs" />
+                <img src="img/PG_servicos/banners/ConfiraServicos.svg" alt="veterinario, hotel,produtos, tosa e banho" />
+            </div>
+        </section>
 
 
 
@@ -57,13 +57,13 @@
             </div>
 
             <div class="carrosel_alinhamento">
-            <div class="carrosel_servico">
+                <div class="carrosel_servico">
                     <div class="fade_delay1 wow animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/fundo_1.svg" alt="">
+                            <img src="img/PG_servicos/carrosel/fundo_1.svg" alt="">
                             <div class="carrosel_conteudo">
                                 <div class="carrosel_texto">
-                                    <img src="img/servicos/carrosel/veterinario_icon.svg" alt="">
+                                    <img src="img/PG_servicos/carrosel/veterinario_icon.svg" alt="">
                                     <h2 class="wow animate__animated animate__flipInX">Produtos</h2>
                                     <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
                                         prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
@@ -76,10 +76,10 @@
 
                     <div class="fade_delay2 wow animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/fundo_2.svg" alt="">
+                            <img src="img/PG_servicos/carrosel/fundo_2.svg" alt="">
                             <div class="carrosel_conteudo_v2">
                                 <div class="carrosel_texto_v2">
-                                    <img src="img/servicos/carrosel/tosa_icon.svg" alt="">
+                                    <img src="img/PG_servicos/carrosel/tosa_icon.svg" alt="">
                                     <h2 class="wow animate__animated animate__flipInX">Produtos</h2>
                                     <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
                                         prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
@@ -89,13 +89,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="fade_delay3 wow animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/fundo_1.svg" alt="">
+                            <img src="img/PG_servicos/carrosel/fundo_1.svg" alt="">
                             <div class="carrosel_conteudo">
                                 <div class="carrosel_texto">
-                                    <img src="img/servicos/carrosel/blusa_icon.svg" alt="">
+                                    <img src="img/PG_servicos/carrosel/blusa_icon.svg" alt="">
                                     <h2 class="wow animate__animated animate__flipInX">Produtos</h2>
                                     <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
                                         prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
@@ -108,10 +108,10 @@
 
                     <div class="fade_delay1 wow animate__animated animate__fadein">
                         <div class="servico_imagem_container">
-                            <img src="img/servicos/carrosel/fundo_2.svg" alt="">
+                            <img src="img/PG_servicos/carrosel/fundo_2.svg" alt="">
                             <div class="carrosel_conteudo_v2">
                                 <div class="carrosel_texto_v2">
-                                    <img src="img/servicos/carrosel/tosa_icon.svg" alt="">
+                                    <img src="img/PG_servicos/carrosel/tosa_icon.svg" alt="">
                                     <h2 class="wow animate__animated animate__flipInX">Produtos</h2>
                                     <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina
                                         prukunia prukinu baskineia. Daskina de prukununia de la kunia transkina de la kuni
@@ -142,9 +142,9 @@
                 </div>
                 <div class="teste2">
                     <div class="estilo2">
-                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
                         <div class="servico_banner_v2">
-                            <img class="fade_icone1 wow animate__animated animate__fadein" src="img/servicos/servicos/bolas.svg" alt="">
+                            <img class="fade_icone1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/bolas.svg" alt="">
                             <div class="servico_conteudo_v2">
                                 <h2 class="animate__animated animate__flipInX">Pet house</h2>
                                 <p class="animate__animated animate__fadeIn">Daske no mate la shuri kine daskina prukunia prukinu baskineia. </p>
@@ -154,9 +154,9 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
                         <div class="servico_banner">
-                            <img class="fade_icone2 wow animate__animated animate__fadein" src="img/servicos/servicos/shampoo.svg" alt="">
+                            <img class="fade_icone2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/shampoo.svg" alt="">
                             <div class="servico_conteudo">
                                 <h2 class="wow animate__animated animate__flipInX">Banho e tosa</h2>
                                 <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina prukunia prukinu baskineia. </p>
@@ -166,9 +166,9 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
                         <div class="servico_banner">
-                            <img class="fade_icone3 wow animate__animated animate__fadein" src="img/servicos/servicos/coleira.svg" alt="">
+                            <img class="fade_icone3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/coleira.svg" alt="">
                             <div class="servico_conteudo">
                                 <h2 class="wow animate__animated animate__flipInX">Passeio</h2>
                                 <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina prukunia prukinu baskineia. </p>
@@ -178,9 +178,9 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
                         <div class="servico_banner">
-                            <img class="fade_icone4 wow animate__animated animate__fadein" src="img/servicos/servicos/sacola.svg" alt="">
+                            <img class="fade_icone4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/sacola.svg" alt="">
                             <div class="servico_conteudo">
                                 <h2 class="wow animate__animated animate__flipInX">Produtos</h2>
                                 <p class="wow animate__animated animate__fadeIn">Daske no mate la shuri kine daskina prukunia prukinu baskineia. </p>
@@ -192,8 +192,8 @@
             </div>
         </section>
 
-                <!-- galeria -->
-                <section class="fundo_site">
+        <!-- galeria -->
+        <section class="fundo_site">
             <div class="site">
                 <div class="galeria">
                     <div class="galeria_Esquerdo_mainDIV">
@@ -202,9 +202,9 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <div class="galeria_Esquerdo_img1">
-                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img1">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img1">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -217,13 +217,13 @@
                             <!-- <span class="popup">
                                 <div class="popup-content">
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img2">
-                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img2">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img2">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -240,13 +240,13 @@
                                 <div class="popup-content">
                                     Seu conteúdo aqui, como texto ou outra imagem
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>qw   
                             </span>-->
                             <div class="galeria_Esquerdo_img3">
-                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img3">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img3">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -258,13 +258,13 @@
                                 <div class="popup-content">
                                      Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img4">
-                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img4">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_quadrado_roxo.svg" alt="Imagem Sobreposta" id="img4">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -274,7 +274,7 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo1.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/PG_servicos/galeria/fundo1.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
 
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
@@ -282,13 +282,13 @@
                                 <div class="popup-content">
                                     Seu conteúdo aqui, como texto ou outra imagem
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img5">
-                                <img class="imagem-base" src="img/servicos/galeria/foto3.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto3.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado3_laranja.svg" alt="Imagem Sobreposta" id="img5">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_quadrado3_laranja.svg" alt="Imagem Sobreposta" id="img5">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p2>Nome</p2>
@@ -300,31 +300,31 @@
                                 <div class="popup-content">
                                     Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img6">
-                                <img class="imagem-base" src="img/servicos/galeria/foto1.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_laranja.svg" alt="Imagem Sobreposta" id="img6">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola_laranja.svg" alt="Imagem Sobreposta" id="img6">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p2>Nome</p2>
                                     </div>
                                 </div>
                             </div>
-                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo2.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/PG_servicos/galeria/fundo2.svg" alt=""></span>
                             <!-- <span class="popup"> 30
                                 <div class="popup-content">
                                      Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img7">
-                                <img class="imagem-base" src="img/servicos/galeria/foto2.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado_laranja.svg" alt="Imagem Sobreposta" id="img7">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_quadrado_laranja.svg" alt="Imagem Sobreposta" id="img7">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p2>Nome</p2>
@@ -334,18 +334,18 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
 
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/servicos/galeria/fundo3.svg" alt=""></span>
+                            <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/PG_servicos/galeria/fundo3.svg" alt=""></span>
                             <!-- <span class="popup"> 35
                                 <div class="popup-content">
                                      Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img8">
-                                <img class="imagem-base" src="img/servicos/galeria/foto5.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto5.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_quadrado4_roxo.svg" alt="Imagem Sobreposta" id="img8">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_quadrado4_roxo.svg" alt="Imagem Sobreposta" id="img8">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -356,13 +356,13 @@
                                 <div class="popup-content">
                                      Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img9">
-                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img9">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img9">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -375,14 +375,14 @@
                                 <div class="popup-content">
                                      Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
 
                             <div class="galeria_Esquerdo_img10">
-                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img10">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola2_roxa.svg" alt="Imagem Sobreposta" id="img10">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -396,13 +396,13 @@
                                 <div class="popup-content">
                                     Seu conteúdo aqui, como texto ou outra imagem 
                                     <p>Seu texto aqui</p>
-                                    <img src="img/servicos/galeria/exemppp.svg" alt="">
+                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
                                 </div>
                             </span> -->
                             <div class="galeria_Esquerdo_img11">
-                                <img class="imagem-base" src="img/servicos/galeria/foto4.svg" alt="Imagem Base">
+                                <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
-                                    <img class="imagem-sobreposta" src="img/servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img11">
+                                    <img class="imagem-sobreposta" src="img/PG_servicos/galeria/sobrepossicao_bola_roxa.svg" alt="Imagem Sobreposta" id="img11">
                                     <div class="conteudo-texto">
                                         <p>Nome</p>
                                         <p1>Nome</p1>
@@ -433,7 +433,7 @@
                     <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
 
                 </div>
-                <img src="img/servicos/contato/contato.svg" alt="" />
+                <img src="img/PG_servicos/contato/contato.svg" alt="" />
             </div>
         </section>
 
