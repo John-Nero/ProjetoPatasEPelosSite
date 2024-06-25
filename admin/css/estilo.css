@@ -1,0 +1,54 @@
+/* Define a fonte padrão para todo o site */
+body {
+  font-family: "Roboto Mono", "Roboto Black", monospace;
+}
+
+main {
+  display: flex;
+}
+
+.site {
+  max-width: 1920px; /* Largura max de 1200 px */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu_lateral {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a38cd6;
+}
+
+.menu_lateral img {
+  width: 75%;
+}
+.menu_lateral nav,
+.menu_lateral ul,
+.menu_lateral a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_lateral li {
+  margin-top: 5%;
+  width: 57%;
+  padding: 5%;
+  border-radius: 50px;
+  background: #ff9a5b;
+}
+
+.menu_lateral a{
+  font-size: 2.5em;
+}
+
+.site div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+
