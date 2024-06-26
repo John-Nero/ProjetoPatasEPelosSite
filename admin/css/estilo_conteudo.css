@@ -1,0 +1,53 @@
+.opcoes {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opcoes a {
+  width: 131px;
+  margin-left: 4%;
+  text-align: center;
+  font-size: 2em;
+  background: #ff9a5b;
+}
+
+.opcoes select {
+  margin-right: 4%;
+  width: 234px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#caixaBanner {
+  display: flex;
+  background-color: #a38cd6;
+  border-radius: 50px;
+  margin: 20px 2.5%;
+}
+
+#caixaBanner span {
+  background: #665098;
+  border-radius: 50px;
+  margin: 2%;
+}
+
+#imgBanner {
+  width: 950px;
+}
+
+#identificacaoEFuncaoBanner {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#identificacaoEFuncaoBanner h2 {
+  width: 50%;
+}
+
+#identificacaoEFuncaoBanner button{
+  margin-left: 50%;
+  width: 50%;
+}

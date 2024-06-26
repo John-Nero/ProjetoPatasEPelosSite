@@ -1,34 +1,43 @@
-<?php 
+<?php
 require_once('class/ClassBanner.php');
 $banner = new bannerClass();
 
 $lista = $banner->Listar();
 //print_r($lista)
 ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<table class="table table-dark table-hover">
-    <caption>DADOS BANNER</caption>
-    <thead>
-        <tr>
-            <td scope="col">Id</td>
-            <td scope="col">Nome</td>
-            <td scope="col">Foto</td>
-            <td scope="col">Alt</td>
-            <td scope="col">Status</td>
-        </tr>
-    </thead>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
 
-    <tbody>
-        <?php foreach ($lista as $linha) : ?>
-            <tr>
-                <td><?php echo $linha['idBanner'] ?></td>
-                <td><?php echo $linha['nomeBanner'] ?></td>
-                <td><?php echo $linha['fotoBanner'] ?></td>
-                <td><?php echo $linha['altBanner'] ?></td>
-                <td><?php echo $linha['statusBanner'] ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+    <link rel="stylesheet" href="css/estilo_conteudo.css">
+</head>
+
+<body>
+    <div class="opcoes">
+
+        <a href="index.php?p=banner">Adicionar</a>
+        <select id="selecao" name="selecao">
+            <option value="todos">Todos</option>
+            <option value="ativos">Ativos</option>
+            <option value="desativos">Desativos</option>
+        </select>
+    </div>
 
 
+    <?php foreach ($lista as $linha) : ?>
+        <div id="caixaBanner">
+            <span><img id="imgBanner" src="<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable="false"></span>
+            <div id="identificacaoEFuncaoBanner">
+                <h2><?php echo $linha['nomeBanner'] ?></h2>
+                <button>Ativar</button>
+            </div>
+
+        </div>
+    <?php endforeach; ?>
+</body>
+
+</html>
