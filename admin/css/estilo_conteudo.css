@@ -1,9 +1,11 @@
+/*A classe opcoes é a responsavel por abrigar o botão de adicionar e o de filtrar os itens da categoria*/
 .opcoes {
   margin: 2% 0;
   display: flex;
   justify-content: space-between;
 }
 
+/*Botão adicionar*/
 .opcoes a {
   width: 131px;
   margin-left: 4%;
@@ -12,6 +14,7 @@
   background: #ff9a5b;
 }
 
+/*Filtragem*/
 .opcoes select {
   margin-right: 4%;
   width: 234px;
@@ -19,6 +22,7 @@
   text-align: center;
 }
 
+/*CaixaBanner é a classe de cada div dos banners, dentro dela temos a imagem do banner, o nome e um botão para ativar e desativar o mesmo*/
 #caixaBanner {
   display: flex;
   background-color: #a38cd6;
@@ -26,28 +30,44 @@
   margin: 20px 2.5%;
 }
 
-#caixaBanner span {
+/*Onde é exibido o banner*/
+#caixaBanner > span {
   background: #665098;
   border-radius: 50px;
   margin: 2%;
 }
 
+/*imagem do banner*/
 #imgBanner {
   width: 950px;
 }
 
+/*Id responsavel por abrigar o nome e o botão para ativar/desativar*/
 #identificacaoEFuncaoBanner {
-  margin: 2%;
+  width: 24%;
+  margin: 2% 2% 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
 }
 
+/*Nome do banner*/
 #identificacaoEFuncaoBanner h2 {
-  width: 50%;
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
 }
 
-#identificacaoEFuncaoBanner button{
-  margin-left: 50%;
-  width: 50%;
+/*botão ativar e desativar*/
+#identificacaoEFuncaoBanner button {
+  margin-bottom: 11%;
+  width: 95%;
+  height: 18%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #a2ec88;
+  font-size: 2.5em;
+  font-weight: 900;
 }
