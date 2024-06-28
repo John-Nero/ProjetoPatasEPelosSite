@@ -1,10 +1,8 @@
 function filtrar() {
-  var caixaDeopcao = document.getElementById("filtragemStatus");
-  var opcao = caixaDeopcao.value;
+  var opcao = document.getElementById("filtragemStatus").value;
   // Atualizar o valor do campo hidden para enviar ao PHP
-console.log(opcao);
-  document.getElementById("valorSelecionado").value = opcao;
-  
+
   // Submeter o formulário para atualizar a variável PHP
-  document.getElementById("paginaHomeFiltragemBanner").submit();
+  window.location.href =
+    "http://localhost/Site-PatasEPelos/admin/index.php?p=banner&opcao=" + opcao;
 }

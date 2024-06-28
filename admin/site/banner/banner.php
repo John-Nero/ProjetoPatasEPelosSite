@@ -20,4 +20,4 @@ if ($pagina == null) {
 }
 ?>
 
-<h2>LISTAR BANNERS</h2>
+<h2>Banner</h2>
