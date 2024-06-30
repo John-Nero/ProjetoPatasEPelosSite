@@ -10,8 +10,11 @@ class bannerClass
     public $fotoBanner;
     public $altBanner;
     public $statusBanner;
+    public $paginaBanner;
 
     //METODOS
+
+    //LISTAR TODOS OS ITENS NO BANCO DE DADOS
 
     public function ListarTodos()
     {
@@ -25,6 +28,8 @@ class bannerClass
 
     }
 
+    //LISTAR TODOS OS ITENS ATIVOS NO BANCO DE DADOS
+
     public function ListarAtivos()
     {
         $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
@@ -37,6 +42,8 @@ class bannerClass
 
     }
 
+    //LISTAR TODOS OS ITENS DESATIVADOS NO BANCO DE DADOS
+
     public function ListarDesativados()
     {
         $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'DESATIVADO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
@@ -46,6 +53,30 @@ class bannerClass
 
         $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
         return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //INSERIR NO BANCO DE DADOS
+    public function Inserir()
+    {
+        $sql = "INSERT INTO tbl_banner 
+        (nomeBanner,
+        fotoBanner,
+        altBanner,
+        statusBanner,
+        paginaBanner)   
+        VALUES(
+                '" . $this->nomeBanner . "',
+                '" . $this->fotoBanner . "',
+                '" . $this->altBanner . "',
+                '" . $this->statusBanner . "',
+                '" . $this->paginaBanner . "'
+            )";
+        //aqui ele ta especificando quais parametros ele vai alimentar e logo em seguida alimentando a mesma 
+
+
+        $conn = conexao::LigarConexao(); //esse ta ligando a nossa conexão
+        $conn->exec($sql); //esse exec executa uma função sql
 
     }
 }

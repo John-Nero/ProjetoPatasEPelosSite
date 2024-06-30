@@ -19,5 +19,3 @@ if ($pagina == null) {
     }
 }
 ?>
-
-<h2>Banner</h2>

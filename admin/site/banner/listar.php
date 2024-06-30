@@ -3,7 +3,7 @@ require_once('class/ClassBanner.php');
 $banner = new bannerClass();
 $lista = "";
 // Definir variável PHP para receber o valor selecionado
-$valorSelecionado = $_GET['opcao'];
+$valorSelecionado = @$_GET['opcao'];
 
 if ($valorSelecionado == 'ativos') {
     $lista = $banner->ListarAtivos();
@@ -20,7 +20,7 @@ if ($valorSelecionado == 'desativados') {
 <form action="http://localhost/Site-PatasEPelos/admin/index.php?p=banner" id="paginaHomeFiltragemBanner" method="$_POST">
     <div class="opcoes">
 
-        <a href="index.php?p=banner&b=atualizar">Adicionar</a>
+        <a href="index.php?p=banner&b=inserir" alt="botão adicionar">Adicionar</a>
         <select id="filtragemStatus" name="filtragemStatus" onchange="filtrar()">
             <option value="todos" <?php echo $valorSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $valorSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
@@ -41,9 +41,9 @@ if ($valorSelecionado == 'desativados') {
 </form>
 
 <?php foreach ($lista as $linha) : ?> <!--laço para exibir todos os banner do banco de dados-->
-    <div id="caixaBanner">
-        <span><img id="imgBanner" src="<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable="false"></span>
-        <div id="identificacaoEFuncaoBanner">
+    <div class="caixaBanner">
+        <span><img class="imgBanner" src="<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable="false"></span>
+        <div class="identificacaoEFuncaoBanner">
             <span>
                 <h2><?php echo $linha['nomeBanner'] ?></h2>
             </span>
