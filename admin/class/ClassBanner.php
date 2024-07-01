@@ -15,7 +15,6 @@ class bannerClass
     //METODOS
 
     //LISTAR TODOS OS ITENS NO BANCO DE DADOS
-
     public function ListarTodos()
     {
         $sql = "SELECT * FROM tbl_banner ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
@@ -29,7 +28,6 @@ class bannerClass
     }
 
     //LISTAR TODOS OS ITENS ATIVOS NO BANCO DE DADOS
-
     public function ListarAtivos()
     {
         $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
@@ -43,7 +41,6 @@ class bannerClass
     }
 
     //LISTAR TODOS OS ITENS DESATIVADOS NO BANCO DE DADOS
-
     public function ListarDesativados()
     {
         $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'DESATIVADO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
@@ -78,5 +75,24 @@ class bannerClass
         $conn = conexao::LigarConexao(); //esse ta ligando a nossa conexão
         $conn->exec($sql); //esse exec executa uma função sql
 
+    }
+
+
+    //ATIVAR BANNER NO BANCO DE DADOS
+    public function Ativar($id)
+    {
+        $sql = "update tbl_banner set statusBanner = 'ATIVO' where idBanner = $id;";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        echo "<script> document.location='index.php?p=banner' </script>";
+    }
+
+    //DESATIVAR BANNER NO BANCO DE DADOS
+    public function Desativar($id)
+    {
+        $sql = "update tbl_banner set statusBanner = 'INATIVO' where idBanner = $id;";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        echo "<script> document.location='index.php?p=banner' </script>";
     }
 }
