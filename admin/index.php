@@ -34,7 +34,7 @@
                 <img src="..\img\Logo_Patas_e_pelos.svg" alt="Logo Patas e pelos" draggable="false">
                 <nav>
                     <ul>
-                        <li><a href="index.php?p=banner">Banner's</a></li>
+                        <li><a href="index.php?p=banner&status=todos&pagina=todas">Banner's</a></li>
                         <li><a href="index.php?p=depoimento">Depoimentos </a></li>
                         <li><a href="index.php?p=categoria">Categorias</a></li>
                         <li><a href="index.php?p=cliente">Clientes</a></li>

@@ -27,8 +27,34 @@ class bannerClass
 
     }
 
+    //LISTAR TODOS OS ITENS DA PAGINA HOME NO BANCO DE DADOS
+    public function ListarTodosHome()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE paginaBanner = 'HOME' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //LISTAR TODOS OS ITENS DA PAGINA SERVIÇO NO BANCO DE DADOS
+    public function ListarTodosServico()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE paginaBanner = 'SERVICO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
     //LISTAR TODOS OS ITENS ATIVOS NO BANCO DE DADOS
-    public function ListarAtivos()
+    public function ListarAtivosTodos()
     {
         $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
 
@@ -40,10 +66,62 @@ class bannerClass
 
     }
 
-    //LISTAR TODOS OS ITENS DESATIVADOS NO BANCO DE DADOS
-    public function ListarDesativados()
+    //LISTAR TODOS OS ITENS ATIVOS DA PAGINA SERVIÇO NO BANCO DE DADOS
+    public function ListarAtivosHome()
     {
-        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'DESATIVADO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND WHERE paginaBanner = 'HOME' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //LISTAR TODOS OS ITENS ATIVOS DA PAGINA SERVIÇO NO BANCO DE DADOS
+    public function ListarAtivosServico()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND WHERE paginaBanner = 'SERVICO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //LISTAR TODOS OS ITENS DESATIVADOS NO BANCO DE DADOS
+    public function ListarDesativadosTodos()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'INATIVO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //LISTAR TODOS OS ITENS DESATIVADOS DA PAGINA HOME NO BANCO DE DADOS
+    public function ListarDesativadosHome()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'INATIVO' AND  paginaBanner = 'HOME' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+
+    }
+
+    //LISTAR TODOS OS ITENS DESATIVADOS DA PAGINA SERVIÇO NO BANCO DE DADOS
+    public function ListarDesativadosServico()
+    {
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'INATIVO' AND  paginaBanner = 'SERVICO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
 
         $conn = conexao::LigarConexao(); //variavel de conexao
         $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)

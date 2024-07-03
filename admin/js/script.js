@@ -1,8 +1,9 @@
 function filtrar() {
-  var opcao = document.getElementById("filtragemStatus").value;
+  var status = document.getElementById("filtragemStatus").value;
+  var pagina = document.getElementById("filtragemPagina").value;
   // Atualizar o valor do campo hidden para enviar ao PHP
 
   // Submeter o formulário para atualizar a variável PHP
   window.location.href =
-    "http://localhost/Site-PatasEPelos/admin/index.php?p=banner&opcao=" + opcao;
+    "http://localhost/Site-PatasEPelos/admin/index.php?p=banner&status=" + status + "&pagina=" + pagina;
 }
