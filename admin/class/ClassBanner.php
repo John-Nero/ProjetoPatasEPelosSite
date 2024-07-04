@@ -69,7 +69,7 @@ class bannerClass
     //LISTAR TODOS OS ITENS ATIVOS DA PAGINA SERVIÇO NO BANCO DE DADOS
     public function ListarAtivosHome()
     {
-        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND WHERE paginaBanner = 'HOME' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND  paginaBanner = 'HOME' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
 
         $conn = conexao::LigarConexao(); //variavel de conexao
         $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
@@ -82,7 +82,7 @@ class bannerClass
     //LISTAR TODOS OS ITENS ATIVOS DA PAGINA SERVIÇO NO BANCO DE DADOS
     public function ListarAtivosServico()
     {
-        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND WHERE paginaBanner = 'SERVICO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
+        $sql = "SELECT * FROM tbl_banner WHERE statusBanner = 'ATIVO' AND paginaBanner = 'SERVICO' ORDER BY nomeBanner ASC"; //Comando que vai la pro sql  
 
         $conn = conexao::LigarConexao(); //variavel de conexao
         $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)

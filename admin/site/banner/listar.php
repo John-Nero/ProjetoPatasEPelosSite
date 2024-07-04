@@ -3,6 +3,8 @@ require_once('class/ClassBanner.php');
 $banner = new bannerClass();
 $lista = "";
 // Definir variável PHP para receber o valor selecionado
+//A categoria é só pra manter apenas um metodo de filtragem 
+$categoria = @$_GET['p'];
 $statusSelecionado = @$_GET['status'];
 $paginaSelecionada = @$_GET['pagina'];
 
@@ -39,7 +41,6 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
     $lista = $banner->ListarDesativadosServico();
 }
 
-
 //print_r($lista)
 ?>
 
@@ -47,7 +48,7 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
     <div class="opcoes">
 
         <a href="index.php?p=banner&b=inserir" alt="botão adicionar">Adicionar</a>
-        <select id="filtragemStatus" name="filtragemStatus" onchange="filtrar()">
+        <select id="filtragemStatus" name="filtragemStatus" onchange="filtrar('<?php echo $categoria ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $statusSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
             Senão, saída(html) fica assim:<option value="todos">Todos</option>
@@ -64,7 +65,7 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
                 A diferença entre um e outro é q se tem o atributo select nele quer dizer que ele é atributo selecionado>-->
         </select>
 
-        <select id="filtragemPagina" name="filtragemPagina" onchange="filtrar()">
+        <select id="filtragemPagina" name="filtragemPagina" onchange="filtrar('<?php echo $categoria ?>')">
             <option value="todas" <?php echo $paginaSelecionada == 'todas' ? 'selected' : ''; ?>>Todas</option>
             <!-- se o valor da variavel $paginaSelecionada for 'todas', a saída(html) fica assim:<option value="todas" selected>Todas</option>
             Senão, saída(html) fica assim:<option value="todas">Todas</option>
