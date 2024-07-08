@@ -48,7 +48,7 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
     <div class="opcoes">
 
         <a href="index.php?p=banner&b=inserir" alt="botão adicionar">Adicionar</a>
-        <select id="filtragemStatus" name="filtragemStatus" onchange="filtrar('<?php echo $categoria ?>')">
+        <select id="filtragemStatusBanner" name="filtragemStatusBanner" onchange="filtrar('<?php echo $categoria ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $statusSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
             Senão, saída(html) fica assim:<option value="todos">Todos</option>
@@ -65,7 +65,7 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
                 A diferença entre um e outro é q se tem o atributo select nele quer dizer que ele é atributo selecionado>-->
         </select>
 
-        <select id="filtragemPagina" name="filtragemPagina" onchange="filtrar('<?php echo $categoria ?>')">
+        <select id="filtragemPaginaBanner" name="filtragemPaginaBanner" onchange="filtrar('<?php echo $categoria ?>')">
             <option value="todas" <?php echo $paginaSelecionada == 'todas' ? 'selected' : ''; ?>>Todas</option>
             <!-- se o valor da variavel $paginaSelecionada for 'todas', a saída(html) fica assim:<option value="todas" selected>Todas</option>
             Senão, saída(html) fica assim:<option value="todas">Todas</option>
@@ -85,9 +85,9 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
 </form>
 
 <?php foreach ($lista as $linha) : ?> <!--laço para exibir todos os banner do banco de dados-->
-    <div class="caixaBanner">
+    <div class="caixaItem">
         <span><img class="imgBanner" src="<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable="false"></span>
-        <div class="identificacaoEFuncaoBanner">
+        <div class="identificacaoEFuncao">
             <span>
                 <h2><?php echo $linha['nomeBanner'] ?></h2>
             </span>

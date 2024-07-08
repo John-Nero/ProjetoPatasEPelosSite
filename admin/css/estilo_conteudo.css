@@ -28,8 +28,8 @@
   text-align: center;
 }
 
-/*CaixaBanner é a classe de cada div dos banners, dentro dela temos a imagem do banner, o nome e um botão para ativar e desativar o mesmo*/
-.caixaBanner {
+/*caixaItem é a classe de cada div dos banners, dentro dela temos a imagem do banner, o nome e um botão para ativar e desativar o mesmo*/
+.caixaItem {
   display: flex;
   background-color: #a38cd6;
   border-radius: 50px;
@@ -37,7 +37,7 @@
 }
 
 /*Onde é exibido o banner*/
-.caixaBanner > span {
+.caixaItem > span {
   background: #665098;
   border-radius: 50px;
   margin: 2%;
@@ -50,7 +50,7 @@
 }
 
 /*Id responsavel por abrigar o nome e o botão para ativar/desativar*/
-.identificacaoEFuncaoBanner {
+.identificacaoEFuncao {
   width: 24%;
   margin: 2% 2% 2% 0;
   display: flex;
@@ -60,7 +60,7 @@
 }
 
 /*Nome do banner*/
-.identificacaoEFuncaoBanner h2 {
+.identificacaoEFuncao h2 {
   color: white;
   font-size: 3.5em;
   text-align: center;
@@ -69,7 +69,6 @@
 /*botão ativar e desativar*/
 
 .botaoAtivar {
-  margin-bottom: 11%;
   width: 95%;
   height: 18%;
   border: 2px solid black;
@@ -80,7 +79,6 @@
 }
 
 .botaoDesativar {
-  margin-bottom: 11%;
   width: 95%;
   height: 18%;
   border: 2px solid black;
@@ -149,3 +147,26 @@
   font-size: 3.5em;
   font-weight: 900 !important;
 }
+
+/*|########| ESTILO INSERIR DEPOIMENTO |########|*/
+.caixaItemDepo > span:nth-child(1) {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+.caixaItemDepo img {
+  width: 66%;
+  margin: 2% 0;
+}
+
+.identificacaoEFuncaoDepo{
+  width: 65%;
+}
+
+.caixaItemDepo p {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+}
+/*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
