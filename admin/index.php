@@ -36,7 +36,7 @@
                     <ul>
                         <li><a href="index.php?p=banner&status=todos&pagina=todas">Banner's</a></li>
                         <li><a href="index.php?p=depoimento&status=todos">Depoimentos </a></li>
-                        <li><a href="index.php?p=categoria">Categorias</a></li>
+                        <li><a href="index.php?p=categoria&status=todos">Categorias</a></li>
                         <li><a href="index.php?p=cliente">Clientes</a></li>
                         <li><a href="index.php?p=pet">Pet's</a></li>
                     </ul>

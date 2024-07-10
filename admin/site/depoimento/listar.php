@@ -3,7 +3,7 @@ require_once('class/ClassDepo.php');
 $depo = new depoimentoClass();
 $lista = "";
 
-$categoria = @$_GET['p']; //A categoria é só pra manter apenas um metodo de filtragem 
+$pagina = @$_GET['p']; //A categoria é só pra manter apenas um metodo de filtragem 
 $statusSelecionado = @$_GET['status'];
 
 //Todas as paginas
@@ -20,7 +20,7 @@ if ($statusSelecionado == 'desativados') {
 
 <form action="http://localhost/Site-PatasEPelos/admin/index.php?p=depoimento" id="paginaHomeFiltragemDepoimento" method="$_POST">
     <div class="opcoes">
-        <select id="filtragemStatusDepo" name="filtragemStatusDepo" onchange="filtrar('<?php echo $categoria ?>')">
+        <select id="filtragemStatusDepo" name="filtragemStatusDepo" onchange="filtrar('<?php echo $pagina ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $statusSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
             Senão, saída(html) fica assim:<option value="todos">Todos</option>

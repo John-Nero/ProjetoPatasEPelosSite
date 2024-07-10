@@ -91,19 +91,19 @@
 
 /*|########| ESTILO INSERIR BANNER |########|*/
 
-.caixaBannerInserir {
+.caixaInserir {
   background-color: #a38cd6;
   border-radius: 50px;
   margin: 20px 2.5%;
 }
 
-.caixaBannerInserir div {
+.caixaInserir div {
   display: flex;
   margin: 2% 2% 0 0;
   justify-content: space-evenly;
 }
 
-.caixaBannerInserir > div > span {
+.caixaInserir > div > span {
   margin: 2%;
   width: 53%;
   display: flex;
@@ -113,7 +113,7 @@
   border-radius: 50px;
 }
 
-.caixaBannerInserir > div > span img {
+.caixaInserir > div > span img {
   width: 100%;
   border-radius: 50px;
 }
@@ -136,7 +136,7 @@
   border-radius: 50px;
 }
 
-.caixaBannerInserir button {
+.caixaInserir button {
   margin: 0px 2% 2% 6%;
   width: 85%;
   height: 48px;
@@ -148,7 +148,7 @@
   font-weight: 900 !important;
 }
 
-/*|########| ESTILO INSERIR DEPOIMENTO |########|*/
+/*|########| ESTILO LISTAR DEPOIMENTO |########|*/
 .caixaItemDepo > span:nth-child(1) {
   display: flex;
   width: 35%;
@@ -160,7 +160,7 @@
   margin: 2% 0;
 }
 
-.identificacaoEFuncaoDepo{
+.identificacaoEFuncaoDepo {
   width: 65%;
 }
 
@@ -170,3 +170,53 @@
   text-align: center;
 }
 /*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
+
+/*|########|  ESTILO LISTAR |########|*/
+
+/*
+.caixaItemCategoria > span {
+  width: 20%;
+}
+
+.caixaItemCategoria img {
+  width: 100%;
+}
+VERSÃO PARA MOSTRAR PRO MATHEUS
+.identificacaoEFuncaoCategoria span {margin-top: 11%;
+}
+
+.identificacaoEFuncaoCategoria button {
+  margin-left: 350%;
+}
+*/
+
+.painelCategoria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caixaItemCategoria {
+  width: 28%;
+ 
+}
+
+.caixaItemCategoria > span {
+  width: 40%;
+}
+
+.caixaItemCategoria img {
+  width: 95%;
+  margin: 3%;
+}
+
+.identificacaoEFuncaoCategoria {
+  margin: 2% 2% 4% 0;
+  width: 60%;
+}
+
+.identificacaoEFuncaoCategoria button {
+  width: 85%;
+  height: 41%;
+}
+
+/*|########| FIM ESTILO LISTAR |########|*/
