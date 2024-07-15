@@ -883,24 +883,28 @@ div:nth-child(1) > h3 {
 }
 
 /*alinahmento e tamanho do nome do dono do pet*/
-.carrosel_depo_texto div:nth-child(2) h2 {
+.carrosel_depo_texto div:nth-child(1) h2 {
   font-size: 3.5em;
   text-align: center;
 }
 
 /*alinahmento do nome do pet*/
-.carrosel_depo_texto div:nth-child(2) h3 {
+.carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
 
 /*Alinhamento das raÃ§Ãµes que sÃ£o usadas como metrica de avaliaÃ§Ã£o*/
-.carrosel_depo_texto div:nth-child(2) ul {
+.carrosel_depo_texto div:nth-child(1) ul {
   display: flex;
   justify-content: center;
 }
 
+.removeUmDeAvaliacao{
+  display: none;
+}
+
 /*PersonalizaÃ§Ã£o e alinhamento do paragrafo de depoimento*/
-.carrosel_depo_texto div:nth-child(2) div p {
+.carrosel_depo_texto div:nth-child(1) div p {
   font-size: 2.5em;
 
   margin: 0px 20px;

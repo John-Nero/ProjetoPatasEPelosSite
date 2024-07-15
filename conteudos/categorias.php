@@ -1,3 +1,9 @@
+<?php
+require_once('admin\class\ClassCategoria.php');
+$categoria = new categoriaClass();
+$lista = $categoria->listarAtivos();
+?>
+
 <section class="site">
   <div class="categorias">
     <!--Estrelas acima das categorias-->
@@ -9,48 +15,13 @@
 
     <!--categorias rotativas--->
     <div class="carrosel_categorias">
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/gato.svg" alt="" draggable=false />
-          <p>Gato</p>
-        </a>
-      </div>
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/cachorro.svg" alt="" draggable=false />
-          <p>Cachorro</p>
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="img/PG_home/icones_categorias/furao.svg" alt="" draggable=false />
-          <p>Furão</p>
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="img/PG_home/icones_categorias/ave.svg" alt="" draggable=false />
-          <p>Aves</p>
-        </a>
-      </div>
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/coelho.svg" alt="" draggable=false />
-          <p>Coelho</p>
-        </a>
-      </div>
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/hamster.svg" alt="" draggable=false />
-          <p>Hamster</p>
-        </a>
-      </div>
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/tartaruga.svg" alt="" draggable=false />
-          <p>Tartaruga</p>
-        </a>
-      </div>
-      <div>
-        <a href="#"><img src="img/PG_home/icones_categorias/peixe.svg" alt="" draggable=false />
-          <p>Peixe</p>
-        </a>
-      </div>
+      <?php foreach ($lista as $linha) : ?>
+        <div>
+          <a href="#"><img src="admin/<?php echo $linha['fotoCategoria'] ?>" alt="<?php echo $linha['nomeCategoria'] ?>" draggable=false />
+            <p><?php echo $linha['nomeCategoria'] ?></p>
+          </a>
+        </div>
+      <?php endforeach; ?>
     </div>
 
     <!--Estrelas abaixo das categorias-->

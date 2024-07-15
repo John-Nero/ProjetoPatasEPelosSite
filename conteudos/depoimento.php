@@ -1,3 +1,9 @@
+<?php
+require_once('admin\class\ClassDepo.php');
+$depo = new depoimentoClass();
+$lista = $depo->ListarAtivos();
+?>
+
 <section class="site">
   <div class="depo">
 
@@ -24,10 +30,9 @@
 
         <!--Imagens dos pets do carrosel-->
         <div class="carrosel_depo_imagem">
-          <img src="img/PG_home/mascaras/mascara_pet1.svg" alt="" draggable=false />
-          <img src="img/PG_home/mascaras/mascara_pet2.svg" alt="" draggable=false />
-          <img src="img/PG_home/mascaras/mascara_pet3.svg" alt="" draggable=false />
-          <img src="img/PG_home/mascaras/mascara_pet4.svg" alt="" draggable=false />
+          <?php foreach ($lista as $linha) : ?>
+            <img src="admin/<?php echo $linha['fotoDepo'] ?>" alt="<?php echo $linha['altDepo'] ?>" draggable=false />
+          <?php endforeach; ?>
         </div>
 
         <!--Detalhes abaixo da imagem-->
@@ -51,105 +56,36 @@
         <!--Texto do carrosel-->
         <div class="carrosel_depo_texto">
           <!--Cada Div é um depoimento idependete-->
-          <div>
-            <h2 class="titulo_roxo">Fofuxo - Roberto</h2>
-            <h3 class="subtitulo_laranja">Aline</h3>
-            <ul>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-            </ul>
+          <?php foreach ($lista as $linha) : ?>
             <div>
-              <p>Adorei o atendimento, super carinhosos e cuidadosos com os meus pets, me senti muito acolhida pela a equipe.</p>
-            </div>
-          </div>
+              <h2 class="titulo_roxo"><?php echo $linha['nomePetDepo'] ?></h2>
+              <h3 class="subtitulo_laranja"><?php echo $linha['nomeDonoDepo'] ?></h3>
+              <ul>
+                <li class="<?php echo $linha['avaliDepo'] > 0 ? '' : 'removeUmDeAvaliacao' ?>">
+                  <img src="img/enfeites/comida.svg" alt="" draggable=false />
+                </li>
 
-          <div>
-            <h2 class="titulo_roxo">Tazmania</h2>
-            <h3 class="subtitulo_laranja">Willian</h3>
-            <ul>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-            </ul>
-            <div>
-              <p>Amei a equipe, o Taz voltou lindo do banho e tosa. Super recomendo.</p>
-            </div>
-          </div>
+                <li class="<?php echo $linha['avaliDepo'] > 1 ? '' : 'removeUmDeAvaliacao' ?>">
+                  <img src="img/enfeites/comida.svg" alt="" draggable=false />
+                </li>
 
-          <div>
-            <h2 class="titulo_roxo">Rodolfo</h2>
-            <h3 class="subtitulo_laranja">Derick</h3>
-            <ul>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-            </ul>
-            <div>
-              <p>Estava desesperado atrás de um luga que soubessem cuidar de furões, obrigado por terem me ajudado nesse momento.</p>
-            </div>
-          </div>
+                <li class="<?php echo $linha['avaliDepo'] > 2 ? '' : 'removeUmDeAvaliacao' ?>">
+                  <img src="img/enfeites/comida.svg" alt="" draggable=false />
+                </li>
 
-          <div>
-            <h2 class="titulo_roxo">Valeria - Fátima</h2>
-            <h3 class="subtitulo_laranja">Matilde</h3>
-            <ul>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-              <li>
-                <img src="img/enfeites/comida.svg" alt="" draggable=false />
-              </li>
-            </ul>
-            <div>
-              <p>Funcionários muito atenciosos, adorei o atendimento e me senti muito acolhida. Obrigado pela atenção.</p>
+                <li class="<?php echo $linha['avaliDepo'] > 3 ? '' : 'removeUmDeAvaliacao' ?>">
+                  <img src="img/enfeites/comida.svg" alt="" draggable=false />
+                </li>
+
+                <li class="<?php echo $linha['avaliDepo'] > 4 ? '' : 'removeUmDeAvaliacao' ?>">
+                  <img src="img/enfeites/comida.svg" alt="" draggable=false />
+                </li>
+              </ul>
+              <div>
+                <p><?php echo $linha['textoDepo'] ?></p>
+              </div>
             </div>
-          </div>
+          <?php endforeach; ?>
         </div>
 
         <!--Detalhes da base da sessão-->
