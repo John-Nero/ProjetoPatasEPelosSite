@@ -899,7 +899,7 @@ div:nth-child(1) > h3 {
   justify-content: center;
 }
 
-.removeUmDeAvaliacao{
+.removeUmDeAvaliacao {
   display: none;
 }
 
@@ -1040,7 +1040,8 @@ a sessÃ£o */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat center center;
+  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat
+    center center;
   background-size: cover;
   pointer-events: none;
 }
@@ -1068,8 +1069,8 @@ a sessÃ£o */
 .visita ul {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
-  margin-right: 20%;
+  margin-top: 89px;
+  margin-right: 8%;
 }
 
 /*EspaÃ§amento interno das redes sociais*/
@@ -1078,8 +1079,8 @@ a sessÃ£o */
 }
 
 .visita ul li a img {
-  width: 110px;
-  height: 110px;
+  width: 85px;
+  height: 85px;
 }
 
 .visita div div h2 {
@@ -1098,7 +1099,7 @@ a sessÃ£o */
   background: #a38cd6;
   text-align: center;
   padding: 26px 0 7px 0px;
-}
+  }
 
 /*personalizaÃ§Ã£o para que todos os links do rodapÃ© ficarem pretos*/
 .rodape a {
