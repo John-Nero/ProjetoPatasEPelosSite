@@ -29,6 +29,7 @@
   <!--Aponta para o arquivo de estilo-->
   <link rel="stylesheet" href="css/estilo.css" />
   <link rel="stylesheet" href="css/mobile.css" />
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
 
 </head>
 
