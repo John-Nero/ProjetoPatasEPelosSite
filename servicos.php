@@ -36,12 +36,7 @@
     <main>
         <!--BANNER PRINCIPAL-->
         <section class="site">
-            <!--banner rotativo-->
-            <div class="banner">
-                <img src="img/PG_servicos/banners/AtendimentoVeterinario.svg" alt="R>são Miguel Paulista, N:200" />
-                <img src="img/PG_servicos/banners/confiraJaOfertas.svg" alt="Horario de atendimento 24hrs" />
-                <img src="img/PG_servicos/banners/ConfiraServicos.svg" alt="veterinario, hotel,produtos, tosa e banho" />
-            </div>
+        <?php include_once 'conteudos/banner-servico.php' ?>
         </section>
 
 
@@ -142,7 +137,7 @@
                 </div>
                 <div class="teste2">
                     <div class="estilo2">
-                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner_v2">
                             <img class="fade_icone1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/bolas.svg" alt="">
                             <div class="servico_conteudo_v2">
@@ -154,7 +149,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/shampoo.svg" alt="">
                             <div class="servico_conteudo">
@@ -166,7 +161,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/coleira.svg" alt="">
                             <div class="servico_conteudo">
@@ -178,7 +173,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/sacola.svg" alt="">
                             <div class="servico_conteudo">
@@ -433,7 +428,7 @@
                     <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
 
                 </div>
-                <img src="img/PG_servicos/contato/contato.svg" alt="" />
+                <img src="img/PG_servicos/mascara/contato.svg" alt="" />
             </div>
         </section>
 

@@ -1,7 +1,7 @@
 <?php 
 require_once('admin\class\ClassBanner.php');
 $banner = new bannerClass();
-$lista = $banner->ListarAtivosTodos();
+$lista = $banner->ListarAtivosHome();
 ?>
 
 <section class="site">
