@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/*|########| CONFIGURAÃ‡Ã•ES GERAIS |########|*/
+
+body {
+  font-size: 11px;
+  font-family: "Roboto Flex";
+  font-weight: 400;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Bloqueia a seleção das imagens do site*/
+img {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  -moz-user-select: none; /* Firefox */
+  user-select: none;
+}
+
+main {
+  display: flex;
+}
+
+.site {
+  max-width: 1920px; /* Largura max de 1200 px */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu_lateral {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a38cd6;
+}
+
+.menu_lateral img {
+  width: 75%;
+  margin-top: 5%;
+}
+.menu_lateral nav,
+.menu_lateral ul,
+.menu_lateral a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu_lateral li {
+  width: 83%;
+  height: 173px;
+  padding: 7.2% 0 7.1% 0;
+}
+
+.menu_lateral a {
+  height: 100%;
+  border-radius: 50px;
+  background: #ff9a5b;
+  font-size: 2.5em;
+  color: white;
+  font-weight: 900 !important;
+}
+
+.site > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.faixa_superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: #ff9a5b;
+  color: #fff;
+}
+
+.faixa_superior > h2 {
+  margin-left: 30px;
+  font-size: 3em;
+}
+.usuario {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.usuario img {
+  width: 80px;
+  height: 80px;
+  border-radius: 60%;
+}
+
+.usuario span {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+}
+
+.usuario span h2 {
+  margin-left: 15px;
+  font-size: 2em;
+}

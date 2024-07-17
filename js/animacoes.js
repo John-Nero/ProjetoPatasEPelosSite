@@ -89,19 +89,7 @@ new simpleParallax(parallax, {
   transition: "cubic-bezier(0,0,0,1)",
 });
 
-let parallax1 = document.getElementsByClassName("parallax1");
-new simpleParallax(parallax1, {
-  overflow: true,
-  delay: 0.6,
-  transition: "cubic-bezier(0,0,0,1)",
-});
 
-let parallax2 = document.getElementsByClassName("parallax2");
-new simpleParallax(parallax2, {
-  overflow: true,
-  delay: 0.6,
-  transition: "cubic-bezier(0,0,0,1)",
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   const popups = document.querySelectorAll(".popup");

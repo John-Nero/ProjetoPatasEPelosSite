@@ -19,7 +19,7 @@ class ClassContato{   // Criar uma classe para atribuir os atributos que tem no 
         // Listar
  
         public function Listar(){ // função, tem que iniciar maiúsculo para identificar que é um método
-            $sql = "SELECT * FROM tbl_contattbl_contatoo WHERE statusContato = 'ATIVO' ORDER BY dataContato ASC;";
+            $sql = "SELECT * FROM tbl_contatotbl_contatoo WHERE statusContato = 'ATIVO' ORDER BY dataContato ASC;";
  
             $conn = Conexao::LigarConexao();
  

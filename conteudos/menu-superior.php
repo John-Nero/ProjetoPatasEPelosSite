@@ -3,8 +3,19 @@
         <div class="menu_superior">
             <div>
                 <!--H1 que vira img por config no css-->
-                <button class="abrir_menu"></button>
-
+                <button class="abrir_menu" id="abrir_menu"></button>
+                <nav class="menu_lateral" id="menu_lateral">
+                    <button class="fechar_menu" id="fechar_menu"> </button>
+                       
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="sobre-nos.php">Sobre nós</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="contato.php">Contato</a></li>
+                            <li><a href="servico.php">Serviços</a></li>
+                        </ul>
+                   
+                </nav>
                 <h1>Patas e pelos</h1>
 
                 <nav>
