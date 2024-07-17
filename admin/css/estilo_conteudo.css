@@ -1,0 +1,222 @@
+/*|########| ESTILO LISTAR BANNER |########|*/
+
+/*A classe opcoes é a responsavel por abrigar o botão de adicionar e o de filtrar os itens da categoria*/
+.opcoes {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Botão adicionar*/
+.opcoes a {
+  width: 131px;
+  height: 34px;
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border-radius: 50px;
+  background: #ff9a5b;
+}
+
+/*Filtragem*/
+.opcoes select {
+  margin-right: 4%;
+  width: 234px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/*caixaItem é a classe de cada div dos banners, dentro dela temos a imagem do banner, o nome e um botão para ativar e desativar o mesmo*/
+.caixaItem {
+  display: flex;
+  background-color: #a38cd6;
+  border-radius: 50px;
+  margin: 20px 2.5%;
+}
+
+/*Onde é exibido o banner*/
+.caixaItem > span {
+  background: #665098;
+  border-radius: 50px;
+  margin: 2%;
+}
+
+/*imagem do banner*/
+.imgBanner {
+  width: 100%;
+  height: 269px;
+}
+
+/*Id responsavel por abrigar o nome e o botão para ativar/desativar*/
+.identificacaoEFuncao {
+  width: 24%;
+  margin: 2% 2% 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Nome do banner*/
+.identificacaoEFuncao h2 {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+/*botão ativar e desativar*/
+
+.botaoAtivar {
+  width: 95%;
+  height: 18%;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 2.5em;
+  font-weight: 900;
+  background: #a2ec88;
+}
+
+.botaoDesativar {
+  width: 95%;
+  height: 18%;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 2.5em;
+  font-weight: 900;
+  background: #f65d5d;
+}
+/*|########| FIM ESTILO LISTAR BANNER |########|*/
+
+/*|########| ESTILO INSERIR BANNER |########|*/
+
+.caixaInserir {
+  background-color: #a38cd6;
+  border-radius: 50px;
+  margin: 20px 2.5%;
+}
+
+.caixaInserir div {
+  display: flex;
+  margin: 2% 2% 0 0;
+  justify-content: space-evenly;
+}
+
+.caixaInserir > div > span {
+  margin: 2%;
+  width: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #665098;
+  border-radius: 50px;
+}
+
+.caixaInserir > div > span img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.dadosDecadastro,
+.dadosDecadastro div {
+  flex-direction: column;
+}
+
+.dadosDecadastro {
+  width: 28%;
+  color: white;
+  font-size: 2.5em;
+  height: 365px;
+}
+
+.dadosDecadastro input,
+.dadosDecadastro select {
+  border: 0;
+  border-radius: 50px;
+}
+
+.caixaInserir button {
+  margin: 0px 2% 2% 6%;
+  width: 85%;
+  height: 48px;
+  border: 0;
+  border-radius: 50px;
+  background: #ff9a5b;
+  color: white;
+  font-size: 3.5em;
+  font-weight: 900 !important;
+}
+
+/*|########| ESTILO LISTAR DEPOIMENTO |########|*/
+.caixaItemDepo > span:nth-child(1) {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
+.caixaItemDepo img {
+  width: 66%;
+  margin: 2% 0;
+}
+
+.identificacaoEFuncaoDepo {
+  width: 65%;
+}
+
+.caixaItemDepo p {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+}
+/*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
+
+/*|########|  ESTILO LISTAR |########|*/
+
+/*
+.caixaItemCategoria > span {
+  width: 20%;
+}
+
+.caixaItemCategoria img {
+  width: 100%;
+}
+VERSÃO PARA MOSTRAR PRO MATHEUS
+.identificacaoEFuncaoCategoria span {margin-top: 11%;
+}
+
+.identificacaoEFuncaoCategoria button {
+  margin-left: 350%;
+}
+*/
+
+.painelCategoria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caixaItemCategoria {
+  width: 28%;
+ 
+}
+
+.caixaItemCategoria > span {
+  width: 40%;
+}
+
+.caixaItemCategoria img {
+  width: 95%;
+  margin: 3%;
+}
+
+.identificacaoEFuncaoCategoria {
+  margin: 2% 2% 4% 0;
+  width: 60%;
+}
+
+.identificacaoEFuncaoCategoria button {
+  width: 85%;
+  height: 41%;
+}
+
+/*|########| FIM ESTILO LISTAR |########|*/

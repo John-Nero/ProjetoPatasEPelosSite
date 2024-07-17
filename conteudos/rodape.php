@@ -10,13 +10,13 @@
                 <a href="tel:1190028922">(11)9002-8922</a>
                 <ul>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/whatsapp.svg" alt="whatsapp" draggable=false /></a>
+                        <a href="#"><img src="img/PG_home/redes_sociais/whatsapp.svg" alt="whatsapp" draggable=false /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/instagram.svg" alt="instagram" draggable=false /></a>
+                        <a href="#"><img src="img/PG_home/redes_sociais/instagram.svg" alt="instagram" draggable=false /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/redes_sociais/X.svg" alt="Facebook" draggable=false /></a>
+                        <a href="#"><img src="img/PG_home/redes_sociais/X.svg" alt="Facebook" draggable=false /></a>
                     </li>
                 </ul>
             </div>

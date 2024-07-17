@@ -11,6 +11,6 @@
       <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
 
     </div>
-    <img src="img/mascaras/sobre_nos.svg" alt="" draggable=false />
+    <img src="img/PG_home/mascaras/sobre_nos.svg" alt="" draggable=false />
   </div>
 </section>
