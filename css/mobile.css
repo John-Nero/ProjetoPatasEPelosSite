@@ -416,6 +416,7 @@
 }
 
 @media not all and (max-width: 900px) {
+  .menu_lateral,
   .abrir_menu,
   .tosa img:nth-child(2) {
     display: none;
