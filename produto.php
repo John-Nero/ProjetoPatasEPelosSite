@@ -4,8 +4,8 @@ $produto = new ClassProduto();
 $lista = '';
 // print_r($lista);
 require_once('admin/class/ClassCategoria.php');
-$categoria = new ClassCategoria();
-$listaC = $categoria->ListarC();
+$categoria = new categoriaClass();
+$listaC = $categoria->listarTodos();
 // print_r($listaC);
 
 $statusSelecionado = @$_GET['status'];
