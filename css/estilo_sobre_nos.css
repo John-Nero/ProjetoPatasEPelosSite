@@ -1,7 +1,5 @@
 /*|########| CONFIGURACOES GERAIS |########|*/
-h1,
-h2,
-p {
+body {
   font-family: "Roboto Flex", sans-serif;
 }
 

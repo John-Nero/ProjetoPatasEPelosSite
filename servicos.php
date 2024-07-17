@@ -36,7 +36,7 @@
     <main>
         <!--BANNER PRINCIPAL-->
         <section class="site">
-        <?php include_once 'conteudos/banner-servico.php' ?>
+            <?php include_once 'conteudos/banner-servico.php' ?>
         </section>
 
 
@@ -448,11 +448,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/simple--js@5.5.1/dist/simple.min.js"></script>
 
-    <!--arquivo de configuração das animações-->
-    <script src="js/animacoes.js"></script>
-    <!--WOW-->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <!--Script de funções js-->
+    < <script src="js/script.js">
+        </script>
+
+        <!--arquivo de configuração das animações-->
+        <script src="js/animacoes.js"></script>
+        <!--WOW-->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>

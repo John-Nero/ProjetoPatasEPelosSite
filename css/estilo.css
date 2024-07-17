@@ -120,7 +120,7 @@ img {
 }
 
 /*EspaÃ§amento interno dos icones*/
-.menu_icones a {
+.menu_icones > a {
   display: flex;
   margin-left: 13px;
 }

@@ -91,8 +91,9 @@
     new WOW().init();
   </script>
 
- <!--arquivo de configuração das animações-->
- <script src="js/script.js"></script>
+<!--Script de funções js-->
+ < <script src="js/script.js"></script>
+
 
   <!--arquivo de configuração das animações-->
   <script src="js/animacoes.js"></script>

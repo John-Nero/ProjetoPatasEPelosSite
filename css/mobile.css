@@ -15,26 +15,63 @@
   }
 
   .abrir_menu,
-  .fecha_menu {
+  .fechar_menu {
     background-size: cover;
     padding: 34px;
     border: 0;
     display: block;
-  }
-
-  .abrir_menu {
+    cursor: pointer;
     background: url("../img/menu/menu_hamburguer.svg") no-repeat;
   }
 
-  .menu_icones a
+  .menu_icones li {
+    width: 50px;
+    height: 50px;
+  }
 
   .menu_icones li:nth-child(1) {
     position: relative;
-    right: 368%;
+    right: 404%;
+    margin-top: 12%;
+  }
+
+  .menu_icones li a,
+  .menu_icones li img {
+    width: 100%;
+    height: 100%;
   }
 
   .menu_superior h1 {
-    margin-left: 12%;
+    margin-left: 21%;
+  }
+
+  .menu_icones li:nth-child(2) {
+    margin: 6% 15% 0 0;
+  }
+
+  .menu_lateral {
+    border: 0;
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a38cd6c9;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 6px;
+  }
+
+  .menu_lateral ul li {
+    padding: 7px 0 30px 32px;
+    font-size: 1.5em;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menu_lateral a {
+    color: black;
   }
 
   /*-----------------PAGINA DE CONTATO/*-----------------*/
