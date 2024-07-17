@@ -8,6 +8,10 @@ body {
   font-weight: 400;
 }
 
+html{
+  background-color: #fff8ed;
+}
+
 a,
 h1,
 h2,
@@ -61,6 +65,7 @@ img {
 .equipe,
 .depo,
 .visita,
+.produto_main,
 .rodape {
   background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;
@@ -130,7 +135,7 @@ img {
   width: 258px;
   height: 228px;
   background: url(../img/menu/elipse_telefone.svg) no-repeat;
-  text-indent: -9999px;
+  text-indent: -9999px;   
   margin-top: 96px;
   position: relative;
   z-index: 1;
@@ -1040,8 +1045,7 @@ a sessÃ£o */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat
-    center center;
+  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat center center;
   background-size: cover;
   pointer-events: none;
 }
