@@ -10,7 +10,7 @@
                 <img src="img\enfeites\produtos.svg" alt="" draggable=false>
             </div>
 
-            <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="18s">clique aqui!</a>
+            <a href="servicos.php" class="wow animate__animated animate__fadeIn" data-wow-delay:="18s">clique aqui!</a>
         </div>
     </div>
 </section>

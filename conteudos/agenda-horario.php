@@ -6,7 +6,7 @@
                 <img draggable="false" src="img/enfeites/produtos.svg" alt="" draggable=false>
                 <p>O seu pet merece o melhor tratamento, venha conferir os nossos tratamentos.</p>
             </div>
-            <a href="#" class="wow animate__animated animate__fadeIn " data-wow-delay:="7s">clique aqui!</a>
+            <a href="servicos.php" class="wow animate__animated animate__fadeIn " data-wow-delay:="7s">clique aqui!</a>
         </div>
         <img src="img/PG_home/mascaras/agenda_seu_horario.svg" alt="" draggable=false />
     </div>

@@ -8,6 +8,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  background-color: #fff8ed;
+}
+
 a,
 h1,
 h2,
@@ -61,6 +65,7 @@ img {
 .equipe,
 .depo,
 .visita,
+.produto_main,
 .rodape {
   background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;
@@ -1099,7 +1104,9 @@ a sessÃ£o */
   background: #a38cd6;
   text-align: center;
   padding: 26px 0 7px 0px;
-  }
+  position: relative;
+  margin-top: 3%;
+}
 
 /*personalizaÃ§Ã£o para que todos os links do rodapÃ© ficarem pretos*/
 .rodape a {
@@ -1108,6 +1115,8 @@ a sessÃ£o */
 
 /*flex para que as tres colubnas fiquem uma ao lado da outra*/
 .rodape div div {
+  position: relative;
+  z-index: 2;
   display: flex;
 }
 
@@ -1199,7 +1208,8 @@ a sessÃ£o */
 /*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
   position: absolute;
-  top: 6635px;
+  bottom: 6px;
+
   left: -2%;
   width: 1919px;
 }

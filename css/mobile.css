@@ -74,6 +74,30 @@
     color: black;
   }
 
+  /*-----------------RODAPÉ -----------------*/
+  .rodape > div span,
+  .rodape div div div:nth-child(1) p,
+  .rodape div div div:nth-child(2) h2,
+  .rodape div div div:nth-child(3)  h2:nth-child(3),
+  .rodape div div div:nth-child(3) a:nth-child(4) {
+    display: none;
+  }
+
+  .rodape div div div:nth-child(1) {
+    margin-left: 1%;
+    order: 1;
+  }
+
+  .rodape div div div:nth-child(2) {
+    margin: 47px 0px 0px 143px;
+
+    order: 3;
+  }
+
+  .rodape div div div:nth-child(3) {
+    margin: 89px 0px 0px 0px;
+    order: 2;
+  }
   /*-----------------PAGINA DE CONTATO/*-----------------*/
   .entreEmContato div div img,
   .form > img:nth-child(1) {
@@ -203,8 +227,16 @@
   .marcas h2:nth-child(2) {
     font-size: 2.5em;
   }
+  .rodape > div span {
+    display: none;
+  }
 }
 
+/*-----------------PAGINA DE SERVIÇO/*-----------------*/
+/* SERVIÇOS */
+.contato img {
+  display: none;
+}
 /* ######################### */
 /* ####   0 atÃ© 600  ##### */
 /* ######################### */
