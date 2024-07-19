@@ -14,12 +14,22 @@ $(".carrosel_categorias").slick({
   autoplaySpeed: 2000,
   responsive: [
     {
-      breakpoint: 601,
+      breakpoint: 600,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ],
 });
 
@@ -82,19 +92,18 @@ $(".carrosel_servico").slick({
   ],
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Verifique se o caminho da URL corresponde à página desejada
-  if (window.location.pathname === 'Site-PatasEPelos/index.php') {
-      let parallax = document.getElementsByClassName("parallax");
+  if (window.location.pathname === "Site-PatasEPelos/index.php") {
+    let parallax = document.getElementsByClassName("parallax");
 
-      new simpleParallax(parallax, {
-          overflow: true,
-          delay: 0.6,
-          transition: "cubic-bezier(0,0,0,1)",
-      });
+    new simpleParallax(parallax, {
+      overflow: true,
+      delay: 0.6,
+      transition: "cubic-bezier(0,0,0,1)",
+    });
   }
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const popups = document.querySelectorAll(".popup");

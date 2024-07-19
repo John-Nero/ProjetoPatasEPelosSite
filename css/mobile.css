@@ -7,6 +7,16 @@
   .slick-prev {
     display: none !important;
   }
+  html {
+    background: aqua;
+  }
+
+  .titulo_roxo {
+    font-size: 4.5em;
+  }
+  .subtitulo_laranja {
+    font-size: 3.5em;
+  }
 
   /*-----------------MENU SUPERIOR/*-----------------*/
   .menu_botoes,
@@ -78,7 +88,7 @@
   .rodape > div span,
   .rodape div div div:nth-child(1) p,
   .rodape div div div:nth-child(2) h2,
-  .rodape div div div:nth-child(3)  h2:nth-child(3),
+  .rodape div div div:nth-child(3) h2:nth-child(3),
   .rodape div div div:nth-child(3) a:nth-child(4) {
     display: none;
   }
@@ -98,7 +108,209 @@
     margin: 89px 0px 0px 0px;
     order: 2;
   }
-  /*-----------------PAGINA DE CONTATO/*-----------------*/
+
+  /*-----------------PAGINA DE INICIAL-----------------*/
+  /*Banner*/
+  .banner {
+    display: none;
+  }
+
+  /*Agenda*/
+  .agenda > img {
+    display: none;
+  }
+
+  /*Categorias*/
+  .categorias {
+    margin-top: 0;
+  }
+
+  .categorias div:nth-child(1) span:nth-child(1),
+  .categorias div:nth-child(1) span:nth-child(2) {
+    display: none;
+  }
+
+  .carrosel_categorias {
+    margin-left: 8%;
+    width: 89%;
+  }
+
+  .categorias div:nth-child(3) {
+    display: none;
+  }
+  /*Banho e tosa*/
+
+  .tosa > img:nth-child(1) {
+    display: none;
+  }
+
+  .tosa {
+    margin-top: 17%;
+  }
+  .tosa > div {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .tosa div div {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tosa p {
+    font-size: 2em;
+  }
+
+  .tosa div div img {
+    display: none;
+  }
+
+  .tosa a {
+    margin-left: 0;
+    padding: 15px 39px;
+  }
+  .sobre {
+    margin-top: 5%;
+    display: flex;
+  }
+  /*Sobre nós*/
+  .sobre > img {
+    display: none;
+  }
+  .sobre > span:nth-child(1) {
+    width: 33%;
+  }
+
+  .sobre > div {
+    width: 54%;
+    margin-left: -3%;
+    margin-right: 0;
+  }
+
+  .sobre div div img {
+    display: none;
+  }
+
+  .sobre div div {
+    width: 100%;
+  }
+
+  .sobre div div p {
+    margin-left: 6%;
+    font-size: 2.3em;
+  }
+
+  .sobre a {
+    margin-left: 0;
+    padding: 15px 38px;
+  }
+
+  .sobre > span:nth-child(2) {
+    width: 23%;
+  }
+
+  /*Equipe*/
+  .equipe {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .equipe > div:nth-child(1) {
+    display: none;
+  }
+
+  .equipe > div:nth-child(2) {
+    width: 100%;
+  }
+
+  .equipe div:nth-child(2) div p {
+    display: none;
+  }
+
+  .carrosel_equipe {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card_funcionario img {
+    width: 100%;
+  }
+
+  .equipe > div:nth-child(3) {
+    display: none;
+  }
+
+  .equipe > div:nth-child(2) > span:nth-child(3),
+  .equipe > div:nth-child(2) > span:nth-child(4) {
+    display: none;
+  }
+
+  /*Depoimentos*/
+  .depo_topo {
+    height: 238px;
+  }
+
+  .depo_topo span:nth-child(1),
+  .depo_topo span:nth-child(2),
+  .depo_topo span:nth-child(3) {
+    display: none;
+  }
+
+  .depo_principal {
+    flex-direction: column;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(1) {
+    bottom: 391px;
+    left: 26%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(1) img:nth-child(2) {
+    position: relative;
+    left: -78px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(2) {
+    width: 133px;
+    height: 133px;
+    bottom: 379px;
+    left: -18%;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(3) {
+    display: inline-flex;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: 77px;
+    left: 10%;
+  }
+
+  .carrosel_depo_imagem {
+    width: 241px;
+    height: 241px;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(5) {
+    bottom: 514px;
+    left: 12%;
+    width: 112px;
+    height: 112px;
+  }
+  .depo_principal div:nth-child(1) span:nth-child(5) img:nth-child(2) {
+    position: relative;
+    bottom: -11px;
+    left: -109%;
+  }
+
+  .depo_principal div:nth-child(1) span:nth-child(7),
+  .depo_principal div:nth-child(1) span:nth-child(6) {
+    display: none;
+  }
+  /*-----------------PAGINA DE CONTATO-----------------*/
   .entreEmContato div div img,
   .form > img:nth-child(1) {
     display: none;
