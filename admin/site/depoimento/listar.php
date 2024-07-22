@@ -1,11 +1,11 @@
 <?php
-require_once('class/ClassDepo.php');
+require_once('class/classDepo.php');
 $depo = new depoimentoClass();
+
 $lista = "";
 
-$pagina = @$_GET['p']; //A categoria é só pra manter apenas um metodo de filtragem 
+$pagina = @$_GET['p']; //A pagina é só pra manter apenas um metodo de filtragem 
 $statusSelecionado = @$_GET['status'];
-
 //Todas as paginas
 if ($statusSelecionado == 'todos') {
     $lista = $depo->ListarTodos();
