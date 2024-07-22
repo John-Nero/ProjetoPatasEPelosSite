@@ -66,7 +66,7 @@
   text-align: center;
 }
 
-/*botão ativar e desativar*/
+/*botão ativar, desativar e atualizar*/
 
 .botaoAtivar {
   width: 95%;
@@ -86,6 +86,16 @@
   font-size: 2.5em;
   font-weight: 900;
   background: #f65d5d;
+}
+
+.botaoAtualizar {
+  width: 95%;
+  height: 18%;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 2.5em;
+  font-weight: 900;
+  background: #88c7ec;
 }
 /*|########| FIM ESTILO LISTAR BANNER |########|*/
 

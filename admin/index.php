@@ -58,27 +58,18 @@
 
                     switch ($pagina) {
                         case 'banner':
-                            $titulo = 'Banner';
                             require_once('site/banner/banner.php');
                             break;
 
                         case 'depoimento':
-                            $titulo = 'Depoimento';
                             require_once('site/depoimento/depoimento.php');
                             break;
 
                         case 'categoria':
-                            $titulo = 'Categoria';
                             require_once('site/categoria/categoria.php');
                             break;
-
                         case 'cliente':
-                            $titulo = 'Cliente';
                             require_once('site/cliente/cliente.php');
-                            break;
-
-                        default:
-                            $titulo = 'Banner';
                             break;
                     }
                     ?>

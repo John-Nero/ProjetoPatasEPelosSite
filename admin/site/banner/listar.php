@@ -91,6 +91,8 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
             <span>
                 <h2><?php echo $linha['nomeBanner'] ?></h2>
             </span>
+            <button class="botaoAtualizar"><a href="index.php?p=banner&b=atualizar&id=<?php echo $linha['idBanner'] ?>">Atualizar</a></button>
+
             <button class="<?php echo $linha['statusBanner'] == 'ATIVO' ? 'botaoDesativar' : 'botaoAtivar' ?>"><!--caso o status seja ativo ele chama chama a clase botãoDesativar se n chama o botãoAtivar-->
                 <?php
                 echo $linha['statusBanner'] == 'ATIVO' ? "<a href='index.php?p=banner&b=desativar&id=" . $linha['idBanner'] . "'>Desativar</a>" : "<a href='index.php?p=banner&b=ativar&id=" . $linha['idBanner'] . "'>Ativar</a>"; ?><!--caso o status seja ativo ele poe o texto como desativar caso contrario coloca como ativar-->
