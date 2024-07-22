@@ -8,6 +8,10 @@ body {
   font-weight: 400;
 }
 
+html {
+  background-color: #fff8ed;
+}
+
 a,
 h1,
 h2,
@@ -61,6 +65,7 @@ img {
 .equipe,
 .depo,
 .visita,
+.produto_main,
 .rodape {
   background-color: #fff8ed;
   font-family: "Roboto Flex", sans-serif;
@@ -120,7 +125,7 @@ img {
 }
 
 /*EspaÃ§amento interno dos icones*/
-.menu_icones a {
+.menu_icones > a {
   display: flex;
   margin-left: 13px;
 }
@@ -883,24 +888,28 @@ div:nth-child(1) > h3 {
 }
 
 /*alinahmento e tamanho do nome do dono do pet*/
-.carrosel_depo_texto div:nth-child(2) h2 {
+.carrosel_depo_texto div:nth-child(1) h2 {
   font-size: 3.5em;
   text-align: center;
 }
 
 /*alinahmento do nome do pet*/
-.carrosel_depo_texto div:nth-child(2) h3 {
+.carrosel_depo_texto div:nth-child(1) h3 {
   text-align: center;
 }
 
 /*Alinhamento das raÃ§Ãµes que sÃ£o usadas como metrica de avaliaÃ§Ã£o*/
-.carrosel_depo_texto div:nth-child(2) ul {
+.carrosel_depo_texto div:nth-child(1) ul {
   display: flex;
   justify-content: center;
 }
 
+.removeUmDeAvaliacao {
+  display: none;
+}
+
 /*PersonalizaÃ§Ã£o e alinhamento do paragrafo de depoimento*/
-.carrosel_depo_texto div:nth-child(2) div p {
+.carrosel_depo_texto div:nth-child(1) div p {
   font-size: 2.5em;
 
   margin: 0px 20px;
@@ -1036,7 +1045,8 @@ a sessÃ£o */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat center center;
+  background: url("../img/PG_home/mascaras/mascara_do_mapa.png") no-repeat
+    center center;
   background-size: cover;
   pointer-events: none;
 }
@@ -1064,8 +1074,8 @@ a sessÃ£o */
 .visita ul {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
-  margin-right: 20%;
+  margin-top: 89px;
+  margin-right: 8%;
 }
 
 /*EspaÃ§amento interno das redes sociais*/
@@ -1074,8 +1084,8 @@ a sessÃ£o */
 }
 
 .visita ul li a img {
-  width: 110px;
-  height: 110px;
+  width: 85px;
+  height: 85px;
 }
 
 .visita div div h2 {
@@ -1094,6 +1104,8 @@ a sessÃ£o */
   background: #a38cd6;
   text-align: center;
   padding: 26px 0 7px 0px;
+  position: relative;
+  margin-top: 3%;
 }
 
 /*personalizaÃ§Ã£o para que todos os links do rodapÃ© ficarem pretos*/
@@ -1103,6 +1115,8 @@ a sessÃ£o */
 
 /*flex para que as tres colubnas fiquem uma ao lado da outra*/
 .rodape div div {
+  position: relative;
+  z-index: 2;
   display: flex;
 }
 
@@ -1194,7 +1208,8 @@ a sessÃ£o */
 /*Detalhes do rodapÃ©(cachorro e as patas)*/
 .rodape > div span {
   position: absolute;
-  top: 6635px;
+  bottom: 6px;
+
   left: -2%;
   width: 1919px;
 }

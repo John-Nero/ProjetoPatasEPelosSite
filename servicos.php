@@ -36,12 +36,7 @@
     <main>
         <!--BANNER PRINCIPAL-->
         <section class="site">
-            <!--banner rotativo-->
-            <div class="banner">
-                <img src="img/PG_servicos/banners/AtendimentoVeterinario.svg" alt="R>são Miguel Paulista, N:200" />
-                <img src="img/PG_servicos/banners/confiraJaOfertas.svg" alt="Horario de atendimento 24hrs" />
-                <img src="img/PG_servicos/banners/ConfiraServicos.svg" alt="veterinario, hotel,produtos, tosa e banho" />
-            </div>
+            <?php include_once 'conteudos/banner-servico.php' ?>
         </section>
 
 
@@ -142,7 +137,7 @@
                 </div>
                 <div class="teste2">
                     <div class="estilo2">
-                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner_v2">
                             <img class="fade_icone1 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/bolas.svg" alt="">
                             <div class="servico_conteudo_v2">
@@ -154,7 +149,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone2 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/shampoo.svg" alt="">
                             <div class="servico_conteudo">
@@ -166,7 +161,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone3 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/coleira.svg" alt="">
                             <div class="servico_conteudo">
@@ -178,7 +173,7 @@
                     </div>
 
                     <div class="estilo2">
-                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/serviço_fundo.svg" alt="">
+                        <img class="fade_fundo4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/servico_fundo.svg" alt="">
                         <div class="servico_banner">
                             <img class="fade_icone4 wow animate__animated animate__fadein" src="img/PG_servicos/servicos/sacola.svg" alt="">
                             <div class="servico_conteudo">
@@ -214,12 +209,7 @@
 
 
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup">
-                                <div class="popup-content">
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img2">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -236,13 +226,7 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-durawdqwdtion="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup">
-                                <div class="popup-content">
-                                    Seu conteúdo aqui, como texto ou outra imagem
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>qw   
-                            </span>-->
+
                             <div class="galeria_Esquerdo_img3">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -254,13 +238,7 @@
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup"> 
-                                <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img4">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -278,13 +256,7 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
 
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup">
-                                <div class="popup-content">
-                                    Seu conteúdo aqui, como texto ou outra imagem
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img5">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto3.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -296,13 +268,7 @@
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup">
-                                <div class="popup-content">
-                                    Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img6">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -314,13 +280,7 @@
                                 </div>
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/PG_servicos/galeria/fundo2.svg" alt=""></span>
-                            <!-- <span class="popup"> 30
-                                <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img7">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto2.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -335,13 +295,7 @@
 
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2.5s" data-wow-delay:="20s" src="img/PG_servicos/galeria/fundo3.svg" alt=""></span>
-                            <!-- <span class="popup"> 35
-                                <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img8">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto5.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -352,13 +306,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <span class="popup"> 37
-                                <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img9">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -371,13 +319,6 @@
                             </div>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
-                            <!-- <span class="popup"> 41
-                                <div class="popup-content">
-                                     Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
 
                             <div class="galeria_Esquerdo_img10">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
@@ -392,13 +333,7 @@
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" data-wow-duration="6s" src="img/enfeites/estrela_roxa.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
-                            <!-- <span class="popup"> 46
-                                <div class="popup-content">
-                                    Seu conteúdo aqui, como texto ou outra imagem 
-                                    <p>Seu texto aqui</p>
-                                    <img src="img/PG_servicos/galeria/exemppp.svg" alt="">
-                                </div>
-                            </span> -->
+
                             <div class="galeria_Esquerdo_img11">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto4.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -433,7 +368,8 @@
                     <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
 
                 </div>
-                <img src="img/PG_servicos/contato/contato.svg" alt="" />
+                <img src="img\PG_servicos\mascara\contato.svg" alt="" />
+
             </div>
         </section>
 
@@ -452,6 +388,10 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/simple--js@5.5.1/dist/simple.min.js"></script>
+
+    <!--Script de funções js-->
+    <script src="js/script.js">
+    </script>
 
     <!--arquivo de configuração das animações-->
     <script src="js/animacoes.js"></script>

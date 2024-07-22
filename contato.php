@@ -188,9 +188,15 @@ if (isset($_POST['email'])) {
                     </div>
                 </form>
             </div>
-
         </section>
+        <!--RODAPÉ-->
+        <?php include_once 'conteudos/rodape.php' ?>
+        <!--FIM RODAPÉ-->
     </main>
+
+    <!--Script de funções js-->
+    <script src="js/script.js">
+    </script>
 
     <!--arquivo de configuração das animações-->
     <script src="js/animacoes.js"></script>

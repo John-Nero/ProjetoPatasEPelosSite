@@ -9,7 +9,8 @@ class depoimentoClass
     public $idDepo;
     public $fotoDepo;
     public $altDepo;
-    public $nomeDepo;
+    public $nomePetDepo;
+    public $nomeDonoDepo;
     public $textoDepo;
     public $avaliDepo;
     public $statusDepo;
