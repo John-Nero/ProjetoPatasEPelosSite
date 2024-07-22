@@ -1,72 +1,63 @@
 <?php
-require_once('class/ClassBanner.php');
-$id = $_GET['id'];
-$banner = new bannerClass($id);
 
-// Verifica se a variável 'nomeBanner' foi definida(preenchida) no corpo da requisição POST(ali no html no form)
-if (isset($_POST['nomeBanner'])) {
-    $nomeBanner     = $_POST['nomeBanner'];
-    $altBanner      = "foto" . $nomeBanner;
-    $paginaBanner   = $_POST['paginaDestino'];
+require_once('class/ClassCategoria.php');
+$id = $_GET['id'];
+$categoria = new categoriaClass($id);
+
+// Verifica se a variável 'nomeCategoria' foi definida(preenchida) no corpo da requisição POST(ali no html no form)
+if (isset($_POST['nomeCategoria'])) {
+    $nomeCategoria     = $_POST['nomeCategoria'];
+    $altCategoria      = "foto" . $nomeCategoria;
 
     //verificar se a foto foi modificada
-    if (!empty($_FILES['fotoBanner']['name'])) {
+    if (!empty($_FILES['fotoCategoria']['name'])) {
         //Recuperar o id
-        $novoId = $banner->idBanner;
+        $novoId = $categoria->idCategoria;
 
         //Tratar o campo FILES
-        $arquivo = $_FILES['fotoBanner'];
+        $arquivo = $_FILES['fotoCategoria'];
         if ($arquivo['error']) {
             throw new Exception('O erro foi: ' . $arquivo['error']);
         }
 
         //Obter a extensão do arquivo
         $extensao = pathinfo($arquivo['name'], PATHINFO_EXTENSION);
-        $nomeBanFoto = str_replace(' ', '', $nomeBanner); //substitui um 'espaço' para 'sem espaço'
-        $nomeBanFoto = iconv('UTF-8', 'ASCII//TRANSLIT', $nomeBanFoto); //remover sinais diacriticos (remove os caracteres especiais)
-        $nomeBanFoto = strtolower($nomeBanFoto);
+        $nomeCatFoto = str_replace(' ', '', $nomeCategoria); //substitui um 'espaço' para 'sem espaço'
+        $nomeCatFoto = iconv('UTF-8', 'ASCII//TRANSLIT', $nomeCatFoto); //remover sinais diacriticos (remove os caracteres especiais)
+        $nomeCatFoto = strtolower($nomeCatFoto);
 
         //novo nome da imagem
-        $novoNome = $novoId . '_' . $nomeBanFoto . '.' . $extensao;
+        $novoNome = $novoId . '_' . $nomeCatFoto . '.' . $extensao;
 
         //print_r($novoNome);
 
         //Mover a imagem
-        if (move_uploaded_file($arquivo['tmp_name'], 'img/banner/' . $novoNome)) {
-            $fotoBanner = 'banner/' . $novoNome;
+        if (move_uploaded_file($arquivo['tmp_name'], 'img/categoria/' . $novoNome)) {
+            $fotoCategoria = 'categoria/' . $novoNome;
         } else {
             throw new Exception('DEU PAU ZÉ');
         }
     } else {
-        $fotoBanner = $banner->fotoBanner;
+        $fotoCategoria = $categoria->fotoCategoria;
     }
     //agr vamo coloca no banco de dados
-    $banner->nomeBanner       = $nomeBanner;
-    $banner->fotoBanner       = $fotoBanner;
-    $banner->altBanner        = $altBanner;
-    $banner->paginaBanner     = $paginaBanner;
-    print_r($banner->fotoBanner);
-    $banner->atualizar();
+    $categoria->nomeCategoria       = $nomeCategoria;
+    $categoria->fotoCategoria       = $fotoCategoria;
+    $categoria->altCategoria        = $altCategoria;
+    $categoria->atualizar();
 }
 ?>
-<form action="index.php?p=banner&b=atualizar&id=<?php echo $banner->idBanner; ?>" method="POST" enctype="multipart/form-data">
+
+<form action="index.php?p=categoria&ca=atualizar&id=<?php echo $categoria->idCategoria; ?>" method="POST" enctype="multipart/form-data">
     <div class="caixaInserir">
         <div>
-            <span><img id="imgFoto" src="<?php echo $banner->fotoBanner ?>" draggable="false">
-                <input type="file" class="form-control" id="fotoBanner" name="fotoBanner" style="display: none;"></span>>
+            <span><img id="imgFoto" src="<?php echo $categoria->fotoCategoria ?>" draggable="false">
+                <input type="file" class="form-control" id="fotoCategoria" name="fotoCategoria" style="display: none;"></span>>
             <div class="dadosDecadastro">
                 <div>
-                    <label for="nomeBanner">Nome do banner</label>
-                    <input type="text" id="nomeBanner" name="nomeBanner" value="<?php echo $banner->nomeBanner ?>">
+                    <label for="nomeCategoria">Nome da categoria</label>
+                    <input type="text" id="nomeCategoria" name="nomeCategoria" value="<?php echo $categoria->nomeCategoria ?>">
                 </div>
-                <div>
-                    <label for="paginaDestino">Página de destino </label>
-                    <select id="paginaDestino" name="paginaDestino" onchange="filtrar()">
-                        <option value="HOME">Home</option>
-                        <option value="SERVICO">Serviços</option>
-                    </select>
-                </div>
-
             </div>
         </div>
         <button type="submit">Atualizar</button>

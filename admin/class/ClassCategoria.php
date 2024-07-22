@@ -6,6 +6,7 @@ class categoriaClass
 {
 
 
+
     //ATRIBUTOS
     public $idCategoria;
     public $nomeCategoria;
@@ -14,6 +15,32 @@ class categoriaClass
     public $statusCategoria;
 
     //METODOS
+
+    public function __construct($id = false)
+    {
+        if ($id) {
+            $this->idCategoria = $id;                  // Define o ID da categoria se fornecido e chama o método Carregar()
+            $this->Carregar();
+        }
+    }
+
+    //METODOS
+    public function Carregar()
+    {
+        $sql = "SELECT * FROM tbl_categorias WHERE idCategoria = $this->idCategoria;"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao();                // Estabelece a conexão com o banco de dados
+        $resultado = $conn->query($sql);                // Executa a consulta SQL
+
+        $cliente = $resultado->fetch();                 // Obtém os dados da categoria da consulta
+
+        //Atribui os dados da categoria às propriedades da classe
+        $this->idCategoria            = $cliente['idCategoria'];
+        $this->nomeCategoria          = $cliente['nomeCategoria'];
+        $this->fotoCategoria          = $cliente['fotoCategoria'];
+        $this->altCategoria           = $cliente['altCategoria'];
+        $this->statusCategoria        = $cliente['statusCategoria'];
+    }
 
     //LISTAR TODOS
     public function listarTodos()
@@ -71,10 +98,27 @@ class categoriaClass
 
     }
 
+    //ATUALIZAR NO BANCO DE DADOS
+    public function Atualizar()
+    {
+
+        $sql = "UPDATE tbl_categorias
+                SET 
+                        nomeCategoria = '$this->nomeCategoria',
+                        fotoCategoria = '$this->fotoCategoria',
+                        altCategoria = '$this->altCategoria'
+                WHERE   idCategoria = '$this->idCategoria';";
+
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        print_r("sdasdasd");
+        echo "<script> document.location='index.php?p=categoria&status=todos' </script>";
+    }
+
     //ATIVAR BANNER NO BANCO DE DADOS
     public function Ativar($id)
     {
-        print_r("aaaaaaa");
+
         $sql = "update tbl_categorias set statusCategoria = 'ATIVO' where idCategoria = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
@@ -84,7 +128,7 @@ class categoriaClass
     //DESATIVAR BANNER NO BANCO DE DADOS
     public function Desativar($id)
     {
-        print_r("aaaaaaa");
+
         $sql = "update tbl_categorias set statusCategoria = 'INATIVO' where idCategoria = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);

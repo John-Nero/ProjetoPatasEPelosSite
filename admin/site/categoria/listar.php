@@ -1,4 +1,4 @@
-<?php
+<?php    
 require_once('class/ClassCategoria.php');
 $categoria = new categoriaClass();
 $lista = "";
@@ -7,6 +7,7 @@ $pagina = @$_GET['p']; //A pagina é só pra manter apenas um metodo de filtrage
 $statusSelecionado = @$_GET['status'];
 //Todas as paginas
 if ($statusSelecionado == 'todos') {
+
     $lista = $categoria->ListarTodos();
 }
 if ($statusSelecionado == 'ativos') {
@@ -47,6 +48,7 @@ if ($statusSelecionado == 'desativados') {
                 <span>
                     <h2><?php echo $linha['nomeCategoria'] ?></h2>
                 </span>
+                <button class="botaoAtualizar"><a href="index.php?p=categoria&ca=atualizar&id=<?php echo $linha['idCategoria'] ?>">Atualizar</a></button>
                 <button class="<?php echo $linha['statusCategoria'] == 'ATIVO' ? 'botaoDesativar' : 'botaoAtivar' ?>"><!--caso o status seja ativo ele chama chama a clase botãoDesativar se n chama o botãoAtivar-->
                     <?php
                     echo $linha['statusCategoria'] == 'ATIVO' ? "<a href='index.php?p=categoria&ca=desativar&id=" . $linha['idCategoria'] . "'>Desativar</a>" :

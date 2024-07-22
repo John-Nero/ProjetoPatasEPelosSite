@@ -87,7 +87,7 @@ class clienteClass
     //ATIVAR BANNER NO BANCO DE DADOS
     public function Ativar($id)
     {
-        print_r("aaaaaaa");
+
         $sql = "update tbl_cliente set statusCliente = 'ATIVO' where idCliente = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
@@ -97,7 +97,7 @@ class clienteClass
     //DESATIVAR BANNER NO BANCO DE DADOS
     public function Desativar($id)
     {
-        print_r("aaaaaaa");
+     
         $sql = "update tbl_cliente set statusCliente = 'INATIVO' where idCliente = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);

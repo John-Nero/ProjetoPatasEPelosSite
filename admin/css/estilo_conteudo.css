@@ -91,6 +91,7 @@
 .botaoAtualizar {
   width: 95%;
   height: 18%;
+  margin-bottom: 12px;
   border: 2px solid black;
   border-radius: 10px;
   font-size: 2.5em;
@@ -182,24 +183,6 @@
 /*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
 
 /*|########|  ESTILO LISTAR  CATEGORIA |########|*/
-
-/*
-.caixaItemCategoria > span {
-  width: 20%;
-}
-
-.caixaItemCategoria img {
-  width: 100%;
-}
-VERSÃO PARA MOSTRAR PRO MATHEUS
-.identificacaoEFuncaoCategoria span {margin-top: 11%;
-}
-
-.identificacaoEFuncaoCategoria button {
-  margin-left: 350%;
-}
-*/
-
 .painelCategoria {
   display: flex;
   flex-wrap: wrap;
@@ -207,11 +190,15 @@ VERSÃO PARA MOSTRAR PRO MATHEUS
 
 .caixaItemCategoria {
   width: 28%;
+  display: flex;
+  align-items: center;
 }
 
 .caixaItemCategoria > span {
   width: 40%;
+display: flex;
 }
+
 
 .caixaItemCategoria img {
   width: 95%;
