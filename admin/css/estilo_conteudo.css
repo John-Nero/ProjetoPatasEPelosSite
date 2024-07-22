@@ -171,7 +171,7 @@
 }
 /*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
 
-/*|########|  ESTILO LISTAR |########|*/
+/*|########|  ESTILO LISTAR  CATEGORIA |########|*/
 
 /*
 .caixaItemCategoria > span {
@@ -197,7 +197,6 @@ VERSÃO PARA MOSTRAR PRO MATHEUS
 
 .caixaItemCategoria {
   width: 28%;
- 
 }
 
 .caixaItemCategoria > span {
@@ -219,4 +218,99 @@ VERSÃO PARA MOSTRAR PRO MATHEUS
   height: 41%;
 }
 
-/*|########| FIM ESTILO LISTAR |########|*/
+/*|########| FIM ESTILO LISTAR  CATEGORIA |########|*/
+
+/*|########| ESTILO LISTAR  CLIENTE |########|*/
+
+.caixaItemCliente > span {
+  width: 30%;
+  max-height: 310px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgCliente {
+  max-width: 328px;
+  max-height: 185px;
+  margin: 11px 11px 11px 11px;
+  border-radius: 50px;
+}
+
+.identificacaoEFuncaoCliente {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+}
+
+.identificacaoEFuncaoCliente div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.identificacaoEFuncaoCliente div:nth-child(1) span:nth-child(1) h2 {
+  text-align: left;
+}
+
+.identificacaoEFuncaoCliente div:nth-child(1) span:nth-child(2) h2,
+.identificacaoEFuncaoCliente div:nth-child(2) h2 {
+  font-size: 1.7em;
+  text-align: left;
+}
+
+.identificacaoEFuncaoCliente div:nth-child(2) h2 {
+  font-size: 1.7em;
+  text-align: right;
+}
+
+.identificacaoEFuncaoCliente button {
+  margin-bottom: -12%;
+  width: 100%;
+  height: 25%;
+}
+/*|########| FIM ESTILO LISTAR  CLIENTE |########|*/
+
+/*|########| FIM ESTILO INSERIR  CLIENTE |########|*/
+
+.caixaInserirCliente > div {
+  justify-content: start;
+}
+
+.caixaInserirCliente > div > span {
+  width: 35%;
+}
+
+.dadosDecadastroCliente {
+  width: 100%;
+}
+
+.dadosDecadastroCliente div:nth-child(1) input {
+  width: 98%;
+}
+
+.dadosDecadastroCliente > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.dadosDecadastroCliente div:nth-child(2) > div {
+  width: 50%;
+}
+
+.dadosDecadastroCliente > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+}
+
+.dadosDecadastroCliente div:nth-child(3) > div {
+  width: 50%;
+  }
+
+.caixaInserirCliente button {
+  margin: 0px 2% 2% 2%;
+  width: 92%;
+}

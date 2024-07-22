@@ -12,6 +12,11 @@ function filtrar(pagina) {
       // Atualizar o valor do campo hidden para enviar ao PHP
       break;
 
+    case "cliente":
+      var status = document.getElementById("filtragemStatusCliente").value;
+      window.location.href = "http://localhost/Site-PatasEPelos/admin/index.php?p=" + pagina + "&status=" + status;
+      // Atualizar o valor do campo hidden para enviar ao PHP
+      break;
     default:
       break;
   }

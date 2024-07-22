@@ -17,7 +17,7 @@ if ($statusSelecionado == 'desativados') {
 }
 ?>
 
-<form action="http://localhost/Site-PatasEPelos/admin/index.php?p=categoria" id="paginaHomeFiltragemCategoria" method="$_POST">
+<form action="http://pethouse.smpsistema.com.br/john/patas_e_pelos/admin/index.php?p=categoria" id="paginaHomeFiltragemCategoria" method="$_POST">
     <div class="opcoes">
         <a href="index.php?p=categoria&ca=inserir" alt="botão adicionar">Adicionar</a>
         <select id="filtragemStatusCategoria" name="filtragemStatusCategoria" onchange="filtrar('<?php echo $pagina ?>')">

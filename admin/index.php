@@ -37,8 +37,7 @@
                         <li><a href="index.php?p=banner&status=todos&pagina=todas">Banner's</a></li>
                         <li><a href="index.php?p=depoimento&status=todos">Depoimentos </a></li>
                         <li><a href="index.php?p=categoria&status=todos">Categorias</a></li>
-                        <li><a href="index.php?p=cliente">Clientes</a></li>
-                        <li><a href="index.php?p=pet">Pet's</a></li>
+                        <li><a href="index.php?p=cliente&status=todos">Clientes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -76,11 +75,6 @@
                         case 'cliente':
                             $titulo = 'Cliente';
                             require_once('site/cliente/cliente.php');
-                            break;
-
-                        case 'pet':
-                            $titulo = 'Pet';
-                            require_once('site/pet/pet.php');
                             break;
 
                         default:

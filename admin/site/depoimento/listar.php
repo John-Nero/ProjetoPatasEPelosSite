@@ -18,7 +18,7 @@ if ($statusSelecionado == 'desativados') {
 }
 ?>
 
-<form action="http://localhost/Site-PatasEPelos/admin/index.php?p=depoimento" id="paginaHomeFiltragemDepoimento" method="$_POST">
+<form action="http://pethouse.smpsistema.com.br/john/patas_e_pelos/admin/index.php?p=depoimento" id="paginaHomeFiltragemDepoimento" method="$_POST">
     <div class="opcoes">
         <select id="filtragemStatusDepo" name="filtragemStatusDepo" onchange="filtrar('<?php echo $pagina ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>

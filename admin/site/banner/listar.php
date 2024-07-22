@@ -44,7 +44,7 @@ if ($statusSelecionado == 'desativados' && $paginaSelecionada == 'servico') {
 //print_r($lista)
 ?>
 
-<form action="http://localhost/Site-PatasEPelos/admin/index.php?p=banner" id="paginaHomeFiltragemBanner" method="$_POST">
+<form action="http://pethouse.smpsistema.com.br/john/patas_e_pelos/admin/index.php?p=banner" id="paginaHomeFiltragemBanner" method="$_POST">
     <div class="opcoes">
 
         <a href="index.php?p=banner&b=inserir" alt="botão adicionar">Adicionar</a>
