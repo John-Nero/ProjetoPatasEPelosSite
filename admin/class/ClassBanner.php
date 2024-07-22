@@ -162,7 +162,7 @@ class bannerClass
         $sql = "update tbl_banner set statusBanner = 'ATIVO' where idBanner = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
-        echo "<script> document.location='index.php?p=banner' </script>";
+        echo "<script> document.location='index.php?p=banner&status=todos&pagina=todas' </script>";
     }
 
     //DESATIVAR BANNER NO BANCO DE DADOS
@@ -171,6 +171,6 @@ class bannerClass
         $sql = "update tbl_banner set statusBanner = 'INATIVO' where idBanner = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
-        echo "<script> document.location='index.php?p=banner' </script>";
+        echo "<script> document.location='index.php?p=banner&status=todos&pagina=todas' </script>";
     }
 }
