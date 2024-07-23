@@ -62,6 +62,7 @@ if ($statusSelecionado == 'desativados') {
                 $dataFormatada = date('d/m/Y', strtotime($datCadCliente));
                 ?>
                 <h2>Data Cad: <?php echo $dataFormatada ?></h2>
+                <button class="botaoAtualizar"><a href="index.php?p=cliente&cli=atualizar&id=<?php echo $linha['idCliente'] ?>">Atualizar</a></button>
                 <button class="<?php echo $linha['statusCliente'] == 'ATIVO' ? 'botaoDesativar' : 'botaoAtivar' ?>"><!--caso o status seja ativo ele chama chama a clase botãoDesativar se n chama o botãoAtivar-->
                     <?php
                     echo $linha['statusCliente'] == 'ATIVO' ? "<a href='index.php?p=cliente&cli=desativar&id=" . $linha['idCliente'] . "'>Desativar</a>" :

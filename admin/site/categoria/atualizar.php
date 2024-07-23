@@ -33,7 +33,7 @@ if (isset($_POST['nomeCategoria'])) {
 
         //Mover a imagem
         if (move_uploaded_file($arquivo['tmp_name'], 'img/categoria/' . $novoNome)) {
-            $fotoCategoria = 'categoria/' . $novoNome;
+            $fotoCategoria = 'img/categoria/' . $novoNome;
         } else {
             throw new Exception('DEU PAU ZÉ');
         }
@@ -72,10 +72,10 @@ if (isset($_POST['nomeCategoria'])) {
     document.getElementById("imgFoto").addEventListener('click', function() {
         // alert("hoje eu mato um");
         //aqui a gente ta chamando o input pelo id pq ele é display none ent a gente ta fazendo que quando a gente clique na foto abra ele 
-        document.getElementById("fotoBanner").click();
+        document.getElementById("fotoCategoria").click();
     })
     //esse change ta falando q quando o foto servico receber o "click" ele vai muda o alvo do que vai ser mudado ent em vez de adicionar na caixa de pesquisa ali do input ele vai muda a img na imgFoto
-    document.getElementById('fotoBanner').addEventListener('change', function(event) {
+    document.getElementById('fotoCategoria').addEventListener('change', function(event) {
 
         let imgFoto = document.getElementById("imgFoto");
         let arquivo = event.target.files[0]; //quando inserir um arquivo ele vai puxa a primeira propriedade e vai atribuir a variavel arquivo

@@ -33,7 +33,7 @@ if (isset($_POST['nomeBanner'])) {
 
         //Mover a imagem
         if (move_uploaded_file($arquivo['tmp_name'], 'img/banner/' . $novoNome)) {
-            $fotoBanner = 'banner/' . $novoNome;
+            $fotoBanner = 'img/banner/' . $novoNome;
         } else {
             throw new Exception('DEU PAU ZÉ');
         }

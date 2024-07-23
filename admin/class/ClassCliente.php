@@ -20,6 +20,36 @@ class clienteClass
 
     //METODOS
 
+    public function __construct($id = false)
+    {
+        if ($id) {
+            $this->idCliente = $id;                    // Define o ID do cliente se fornecido e chama o método Carregar()
+            $this->Carregar();
+        }
+    }
+
+    //CARREGAR
+    public function Carregar()
+    {
+        $sql = "SELECT * FROM tbl_cliente WHERE idCliente = $this->idCliente;"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao();                // Estabelece a conexão com o banco de dados
+        $resultado = $conn->query($sql);                // Executa a consulta SQL
+
+        $cliente = $resultado->fetch();                 // Obtém os dados do cliente da consulta
+
+        //Atribui os dados do cliente às propriedades da classe
+        $this->idCliente            = $cliente['idCliente'];
+        $this->nomeCliente          = $cliente['nomeCliente'];
+        $this->enderecoCliente      = $cliente['enderecoCliente'];
+        $this->telefoneCliente      = $cliente['telefoneCliente'];
+        $this->emailCliente         = $cliente['emailCliente'];
+        $this->senhaCliente         = $cliente['senhaCliente'];
+        $this->fotoCliente          = $cliente['fotoCliente'];
+        $this->altCliente           = $cliente['altCliente'];
+        $this->statusCliente        = $cliente['statusCliente'];
+    }
+
     //LISTAR TODOS
     public function listarTodos()
     {
@@ -84,6 +114,26 @@ class clienteClass
 
     }
 
+    //ATUALIZAR NO BANCO DE DADOS
+    public function Atualizar()
+    {
+        $sql = "UPDATE  tbl_cliente 
+                SET     nomeCliente     = '$this->nomeCliente',
+                        enderecoCliente = '$this->enderecoCliente',
+                        telefoneCliente = '$this->telefoneCliente',
+                        emailCliente    = '$this->emailCliente',
+                        senhaCliente    = '$this->senhaCliente',
+                        fotoCliente     = '$this->fotoCliente',
+                        altCliente      = '$this->altCliente',
+                        statusCliente   = '$this->statusCliente'
+                WHERE   idCliente       =  $this->idCliente";
+
+        $conn = conexao::LigarConexao();                // Estabelece a conexão com o banco de dados
+        $conn->exec($sql);                              // Executa a query SQL de atualização
+
+        echo "<script>document.location='index.php?p=cliente&status=todos'</script>"; // Redireciona para a página de clientes após a atualização
+    }
+
     //ATIVAR BANNER NO BANCO DE DADOS
     public function Ativar($id)
     {
@@ -97,7 +147,7 @@ class clienteClass
     //DESATIVAR BANNER NO BANCO DE DADOS
     public function Desativar($id)
     {
-     
+
         $sql = "update tbl_cliente set statusCliente = 'INATIVO' where idCliente = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
