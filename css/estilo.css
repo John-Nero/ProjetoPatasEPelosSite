@@ -151,6 +151,8 @@ img {
 
 .banner img {
   width: 100%;
+  max-width: 1920px;
+  max-height: 545px;
 }
 
 /*Tira as setas do carrosel de imagem*/

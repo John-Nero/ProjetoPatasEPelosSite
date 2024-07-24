@@ -1,6 +1,6 @@
 <?php
  
-require_once('admin\class\Conexao.php');
+require_once('admin/class/Conexao.php');
  
 class ClassProduto{   // Criar uma classe para atribuir os atributos que tem no banco de dados
  
@@ -12,7 +12,6 @@ class ClassProduto{   // Criar uma classe para atribuir os atributos que tem no 
     public $mensagemContato;
     public $qtdeProduto;
     public $barrasProduto;
-    public $statusProduto;
     public $fotoProduto;
  
     // Criar método

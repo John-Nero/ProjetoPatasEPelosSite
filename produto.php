@@ -1,42 +1,46 @@
 <?php
-require_once('admin/class/ClassProduto.php');
-$produto = new ClassProduto();
-$lista = '';
-// print_r($lista);
-require_once('admin/class/ClassCategoria.php');
-$categoria = new categoriaClass();
-$listaC = $categoria->listarTodos();
-// print_r($listaC);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-$statusSelecionado = @$_GET['status'];
+    require_once('admin/class/ClassProduto.php');
+    $produto = new ClassProduto();
+    $lista = '';
+    // print_r($lista);
+    require_once('admin/class/ClassCategoria.php');
+    $categoria = new categoriaClass();
+    $listaC = $categoria->listarTodos();
+    // print_r($listaC);
 
-$categoriaB = @$_GET['c'];
+    $statusSelecionado = @$_GET['status'];
+
+    $categoriaB = @$_GET['c'];
 
 
-if ($categoriaB == "todos") {
-    $lista = $produto->Listar();
-}
-if ($categoriaB == "Cachorro") {
-    $lista = $produto->ListarCao();
-}
-if ($categoriaB == "Chinchila") {
-    $lista = $produto->ListarChinchila();
-}
-if ($categoriaB == "Gato") {
-    $lista = $produto->ListarGato();
-}
-if ($categoriaB == "Hamster") {
-    $lista = $produto->ListarHamster();
-}
-if ($categoriaB == "Passaro") {
-    $lista = $produto->ListarPassaro();
-}
-if ($categoriaB == "Peixe") {
-    $lista = $produto->ListarPeixe();
-}
-if ($categoriaB == "Tartaruga") {
-    $lista = $produto->ListarTataruga();
-}
+    if ($categoriaB == "todos") {
+        $lista = $produto->Listar();
+    }
+    if ($categoriaB == "Cachorro") {
+        $lista = $produto->ListarCao();
+    }
+    if ($categoriaB == "Chinchila") {
+        $lista = $produto->ListarChinchila();
+    }
+    if ($categoriaB == "Gato") {
+        $lista = $produto->ListarGato();
+    }
+    if ($categoriaB == "Hamster") {
+        $lista = $produto->ListarHamster();
+    }
+    if ($categoriaB == "Passaro") {
+        $lista = $produto->ListarPassaro();
+    }
+    if ($categoriaB == "Peixe") {
+        $lista = $produto->ListarPeixe();
+    }
+    if ($categoriaB == "Tartaruga") {
+        $lista = $produto->ListarTataruga();
+    }
 
 ?>
 

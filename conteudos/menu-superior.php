@@ -6,15 +6,15 @@
                 <button class="abrir_menu" id="abrir_menu"></button>
                 <nav class="menu_lateral" id="menu_lateral">
                     <button class="fechar_menu" id="fechar_menu"> </button>
-                       
-                        <ul>
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="sobre-nos.php">Sobre nós</a></li>
-                            <li><a href="#">Produtos</a></li>
-                            <li><a href="contato.php">Contato</a></li>
-                            <li><a href="servico.php">Serviços</a></li>
-                        </ul>
-                   
+
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="sobre-nos.php">Sobre nós</a></li>
+                        <li><a href="produto.php?c=todos">Produtos</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                        <li><a href="servico.php">Serviços</a></li>
+                    </ul>
+
                 </nav>
                 <h1>Patas e pelos</h1>
 
@@ -22,7 +22,7 @@
                     <ul class="menu_botoes">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="sobre-nos.php">Sobre Nós</a></li>
-                        <li><a href="http://localhost/site-patasepelos/produto.php?c=todos">Produtos</a></li>
+                        <li><a href="produto.php?c=todos">Produtos</a></li>
                         <li><a href="contato.php">Contato</a></li>
                         <li><a href="servicos.php">Serviços</a></li>
                     </ul>

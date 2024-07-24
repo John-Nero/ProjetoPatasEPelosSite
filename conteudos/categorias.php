@@ -1,5 +1,5 @@
 <?php
-require_once('admin\class\ClassCategoria.php');
+require_once('admin/class/ClassCategoria.php');
 $categoria = new categoriaClass();
 $lista = $categoria->listarAtivos();
 ?>

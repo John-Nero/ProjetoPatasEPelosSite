@@ -1,5 +1,5 @@
 <?php
-require_once('admin\class\ClassDepo.php');
+require_once('admin/class/classDepo.php');
 $depo = new depoimentoClass();
 $lista = $depo->ListarAtivos();
 ?>

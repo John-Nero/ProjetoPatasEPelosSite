@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nós - Patas e pelos Pethouse</title>
+    <link rel="icon" href="img\favicon.ico">
     <!--Reseta o estilo-->
     <link rel="stylesheet" href="css/reset.css" />
     <!--API do google fonts-->
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Aponta para o arquivo de estilo-->
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="css\estilo_sobre_nos.css" />
+    <link rel="stylesheet" href="css/estilo_sobre_nos.css" />
     <link rel="stylesheet" href="css/mobile.css" />
 </head>
 

@@ -662,7 +662,8 @@
 @media not all and (max-width: 900px) {
   .menu_lateral,
   .abrir_menu,
-  .tosa img:nth-child(2) {
+  .tosa img:nth-child(2),
+  .sobre > span {
     display: none;
   }
 }
