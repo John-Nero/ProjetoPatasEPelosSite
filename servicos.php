@@ -1,3 +1,6 @@
+<?php ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -196,6 +199,7 @@
                             <span><img class="wow animate__animated animate__fadeInDown estrela-animation-delay" src="img/enfeites/estrela_roxa.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
                             <span><img class="wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay:="20s" src="img/enfeites/estrela_laranja.svg" alt=""></span>
+                            
                             <div class="galeria_Esquerdo_img1">
                                 <img class="imagem-base" src="img/PG_servicos/galeria/foto1.svg" alt="Imagem Base">
                                 <div class="conteudo-sobreposto">
@@ -368,7 +372,7 @@
                     <a href="#" class="wow animate__animated animate__fadeIn" data-wow-delay:="6s">clique aqui!</a>
 
                 </div>
-                <img src="img\PG_servicos\mascara\contato.svg" alt="" />
+                <img src="img\PG_contato\cachorrosEEstrelasForm.svg" alt="" />
 
             </div>
         </section>

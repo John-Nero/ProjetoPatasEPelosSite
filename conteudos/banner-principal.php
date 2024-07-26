@@ -8,7 +8,7 @@ $lista = $banner->ListarAtivosHome();
   <!--banner rotativo-->
   <div class="banner">
     <?php foreach ($lista as $linha) : ?>
-      <img src="admin/<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable=false />
+      <img src="admin/<?php echo $linha['fotoBanner'] ?>" alt="<?php echo $linha['nomeBanner'] ?>" draggable=false  loading="lazy"/>
     <?php endforeach; ?>
   </div>
 </section>

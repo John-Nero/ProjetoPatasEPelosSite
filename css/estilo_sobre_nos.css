@@ -1,28 +1,25 @@
-/*|########| CONFIGURACOES GERAIS |########|*/
+/* ######## CONFIGURAÇÕES GERAIS ######## */
 h1,
 h2,
 p {
   font-family: "Roboto Flex", sans-serif;
 }
 
-/*estilização dos titulos em roxo mais escuro*/
-h2,
-h1 {
+/* Estilização dos títulos em roxo mais escuro */
+h1,
+h2 {
   font-size: 8.5em;
   color: #664d9f;
   font-weight: 900;
-  font-style: normal;
 }
 
 p {
   font-size: 2.5em;
 }
 
-/*|########| SESSAO 1 E 2 PORQUE SÃO SEMELHANTES |########|*/
-.sobre_nos_pt1 div,
-.sobre_nos_pt1 span {
-  margin-top: 50px;
-}
+/* ######## SESSÕES SOBRE NÓS ######## */
+
+/* Sessão 1 e 2: Estilizações compartilhadas */
 .sobre_nos_pt1,
 .sobre_nos_pt2 {
   display: flex;
@@ -32,17 +29,13 @@ p {
 .sobre_nos_pt1 div,
 .sobre_nos_pt2 div {
   margin-top: 250px;
-  margin-left: 10%;
+  margin-left: 15%;
   width: 600px;
 }
+
 .sobre_nos_pt1 span,
 .sobre_nos_pt2 span {
   width: 50%;
-}
-.sobre_nos_pt1 div,
-.sobre_nos_pt2 div {
-  margin-top: 250px;
-  margin-left: 15%;
 }
 
 .sobre_nos_pt1 img,
@@ -50,24 +43,30 @@ p {
   width: 100%;
 }
 
-/*|########| SESSAO 1 DIFERENCIAL |########|*/
+/* Estilização específica da Sessão 1 */
+.sobre_nos_pt1 div,
+.sobre_nos_pt1 span {
+  margin-top: 50px;
+}
+
 .sobre_nos_pt1 img {
   margin-left: -10px;
 }
 
-/*|########| SESSAO 2 DIFERENCIAL |########|*/
+/* Estilização específica da Sessão 2 */
 .sobre_nos_pt2 img {
   margin-left: 64px;
 }
 
-/*|########| MARCAS |########|*/
+/* ######## MARCAS ######## */
 .marcas {
   background: #fff8ed;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.marcas div:nth-child(1) {
+
+.marcas > div:nth-child(1) {
   margin-top: 100px;
 }
 
@@ -84,24 +83,8 @@ p {
 .carrosel_Marcas .slick-next {
   display: none !important;
 }
+
 .carrosel_Marcas {
-  margin-top: -60px;
-  width: 80%;
-}
-.carrosel_Marcas div div a {
-  display: flex;
-  width: 200px;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 39px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-.carrosel_Marcas div div a img {
-  width: 150px;
-  height: 150px;
-}
-.carrosel_Marcas div div a p {
-  margin-top: 10px;
-  font-size: 1.4em;
+  margin-top: 100px;
+  width: 95%;
 }

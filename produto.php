@@ -134,7 +134,8 @@ error_reporting(E_ALL);
         <?php include_once 'conteudos/rodape.php' ?>
         <!--FIM RODAPÉ-->
     </main>
-    <script src="js/script.js"></script>
+     <!--Script de funções js-->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

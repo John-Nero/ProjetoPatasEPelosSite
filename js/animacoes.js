@@ -1,121 +1,157 @@
-/*BANNER*/
-$(".banner").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
-/*CATEGORIAS*/
-$(".carrosel_categorias").slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
-});
-
-/*EQUIPE*/
-$(".carrosel_equipe").slick({
-  slide: "div",
-  centerMode: true,
-  autoplay: true,
-  centerPadding: "0",
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
-});
-
-/*DEPOIMENTO*/
-
-/*Esse gira as imagens dos depoimentos*/
-$(".carrosel_depo_imagem").slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: "linear",
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_texto",
-});
-
-/*Para os dois girarem juntos a gente ta chamando o asNavFor fazendo referencia um do outro em cada configuração*/
-
-/*Esse gira os textos*/
-$(".carrosel_depo_texto").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  speed: 500,
-  fade: true,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  asNavFor: ".carrosel_depo_imagem",
-});
-
-//---------------PAGINA SERVIÇOS-------------------------------
-
-$(".carrosel_servico").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  infinite: true,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Verifique se o caminho da URL corresponde à página desejada
-  if (window.location.pathname === "Site-PatasEPelos/index.php") {
-    let parallax = document.getElementsByClassName("parallax");
+  // Inicialização do Slick Carousels
+  function initializeSlick(selector, settings) {
+    if (document.querySelector(selector)) {
+      $(selector).slick(settings);
+    }
+  }
 
-    new simpleParallax(parallax, {
+  const slickSettings = {
+    banner: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    },
+    categorias: {
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    },
+    equipe: {
+      slide: "div",
+      centerMode: true,
+      autoplay: false,
+      centerPadding: "0",
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    },
+    depo_imagem: {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: "linear",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      asNavFor: ".carrosel_depo_texto",
+    },
+    depo_texto: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 500,
+      fade: true,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      asNavFor: ".carrosel_depo_imagem",
+    },
+    servico: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    },
+    marcas: {
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    },
+  };
+
+  // Inicializar todos os carrosséis
+  initializeSlick(".banner", slickSettings.banner);
+  initializeSlick(".carrosel_categorias", slickSettings.categorias);
+  initializeSlick(".carrosel_equipe", slickSettings.equipe);
+  initializeSlick(".carrosel_depo_imagem", slickSettings.depo_imagem);
+  initializeSlick(".carrosel_depo_texto", slickSettings.depo_texto);
+  initializeSlick(".carrosel_servico", slickSettings.servico);
+  initializeSlick(".carrosel_Marcas", slickSettings.marcas);
+
+  // Efeito parallax
+  const parallaxElements = document.getElementsByClassName("parallax");
+  if (parallaxElements.length > 0) {
+    new simpleParallax(parallaxElements, {
       overflow: true,
       delay: 0.6,
       transition: "cubic-bezier(0,0,0,1)",
     });
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  // Popups
   const popups = document.querySelectorAll(".popup");
-
-  popups.forEach(function (popup) {
+  popups.forEach((popup) => {
     popup.addEventListener("mouseenter", function () {
       const popupContent = this.querySelector(".popup-content");
       if (popupContent) {
         popupContent.style.display = "block";
       }
     });
-
     popup.addEventListener("mouseleave", function () {
       const popupContent = this.querySelector(".popup-content");
       if (popupContent) {
@@ -125,40 +161,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//---------------PAGINA SOBRE NÓS-------------------------------
-$(".carrosel_Marcas").slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-
-/* FORM WhatsAPP */
+// Envio de mensagem WhatsApp
 function EnviarWhats() {
-  let assunto = "Site Oficina Auto Mestre";
+  let assunto = "Patas e pelos";
   let nome = "*Nome:* " + document.getElementById("nome").value;
   let email = "*E-mail:* " + document.getElementById("email").value;
   let fone = "*Fone:* " + document.getElementById("fone").value;
   let mens = "*Mens:* " + document.getElementById("mens").value;
 
   let numeroWhats = "5511997548991";
-
   let quebraDeLinha = "%0A";
 
   var mensagem = encodeURIComponent(
-    assunto +
-      quebraDeLinha +
-      nome +
-      quebraDeLinha +
-      email +
-      quebraDeLinha +
-      fone +
-      quebraDeLinha +
-      mens
+    `${assunto}${quebraDeLinha}${nome}${quebraDeLinha}${email}${quebraDeLinha}${fone}${quebraDeLinha}${mens}`
   );
 
   window.open(
-    "https://api.whatsapp.com/send?phone=" + numeroWhats + "&text=" + mensagem,
+    `https://api.whatsapp.com/send?phone=${numeroWhats}&text=${mensagem}`,
     "_blank"
   );
 

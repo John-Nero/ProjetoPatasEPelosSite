@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre nós - Patas e pelos Pethouse</title>
-    <link rel="icon" href="img\favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <!--Reseta o estilo-->
     <link rel="stylesheet" href="css/reset.css" />
     <!--API do google fonts-->
@@ -35,7 +35,7 @@
         <section class="site">
             <!--Primeira sessão do site-->
             <div class="sobre_nos_pt1">
-                <span><img src="img\PG_sobre_nos\MascaraGato.svg" alt="Doutora segurando um gato" draggable=false></span>
+                <span><img src="img/PG_sobre_nos/MascaraGato.svg" alt="Doutora segurando um gato" draggable=false></span>
                 <div>
                     <h1>Sobre nós</h1>
                     <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
@@ -50,7 +50,7 @@
                     <h2 class="subtitulo_laranja">Conheça um pouco mais de nós</h2>
                     <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
                 </div>
-                <span><img src="img\PG_sobre_nos\Mascaracachorro.svg" alt="Cachorro vestindo jaleco de veterinario" draggable=false></span>
+                <span><img src="img/PG_sobre_nos/Mascaracachorro.svg" alt="Cachorro vestindo jaleco de veterinario" draggable=false></span>
             </div>
         </section>
 
@@ -62,25 +62,25 @@
                     <h2 class="subtitulo_laranja">Conheça as nossas marcas <br> parceiras</h2>
                 </div>
                 <div class="carrosel_Marcas" id="carrosel_Marcas">
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca2.svg" alt="Patas unidas" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca3.svg" alt="Personalit cats" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca4.svg" alt="União agraria" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca5.svg" alt="Love pets" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca1.svg" alt="Petz do paraguai" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca2.svg" alt="Patas unidas" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca2.svg" alt="Patas unidas" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca3.svg" alt="Personalit cats" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca3.svg" alt="Personalit cats" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca4.svg" alt="União agraria" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca4.svg" alt="União agraria" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca5.svg" alt="Love pets" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca5.svg" alt="Love pets" draggable=false></span>
                     </div>
-                    <div><span><img src="img\PG_sobre_nos\marcas\marca1.svg" alt="Petz do paraguai" draggable=false></span>
+                    <div><span><img src="img/PG_sobre_nos/marcas/marca1.svg" alt="Petz do paraguai" draggable=false></span>
                     </div>
                 </div>
             </div>
@@ -100,6 +100,40 @@
     <script>
         new WOW().init();
     </script>
+
+    <!--Script de funções js-->
+    <script src="js/script.js"></script>
+
     <!--arquivo de configuração das animações-->
-    <script src="js\animacoes.js"></script>
+    <script src="js/animacoes.js"></script>
+
+    <!-- Inicialização do Slick -->
+    <script>
+        $(document).ready(function(){
+            $(".carrosel_Marcas").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
 </body>
+
+</html>

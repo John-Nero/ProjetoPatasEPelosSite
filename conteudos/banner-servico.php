@@ -1,5 +1,5 @@
 <?php
-require_once('../admin/class/ClassBanner.php');
+require_once('admin/class/ClassBanner.php');
 $banner = new bannerClass();
 $lista = $banner->ListarAtivosServico();
 ?>
