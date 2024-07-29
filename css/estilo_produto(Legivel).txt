@@ -1,0 +1,222 @@
+.produto_main > img{
+  position: relative;
+  left: 4%;
+  top: 15px;
+}
+
+.produto_itens{
+  display: flex;
+  flex-wrap: wrap;
+  width: 76%;
+  position: relative;
+  left: 5%;
+  top: 30px;
+}
+
+.produto_div{
+  background-color: #FFFFFF;
+  border-radius: 60px;
+  width: 245px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.produto_exibido{
+  position: relative;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 158px;
+  height: 49%;
+}
+
+
+.produto_exibido h2{
+  text-align: center;
+  font-size: 16px;
+  width: 230px;
+  align-self: center;
+}
+
+.produto_exibido img{
+  width: 85%;
+  align-self: center;
+}
+
+.produto_info_fundo{
+  background-color: #A38CD6;
+  border-radius: 73px;
+  width: 250px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  position: relative;
+  top: 83px;
+}
+
+.produto_info{
+  position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto_info button{
+  font-size: 14px;
+  font-weight: 900;
+  border-color: #ff9a5b;
+  border-radius: 30px;
+  background-color: #ff9a5b;
+  width: 180px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  border-style: none;
+  color: #FFFFFF;
+}
+
+.produto_texto{
+  display: flex;
+  max-width: 238px;
+  width: 238px;
+  justify-content: space-around;
+  position: relative;
+  left: 6%;
+}
+
+.produto_texto h2{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-left: -10px;
+}
+
+p2{
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  position: relative;
+    right: 7%;
+}
+
+.produto_texto p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-right: -25px;
+  position: relative;
+    right: 7%;
+}
+
+h2 .valor{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.alinhamento_status{
+  display: flex;
+  flex-direction: column;
+}
+
+.alinha{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para o botão principal */
+.menu-button{
+  display: block;
+  margin: 10px 20px;
+  background-color: #FFFFFF;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.filtro{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 2%;
+  top: 90px;
+  width: 300px;
+  background-color: #FFFFFF;
+  border-radius: 17px;
+  height: 500px;
+}
+
+.filtro > h2{
+    margin-left: 18px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/* Estilo básico para o menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+/* Estilo para o submenu */
+/* .subMenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 300px;
+} */
+
+/* Estilo para os itens do submenu */
+.subMenu li {
+  position: relative;
+  left: 33%;
+  margin-bottom: 15px;
+  width: max-content;
+}
+
+.subMenu li button{
+  FONT-SIZE: 16px;
+  background-color: #FFFFFF;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-button {
+  padding: 10px;
+  color: white;
+  background-color: #FFFFFF;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilo para o submenu visível */
+.menu-item.show .subMenu {
+  display: block;
+}

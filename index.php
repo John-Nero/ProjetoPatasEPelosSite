@@ -8,8 +8,8 @@
   <link rel="icon" href="img\favicon.ico">
 
 
-  <!--Reseta o estilo-->
-  <link rel="stylesheet" href="css/reset.css" />
+  <!--reset.min.mina o estilo-->
+  <link rel="stylesheet" href="css/reset.min.css" />
 
   <!--API do google para os icones-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -27,7 +27,7 @@
   <!--ANIMATE STYLE-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!--Aponta para o arquivo de estilo-->
-  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/estilo.min.css" />
   <link rel="stylesheet" href="css/mobile.css" />
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
 

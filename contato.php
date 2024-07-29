@@ -105,16 +105,16 @@ if (isset($_POST['email'])) {
     <link rel="icon" href="img\favicon.ico">
 
 
-    <!--Link para o arquivo que da um reset maneiro na pagina (Tem que ficar antes pq se n reseta tudo mo perigo)-->
-    <link rel="stylesheet" href="css/reset.css">
+    <!--Link para o arquivo que da um reset.min maneiro na pagina (Tem que ficar antes pq se n reset.mina tudo mo perigo)-->
+    <link rel="stylesheet" href="css/reset.min.css">
 
     <!--Slick-->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
 
     <!--Link pro css do site pra ficar bonitinho-->
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/estilo_contato.css">
+    <link rel="stylesheet" href="css/estilo.min.css">
+    <link rel="stylesheet" href="css/estilo_contato.min.css">
 
     <!--Responsivo-->
     <link rel="stylesheet" href="css/mobile.css">
