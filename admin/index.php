@@ -38,6 +38,7 @@
                         <li><a href="index.php?p=depoimento&status=todos">Depoimentos </a></li>
                         <li><a href="index.php?p=categoria&status=todos">Categorias</a></li>
                         <li><a href="index.php?p=cliente&status=todos">Clientes</a></li>
+                        <li><a href="index.php?p=galeria&status=todos">Galeria</a></li>
                     </ul>
                 </nav>
             </div>
@@ -70,6 +71,9 @@
                             break;
                         case 'cliente':
                             require_once('site/cliente/cliente.php');
+                            break;
+                        case 'galeria':
+                            require_once('site/galeria/galeria.php');
                             break;
                     }
                     ?>

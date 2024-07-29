@@ -1,5 +1,5 @@
 <?php
-require_once('class/classDepo.php');
+require_once('Class/ClassDepo.php');
 $depo = new depoimentoClass();
 
 $lista = "";

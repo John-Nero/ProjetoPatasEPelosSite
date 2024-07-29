@@ -25,6 +25,12 @@ function filtrar(pagina) {
       window.location.href = "https://pethouse.smpsistema.com.br/john/Patas_e_pelos/admin/index.php?p=" + pagina + "&status=" + status;
       // Atualizar o valor do campo hidden para enviar ao PHP
     break;
+    case "galeria":
+      var status = document.getElementById("filtragemStatusGaleria").value;
+      window.location.href = "https://pethouse.smpsistema.com.br/john/Patas_e_pelos/admin/index.php?p=" + pagina + "&status=" + status;
+      // Atualizar o valor do campo hidden para enviar ao PHP
+    break;
+    
   }
 
   // Submeter o formulário para atualizar a variável PHP

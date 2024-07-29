@@ -1,6 +1,6 @@
 <?php
 
-require_once('class/classDepo.php');
+require_once('class/ClassDepo.php');
 $id = $_GET['id'];
 $depo = new depoimentoClass();
 

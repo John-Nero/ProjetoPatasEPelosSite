@@ -203,7 +203,7 @@
   display: flex;
 }
 
-.imgCategoria{
+.imgCategoria {
   margin: 3%;
   width: 95%;
   max-width: 129px;
@@ -277,7 +277,7 @@
 }
 /*|########| FIM ESTILO LISTAR  CLIENTE |########|*/
 
-/*|########| FIM ESTILO INSERIR  CLIENTE |########|*/
+/*|########|  ESTILO INSERIR  CLIENTE    |#######|*/
 
 .caixaInserirCliente > div {
   justify-content: start;
@@ -317,4 +317,46 @@
 .caixaInserirCliente button {
   margin: 0px 2% 2% 2%;
   width: 92%;
+}
+/*|########| FIM  ESTILO INSERIR  CLIENTE    |#######|*/
+
+/*|########|   ESTILO LISTAR  GALERIA    |#######|*/
+
+.painelGaleria {
+  display: flex;
+  flex-wrap: wrap;
+}
+.caixaIteGaleria {
+  display: flex;
+  background-color: #a38cd6;
+  border-radius: 50px;
+  margin: 20px 1%;
+  width: 48%;
+}
+.identificacaoEFuncaoGaleria {
+  width: 50%;
+}
+.caixaIteGaleria > span {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgGaleria {
+  width: 100%;
+  max-width: 129px;
+  max-height: 132px;
+  margin: 11px 11px 11px 11px;
+  border-radius: 50px;
+}
+
+.identificacaoEFuncaoGaleria {
+  width: 60%;
+}
+
+.identificacaoEFuncaoGaleria h2{
+  font-size: 2.5em;
+  margin: 5%;
+  text-align: left;
 }

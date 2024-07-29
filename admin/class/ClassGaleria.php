@@ -1,0 +1,69 @@
+<?php
+
+require_once('Conexao.php');
+class galeriaClass
+{
+
+    //ATRIBUTOS
+    public $idGaleria;
+    public $nomeGaleria;
+    public $fotoGaleria;
+    public $altGaleria;
+    public $statusGaleria;
+    public $formatoFoto;
+
+    //METODOS
+
+    //LISTAR TODOS
+    public function ListarTodos()
+    {
+        $sql = "SELECT * FROM tbl_galeria ORDER BY idGaleria ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+    }
+
+    //LISTAR ATIVOS
+    public function ListarAtivos()
+    {
+        $sql = "SELECT * FROM tbl_galeria  WHERE statusGaleria = 'ATIVO' ORDER BY idGaleria ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+    }
+
+    public function ListarInativos()
+    {
+        $sql = "SELECT * FROM tbl_galeria  WHERE statusGaleria = 'INATIVO' ORDER BY idGaleria ASC"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao(); //variavel de conexao
+        $resultado = $conn->query($sql); //aqui a variavel resultado ta recebendo uma pesquisa ($query) da conexao com o banco de dados($conn) e essa pesquisa ta passando um comando($sql)
+
+        $lista = $resultado->fetchAll(); //a variavel lista ta recebendo os dados (matriz) la do banco de dados
+        return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
+    }
+
+    //ATIVAR DEPOIEMNTO NO BANCO DE DADOS
+    public function Ativar($id)
+    {
+        $sql = "update tbl_galeria set statusGaleria = 'ATIVO' where idGaleria = $id;";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        echo "<script> document.location='index.php?p=galeriao&status=todos' </script>";
+    }
+
+    //DESATIVAR DEPOIEMNTO NO BANCO DE DADOS
+    public function Desativar($id)
+    {
+        $sql = "update tbl_galeria set statusGaleria = 'INATIVO' where idGaleria = $id;";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        echo "<script> document.location='index.php?p=galeria&status=todos' </script>";
+    }
+}
