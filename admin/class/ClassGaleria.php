@@ -7,12 +7,41 @@ class galeriaClass
     //ATRIBUTOS
     public $idGaleria;
     public $nomeGaleria;
+    public $nomeCliente;
     public $fotoGaleria;
     public $altGaleria;
     public $statusGaleria;
     public $formatoFoto;
 
     //METODOS
+
+    public function __construct($id = false)
+    {
+        if ($id) {
+            $this->idGaleria = $id;                    // Define o ID do banner se fornecido e chama o método Carregar()
+            $this->Carregar();
+        }
+    }
+
+    //METODOS
+    public function Carregar()
+    {
+        $sql = "SELECT * FROM tbl_galeria WHERE idGaleria = $this->idGaleria;"; //Comando que vai la pro sql  
+
+        $conn = conexao::LigarConexao();                // Estabelece a conexão com o banco de dados
+        $resultado = $conn->query($sql);                // Executa a consulta SQL
+
+        $Galeria = $resultado->fetch();                 // Obtém os dados do Galeria da consulta
+
+        //Atribui os dados do Galeria às propriedades da classe
+        $this->idGaleria            = $Galeria['idGaleria'];
+        $this->nomeGaleria          = $Galeria['nomeGaleria'];
+        $this->nomeCliente          = $Galeria['nomeGaleria'];
+        $this->fotoGaleria          = $Galeria['fotoGaleria'];
+        $this->altGaleria           = $Galeria['altGaleria'];
+        $this->statusGaleria        = $Galeria['statusGaleria'];
+        $this->formatoFoto          = $Galeria['formatoFoto'];
+    }
 
     //LISTAR TODOS
     public function ListarTodos()
@@ -53,23 +82,41 @@ class galeriaClass
     {
         $sql = "INSERT INTO tbl_galeria
         (nomeGaleria,
+        nomeCliente,
         fotoGaleria,
         altGaleria,
         statusGaleria,
         formatoFoto)   
-        VALUES(
-                '" . $this->nomeGaleria . "',
-                '" . $this->fotoGaleria . "',
-                '" . $this->altGaleria . "',
-                '" . $this->statusGaleria . "',
-                '" . $this->formatoFoto . "'
-            )";
+                VALUES(
+                        '" . $this->nomeGaleria     . "',
+                        '" . $this->nomeCliente     . "',
+                        '" . $this->fotoGaleria     . "',
+                        '" . $this->altGaleria      . "',
+                        '" . $this->statusGaleria   . "',
+                        '" . $this->formatoFoto     . "'
+                    )";
         //aqui ele ta especificando quais parametros ele vai alimentar e logo em seguida alimentando a mesma 
 
 
         $conn = conexao::LigarConexao(); //esse ta ligando a nossa conexão
         $conn->exec($sql); //esse exec executa uma função sql
 
+    }
+
+    public function Atualizar()
+    {
+        $sql = "UPDATE tbl_banner
+                SET 
+                        nomeGaleria     = '$this->nomeGaleria',
+                        nomeCliente     = '$this->nomeCliente',
+                        fotoGaleria     = '$this->fotoGaleria',
+                        altGaleria      = '$this->altGaleria',
+                        statusGaleria   = '$this->statusGaleria',
+                        formatoFoto     = '$this->formatoFoto'
+                WHERE   idGaleria       = $this->idGaleria;";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($sql);
+        echo "<script> document.location='index.php?p=galeria&status=todos' </script>";
     }
 
     //ATIVAR DEPOIEMNTO NO BANCO DE DADOS

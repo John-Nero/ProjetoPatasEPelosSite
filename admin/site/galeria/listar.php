@@ -20,7 +20,7 @@ if ($statusSelecionado == 'desativados') {
 
 <form action="http://pethouse.smpsistema.com.br/john/patas_e_pelos/admin/index.php?p=galeria" id="paginaHomeFiltragemGaleria" method="$_POST">
     <div class="opcoes">
-    <a href="index.php?p=galeria&g=inserir" alt="botão adicionar">Adicionar</a>
+        <a href="index.php?p=galeria&g=inserir" alt="botão adicionar">Adicionar</a>
         <select id="filtragemStatusGaleria" name="filtragemStatusGaleria" onchange="filtrar('<?php echo $pagina ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $statusSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
@@ -45,13 +45,16 @@ if ($statusSelecionado == 'desativados') {
             <span><img class="imgGaleria" src="<?php echo $linha['fotoGaleria'] ?>" alt="<?php echo $linha['nomePetGaleria'] ?>" draggable="false"></span>
             <div class="identificacaoEFuncao identificacaoEFuncaoGaleria">
                 <span>
-                    <h2>nome: <br><?php echo $linha['nomeGaleria'] ?></h2>
-                    <h2>formato: <br> <?php echo $linha['formatoFoto'] ?></h2>
+                    <h2>nome: <?php echo $linha['nomeGaleria'] ?></h2>
+                    <h2>nome do cliente: <?php echo $linha['nomeCliente'] ?></h2>
+                    <h2>formato: <?php echo $linha['formatoFoto'] ?></h2>
                 </span>
+
+                <button class="botaoAtualizar"><a href="index.php?p=galeria&g=atualizar&id=<?php echo $linha['idGaleria'] ?>">Atualizar</a></button>
                 <button class="<?php echo $linha['statusGaleria'] == 'ATIVO' ? 'botaoDesativar' : 'botaoAtivar' ?>"><!--caso o status seja ativo ele chama chama a clase botãoDesativar se n chama o botãoAtivar-->
                     <?php
-                    echo $linha['statusGaleria'] == 'ATIVO' ? "<a href='index.php?p=Galeriaimento&d=desativar&id=" . $linha['idGaleria'] . "'>Desativar</a>" :
-                        "<a href='index.php?p=Galeriaimento&d=ativar&id=" . $linha['idGaleria'] . "'>Ativar</a>"; ?>
+                    echo $linha['statusGaleria'] == 'ATIVO' ? "<a href='index.php?p=galeria&g=desativar&id=" . $linha['idGaleria'] . "'>Desativar</a>" :
+                        "<a href='index.php?p=galeria&g=ativar&id=" . $linha['idGaleria'] . "'>Ativar</a>"; ?>
                     <!--caso o status seja ativo ele poe o texto como desativar caso contrario coloca como ativar--></button>
             </div>
         </div>

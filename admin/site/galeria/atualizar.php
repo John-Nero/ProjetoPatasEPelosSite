@@ -1,4 +1,8 @@
 <?php
+require_once('class/ClassGaleria.php');
+$id = $_GET['id'];
+$galeria = new galeriaClass($id);
+
 if (isset($_POST['nomeGaleria'])) {
     $nomeGaleria    = $_POST['nomeGaleria'];
     $altGaleria     = 'foto' . $nomeGaleria;
@@ -43,43 +47,41 @@ if (isset($_POST['nomeGaleria'])) {
     $galeria = new galeriaClass();
 
     $galeria->nomeGaleria   = $nomeGaleria;
-    $galeria ->nomeCliente  = $nomeCliente;
+    $galeria->nomeCliente  = $nomeCliente;
     $galeria->fotoGaleria   = $fotoGaleria;
     $galeria->statusGaleria = $statusGaleria;
     $galeria->altGaleria    = 'foto ' . $nomeGaleria;
     $galeria->formatoFoto   = $formatoFoto;
 
-    $galeria->inserir();
+    $galeria->Atualizar();
 }
 
 ?>
-<form action="index.php?p=galeria&g=inserir" method="POST" enctype="multipart/form-data">
+<form action="index.php?p=galeria&g=atualizar&id=<?php echo $galeria->idGaleria; ?>" method="POST" enctype="multipart/form-data">
     <div class="caixaInserir">
         <div>
-            <span><img id="imgFoto" src="img/semImagem.png" draggable="false">
+            <span><img id="imgFoto" src="<?php echo $galeria->fotoGaleria ?>" draggable="false">
                 <input type="file" class="form-control" id="fotoGaleria" name="fotoGaleria" required style="display: none;"></span>
             <div class="dadosDecadastro">
                 <div>
                     <label for="nomeGaleria">Nome da foto</label>
-                    <input type="text" id="nomeGaleria" name="nomeGaleria" required>
+                    <input type="text" id="nomeGaleria" name="nomeGaleria" value="<?php echo $galeria->nomeGaleria ?>">
                 </div>
                 <div>
                     <label for="nomeCliente">Nome do cliente</label>
-                    <input type="text" id="nomeCliente" name="nomeCliente" required>
+                    <input type="text" id="nomeCliente" name="nomeCliente" <?php echo $galeria->nomeCliente ?>>
                 </div>
                 <div>
                     <label for="formatoFoto">Formato que a imagem ficara</label>
                     <select id="formatoFoto" name="formatoFoto">
-                        <option value="sobrepossicao_bola_laranja.svg">bola laranja</option>
-                        <option value="sobrepossicao_bola_roxa.svg">bola roxa</option>
-                        <option value="sobrepossicao_quadrado_laranja.svg">quadrado laranja</option>
-                        <option value="sobrepossicao_quadrado_roxo.svg">quadrado roxo</option>
+                        <option value="sobrepossicao_bola.svg">bola</option>
+                        <option value="sobrepossicao_quadrado.svg">quadrado</option>
                     </select>
                 </div>
 
             </div>
         </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Atualizar</button>
     </div>
 
     </div>

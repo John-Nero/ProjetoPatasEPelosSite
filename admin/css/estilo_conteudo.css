@@ -333,9 +333,7 @@
   margin: 20px 1%;
   width: 48%;
 }
-.identificacaoEFuncaoGaleria {
-  width: 50%;
-}
+
 .caixaIteGaleria > span {
   width: 27%;
   display: flex;
@@ -354,6 +352,8 @@
 .identificacaoEFuncaoGaleria {
   width: 60%;
 }
+
+.identificacaoEFuncaoGaleria >span{width: 100%;}
 
 .identificacaoEFuncaoGaleria h2{
   font-size: 2.5em;
