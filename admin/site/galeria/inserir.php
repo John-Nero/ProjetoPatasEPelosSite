@@ -3,6 +3,7 @@ if (isset($_POST['nomeGaleria'])) {
     $nomeGaleria = $_POST['nomeGaleria'];
     $altGaleria = 'foto' . $nomeGaleria;
     $statusGaleria = "ATIVO";
+    $formatoFoto = $_POST['formatoFoto'];
 
     require_once('class/Conexao.php');
     $conexao = Conexao::LigarConexao();
@@ -43,14 +44,14 @@ if (isset($_POST['nomeGaleria'])) {
     $galeria->nomeGaleria = $nomeGaleria;
     $galeria->fotoGaleria = $fotoGaleria;
     $galeria->statusGaleria = $statusGaleria;
-    $galeria->formatoFoto = $formatoFoto;
     $galeria->altGaleria = 'foto ' . $nomeGaleria;
+    $galeria->formatoFoto = $formatoFoto;
 
-    //$galeria->inserir();
+    $galeria->inserir();
 }
 
 ?>
-<form action="index.php?p=galeria&ca=inserir" method="POST" enctype="multipart/form-data">
+<form action="index.php?p=galeria&g=inserir" method="POST" enctype="multipart/form-data">
     <div class="caixaInserir">
         <div>
             <span><img id="imgFoto" src="img/semImagem.png" draggable="false">
@@ -61,13 +62,15 @@ if (isset($_POST['nomeGaleria'])) {
                     <input type="text" id="nomeGaleria" name="nomeGaleria" required>
                 </div>
                 <div>
-                    <select id="tipoFoto" name="tipoFoto">
-                        <option value="bola_roxa">bola roxa</option>
-                        <option value="bola_laranja">bola laranja</option>
-                        <ption value="quadrado_roxo">Quadrado roxo</option>
-                        <option value="quadrado_laranja">Quadrado laranja</option>
+                    <label for="formatoFoto">Formato que a imagem ficara</label>
+                    <select id="formatoFoto" name="formatoFoto">
+                        <option value="sobrepossicao_bola_laranja.svg">bola laranja</option>
+                        <option value="sobrepossicao_bola_roxa.svg">bola roxa</option>
+                        <option value="sobrepossicao_quadrado_laranja.svg">quadrado laranja</option>
+                        <option value="sobrepossicao_quadrado_roxo.svg">quadrado roxo</option>
                     </select>
                 </div>
+
             </div>
         </div>
         <button type="submit">Cadastrar</button>

@@ -49,6 +49,29 @@ class galeriaClass
         return $lista; //e por fim retorna isso pra quem ta chamando o metodo como resposta
     }
 
+    public function Inserir()
+    {
+        $sql = "INSERT INTO tbl_galeria
+        (nomeGaleria,
+        fotoGaleria,
+        altGaleria,
+        statusGaleria,
+        formatoFoto)   
+        VALUES(
+                '" . $this->nomeGaleria . "',
+                '" . $this->fotoGaleria . "',
+                '" . $this->altGaleria . "',
+                '" . $this->statusGaleria . "',
+                '" . $this->formatoFoto . "'
+            )";
+        //aqui ele ta especificando quais parametros ele vai alimentar e logo em seguida alimentando a mesma 
+
+
+        $conn = conexao::LigarConexao(); //esse ta ligando a nossa conexão
+        $conn->exec($sql); //esse exec executa uma função sql
+
+    }
+
     //ATIVAR DEPOIEMNTO NO BANCO DE DADOS
     public function Ativar($id)
     {
