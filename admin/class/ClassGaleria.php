@@ -125,7 +125,7 @@ class galeriaClass
         $sql = "update tbl_galeria set statusGaleria = 'ATIVO' where idGaleria = $id;";
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
-        echo "<script> document.location='index.php?p=galeriao&status=todos' </script>";
+        echo "<script> document.location='index.php?p=galeria&status=todos' </script>";
     }
 
     //DESATIVAR DEPOIEMNTO NO BANCO DE DADOS

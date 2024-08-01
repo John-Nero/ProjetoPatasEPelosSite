@@ -20,6 +20,7 @@ if ($statusSelecionado == 'desativados') {
 
 <form action="http://pethouse.smpsistema.com.br/john/patas_e_pelos/admin/index.php?p=depoimento" id="paginaHomeFiltragemDepoimento" method="$_POST">
     <div class="opcoes">
+        <a href="index.php?p=depo&b=inserir" alt="botão adicionar">Adicionar</a>
         <select id="filtragemStatusDepo" name="filtragemStatusDepo" onchange="filtrar('<?php echo $pagina ?>')">
             <option value="todos" <?php echo $statusSelecionado == 'todos' ? 'selected' : ''; ?>>Todos</option>
             <!-- se o valor da variavel $statusSelecionado for 'todos', a saída(html) fica assim:<option value="todos" selected>Todos</option>
