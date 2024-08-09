@@ -1,3 +1,10 @@
+<?php
+require_once('admin/class/ClassFuncionario.php');
+$funcionario = new funcionarioClass();
+$lista = $funcionario->ListarAtivos();
+
+?>
+
 <section class="site">
     <div class="equipe">
 
@@ -19,38 +26,17 @@
             </div>
             <div class="carrosel_equipe">
 
-                <div class="card_funcionario">
-                    <img src="img/PG_home/equipe/truskino.svg" alt="" draggable=false />
-                    <h2>Truskino</h2>
-                    <h3>Mendes</h3>
-                    <h4>veterinaria - 24 anos</h4>
-                    <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
-                </div>
-
-                <div class="card_funcionario">
-                    <img src="img/PG_home/equipe/luxana.svg" alt="" draggable=false />
-                    <h2>Luxana</h2>
-                    <h3>Silva</h3>
-                    <h4>veterinaria - 24 anos</h4>
-                    <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
-                </div>
-
-                <div class="card_funcionario">
-                    <img src="img/PG_home/equipe/daskina.svg" alt="" draggable=false />
-                    <h2>Daskina</h2>
-                    <h3>Moto</h3>
-                    <h4>veterinaria - 24 anos</h4>
-                    <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
-                </div>
-
-                <div class="card_funcionario">
-                    <img src="img/PG_home/equipe/dany.svg" alt="" draggable=false />
-                    <h2>Daskina</h2>
-                    <h3>Moto</h3>
-                    <h4>veterinaria - 24 anos</h4>
-                    <p>daskina prukuni trakina trukina laski mari kuri trukinia daski tru</p>
-                </div>
-
+                <?php ?>
+                <?php foreach ($lista as $linha) : ?>
+                    <?php if ($linha['idFuncionario'] != 1) : ?>
+                        <div class="card_funcionario">
+                            <img class="fotoFuncionario" src="admin/img/<?php echo $linha['fotoFuncionario'] ?>" alt="<?php echo $linha['altFuncionario'] ?>" draggable=false />
+                            <h2><?php echo $linha['nomeFuncionario'] ?></h2>
+                            <h4><?php echo $linha['especialidadeFuncionario'] ?></h4>
+                            <p><?php echo $linha['descFuncionario'] ?></p>
+                        </div>
+                    <?php endif ?>
+                <?php endforeach ?>
             </div>
 
             <span><img class="wow animate__animated animate__fadeInDownBig" data-wow-duration="2s" data-wow-delay:="5s" src="img\enfeites\estrela_roxa.svg" alt="" draggable=false></span>

@@ -1,72 +1,53 @@
 <?php
 
-// Importar classes do PHPMailer para o espaço de nomes global
-// Estas devem estar no topo do seu script, não dentro de uma função
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-//Isso aqui indica se deu tudo certo mais pra frente
 $ok = 0;
 
-//Ta confirmando se o email ta prenchido caso esteja ele continua
 if (isset($_POST['email'])) {
 
-    //Declaração das variaveis pra passar pelo corpo do email
     $nome   = $_POST['nome'];
     $email  = $_POST['email'];
     $fone   = $_POST['fone'];
     $mens   = $_POST['mens'];
 
-
-    //chama a ClassContato pra usar os metodos dela
     require_once('admin/class/ClassContato.php');
 
-    //instancia a ClassContato
     $contato = new ClassContato();
 
-    //Atribui Valores as variaveis da ClassContato
     $contato->nomeContato = $nome;
     $contato->emailContato = $email;
     $contato->telefoneContato = $fone;
     $contato->mensagemContato = $mens;
     $contato->statusContato = "ATIVO";
 
-    //chamammos o metodo de inserrir, como a  gente alimentou as variaveis da classe logo ali encima ele vai direto
     $contato->Inserir();
 
-
-    // Carregar o autoloader do Composer
     require 'mailer/Exception.php';
     require 'mailer/PHPMailer.php';
     require 'mailer/SMTP.php';
 
-    // Criar uma instância; passar `true` habilitando as exceções
     $mail = new PHPMailer(true);
 
-    //SERVIDOR E MENSSAGEM DO EMAIL
     try {
-        // --------CONFIGURAÇÕES DO SERVIDOR
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.hostinger.com.br';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'pethouse@ti22.smpsistema.com.br';
+        $mail->Password   = 'Senac@pethouse01';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
 
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                    // Habilitar saída de depuração detalhada
-        $mail->isSMTP();                                            // Enviar usando SMTP
-        $mail->Host       = 'smtp.hostinger.com.br';                // Definir o servidor SMTP para enviar  --aqui tem q usar o seu proprio ein
-        $mail->SMTPAuth   = true;                                   // Habilitar autenticação SMTP
-        $mail->Username   = 'pethouse@ti22.smpsistema.com.br';      // Nome de usuário SMTP                 --aqui tem q usar o seu proprio ein
-        $mail->Password   = 'Senac@pethouse01';                     // Senha SMTP                           --aqui tem q usar o seu proprio ein
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Habilitar criptografia TLS
-        $mail->Port       = 465;                                    // Porta TCP para conectar-se
+        $mail->setFrom('pethouse@ti22.smpsistema.com.br', 'pet house');
+        $mail->addAddress('pethouse@ti22.smpsistema.com.br');
 
-        // --------FIM CONFIGURAÇÕES DO SERVIDOR
-
-        // Destinatários
-        $mail->setFrom('pethouse@ti22.smpsistema.com.br', 'pet house');       // Adicionar um Remetente
-        $mail->addAddress('pethouse@ti22.smpsistema.com.br');                 // Adicionar um destinatário
-
-        // Conteúdo
-        $mail->isHTML(true);                                                  // Definir formato de e-mail para HTML
-
-        $mail->Subject = 'Patas E pelos';                        // Titulo do email
+        $mail->isHTML(true);
+        $mail->Subject = 'Patas E pelos';
 
         $mail->Body    = "
             <strong> Novo contato Patas E pelos </strong>
@@ -78,7 +59,7 @@ if (isset($_POST['email'])) {
         ";
 
         $mail->AltBody = "
-        <strong> Novo contato Patas E pelos </strong>
+            <strong> Novo contato Patas E pelos </strong>
             <br><br>
             <strong> Nome: </strong> $nome <br>
             <strong> Email: </strong> $email <br>
@@ -87,13 +68,18 @@ if (isset($_POST['email'])) {
         ";
 
         $mail->send();
-        $ok = 1;                                     //caso tudo tenha dado certo ele só segue a vida
+        $ok = 1;
     } catch (Exception $e) {
-        $ok = 2;                                     //caso tudo tenha dado Errado ele retonra com um salve
-        echo "Erro do Mailer: {$mail->ErrorInfo}";
+        $ok = 2;
+        $errorMessage = "Erro do Mailer: {$mail->ErrorInfo}";
     }
+
+    // Redirecionar para a página de resultado
+    header('Location: formulario.php?status=' . $ok);
+    exit;
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -102,7 +88,7 @@ if (isset($_POST['email'])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato - Patas e pelos Pethouse</title>
-    <link rel="icon" href="img\favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
 
 
     <!--Link para o arquivo que da um reset.min maneiro na pagina (Tem que ficar antes pq se n reset.mina tudo mo perigo)-->
@@ -118,6 +104,12 @@ if (isset($_POST['email'])) {
 
     <!--Responsivo-->
     <link rel="stylesheet" href="css/mobile.css">
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
 
 </head>
 
@@ -135,7 +127,7 @@ if (isset($_POST['email'])) {
 
                 <!--Imagem do topo e o fale conosco acima do form-->
                 <div>
-                    <img src="img\PG_contato\entreEmContatoBanner.svg" alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas" draggable=false>
+                    <img src="img/PG_contato/entreEmContatoBanner.svg" alt="Entre em contato agora mesmo. Marque seu horário e tire suas Duvidas" draggable=false>
                     <h2>Fale conosco e agende o seu horário, agora mesmo !</h2>
                 </div>
             </div>
@@ -144,8 +136,8 @@ if (isset($_POST['email'])) {
 
         <!--Form-->
         <section class="form">
-            <img src="img\PG_contato\fundoFormulario1200.svg" alt="" draggable=false>
-            <img src="img\PG_contato\fundoFormularioResponsivo.svg" alt="" draggable=false>
+            <img src="img/PG_contato/fundoFormulario1200.svg" alt="" draggable=false>
+            <img src="img/PG_contato/fundoFormularioResponsivo.svg" alt="" draggable=false>
 
             <div class="site">
 
@@ -174,7 +166,7 @@ if (isset($_POST['email'])) {
                             <h2>Email</h2>
                             <input type="email" name="email" id="emall" placeholder="Digite seu email" required>
                         </div>
-                        <span><img src="img\PG_contato\cachorrosEEstrelasForm.svg" alt="" draggable="false"></span>
+                        <span><img src="img/PG_contato/cachorrosEEstrelasForm.svg" alt="" draggable="false"></span>
                     </div>
                     <div>
                         <div>
@@ -182,8 +174,8 @@ if (isset($_POST['email'])) {
                             <textarea name="mens" id="mens" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
                         </div>
                         <div>
-                            <div><img src="img\PG_contato\icons\iconWhatsappForm.svg" alt="icone whatsapp" draggable=false><button onclick="EnviarWhats()">Whatsapp</button></div>
-                            <div><img src="img\PG_contato\icons\iconEmailForms.svg" alt="Icon email" draggable=false><input type="submit" value="Email"></div>
+                            <div><img src="img/PG_contato/icons/iconWhatsappForm.svg" alt="icone whatsapp" draggable=false><button onclick="EnviarWhats()">Whatsapp</button></div>
+                            <div><img src="img/PG_contato/icons/iconEmailForms.svg" alt="Icon email" draggable=false><input type="submit" value="Email"></div>
                         </div>
                     </div>
                 </form>

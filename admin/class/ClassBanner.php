@@ -12,33 +12,7 @@ class bannerClass
     public $statusBanner;
     public $paginaBanner;
 
-    //CONSTRUTOR (SERVE PRA CARREGA AS INFORMAÇÕES DE UM CLIENTE DO BANCO)
-    public function __construct($id = false)
-    {
-        if ($id) {
-            $this->idBanner = $id;                    // Define o ID do banner se fornecido e chama o método Carregar()
-            $this->Carregar();
-        }
-    }
-
     //METODOS
-    public function Carregar()
-    {
-        $sql = "SELECT * FROM tbl_banner WHERE idBanner = $this->idBanner;"; //Comando que vai la pro sql  
-
-        $conn = conexao::LigarConexao();                // Estabelece a conexão com o banco de dados
-        $resultado = $conn->query($sql);                // Executa a consulta SQL
-
-        $cliente = $resultado->fetch();                 // Obtém os dados do banner da consulta
-
-        //Atribui os dados do banner às propriedades da classe
-        $this->idBanner            = $cliente['idBanner'];
-        $this->nomeBanner          = $cliente['nomeBanner'];
-        $this->fotoBanner          = $cliente['fotoBanner'];
-        $this->altBanner           = $cliente['altBanner'];
-        $this->statusBanner        = $cliente['statusBanner'];
-        $this->paginaBanner        = $cliente['paginaBanner'];
-    }
 
     //LISTAR TODOS OS ITENS NO BANCO DE DADOS
     public function ListarTodos()
@@ -179,22 +153,6 @@ class bannerClass
         $conn = conexao::LigarConexao(); //esse ta ligando a nossa conexão
         $conn->exec($sql); //esse exec executa uma função sql
 
-    }
-
-    //INSERIR NO BANCO DE DADOS
-    public function Atualizar()
-    {
-        $sql = "UPDATE tbl_banner
-        SET 
-            nomeBanner = '$this->nomeBanner',
-            fotoBanner = '$this->fotoBanner',
-            altBanner = '$this->altBanner',
-            statusBanner = '$this->statusBanner',
-            paginaBanner = '$this->paginaBanner'
-        WHERE idBanner = $this->idBanner;";
-        $conn = Conexao::LigarConexao();
-        $conn->exec($sql);
-        echo "<script> document.location='index.php?p=banner&status=todos&pagina=todas' </script>";
     }
 
 

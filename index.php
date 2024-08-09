@@ -1,3 +1,6 @@
+<?php ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patas e pelos Pethouse</title>
-  <link rel="icon" href="img\favicon.ico">
+  <link rel="icon" href="img/favicon.ico">
 
 
   <!--reset.min.mina o estilo-->

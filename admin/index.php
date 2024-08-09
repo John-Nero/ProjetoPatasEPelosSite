@@ -1,3 +1,8 @@
+<?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,7 +36,7 @@
     <main>
         <div class="site">
             <div class="menu_lateral">
-                <img src="..\img\Logo_Patas_e_pelos.svg" alt="Logo Patas e pelos" draggable="false">
+                <img src="..\img\logo_Patas_e_pelos.svg" alt="Logo Patas e pelos" draggable="false">
                 <nav>
                     <ul>
                         <li><a href="index.php?p=banner&status=todos&pagina=todas">Banner's</a></li>
@@ -48,7 +53,7 @@
                     <div class="usuario">
                         <img src="img/perfil.png" alt="">
                         <span>
-                            <h2>El Puta</h2>
+                            <h2>Usuario</h2>
                             <h2>Administrador</h2>
                         </span>
                     </div>

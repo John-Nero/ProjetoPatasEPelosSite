@@ -31,7 +31,7 @@ if (isset($_POST['nomeGaleria'])) {
     $novoNome = $novoId . '_' . $nomeGalFoto . '.' . $extenssao;
 
     //Mover a imagem
-    if (move_uploaded_file($arquivo['tmp_name'], 'img/galeria/' . $novoNome)) //Primeiro atributo é de onde sai e o segundo pra onde vai
+    if (move_uploaded_file($arquivo['tmp_name'], 'admin/img/galeria/' . $novoNome)) //Primeiro atributo é de onde sai e o segundo pra onde vai
     {
         //Esse aqui é o nome final dessa bagunça q é pra fica nesse formato aq servico/ronaldo1.png
         $fotoGaleria = 'img/galeria/' . $novoNome;
@@ -70,10 +70,8 @@ if (isset($_POST['nomeGaleria'])) {
                 <div>
                     <label for="formatoFoto">Formato que a imagem ficara</label>
                     <select id="formatoFoto" name="formatoFoto">
-                        <option value="sobrepossicao_bola_laranja.svg">bola laranja</option>
-                        <option value="sobrepossicao_bola_roxa.svg">bola roxa</option>
-                        <option value="sobrepossicao_quadrado_laranja.svg">quadrado laranja</option>
-                        <option value="sobrepossicao_quadrado_roxo.svg">quadrado roxo</option>
+                        <option value="circulo">Circulo</option>
+                        <option value="quadrado">Quadrado</option>
                     </select>
                 </div>
 

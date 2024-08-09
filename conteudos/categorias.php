@@ -16,9 +16,8 @@ $lista = $categoria->listarAtivos();
     <!--categorias rotativas--->
     <div class="carrosel_categorias">
       <?php foreach ($lista as $linha) : ?>
-
         <div>
-          <a href="#"><img src="admin/<?php echo $linha['fotoCategoria'] ?>" alt="<?php echo $linha['nomeCategoria'] ?>" draggable=false />
+          <a href="https://pethouse.smpsistema.com.br/john/Patas_e_pelos/produto.php?c=<?php echo $linha['nomeCategoria'] ?>"><img src="admin/<?php echo $linha['fotoCategoria'] ?>" alt="<?php echo $linha['nomeCategoria'] ?>" draggable=false />
             <p><?php echo $linha['nomeCategoria'] ?></p>
           </a>
         </div>

@@ -1,5 +1,5 @@
 <?php
-require_once('admin/class/classDepo.php');
+require_once('admin/class/ClassDepo.php');
 $depo = new depoimentoClass();
 $lista = $depo->ListarAtivos();
 ?>
@@ -31,7 +31,7 @@ $lista = $depo->ListarAtivos();
         <!--Imagens dos pets do carrosel-->
         <div class="carrosel_depo_imagem">
           <?php foreach ($lista as $linha) : ?>
-            <img src="admin/<?php echo $linha['fotoDepo'] ?>" alt="<?php echo $linha['altDepo'] ?>" draggable=false />
+            <img class="fotoDepo" src="admin/<?php echo $linha['fotoDepo'] ?>" alt="<?php echo $linha['altDepo'] ?>" draggable=false />
           <?php endforeach; ?>
         </div>
 

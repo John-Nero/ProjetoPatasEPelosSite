@@ -42,7 +42,7 @@ if ($statusSelecionado == 'desativados') {
 <div class="painelGaleria">
     <?php foreach ($lista as $linha) : ?> <!--laço para exibir todos os Galeria do banco de dados-->
         <div class="caixaItem caixaIteGaleria">
-            <span><img class="imgGaleria" src="<?php echo $linha['fotoGaleria'] ?>" alt="<?php echo $linha['nomePetGaleria'] ?>" draggable="false"></span>
+            <span><img class="imgGaleria" src="<?php echo $linha['fotoGaleria'] ?>" alt="<?php echo $linha['altGaleria'] ?>" draggable="false"></span>
             <div class="identificacaoEFuncao identificacaoEFuncaoGaleria">
                 <span>
                     <h2>nome: <?php echo $linha['nomeGaleria'] ?></h2>

@@ -1,13 +1,17 @@
+input,
+select {
+  border: 0;
+  border-radius: 90px;
+}
+
 /*|########| ESTILO LISTAR BANNER |########|*/
 
-/*A classe opcoes é a responsavel por abrigar o botão de adicionar e o de filtrar os itens da categoria*/
 .opcoes {
   margin: 2% 0;
   display: flex;
   justify-content: space-between;
 }
 
-/*Botão adicionar*/
 .opcoes a {
   width: 131px;
   height: 34px;
@@ -20,7 +24,6 @@
   background: #ff9a5b;
 }
 
-/*Filtragem*/
 .opcoes select {
   margin-right: 4%;
   width: 234px;
@@ -28,7 +31,6 @@
   text-align: center;
 }
 
-/*caixaItem é a classe de cada div dos banners, dentro dela temos a imagem do banner, o nome e um botão para ativar e desativar o mesmo*/
 .caixaItem {
   display: flex;
   background-color: #a38cd6;
@@ -36,24 +38,21 @@
   margin: 20px 2.5%;
 }
 
-/*Onde é exibido o banner*/
 .caixaItem > span {
   background: #665098;
   border-radius: 50px;
   margin: 2%;
 }
 
-/*imagem do banner*/
 .imgBanner {
   width: 95%;
   height: 266px;
   max-width: 946px;
   max-height: 269px;
-  margin: 11px 11px 11px 11px;
+  margin: 11px;
   border-radius: 50px;
 }
 
-/*Id responsavel por abrigar o nome e o botão para ativar/desativar*/
 .identificacaoEFuncao {
   width: 24%;
   margin: 2% 2% 2% 0;
@@ -63,43 +62,33 @@
   align-items: center;
 }
 
-/*Nome do banner*/
 .identificacaoEFuncao h2 {
   color: white;
   font-size: 3.5em;
   text-align: center;
 }
 
-/*botão ativar, desativar e atualizar*/
-
-.botaoAtivar {
+.botaoAtivar,
+.botaoDesativar,
+.botaoAtualizar {
   width: 95%;
   height: 18%;
   border: 2px solid black;
   border-radius: 10px;
   font-size: 2.5em;
   font-weight: 900;
+}
+
+.botaoAtivar {
   background: #a2ec88;
 }
 
 .botaoDesativar {
-  width: 95%;
-  height: 18%;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 2.5em;
-  font-weight: 900;
   background: #f65d5d;
 }
 
 .botaoAtualizar {
-  width: 95%;
-  height: 18%;
   margin-bottom: 12px;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 2.5em;
-  font-weight: 900;
   background: #88c7ec;
 }
 /*|########| FIM ESTILO LISTAR BANNER |########|*/
@@ -145,14 +134,8 @@
   height: 365px;
 }
 
-.dadosDecadastro input,
-.dadosDecadastro select {
-  border: 0;
-  border-radius: 50px;
-}
-
 .caixaInserir button {
-  margin: 0px 2% 2% 6%;
+  margin: 0% 2% 2% 6%;
   width: 85%;
   height: 48px;
   border: 0;
@@ -162,31 +145,113 @@
   font-size: 3.5em;
   font-weight: 900 !important;
 }
+/*|########| FIM ESTILO INSERIR BANNER |########|*/
 
 /*|########| ESTILO LISTAR DEPOIMENTO |########|*/
+
 .caixaItemDepo > span:nth-child(1) {
   display: flex;
   width: 35%;
   justify-content: center;
   align-items: center;
 }
+
 .caixaItemDepo img {
   width: 66%;
   margin: 2% 0;
+  border-radius: 50px;
 }
 
 .identificacaoEFuncaoDepo {
   width: 65%;
 }
 
-.caixaItemDepo p {
+.caixaItemDepo p,
+.caixaInserirDepoimento > div > div:nth-child(2) > div:nth-child(2) {
   color: white;
   font-size: 3.5em;
   text-align: center;
 }
+/*|########| FIM ESTILO LISTAR DEPOIMENTO |########|*/
+
+/*|########| ESTILO INSERIR DEPOIMENTO |########|*/
+
+.caixaInserirDepoimento > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.caixaInserirDepoimento > div > div {
+  margin: 2%;
+  height: 272px;
+}
+
+.caixaInserirDepoimento > div > div:nth-child(1) span,
+.caixaInserirDepoimento > div > div:nth-child(1) div {
+  width: 50%;
+  height: 244px;
+}
+
+.caixaInserirDepoimento > div > div:nth-child(1) span img,
+.caixaInserirDepoimento > div > div:nth-child(1) div div {
+  width: 100%;
+  height: 100%;
+}
+
+.caixaInserirDepoimento > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.avaliacao_estrela {
+  direction: rtl;
+  display: inline-block;
+  font-size: 2em;
+  unicode-bidi: bidi-override;
+}
+
+.avaliacao_estrela input {
+  display: none;
+}
+
+.avaliacao_estrela label {
+  color: #bbb;
+  font-size: 2em;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.avaliacao_estrela label:hover,
+.avaliacao_estrela label:hover ~ label,
+.avaliacao_estrela input:checked ~ label {
+  color: #f2b600;
+}
+
+.caixaInserirDepoimento div > div:nth-child(2) > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.caixaInserirDepoimento > div > div:nth-child(2) > div:nth-child(2) > input {
+  width: 100%;
+  height: 184px;
+}
+
+.caixaInserirDepoimento {
+  margin: 2% 2% 2% 6%;
+  width: 88%;
+}
+
+.caixaInserirDepoimento button{
+  margin: 4% 2% 2% 8%;
+}
 /*|########| FIM ESTILO INSERIR DEPOIMENTO |########|*/
 
-/*|########|  ESTILO LISTAR  CATEGORIA |########|*/
+/*|########| ESTILO LISTAR CATEGORIA |########|*/
+
 .painelCategoria {
   display: flex;
   flex-wrap: wrap;
@@ -208,7 +273,7 @@
   width: 95%;
   max-width: 129px;
   max-height: 132px;
-  margin: 11px 11px 11px 11px;
+  margin: 11px;
   border-radius: 50px;
 }
 
@@ -221,10 +286,9 @@
   width: 85%;
   height: 41%;
 }
+/*|########| FIM ESTILO LISTAR CATEGORIA |########|*/
 
-/*|########| FIM ESTILO LISTAR  CATEGORIA |########|*/
-
-/*|########| ESTILO LISTAR  CLIENTE |########|*/
+/*|########| ESTILO LISTAR CLIENTE |########|*/
 
 .caixaItemCliente > span {
   width: 30%;
@@ -236,7 +300,7 @@
 .imgCliente {
   max-width: 328px;
   max-height: 185px;
-  margin: 11px 11px 11px 11px;
+  margin: 11px;
   border-radius: 50px;
 }
 
@@ -275,9 +339,9 @@
   width: 100%;
   height: 25%;
 }
-/*|########| FIM ESTILO LISTAR  CLIENTE |########|*/
+/*|########| FIM ESTILO LISTAR CLIENTE |########|*/
 
-/*|########|  ESTILO INSERIR  CLIENTE    |#######|*/
+/*|########| ESTILO INSERIR CLIENTE |########|*/
 
 .caixaInserirCliente > div {
   justify-content: start;
@@ -315,17 +379,18 @@
 }
 
 .caixaInserirCliente button {
-  margin: 0px 2% 2% 2%;
+  margin: 0 2% 2% 2%;
   width: 92%;
 }
-/*|########| FIM  ESTILO INSERIR  CLIENTE    |#######|*/
+/*|########| FIM ESTILO INSERIR CLIENTE |########|*/
 
-/*|########|   ESTILO LISTAR  GALERIA    |#######|*/
+/*|########| ESTILO LISTAR GALERIA |########|*/
 
 .painelGaleria {
   display: flex;
   flex-wrap: wrap;
 }
+
 .caixaIteGaleria {
   display: flex;
   background-color: #a38cd6;
@@ -345,7 +410,7 @@
   width: 100%;
   max-width: 129px;
   max-height: 132px;
-  margin: 11px 11px 11px 11px;
+  margin: 11px;
   border-radius: 50px;
 }
 
@@ -353,10 +418,13 @@
   width: 60%;
 }
 
-.identificacaoEFuncaoGaleria >span{width: 100%;}
+.identificacaoEFuncaoGaleria > span {
+  width: 100%;
+}
 
-.identificacaoEFuncaoGaleria h2{
+.identificacaoEFuncaoGaleria h2 {
   font-size: 2.5em;
   margin: 5%;
   text-align: left;
 }
+/*|########| FIM ESTILO LISTAR GALERIA |########|*/

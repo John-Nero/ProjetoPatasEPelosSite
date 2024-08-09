@@ -1,6 +1,6 @@
 <?php
  
-require_once('admin\class\Conexao.php');
+require_once('Conexao.php');
  
 class ClassContato{   // Criar uma classe para atribuir os atributos que tem no banco de dados
  

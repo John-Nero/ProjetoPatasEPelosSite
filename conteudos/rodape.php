@@ -25,10 +25,10 @@
             <div>
                 <h2>Paginas</h2>
                 <ul>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">equipe</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Políticas de privacidade</a></li>
+                    <li><a href="sonbre-nos.php">Sobre nós</a></li>
+                    <li><a href="servicos.php">Serviços</a></li>
+                    <li><a href="produto.php?c=todos">Produtos</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                 </ul>
             </div>
 
@@ -39,9 +39,10 @@
                 <h2>Localização:</h2>
                 <a href="https://maps.app.goo.gl/7ssnQNByfQDJmkVw6">Rua São Miguel Paulista, n:100</a>
             </div>
+
+            <!--Detalhes ao redor do rodapé e o cachorro que fica ao lado da terceira coluna-->
+            <span><img src="img/enfeites/rodape_fundo.svg" alt="" draggable=false /></span>
         </div>
 
-        <!--Detalhes ao redor do rodapé e o cachorro que fica ao lado da terceira coluna-->
-        <span><img src="img/enfeites/rodape_fundo.svg" alt="" draggable=false /></span>
     </div>
 </footer>

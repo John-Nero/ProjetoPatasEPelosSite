@@ -6,15 +6,11 @@ if ($pagina == null) {
     require_once('listar.php');
 } else {
     if ($pagina == 'inserir') {
+        print_r("sdsadasdasfsdf");
         require_once('inserir.php');
     }
 
-    if ($pagina == 'atualizar') {
-        require_once('atualizar.php');
-    }
-
     if ($pagina == 'ativar') {
-      
         require_once('ativar.php');
     }
 

@@ -1,46 +1,45 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+require_once('admin/class/ClassProduto.php');
+$produto = new ClassProduto();
+$lista = '';
+// print_r($lista);
+require_once('admin/class/ClassCategoria.php');
+$categoria = new CategoriaClass();
+$listaC = $categoria->ListarTodos();
+// print_r($listaC);
 
-    require_once('admin/class/ClassProduto.php');
-    $produto = new ClassProduto();
-    $lista = '';
-    // print_r($lista);
-    require_once('admin/class/ClassCategoria.php');
-    $categoria = new categoriaClass();
-    $listaC = $categoria->listarTodos();
-    // print_r($listaC);
+$statusSelecionado = @$_GET['status'];
 
-    $statusSelecionado = @$_GET['status'];
-
-    $categoriaB = @$_GET['c'];
+$categoriaB = @$_GET['c'];
 
 
-    if ($categoriaB == "todos") {
-        $lista = $produto->Listar();
-    }
-    if ($categoriaB == "Cachorro") {
-        $lista = $produto->ListarCao();
-    }
-    if ($categoriaB == "Chinchila") {
-        $lista = $produto->ListarChinchila();
-    }
-    if ($categoriaB == "Gato") {
-        $lista = $produto->ListarGato();
-    }
-    if ($categoriaB == "Hamster") {
-        $lista = $produto->ListarHamster();
-    }
-    if ($categoriaB == "Passaro") {
-        $lista = $produto->ListarPassaro();
-    }
-    if ($categoriaB == "Peixe") {
-        $lista = $produto->ListarPeixe();
-    }
-    if ($categoriaB == "Tartaruga") {
-        $lista = $produto->ListarTataruga();
-    }
+if ($categoriaB == "todos") {
+    $lista = $produto->Listar();
+}
+if ($categoriaB == "Cachorro") {
+    $lista = $produto->ListarCao();
+}
+if ($categoriaB == "Furao") {
+    $lista = $produto->ListarFurao();
+}
+if ($categoriaB == "Gato") {
+    $lista = $produto->ListarGato();
+}
+if ($categoriaB == "Hamster") {
+    $lista = $produto->ListarHamster();
+}
+if ($categoriaB == "Aves") {
+    $lista = $produto->ListarAves();
+}
+if ($categoriaB == "Peixe") {
+    $lista = $produto->ListarPeixe();
+}
+if ($categoriaB == "Tartaruga") {
+    $lista = $produto->ListarTataruga();
+}
+if ($categoriaB == "Coelho") {
+    $lista = $produto->ListarCoelho();
+}
 
 ?>
 
@@ -51,7 +50,7 @@ error_reporting(E_ALL);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
-    <!--reset.mina o estilo-->
+    <!--Reseta o estilo-->
     <link rel="stylesheet" href="css/reset.min.css" />
 
     <!--API do google para os icones-->
@@ -71,6 +70,7 @@ error_reporting(E_ALL);
     <link rel="stylesheet" href="css/estilo.min.css" />
     <link rel="stylesheet" href="css/estilo_produto.min.css">
     <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/mobile_produto.min.css" />
 </head>
 
 <body>
@@ -88,7 +88,7 @@ error_reporting(E_ALL);
                         <?php foreach ($lista as $linha) : ?>
                             <div class="produto_div">
                                 <div class="produto_exibido">
-                                    <img src="img/produto/<?php echo $linha['fotoProduto'] ?>" alt="">
+                                    <img src="admin/img/<?php echo $linha['fotoProduto'] ?>" alt="">
                                     <h2><?php echo $linha['nomeProduto'] ?></h2>
                                 </div>
 
@@ -101,23 +101,26 @@ error_reporting(E_ALL);
                                                 <p2><?php echo $linha['statusProduto'] == 'ATIVO' ? 'Disponivel na loja' : 'Indisponivel na loja' ?></p2>
                                             </div>
                                         </div>
-                                        <button><a href="#">Reserve Já</a></button>
+                                        <button><a href="https://pethouse.smpsistema.com.br/john/Patas_e_pelos/contato.php">Reserve Já</a></button>
                                     </div>
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
 
-                    <!-- lado direito -->
-                    <div class="filtro">
+                    <!-- Botão do Menu Hambúrguer -->
+                    <button class="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
+
+                    <!-- Filtro -->
+                    <div class="filtro" id="filtroMenu">
                         <h2>Categorias</h2>
                         <nav>
                             <ul>
                                 <li class="menu-item">
-                                    <h2 class="menu-button">Procure por pets</h2>
+                                    <h2 class="menu-button" onclick="toggleSubMenu(this)">Procure por pets</h2>
                                     <ul class="subMenu">
                                         <!-- Sub Menu Serviço -->
-                                        <li><button type="button" onclick="filtrar('todos')">Todos</li>
+                                        <li><button type="button" onclick="filtrar('todos')">Todos</button></li>
                                         <?php foreach ($listaC as $linha) : ?>
                                             <li><button type="button" onclick="filtrar('<?php echo $linha['nomeCategoria'] ?>')"><?php echo $linha['nomeCategoria'] ?></button></li>
                                         <?php endforeach; ?>
@@ -130,12 +133,11 @@ error_reporting(E_ALL);
                 </div>
             </div>
         </section>
-        <!--RODAPÉ-->
-        <?php include_once 'conteudos/rodape.php' ?>
-        <!--FIM RODAPÉ-->
     </main>
-     <!--Script de funções js-->
-  <script src="js/script.js"></script>
+    <!--RODAPÉ-->
+    <?php include_once 'conteudos/rodape.php' ?>
+    <!--FIM RODAPÉ-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
